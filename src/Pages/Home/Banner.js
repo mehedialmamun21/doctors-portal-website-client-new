@@ -1,10 +1,10 @@
 import React from 'react';
 import chair from '../../assets/images/chair.png';
-import img from '../../assets/images/bg.png';
+import PrimaryButton from '../../component/PrimaryButton/PrimaryButton';
 
 const Banner = () => {
     return (
-        <div class="hero min-h-screen px-12 bg-[url('/src/assets/images/bg.png')]">
+        <div class="hero min-h-screen bg-[url('/src/assets/images/bg.png')]">
             <div class="hero-content flex-col lg:flex-row-reverse">
                 <img src={chair} class="max-w-sm rounded-lg shadow-2xl ml-7" />
                 <div>
@@ -16,7 +16,7 @@ const Banner = () => {
                         feeling refreshed and relaxed. Whether you're getting a cleaning, a root
                         canal, or simply require help understanding your insurance, we're here for
                         you!</p>
-                    <button class="btn btn-primary uppercase text-white font-bold bg-gradient-to-r from-secondary to-primary">Get Started</button>
+                    <PrimaryButton></PrimaryButton>
                 </div>
             </div>
         </div>
