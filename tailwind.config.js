@@ -3,8 +3,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        // 'hero-pattern': "url('/img/hero-pattern.svg')",
-        'footer-texture': "url('/src/assets/images/bg.png')",
+        'banner-section-backImg': "url('/src/assets/images/bg.png')",
+        'contact-section-backImg': "url('/src/assets/images/appointment.png')",
       }
     },
   },

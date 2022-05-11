@@ -6,7 +6,6 @@ import whitening from '../../assets/images/whitening.png'
 
 const Services = () => {
 
-
     const services = [
 
         {
@@ -34,7 +33,7 @@ const Services = () => {
 
 
     return (
-        <div className='my-28'>
+        <div className='my-20'>
             <div className='text-center my-20'>
                 <h4 className='text-primary text-xl font-bold uppercase'>Our Services</h4>
                 <h3 className='text-4xl'>Services We Provide</h3>
