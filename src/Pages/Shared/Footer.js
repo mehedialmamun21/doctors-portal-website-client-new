@@ -13,7 +13,7 @@ const Footer = () => {
             backgroundSize: 'cover'
         }} className="p-10 my-28">
 
-            <div className='footer mx-40'>
+            <div className='footer lg:mx-40'>
                 <div>
                     <span className="footer-title text-xl">Services</span>
                     <a href='/#' className="link link-hover">Emergency Checkup</a>
@@ -29,11 +29,11 @@ const Footer = () => {
                 </div>
                 <div>
                     <span className="footer-title text-xl">Our Address</span>
-                    <a href='/#' className="link link-hover">Dhanmondi, Lab-Aid (main branch)</a>
+                    <a href='/#' className="link link-hover">Dhanmondi, Lab-Aid</a>
                 </div>
             </div>
 
-            <div className='text-center py-10'>
+            <div className='text-center py-20 lg:py-10'>
                 <p>Copyright © {date} All rights are reserved by "LabAid - Dental Solutions"</p>
             </div>
 

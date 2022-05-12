@@ -6,8 +6,8 @@ const ExCare = () => {
     return (
         <div className="hero min-h-screen">
             <div className="hero-content flex-col lg:flex-row mb-20">
-                <img className='w-[458px] mr-10' src={treatmentPic} alt="" />
-                <div className='w-[497px]'>
+                <img className='w-[300px] lg:w-[458px] mr-10' src={treatmentPic} alt="" />
+                <div className='w-[300px] lg:w-[497px]'>
                     <h2 className="text-4xl font-bold">Exceptional Dental Care, <br /> on Your Terms</h2>
                     <p className="py-6">Exceptional Dental Care is a cheerful dental practice,
                         offering high-quality dental care in the heart of Spearwood.
