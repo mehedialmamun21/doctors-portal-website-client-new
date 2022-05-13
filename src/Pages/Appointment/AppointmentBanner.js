@@ -1,18 +1,8 @@
-import React, { useState } from 'react';
 import dentistChair from '../../assets/images/chair.png';
 import { DayPicker } from 'react-day-picker';
 import 'react-day-picker/dist/style.css';
-import { format } from 'date-fns';
 
-const AppointmentBanner = () => {
-    // const [selected, setSelected] = useState(new Date());
-    const [selected, setSelected] = useState();
-
-    let footer = <p>Please pick a day : </p>;
-    if (selected) {
-        footer = <p>You have selected : {format(selected, 'PP')}</p>;
-    }
-
+const AppointmentBanner = ({ date, setDate }) => {
     return (
         <section>
             <div className="hero min-h-screen bg-banner-section-backImg">
@@ -21,9 +11,8 @@ const AppointmentBanner = () => {
                     <div className='lg:pr-10'>
                         <DayPicker
                             mode="single"
-                            selected={selected}
-                            onSelect={setSelected}
-                            footer={footer}
+                            date={date}
+                            onSelect={setDate}
                         />
                     </div>
                 </div>
