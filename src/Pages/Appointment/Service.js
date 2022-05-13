@@ -14,12 +14,12 @@ const Service = ({ service, setTreatment }) => {
                             <span className='text-red-500 font-semibold'>Try another date</span>
                     }
                 </p>
-                <p className='text-xs py-0.5'>{slots.length} {slots.length > 1 ? 'spaces' : 'space'} available</p>
+                <p className='text-sm py-0.5'>{slots.length} {slots.length > 1 ? 'spaces' : 'space'} available</p>
                 <div className="card-actions justify-center">
                     <label htmlFor="booking-modal"
                         disabled={slots.length === 0}
                         onClick={() => setTreatment(service)}
-                        className="btn btn-secondary text-white font-semibold uppercase">
+                        className="btn btn-sm bg-gradient-to-r from-secondary to-primary text-white font-semibold uppercase">
                         Book Appointment
                     </label>
                 </div>

@@ -6,7 +6,7 @@ const Banner = () => {
     return (
         <section className="hero min-h-screen bg-banner-section-backImg">
             <div className="hero-content flex-col lg:flex-row-reverse">
-                <img src={chair} alt="" className="lg:max-w-sm rounded-lg shadow-2xl ml-7" />
+                <img src={chair} alt="" className="lg:max-w-sm rounded-lg shadow-2xl lg:ml-10" />
                 <div>
                     <h1 className="text-4xl font-bold">Your New Smile Starts Here</h1>
                     <p className="py-6">Our team is filled with experienced professionals who
