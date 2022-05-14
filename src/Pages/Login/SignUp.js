@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useForm } from "react-hook-form";
-import { useCreateUserWithEmailAndPassword, useSignInWithGoogle, useUpdateProfile } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword, useSendEmailVerification, useSignInWithGoogle, useUpdateProfile } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init'
 import Loading from "../Shared/Loading";
 import { Link, useNavigate } from "react-router-dom";
 
 const SignUp = () => {
+
+    const [email, setEmail] = useState('');
 
     const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
     const { register, formState: { errors }, handleSubmit } = useForm();
@@ -16,18 +18,20 @@ const SignUp = () => {
         error,
     ] = useCreateUserWithEmailAndPassword(auth);
 
+    const [sendEmailVerification, sending, verError] = useSendEmailVerification(auth);
+
     const [updateProfile, updating, updateError] = useUpdateProfile(auth);
 
     const navigate = useNavigate();
 
     let signInError;
 
-    if (loading || gLoading || updating) {
+    if (loading || gLoading || updating || sending) {
         return <Loading></Loading>
     }
 
-    if (error || gError || updateError) {
-        signInError = <p className="text-red-500"> <small>{error?.message || gError?.message || updateError?.message}</small> </p>
+    if (error || gError || updateError || verError) {
+        signInError = <p className="text-red-500"> <small>{error?.message || gError?.message || updateError?.message || verError?.message}</small> </p>
     }
 
     if (user || gUser) {
@@ -35,10 +39,15 @@ const SignUp = () => {
     }
 
     const onSubmit = async data => {
+        setEmail(data.email);
         // console.log(data);
         await createUserWithEmailAndPassword(data.email, data.password);
         await updateProfile({ displayName: data.name });
-        console.log('update done');
+        // console.log('update done');
+
+        await sendEmailVerification();
+        alert('Email verification sent');
+
         navigate('/appointment');
     }
 

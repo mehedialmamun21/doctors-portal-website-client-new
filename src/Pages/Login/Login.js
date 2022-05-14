@@ -1,11 +1,14 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
-import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init'
 import Loading from "../Shared/Loading";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const Login = () => {
+
+  const [email, setEmail] = useState('');
+
   const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
   const { register, formState: { errors }, handleSubmit } = useForm();
   const [
@@ -14,6 +17,10 @@ const Login = () => {
     loading,
     error,
   ] = useSignInWithEmailAndPassword(auth);
+
+  const [sendPasswordResetEmail, sending, resError] = useSendPasswordResetEmail(
+    auth
+  );
 
   let signInError;
   const navigate = useNavigate();
@@ -26,15 +33,16 @@ const Login = () => {
     }
   }, [user, gUser, from, navigate]);
 
-  if (loading || gLoading) {
+  if (loading || gLoading || sending) {
     return <Loading></Loading>
   }
 
-  if (error || gError) {
-    signInError = <p className="text-red-500"> <small>{error?.message || gError?.message}</small> </p>
+  if (error || gError || resError) {
+    signInError = <p className="text-red-500"> <small>{error?.message || gError?.message || resError}</small> </p>
   }
 
   const onSubmit = data => {
+    setEmail(data.email);
     signInWithEmailAndPassword(data.email, data.password);
   }
 
@@ -98,6 +106,21 @@ const Login = () => {
             </div>
 
             {signInError}
+
+
+
+
+            <button
+              onClick={async () => {
+                await sendPasswordResetEmail(email);
+                alert('Password Reset email sent..');
+              }}
+            >
+              <h5 className="pb-4 text-secondary font-semibold">Forgot password?</h5>
+            </button>
+
+
+
             <input className="btn w-full max-w-xs" type="submit" value="Login" />
           </form>
 
