@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init'
 import Loading from "../Shared/Loading";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const Login = () => {
   const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
@@ -15,17 +16,20 @@ const Login = () => {
   ] = useSignInWithEmailAndPassword(auth);
 
   let signInError;
+  const navigate = useNavigate();
+  const location = useLocation();
+  let from = location.state?.from?.pathname || "/";
 
   if (loading || gLoading) {
     return <Loading></Loading>
   }
 
   if (error || gError) {
-    signInError = <p className="text-red-500 font-bold"> <small>{error?.message || gError?.message}</small> </p>
+    signInError = <p className="text-red-500"> <small>{error?.message || gError?.message}</small> </p>
   }
 
-  if (gUser) {
-    console.log(gUser);
+  if (user || gUser) {
+    navigate(from, { replace: true });
   }
 
   const onSubmit = data => {
@@ -95,6 +99,8 @@ const Login = () => {
             {signInError}
             <input className="btn w-full max-w-xs" type="submit" value="Login" />
           </form>
+
+          <small><p>New to Doctors Portal? <Link className="text-secondary font-bold" to="/signup" >Create new account</Link> </p></small>
 
           <div className="divider">OR</div>
           <button
