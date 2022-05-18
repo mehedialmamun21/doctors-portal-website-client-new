@@ -4,6 +4,7 @@ import { useCreateUserWithEmailAndPassword, useSendEmailVerification, useSignInW
 import auth from '../../firebase.init'
 import Loading from "../Shared/Loading";
 import { Link, useNavigate } from "react-router-dom";
+import useToken from '../../hooks/useToken';
 
 const SignUp = () => {
 
@@ -22,6 +23,8 @@ const SignUp = () => {
 
     const [updateProfile, updating, updateError] = useUpdateProfile(auth);
 
+    const [token] = useToken(user || gUser);
+
     const navigate = useNavigate();
 
     let signInError;
@@ -34,8 +37,8 @@ const SignUp = () => {
         signInError = <p className="text-red-500"> <small>{error?.message || gError?.message || updateError?.message || verError?.message}</small> </p>
     }
 
-    if (user || gUser) {
-        console.log(user || gUser);
+    if (token) {
+        navigate('/appointment');
     }
 
     const onSubmit = async data => {
@@ -48,7 +51,6 @@ const SignUp = () => {
         await sendEmailVerification();
         alert('Email verification sent');
 
-        navigate('/appointment');
     }
 
     return (
