@@ -20,11 +20,8 @@ const SignUp = () => {
     ] = useCreateUserWithEmailAndPassword(auth);
 
     const [sendEmailVerification, sending, verError] = useSendEmailVerification(auth);
-
     const [updateProfile, updating, updateError] = useUpdateProfile(auth);
-
     const [token] = useToken(user || gUser);
-
     const navigate = useNavigate();
 
     let signInError;
@@ -50,7 +47,6 @@ const SignUp = () => {
 
         await sendEmailVerification();
         alert('Email verification sent');
-
     }
 
     return (
