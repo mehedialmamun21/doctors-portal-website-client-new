@@ -5,21 +5,25 @@ const DoctorRow = ({ doctor, index, refetch }) => {
     const { name, speciality, img, email } = doctor;
 
     const handleDelete = email => {
-        fetch(`http://localhost:5000/doctor/${email}`, {
-            method: 'DELETE',
-            headers: {
-                authorization: `Bearer ${localStorage.getItem('accessToken')}`
-            }
-        })
-            .then(res => res.json())
-
-            .then(data => {
-                // console.log(data);
-                if (data.deletedCount) {
-                    toast.success(`Doctor: ${name} is deleted.`);
-                    refetch();
+        const proceed = window.confirm("sure to Delete the doctor?");
+        if (proceed) {
+            fetch(`http://localhost:5000/doctor/${email}`, {
+                method: 'DELETE',
+                headers: {
+                    authorization: `Bearer ${localStorage.getItem('accessToken')}`
                 }
             })
+                .then(res => res.json())
+
+                .then(data => {
+                    // console.log(data);
+                    if (data.deletedCount) {
+                        toast.success(`Doctor: ${name} is deleted.`);
+                        refetch();
+                    }
+                })
+        }
+
     }
 
     return (

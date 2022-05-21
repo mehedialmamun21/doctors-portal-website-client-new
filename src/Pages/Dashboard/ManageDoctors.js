@@ -16,17 +16,17 @@ const ManageDoctors = () => {
 
     return (
         <div>
-            <h2 className="text-2xl">Manage Doctors : {doctors.length}</h2>
+            <h2 className="text-2xl text-center my-5">Doctors are : {doctors.length}</h2>
             <div class="overflow-x-auto">
                 <table class="table w-full">
 
                     <thead>
                         <tr>
                             <th></th>
-                            <th>Avatar</th>
+                            <th>Doctor_image</th>
                             <th>Name</th>
                             <th>Speciality</th>
-                            <th>Action</th>
+                            <th>Action ( delete )</th>
                         </tr>
                     </thead>
                     <tbody>

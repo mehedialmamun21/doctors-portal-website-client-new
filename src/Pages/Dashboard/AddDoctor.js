@@ -70,9 +70,8 @@ const AddDoctor = () => {
 
 
     return (
-        <div>
-            <h2 className="text-2xl">Add a new Doctor</h2>
-
+        <div className='flex justify-center mt-5'>
+            {/* <h2 className="text-2xl">Add a new Doctor</h2> */}
 
             <form onSubmit={handleSubmit(onSubmit)}>
 

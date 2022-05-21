@@ -15,16 +15,16 @@ const Users = () => {
     }
     return (
         <div>
-            <h2 className='text-2xl'>All Users: {users.length}</h2>
+            <h2 className='text-2xl text-center my-5'>Users are : {users.length}</h2>
             <div class="overflow-x-auto">
                 <table class="table w-full">
 
                     <thead>
                         <tr>
                             <th></th>
-                            <th>Name</th>
-                            <th>Job</th>
-                            <th>Favorite Color</th>
+                            <th>User_Email</th>
+                            <th>Make_Admin</th>
+                            <th>Remove_User</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -32,8 +32,8 @@ const Users = () => {
                             users.map((user, index) => <UserRow
                                 key={user._id}
                                 user={user}
-                                refetch={refetch}
                                 index={index}
+                                refetch={refetch}
                             ></UserRow>)
                         }
                     </tbody>
