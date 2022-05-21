@@ -28,7 +28,7 @@ const UserRow = ({ user, refetch, index }) => {
         const proceed = window.confirm("sure to Delete the user?");
         if (proceed) {
 
-            fetch(`http://localhost:5000/user/${email}`, {
+            fetch(`https://glacial-bayou-47586.herokuapp.com/user/${email}`, {
                 method: 'DELETE',
                 headers: {
                     authorization: `Bearer ${localStorage.getItem('accessToken')}`
