@@ -37,7 +37,7 @@ const MyAppointments = () => {
 
     return (
         <div>
-            <h2 className='my-5 text-xl text-center'>Your Appointments are : {appointments.length}</h2>
+            <h2 className='my-5 text-xl text-center font-bold text-primary'>Your Appointments are : {appointments.length}</h2>
 
             <div class="overflow-x-auto">
                 <table class="table w-full">
@@ -53,15 +53,18 @@ const MyAppointments = () => {
                     </thead>
                     <tbody>
                         {
-                            appointments.map((a, index) => <tr>
+                            appointments.map((a, index) => <tr key={a._id}>
                                 <th>{index + 1}</th>
                                 <td>{a.patientName}</td>
                                 <td>{a.date}</td>
                                 <td>{a.slot}</td>
                                 <td>{a.treatment}</td>
                                 <td>
-                                    {(a.price && !a.paid) && <Link to={`/dashboard/payment/${a._id}`}> <button className='btn btn-xs btn-success'>Pay</button> </Link>}
-                                    {(a.price && a.paid) && <span className='text-success'>Paid</span>}
+                                    {(a.price && !a.paid) && <Link to={`/dashboard/payment/${a._id}`}> <button className='btn btn-xs btn-success text-white px-5 font-bold text-sm'>Pay</button> </Link>}
+                                    {(a.price && a.paid) && <div>
+                                        <p><span className='text-success font-bold text-lg'>Paid</span></p>
+                                        <p>Transaction ID : <span className='text-success font-bold text-lg'>{a.transactionId}</span> </p>
+                                    </div>}
                                 </td>
                             </tr>)
                         }
