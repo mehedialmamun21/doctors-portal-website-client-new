@@ -34,7 +34,7 @@ const Footer = () => {
             </div>
 
             <div className='text-center py-20 lg:py-10'>
-                <p>Copyright © {date} All rights are reserved by "LabAid - Dental Solutions"</p>
+                <p className='font-semibold'>Copyright © {date} All rights are reserved by "LabAid - Dental Solutions"</p>
             </div>
 
         </footer>

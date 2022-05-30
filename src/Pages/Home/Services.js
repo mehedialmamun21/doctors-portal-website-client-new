@@ -23,7 +23,7 @@ const Services = () => {
         {
             _id: 3,
             name: "Teeth Whitening",
-            description: "To treat a cavity your dentist will remove the decayed portion of the tooth and then fill the area on the tooth where the decayed material was removed.",
+            description: "Everyone notices a bright, white, glowing smile. And everyone notices how confident you feel when you have that beautiful smile. That’s why we utilize long-lasting Teeth Whitening procedure — because we want you to glow with pride and confidence.",
             img: whitening
         }
 
