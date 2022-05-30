@@ -70,7 +70,7 @@ const AddDoctor = () => {
 
 
     return (
-        <div className='flex justify-center mt-5'>
+        <div className='flex justify-center mt-10'>
             {/* <h2 className="text-2xl">Add a new Doctor</h2> */}
 
             <form onSubmit={handleSubmit(onSubmit)}>
@@ -78,7 +78,7 @@ const AddDoctor = () => {
 
                 <div className="form-control w-full max-w-xs">
                     <label className="label">
-                        <span className="label-text">Name</span>
+                        <span className="label-text font-bold">Name</span>
                     </label>
                     <input type="text"
                         placeholder="Doctor's Name"
@@ -100,7 +100,7 @@ const AddDoctor = () => {
 
                 <div className="form-control w-full max-w-xs">
                     <label className="label">
-                        <span className="label-text">Email</span>
+                        <span className="label-text font-bold">Email</span>
                     </label>
                     <input type="email"
                         placeholder="Doctor's Email"
@@ -126,7 +126,7 @@ const AddDoctor = () => {
 
                 <div className="form-control w-full max-w-xs">
                     <label className="label">
-                        <span className="label-text">Speciality</span>
+                        <span className="label-text font-bold">Speciality</span>
                     </label>
                     <select {...register('speciality')} class="select input-bordered w-full max-w-xs">
                         {
@@ -141,7 +141,7 @@ const AddDoctor = () => {
 
                 <div className="form-control w-full max-w-xs">
                     <label className="label">
-                        <span className="label-text">Photo</span>
+                        <span className="label-text font-bold  mt-3">Photo</span>
                     </label>
                     <input type="file"
                         className="input input-bordered w-full max-w-xs"
@@ -160,7 +160,7 @@ const AddDoctor = () => {
                 </div>
 
 
-                <input className="btn w-full max-w-xs" type="submit" value="Add" />
+                <input className="btn w-full max-w-xs font-semibold" type="submit" value="Add Doctor" />
             </form>
 
 

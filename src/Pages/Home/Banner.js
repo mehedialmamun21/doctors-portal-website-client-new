@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import chair from '../../assets/images/chair.png';
 import PrimaryButton from '../../component/PrimaryButton/PrimaryButton';
 
@@ -16,7 +17,7 @@ const Banner = () => {
                         feeling refreshed and relaxed. Whether you're getting a cleaning, a root
                         canal, or simply require help understanding your insurance, we're here for
                         you!</p>
-                    <PrimaryButton>Get Started</PrimaryButton>
+                    <Link to="/appointment"><PrimaryButton>Get Started</PrimaryButton></Link>
                 </div>
             </div>
         </section>

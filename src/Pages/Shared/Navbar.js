@@ -3,6 +3,7 @@ import React from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { Link } from "react-router-dom";
 import auth from "../../firebase.init";
+import img from "../../assets/images/navLogo.png"
 
 const Navbar = () => {
 
@@ -15,20 +16,20 @@ const Navbar = () => {
 
   const menuItems = (
     <>
-      <li><Link to="/">Home</Link></li>
-      <li><Link to="/appointment">Appointment</Link></li>
-      <li><Link to="/review">Review</Link></li>
-      <li><Link to="/contact">Contact</Link></li>
-      <li><Link to="/about">About</Link></li>
+      <li><Link to="/"> <span className="font-bold text-xl text-gray-500">Home</span> </Link></li>
+      <li><Link to="/appointment"><span className="font-bold text-xl text-gray-500">Appointment</span></Link></li>
+      {/* <li><Link to="/review">Review</Link></li> */}
+      <li><Link to="/contact"><span className="font-bold text-xl text-gray-500">Contact</span></Link></li>
+      <li><Link to="/about"><span className="font-bold text-xl text-gray-500">About</span></Link></li>
       {
-        user && <li><Link to="/dashboard">Dashboard</Link></li>
+        user && <li><Link to="/dashboard"><span className="font-bold text-xl text-gray-500">Dashboard</span></Link></li>
       }
-      <li>{user ? <button className="btn btn-ghost" onClick={logout} >Sign Out</button> : <Link to="/login">Login</Link>}</li>
+      <li>{user ? <button className="btn btn-ghost text-lg font-bold bg-white text-gray-500" onClick={logout} >Sign Out</button> : <Link to="/login" className="btn btn-ghost text-lg font-bold bg-white text-gray-500">Login</Link>}</li>
     </>
   );
 
   return (
-    <div className="navbar bg-base-200 px-12">
+    <div className="navbar bg-base-200 px-12 pb-7">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex="0" className="btn btn-ghost lg:hidden">
@@ -46,10 +47,10 @@ const Navbar = () => {
             {menuItems}
           </ul>
         </div>
-        <a href="/" className="btn btn-ghost normal-case text-xl">Doctors Portal</a>
+        <a href="/" className="btn btn-ghost normal-case text-xl"><img className='rounded' src={img} width="150px" alt="" /></a>
       </div>
       <div className="navbar-end hidden lg:flex">
-        <ul className="menu menu-horizontal p-0">
+        <ul className="menu menu-horizontal p-0 mt-5 text-lg">
           {menuItems}
         </ul>
       </div>

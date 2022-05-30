@@ -2,6 +2,7 @@ import React from 'react';
 import PrimaryButton from '../../component/PrimaryButton/PrimaryButton';
 
 const ContactUs = () => {
+
     return (
         <section className='my-28'>
 

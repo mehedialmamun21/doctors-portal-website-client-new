@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import treatmentPic from '../../assets/images/treatment.png';
 import PrimaryButton from '../../component/PrimaryButton/PrimaryButton';
 
@@ -17,9 +18,7 @@ const ExCare = () => {
                         for patient's understanding of their oral condition.
                         <br />
                         At our dental clinic in Spearwood, we strive to provide our patients with an exceptional experience at the dentist.</p>
-
-                    <PrimaryButton>Get Started</PrimaryButton>
-
+                    <Link to="/appointment"><PrimaryButton>Get Started</PrimaryButton></Link>
                 </div>
             </div>
         </div>

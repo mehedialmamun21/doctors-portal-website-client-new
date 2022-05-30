@@ -5,6 +5,7 @@ import auth from '../../firebase.init'
 import Loading from "../Shared/Loading";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import useToken from "../../hooks/useToken";
+import googleIcon from '../../assets/images/google.png'
 
 const Login = () => {
 
@@ -127,13 +128,14 @@ const Login = () => {
             <input className="btn w-full max-w-xs" type="submit" value="Login" />
           </form>
 
-          <small><p>New to Doctors Portal? <Link className="text-secondary font-bold" to="/signup" >Create new account</Link> </p></small>
+          <small><p className="text-sm font-semibold">New to Doctors Portal? <Link className="text-secondary font-bold ml-5" to="/signup" >Create new account</Link> </p></small>
 
-          <div className="divider">OR</div>
+          <div className="divider">Or continue with</div>
+
           <button
             onClick={() => signInWithGoogle()}
-            className="btn btn-outline"
-          >Continue With Google</button>
+            className="btn btn-outline bg-gray-300"
+          > <img src={googleIcon} alt="" /><b className="mx-2 text-accent">Google</b></button>
         </div>
       </div>
     </div>

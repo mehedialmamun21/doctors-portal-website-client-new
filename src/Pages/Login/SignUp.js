@@ -5,6 +5,7 @@ import auth from '../../firebase.init'
 import Loading from "../Shared/Loading";
 import { Link, useNavigate } from "react-router-dom";
 import useToken from '../../hooks/useToken';
+import googleIcon from '../../assets/images/google.png';
 
 const SignUp = () => {
 
@@ -53,7 +54,7 @@ const SignUp = () => {
         <div className="flex justify-center items-center h-screen">
             <div className="card w-96 bg-base-100 shadow-xl">
                 <div className="card-body">
-                    <h2 className="card-title justify-center">Sign Up</h2>
+                    <h2 className="card-title justify-center">SignUp</h2>
 
 
                     <form onSubmit={handleSubmit(onSubmit)}>
@@ -135,13 +136,15 @@ const SignUp = () => {
                         <input className="btn w-full max-w-xs" type="submit" value="Sign Up" />
                     </form>
 
-                    <small><p>Already have an account? <Link className="text-secondary font-bold" to="/login" >Please login</Link> </p></small>
+                    <small><p className='text-sm font-semibold'>Already have an account? <Link className="text-secondary font-bold ml-12" to="/login" >Please login</Link> </p></small>
 
-                    <div className="divider">OR</div>
+                    <div className="divider">Or continue with</div>
+
                     <button
                         onClick={() => signInWithGoogle()}
-                        className="btn btn-outline"
-                    >Continue With Google</button>
+                        className="btn btn-outline bg-gray-300"
+                    > <img src={googleIcon} alt="" /><b className="mx-2 text-accent">Google</b></button>
+
                 </div>
             </div>
         </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import doctor from '../../assets/images/doctor.png';
 import appointmentPic from '../../assets/images/appointment.png';
 import PrimaryButton from '../../component/PrimaryButton/PrimaryButton';
+import { Link } from 'react-router-dom';
 
 const MakeAppointment = () => {
     return (
@@ -22,7 +23,7 @@ const MakeAppointment = () => {
                     Plenty of parking is available in the front.
                     We are accessible via public transport. After-hours care is available.
                     We are open on Saturdays and Sundays.</p>
-                <PrimaryButton>Get Started</PrimaryButton>
+                <Link to="/appointment"><PrimaryButton>Get Started</PrimaryButton></Link>
             </div>
         </section>
     );
