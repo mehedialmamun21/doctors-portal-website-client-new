@@ -20,6 +20,7 @@ import RequireAdmin from "./Pages/Login/RequireAdmin";
 import AddDoctor from "./Pages/Dashboard/AddDoctor";
 import ManageDoctors from "./Pages/Dashboard/ManageDoctors";
 import Payment from "./Pages/Dashboard/Payment";
+import Contact from "./Pages/Contact/Contact";
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
         </Route>
 
         <Route path="/about" element={<About></About>} />
+        <Route path="/contact" element={<Contact></Contact>} />
         <Route path="/login" element={<Login></Login>} />
         <Route path="/signup" element={<SignUp></SignUp>} />
       </Routes>

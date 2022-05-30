@@ -24,11 +24,12 @@ const Navbar = () => {
       {
         user && <li><Link to="/dashboard"><span className="font-bold text-xl text-gray-500">Dashboard</span></Link></li>
       }
-      <li>{user ? <button className="btn btn-ghost text-lg font-bold bg-white text-gray-500" onClick={logout} >Sign Out</button> : <Link to="/login" className="btn btn-ghost text-lg font-bold bg-white text-gray-500">Login</Link>}</li>
+
     </>
   );
 
   return (
+
     <div className="navbar bg-base-200 px-12 pb-7">
       <div className="navbar-start">
         <div className="dropdown">
@@ -68,8 +69,8 @@ const Navbar = () => {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
           </svg>
         </label>
+        {user ? <button className="btn btn-ghost text-lg font-bold bg-white text-gray-500" onClick={logout} >Sign Out</button> : <Link to="/login" className="btn btn-ghost text-lg font-bold bg-white text-gray-500">Login</Link>}
       </div>
-
 
     </div>
   );
