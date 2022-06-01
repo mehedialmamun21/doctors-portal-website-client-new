@@ -16,13 +16,13 @@ const Navbar = () => {
 
   const menuItems = (
     <>
-      <li><Link to="/"> <span className="font-bold text-xl text-gray-500">Home</span> </Link></li>
-      <li><Link to="/appointment"><span className="font-bold text-xl text-gray-500">Appointment</span></Link></li>
-      {/* <li><Link to="/review">Review</Link></li> */}
-      <li><Link to="/contact"><span className="font-bold text-xl text-gray-500">Contact</span></Link></li>
-      <li><Link to="/about"><span className="font-bold text-xl text-gray-500">About</span></Link></li>
+      <li><Link to="/"> <span className="font-bold text-lg text-gray-500">Home</span> </Link></li>
+      <li><Link to="/appointment"><span className="font-bold text-lg text-gray-500">Appointment</span></Link></li>
+      <li><Link to="/doctors"><span className="font-bold text-lg text-gray-500">Doctors</span></Link></li>
+      <li><Link to="/contact"><span className="font-bold text-lg text-gray-500">Contact</span></Link></li>
+      <li><Link to="/about"><span className="font-bold text-lg text-gray-500">About</span></Link></li>
       {
-        user && <li><Link to="/dashboard"><span className="font-bold text-xl text-gray-500">Dashboard</span></Link></li>
+        user && <li><Link to="/dashboard"><span className="font-bold text-lg text-gray-500">Dashboard</span></Link></li>
       }
 
     </>
@@ -30,7 +30,7 @@ const Navbar = () => {
 
   return (
 
-    <div className="navbar bg-base-200 px-12 pb-7">
+    <div className="navbar bg-base-200 px-12 py-3 mt-5">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex="0" className="btn btn-ghost lg:hidden">
@@ -48,7 +48,7 @@ const Navbar = () => {
             {menuItems}
           </ul>
         </div>
-        <a href="/" className="btn btn-ghost normal-case text-xl"><img className='rounded' src={img} width="150px" alt="" /></a>
+        <a href="/" className="btn btn-ghost normal-case text-xl"><img className='rounded' src={img} width="90px" alt="" /></a>
       </div>
       <div className="navbar-end hidden lg:flex">
         <ul className="menu menu-horizontal p-0 mt-5 text-lg">
@@ -69,7 +69,7 @@ const Navbar = () => {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
           </svg>
         </label>
-        {user ? <button className="btn btn-ghost text-lg font-bold bg-white text-gray-500" onClick={logout} >Sign Out</button> : <Link to="/login" className="btn btn-ghost text-lg font-bold bg-white text-gray-500">Login</Link>}
+        {user ? <button className="btn btn-ghost font-bold bg-white text-gray-500" onClick={logout} >Sign Out</button> : <Link to="/login" className="btn btn-ghost font-bold bg-white text-gray-500">Login</Link>}
       </div>
 
     </div>

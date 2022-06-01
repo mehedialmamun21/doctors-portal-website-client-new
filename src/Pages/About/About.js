@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <section className="mt-10">
+    <section className="mt-10 px-5 py-5 bg-gray-100">
       <div>
         <h1 className="font-bold text-2xl mb-5 text-primary">About Us</h1>
         <p className="">In the last few years we have been proudly witnessing the astounding pace of progress in health care delivery system in the private sector in Bangladesh. Our doctors have made remarkable achievements in almost all specialties of medical science. Diagnostic facilities are getting latest technological advents. Patient-related services are becoming professional and patient-friendly. <br />
@@ -12,16 +12,15 @@ const About = () => {
         <h1 className="font-bold text-2xl mb-5 mt-5 text-primary">Our Location</h1>
         <p> <span className="font-semibold text-lg">Address :</span> House-1 and, 6 Road No 4, Dinajpur 1205</p>
         <p> <span className="font-semibold text-lg">Hours :</span> Open 24 hours</p>
-        <p> <span className="font-semibold text-lg">Phone :</span> 09666-710606</p>
       </div>
       <div>
         <h1 className="font-bold text-lg text-primary mb-5 mt-5">WHAT MAKES US SPECIAL</h1>
         <ul>
-          <li>LASER TECHNOLOGY</li>
-          <li>PAINLESS INJECTION</li>
-          <li>3D DENTAL SCANNER</li>
-          <li>DENTAL IMPLANT</li>
-          <li>DIGITAL SMILE DESIGN</li>
+          <li>* LASER TECHNOLOGY</li>
+          <li>* PAINLESS INJECTION</li>
+          <li>* 3D DENTAL SCANNER</li>
+          <li>* DENTAL IMPLANT</li>
+          <li>* DIGITAL SMILE DESIGN</li>
         </ul>
       </div>
     </section>
