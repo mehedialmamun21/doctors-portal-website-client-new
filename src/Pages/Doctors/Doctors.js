@@ -21,6 +21,7 @@ const Doctors = () => {
                         <th>Name</th>
                         <th>Speciality</th>
                         <th>Email</th>
+                        <th>Phone</th>
                     </tr>
                 </thead>
                 <tbody>
