@@ -12,9 +12,7 @@ const ManageDoctors = () => {
         }
     }).then(res => res.json()));
 
-    if (isLoading) {
-        return <Loading></Loading>
-    }
+
 
     return (
         <div>
