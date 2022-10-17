@@ -19,10 +19,6 @@ const Payment = () => {
         }
     }).then(res => res.json()));
 
-    if (isLoading) {
-        return <Loading></Loading>
-    }
-
     return (
         <div>
             <div class="card w-50 max-w-md bg-base-100 shadow-xl my-12">
