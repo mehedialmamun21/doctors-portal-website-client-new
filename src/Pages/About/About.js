@@ -13,16 +13,6 @@ const About = () => {
         <p> <span className="font-semibold text-lg">Address :</span> House-1 and, 6 Road No 4, Dinajpur 1205</p>
         <p> <span className="font-semibold text-lg">Hours :</span> Open 24 hours</p>
       </div>
-      <div>
-        <h1 className="font-bold text-lg text-primary mb-5 mt-5">WHAT MAKES US SPECIAL</h1>
-        <ul>
-          <li>* LASER TECHNOLOGY</li>
-          <li>* PAINLESS INJECTION</li>
-          <li>* 3D DENTAL SCANNER</li>
-          <li>* DENTAL IMPLANT</li>
-          <li>* DIGITAL SMILE DESIGN</li>
-        </ul>
-      </div>
     </section>
   );
 };
