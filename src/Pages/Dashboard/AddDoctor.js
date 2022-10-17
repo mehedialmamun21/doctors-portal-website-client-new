@@ -64,9 +64,7 @@ const AddDoctor = () => {
             })
     }
 
-    if (isLoading) {
-        return <Loading></Loading>
-    }
+
 
 
     return (
