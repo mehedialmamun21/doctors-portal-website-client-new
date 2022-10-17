@@ -9,4 +9,5 @@
  * -----------------------------------
  * 8. get client secret from backend via payment intent post api
  * 9. store client secret on the client side
+ * These are the needed steps to fulfill the desired payment process.
 */
