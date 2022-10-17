@@ -64,7 +64,11 @@ const AddDoctor = () => {
             })
     }
 
+    // Loading part
 
+    if (isLoading) {
+        return <Loading></Loading>
+    }
 
 
     return (
