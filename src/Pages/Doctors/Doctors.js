@@ -17,11 +17,10 @@ const Doctors = () => {
             <table class="table w-full">
                 <thead>
                     <tr>
-                        <th>Doctor Image</th>
+                        <th>Doctor's Image</th>
                         <th>Name</th>
                         <th>Speciality</th>
-                        <th>Email</th>
-                        <th>Phone</th>
+                        <th>Doctor's Email</th>
                     </tr>
                 </thead>
                 <tbody>

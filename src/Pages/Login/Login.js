@@ -50,14 +50,11 @@ const Login = () => {
     signInWithEmailAndPassword(data.email, data.password);
   }
 
-
   return (
     <div className="flex justify-center items-center h-screen">
       <div className="card w-96 bg-base-100 shadow-xl">
         <div className="card-body">
           <h2 className="card-title justify-center">Login</h2>
-
-
           <form onSubmit={handleSubmit(onSubmit)}>
             <div className="form-control w-full max-w-xs">
               <label className="label">
@@ -83,7 +80,6 @@ const Login = () => {
 
               </label>
             </div>
-
 
             <div className="form-control w-full max-w-xs">
               <label className="label">
@@ -122,9 +118,6 @@ const Login = () => {
             >
               <h5 className="pb-4 text-secondary font-semibold">Forgot password?</h5>
             </button>
-
-
-
             <input className="btn w-full max-w-xs" type="submit" value="Login" />
           </form>
 
