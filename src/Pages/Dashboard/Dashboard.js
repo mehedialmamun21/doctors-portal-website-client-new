@@ -9,25 +9,28 @@ const Dashboard = () => {
     const [admin] = useAdmin(user);
     return (
         <div class="drawer drawer-mobile">
+
             <input id="dashboard-sidebar" type="checkbox" class="drawer-toggle" />
+
             <div class="drawer-content">
-                <h2 className='text-3xl font-bold text-white bg-success text-center py-1 mt-10'>Welcome to Dashboard</h2>
                 <Outlet></Outlet>
             </div>
+
             <div class="drawer-side">
                 <label for="dashboard-sidebar" class="drawer-overlay"></label>
                 <ul class="menu p-4 overflow-y-auto w-60 bg-base-100 text-base-content">
                     {!admin && <>
-                        <li><Link to="/dashboard">My Appointments</Link></li>
-                        <li><Link to="/dashboard/review">My Reviews</Link></li>
+                        <li><Link to="/dashboard"><span className='px-3 py-2 font-semibold rounded'>My Appointments</span></Link></li>
+                        <li><Link to="/dashboard/review"><span className='px-3 py-2 font-semibold rounded'>My Reviews</span></Link></li>
                     </>}
                     {admin && <>
-                        <li><Link to="/dashboard/users">Make Admin</Link></li>
-                        <li><Link to="/dashboard/addDoctor">Add a Doctor</Link></li>
-                        <li><Link to="/dashboard/manageDoctor">Manage Doctors</Link></li>
+                        <li><Link to="/dashboard/users"> <span className='px-3 py-2 font-semibold rounded'> Make Admin</span></Link></li>
+                        <li><Link to="/dashboard/addDoctor"> <span className='px-3 py-2 font-semibold rounded'>Add a Doctor</span> </Link></li>
+                        <li><Link to="/dashboard/manageDoctor"><span className='px-3 py-2 font-semibold rounded'>Manage Doctors</span></Link></li>
                     </>}
                 </ul>
             </div>
+
         </div>
     );
 };

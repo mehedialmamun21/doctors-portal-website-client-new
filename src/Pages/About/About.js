@@ -10,7 +10,7 @@ const About = () => {
       </div>
       <div>
         <h1 className="font-bold text-2xl mb-5 mt-5 text-primary">Our Location</h1>
-        <p> <span className="font-semibold text-lg">Address :</span> House-1 and, 6 Road No 4, Dinajpur 1205</p>
+        <p> <span className="font-semibold text-lg">Address :</span> House- 06, Road-04, Dhanmondi, Dhaka-1205, Bangladesh.</p>
         <p> <span className="font-semibold text-lg">Hours :</span> Open 24 hours</p>
       </div>
       <div>
