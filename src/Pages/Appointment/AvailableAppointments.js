@@ -22,7 +22,7 @@ const AvailableAppointments = ({ date }) => {
 
     return (
         <section className='my-28'>
-            <h4 className='text-center text-secondary text-2xl'>Available Appointments on - {format(date, 'PP')}</h4>
+            <h4 className='text-center font-bold text-secondary text-2xl'>Available Appointments on - <span className='text-gray-700'>{format(date, 'PP')}</span> </h4>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 px-5 py-20'>
                 {
                     services?.map(service => <Service
