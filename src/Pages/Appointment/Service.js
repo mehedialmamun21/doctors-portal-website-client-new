@@ -14,8 +14,8 @@ const Service = ({ service, setTreatment }) => {
                             <span className='text-red-500 font-semibold'>Try another date</span>
                     }
                 </p>
-                <p className='text-sm py-0.5'>{slots.length} {slots.length > 1 ? 'spaces' : 'space'} available</p>
-                <p><small>Price : ${price}</small></p>
+                <p className='text-md font-semibold py-0.5'>{slots.length} {slots.length > 1 ? 'spaces' : 'space'} available</p>
+                <p>Price : <span className='font-bold'>Taka {price}</span></p>
                 <div className="card-actions justify-center">
                     <label htmlFor="booking-modal"
                         disabled={slots.length === 0}

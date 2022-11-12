@@ -35,8 +35,8 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className='text-center py-20 lg:py-10'>
-                <p className='font-semibold'>Copyright © {date} All rights are reserved by "LabAid - Dental Solutions"</p>
+            <div className='text-center text-gray-500 py-20 lg:py-10'>
+                <p className='font-semibold text-lg'>Copyright © {date} All rights are reserved by "Doctors BD - Dental Solutions"</p>
             </div>
 
         </footer>
