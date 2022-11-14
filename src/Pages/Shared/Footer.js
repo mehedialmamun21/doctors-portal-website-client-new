@@ -13,7 +13,7 @@ const Footer = () => {
             backgroundImage: `url(${footerImg})`,
             backgroundPosition: 'center',
             backgroundSize: 'cover'
-        }} className="p-10 my-28">
+        }} className="p-10 mt-28">
 
             <div className='footer lg:mx-40'>
                 <div>
@@ -36,7 +36,7 @@ const Footer = () => {
             </div>
 
             <div className='text-center text-gray-500 py-20 lg:py-10'>
-                <p className='font-semibold'>Copyright © <span className='font-semibold'>{date}</span> <span className='text-primary font-bold'> Doctors BD.</span> All rights are reserved.</p>
+                <p className='font-semibold'>Copyright © <span className='font-semibold'>{date}</span> <span className='font-bold'> Doctors BD.</span> All rights are reserved.</p>
             </div>
 
         </footer>

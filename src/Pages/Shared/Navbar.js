@@ -29,7 +29,7 @@ const Navbar = () => {
 
   return (
 
-    <div className="navbar bg-sky-200 px-12 py-3">
+    <div className="navbar bg-amber-300 px-12 py-3">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex="0" className="btn btn-ghost lg:hidden">
@@ -67,7 +67,7 @@ const Navbar = () => {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
           </svg>
         </label>
-        {user ? <button className="btn btn-ghost font-bold bg-slate-500 text-slate-200" onClick={logout} >Sign Out</button> : <Link to="/login" className="btn btn-ghost font-bold bg-slate-500 text-slate-200">Login</Link>}
+        {user ? <button className="btn btn-ghost font-bold bg-slate-400 text-yellow-300" onClick={logout} >Sign Out</button> : <Link to="/login" className="btn btn-ghost font-bold bg-slate-400 text-yellow-300">Login</Link>}
       </div>
 
     </div>
