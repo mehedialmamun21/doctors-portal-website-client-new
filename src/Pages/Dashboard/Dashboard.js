@@ -33,8 +33,6 @@ const Dashboard = () => {
                 </div>
             </div>
 
-            <hr />
-
         </section>
     );
 };
