@@ -32,7 +32,7 @@ const Doctors = () => {
                                 <tr>
                                     <td>
                                         <div class="avatar">
-                                            <div class="w-16 rounded">
+                                            <div class="w-16 rounded-2xl">
                                                 <img src={doctor.img} alt={doctor.name} />
                                             </div>
                                         </div>

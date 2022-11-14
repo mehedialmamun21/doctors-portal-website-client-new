@@ -15,13 +15,13 @@ const Navbar = () => {
 
   const menuItems = (
     <>
-      <li><Link to="/"> <span className="font-bold text-lg text-gray-700">Home</span> </Link></li>
-      <li><Link to="/appointment"><span className="font-bold text-lg text-gray-700">Appointment</span></Link></li>
-      <li><Link to="/doctors"><span className="font-bold text-lg text-gray-700">Doctors</span></Link></li>
-      <li><Link to="/contact"><span className="font-bold text-lg text-gray-700">Contact</span></Link></li>
-      <li><Link to="/about"><span className="font-bold text-lg text-gray-700">About</span></Link></li>
+      <li><Link to="/"> <span className="font-bold text-lg text-gray-800">Home</span> </Link></li>
+      <li><Link to="/appointment"><span className="font-bold text-lg text-gray-800">Appointment</span></Link></li>
+      <li><Link to="/doctors"><span className="font-bold text-lg text-gray-800">Doctors</span></Link></li>
+      <li><Link to="/contact"><span className="font-bold text-lg text-gray-800">Contact</span></Link></li>
+      <li><Link to="/about"><span className="font-bold text-lg text-gray-800">About</span></Link></li>
       {
-        user && <li><Link to="/dashboard"><span className="font-bold text-lg text-gray-700">Dashboard</span></Link></li>
+        user && <li><Link to="/dashboard"><span className="font-bold text-lg text-gray-800">Dashboard</span></Link></li>
       }
 
     </>
@@ -29,7 +29,7 @@ const Navbar = () => {
 
   return (
 
-    <div className="navbar bg-amber-300 px-12 py-3">
+    <div className="navbar bg-primary px-12 py-3">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex="0" className="btn btn-ghost lg:hidden">
@@ -67,7 +67,7 @@ const Navbar = () => {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
           </svg>
         </label>
-        {user ? <button className="btn btn-ghost font-bold bg-slate-400 text-yellow-300" onClick={logout} >Sign Out</button> : <Link to="/login" className="btn btn-ghost font-bold bg-slate-400 text-yellow-300">Login</Link>}
+        {user ? <button className="btn btn-ghost font-bold bg-slate-500 text-white" onClick={logout} >Sign Out</button> : <Link to="/login" className="btn btn-ghost font-bold bg-slate-500 text-white">Login</Link>}
       </div>
 
     </div>

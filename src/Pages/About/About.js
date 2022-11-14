@@ -3,7 +3,7 @@ const About = () => {
   return (
     <section>
 
-      <div className="px-5 py-5 h-screen bg-gray-100">
+      <div className="px-5 pt-5 pb-10 lg:py-5 h-screen bg-gray-100">
         <div>
           <p className="font-bold mb-5 text-primary text-lg">About Us</p>
           <p className="">In the last few years we have been proudly witnessing the astounding pace of progress in health care delivery system in the private sector in Bangladesh. Our doctors have made remarkable achievements in almost all specialties of medical science. Diagnostic facilities are getting latest technological advents. Patient-related services are becoming professional and patient-friendly. <br />
