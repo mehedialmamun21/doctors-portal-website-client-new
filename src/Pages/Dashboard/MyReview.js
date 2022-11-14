@@ -26,7 +26,7 @@ const MyReview = () => {
             <form className='flex flex-col items-center' onSubmit={handleSubmit(onSubmit)}>
                 <input className='input input-bordered w-full max-w-xs my-2' required placeholder="Give us Ratings (1-5).." type="number" {...register("rating")} />
                 <textarea className='input input-bordered w-full max-w-xs my-2' required placeholder="Share your valuable feedback.." {...register("description")} />
-                <input className="btn w-full max-w-xs bg-slate-400 text-white font-bold mt-3" type="submit" value="Add Review" />
+                <input className="btn w-full max-w-xs bg-sky-300 text-white font-semibold mt-3 border-none" type="submit" value="Add Review" />
             </form>
         </div>
     );

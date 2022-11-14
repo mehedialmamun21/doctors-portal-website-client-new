@@ -4,7 +4,7 @@ import qrCode from '../../../src/assets/images/qr-code.png';
 const Contact = () => {
 
     return (
-        <section className='lg:flex bg-gray-100'>
+        <section className='lg:flex h-screen bg-gray-100'>
 
             <div className='px-10 lg:px-10 py-10 lg:w-1/2'>
                 <p> <span className="font-semibold text-lg">Address: </span>House- 06, Road-04, Dinajpur, <br />Bangladesh.</p>
