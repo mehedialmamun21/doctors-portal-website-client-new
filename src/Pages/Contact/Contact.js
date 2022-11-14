@@ -1,6 +1,5 @@
 import React from 'react';
 import qrCode from '../../../src/assets/images/qr-code.png';
-import Footer from '../Shared/Footer';
 const Contact = () => {
 
     return (
@@ -25,7 +24,6 @@ const Contact = () => {
                 </div>
 
             </div>
-            <Footer></Footer>
 
         </section>
     );

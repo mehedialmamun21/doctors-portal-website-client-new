@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from '../Shared/Footer';
 const About = () => {
   return (
     <section>
@@ -28,8 +27,6 @@ const About = () => {
           </ul>
         </div>
       </div>
-
-      <Footer></Footer>
 
     </section>
   );
