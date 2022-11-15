@@ -4,32 +4,36 @@ import PrimaryButton from '../../component/PrimaryButton/PrimaryButton';
 const ContactUs = () => {
 
     return (
-        <section className='my-28'>
+        <section className='my-20'>
 
             <div className='bg-contact-section-backImg'>
-                <h5 className='text-base text-secondary font-bold text-center pt-10'>Contact Us</h5>
-                <h2 className='text-2xl text-center text-white'>Stay Connected With Us</h2>
 
-                <div className="hero">
-                    <div className="hero-content flex-col lg:flex-row-reverse">
-                        <div className="card flex-shrink-0 w-full max-w-sm">
-                            <div className="card-body">
-                                <div className="form-control">
-                                    <input type="text" placeholder="Email Address" className="input input-bordered" />
-                                </div>
+                <h2 className='text-2xl text-center text-white pt-10'>Stay Connected With Us</h2>
 
-                                <input type="text" placeholder="Subject" className="input input-bordered max-w-xs w-96" />
+                <div className='w-full lg:w-full text-black px-10 md:px-20 lg:px-80 py-10'>
+                    <form className='row'>
+                        <div className='flex flex-col gap-4 w-full'>
+                            <div className='flex gap-4 w-full'>
+                                <input type="text" name="user_name" placeholder='Your Name' className='form-control bg-[#EFEFEF] w-full py-4 px-3 outline-none rounded-sm' required />
 
-                                <textarea className="textarea textarea-bordered" placeholder="Your Message"></textarea>
-
-                                <div className="form-control mt-4 items-center">
-                                    <PrimaryButton>Submit</PrimaryButton>
-                                </div>
+                                <input type="email" name="user_email" placeholder='Your Email' className='form-control bg-[#EFEFEF] w-full py-4 px-3 outline-none rounded-sm' required />
                             </div>
+
+                            <input name="user_subject" type="text" placeholder="Subject" className="form-control bg-[#EFEFEF] py-4 px-3 h-14 w-full mt-2 focus:outline-none rounded-sm"></input>
+
+                            <div>
+                                <textarea name='message' rows="4" placeholder='Type Your Message' className='form-control bg-[#EFEFEF] w-full mt-2 py-4 px-3 outline-none rounded-sm' required />
+                            </div>
+                            <center>
+                                <input type="submit" value="Send Message" className='form-control btn bg-slate-800 text-white w-3/4 lg:w-2/3 py-3 px-3 lg:px-8 mt-5 rounded-3xl border-none font-bold' />
+                            </center>
+
                         </div>
-                    </div>
+                    </form>
                 </div>
+
             </div>
+
         </section>
     );
 };

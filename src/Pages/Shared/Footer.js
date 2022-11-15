@@ -13,7 +13,7 @@ const Footer = () => {
             backgroundImage: `url(${footerImg})`,
             backgroundPosition: 'center',
             backgroundSize: 'cover'
-        }} className="p-10 mt-28">
+        }} className="p-5 mt-20">
 
             <div className='footer lg:mx-40'>
                 <div>
