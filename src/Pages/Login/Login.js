@@ -51,11 +51,12 @@ const Login = () => {
   }
 
   return (
-    <div className="flex justify-center items-center h-screen bg-gray-100">
+    <div className="flex justify-center items-center h-screen bg-gray-200">
       <div className="card w-96 bg-base-100 shadow-xl">
         <div className="card-body">
-          <h2 className="card-title justify-center">Login</h2>
+
           <form onSubmit={handleSubmit(onSubmit)}>
+
             <div className="form-control w-full max-w-xs">
               <label className="label">
                 <span className="label-text">Email</span>
@@ -116,19 +117,19 @@ const Login = () => {
                 alert('Password Reset email sent..');
               }}
             >
-              <h5 className="pb-4 text-secondary font-semibold">Forgot password?</h5>
+              <h5 className="pb-4 font-bold">Forgot password?</h5>
             </button>
-            <input className="btn w-full max-w-xs" type="submit" value="Login" />
+            <input className="btn w-full max-w-xs font-bold bg-slate-500 text-white border-none" type="submit" value="Login" />
           </form>
 
-          <small><p className="text-sm font-semibold">New to Doctors Portal? <Link className="text-secondary font-bold ml-5" to="/signup" >Create new account</Link> </p></small>
+          <small><p className="text-sm font-semibold">New to Doctors Portal? <Link className="text-primary font-bold ml-5" to="/signup" >Create new account</Link> </p></small>
 
           <div className="divider">Or continue with</div>
 
           <button
             onClick={() => signInWithGoogle()}
-            className="btn btn-outline bg-gray-300"
-          > <img src={googleIcon} alt="" /><b className="mx-2 text-accent">Google</b></button>
+            className="btn btn-outline bg-slate-800 hover:bg-slate-500 border-none text-white"
+          > <img src={googleIcon} alt="" /><b className="mx-2 font-bold">Google</b></button>
         </div>
       </div>
     </div>
