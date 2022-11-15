@@ -47,7 +47,7 @@ const Navbar = () => {
             {menuItems}
           </ul>
         </div>
-        <a href="/" className="btn btn-ghost normal-case text-xl"><img className='rounded' src={img} width="90px" alt="" /></a>
+        <a href="/" className="normal-case text-xl"><img className='rounded-2xl' src={img} width="80px" alt="" /></a>
       </div>
       <div className="navbar-end hidden lg:flex">
         <ul className="menu menu-horizontal p-0 mt-5 text-lg">
