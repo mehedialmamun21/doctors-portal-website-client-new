@@ -5,7 +5,7 @@ import PrimaryButton from '../../component/PrimaryButton/PrimaryButton';
 
 const Banner = () => {
     return (
-        <section className="hero min-h-screen bg-banner-section-backImg">
+        <section className="hero py-20 bg-banner-section-backImg">
             <div className="hero-content flex-col lg:flex-row-reverse py-10">
                 <img src={chair} alt="" className="lg:max-w-sm rounded-lg shadow-2xl lg:ml-10 h-1/2" />
                 <div>

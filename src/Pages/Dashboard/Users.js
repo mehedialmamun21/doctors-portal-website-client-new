@@ -24,9 +24,9 @@ const Users = () => {
                     <thead>
                         <tr>
                             <th></th>
-                            <th>User_Email</th>
-                            <th>Make_Admin</th>
-                            <th>Remove_User</th>
+                            <th>User Email</th>
+                            <th>Make Admin</th>
+                            <th>Remove User</th>
                         </tr>
                     </thead>
                     <tbody>

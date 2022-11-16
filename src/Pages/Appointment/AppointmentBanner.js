@@ -5,7 +5,7 @@ import 'react-day-picker/dist/style.css';
 const AppointmentBanner = ({ date, setDate }) => {
     return (
         <section>
-            <div className="hero min-h-screen bg-banner-section-backImg">
+            <div className="hero bg-banner-section-backImg py-10">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <img src={dentistChair} alt="" className="lg:max-w-sm rounded-lg shadow-2xl lg:ml-20" />
                     <div className='lg:pr-10'>
@@ -17,6 +17,7 @@ const AppointmentBanner = ({ date, setDate }) => {
                     </div>
                 </div>
             </div>
+
         </section>
     );
 };

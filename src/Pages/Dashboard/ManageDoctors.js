@@ -27,7 +27,7 @@ const ManageDoctors = () => {
                     <thead>
                         <tr>
                             <th></th>
-                            <th>Doctor_image</th>
+                            <th>Doctor Image</th>
                             <th>Name</th>
                             <th>Speciality</th>
                             <th>Action ( delete )</th>

@@ -69,48 +69,48 @@ const Contact = () => {
             </div>
 
 
-            <center>
-                <div className='lg:flex py-5'>
 
-                    <div className='py-5 lg:w-1/2'>
-                        <p className="font-bold mb-3 text-primary text-lg">Our Location</p>
-                        <div className='border-l-2 border-orange-500 lg:border-hidden'>
-                            <div className=''>
-                                <p> <span className="font-semibold">Address:</span> House- 06, Road-04, Dinajpur.</p>
-                                <br />
-                                <p> <span className="font-semibold">Phone: </span> 09666-710606, 01303-115423</p>
-                                <p> <span className="font-semibold">Fax: </span> +88 02 9615497</p>
-                                <p> <span className="font-semibold">Email: </span> <span className='font-bold'> dentalhub@gmail.com </span> </p>
-                                <p> <span className="font-semibold">Emergency: </span> 03444-768656</p>
-                            </div>
+            <div className='lg:flex'>
+
+                <div className='py-5 lg:w-1/2'>
+                    <p className="font-bold mb-3 text-primary text-lg pl-5">Our Location</p>
+                    <div className='border-l-8 border-orange-500'>
+                        <div className='pl-5'>
+                            <p> <span className="font-semibold">Address:</span> House- 06, Road-04, Dinajpur.</p>
+                            <br />
+                            <p> <span className="font-semibold">Phone: </span> 09666-710606, 01303-115423</p>
+                            <p> <span className="font-semibold">Fax: </span> +88 02 9615497</p>
+                            <p> <span className="font-semibold">Email: </span> <span className='font-bold'> dentalhub@gmail.com </span> </p>
+                            <p> <span className="font-semibold">Emergency: </span> 03444-768656</p>
                         </div>
                     </div>
-
-                    <div className="py-5 lg:py-5 lg:w-1/2">
-                        <p className="font-bold text-primary mb-3 text-lg">What Makes Us Special</p>
-                        <div className='border-l-2 border-blue-500'>
-                            <div className='font-semibold'>
-                                <ul>
-                                    <li>Laser Dentistry</li>
-                                    <li>Oral & Maxillofacial Surgery</li>
-                                    <li>Dental Implant</li>
-                                    <li>Digital Smile Design</li>
-                                    <li>Cosmetic Dentistry</li>
-                                    <li>Autism and Special Patient Dentistry</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className='py-5 lg:w-1/2'>
-                        <p className="font-bold text-primary mb-3 text-lg">QR Code</p>
-                        <div className='border-l-2 border-purple-500'>
-                            <img src={qrCode} alt="" className='w-44 lg:w-48 lg:h-36' />
-                        </div>
-                    </div>
-
                 </div>
-            </center>
+
+                <div className="py-5 lg:py-5 lg:w-1/2">
+                    <p className="font-bold text-primary mb-3 text-lg pl-5">What Makes Us Special</p>
+                    <div className='border-l-8 border-purple-500 pl-5'>
+                        <div className='font-semibold'>
+                            <ul>
+                                <li>Laser Dentistry</li>
+                                <li>Oral & Maxillofacial Surgery</li>
+                                <li>Dental Implant</li>
+                                <li>Digital Smile Design</li>
+                                <li>Cosmetic Dentistry</li>
+                                <li>Autism and Special Patient Dentistry</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div className='py-5 lg:w-1/2'>
+                    <p className="font-bold text-primary mb-3 text-lg pl-5">QR Code</p>
+                    <div className='border-l-8 border-green-500 pl-5'>
+                        <img src={qrCode} alt="" className='w-44 lg:w-48 lg:h-36' />
+                    </div>
+                </div>
+
+            </div>
+
 
             <Footer></Footer>
 
