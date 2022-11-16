@@ -14,14 +14,14 @@ const Testimonial = () => {
     }, []);
 
     return (
-        <section className='my-10 px-5'>
+        <section className='my-10 px-5 lg:px-0'>
             <div className='flex justify-between'>
-                <div className='px-5 pb-5'>
+                <div className='py-5'>
                     <h4 className='text-2xl text-secondary font-bold'>Testimonial</h4>
                     <h2 className='text-3xl font-semibold'>What Our Patient Says</h2>
                 </div>
                 <div>
-                    <img className='w-24 lg:w-48' src={quotePic} alt="" />
+                    <img className='w-24 lg:w-40' src={quotePic} alt="" />
                 </div>
             </div>
 
