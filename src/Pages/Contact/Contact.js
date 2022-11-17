@@ -6,7 +6,7 @@ const Contact = () => {
     return (
         <section className='px-5'>
 
-            <div className='flex flex-col md:flex-row lg:flex-row py-5'>
+            <div className='flex flex-col md:flex-row lg:flex-row py-3'>
 
                 <div className='w-full md:w-5/12 space-y-5'>
                     <div className='flex gap-4'>

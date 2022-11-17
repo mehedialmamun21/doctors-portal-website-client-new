@@ -19,7 +19,7 @@ const ManageDoctors = () => {
     }
 
     return (
-        <div>
+        <section>
             <h2 className="text-xl text-center my-5 text-slate-500 font-bold">Doctors are : {doctors.length}</h2>
             <div class="overflow-x-auto">
                 <table class="table w-full">
@@ -33,6 +33,7 @@ const ManageDoctors = () => {
                             <th>Action ( delete )</th>
                         </tr>
                     </thead>
+
                     <tbody>
 
                         {
@@ -53,7 +54,7 @@ const ManageDoctors = () => {
                 refetch={refetch}
                 setDeletingDoctor={setDeletingDoctor}
             ></DeleteConfirmModal>}
-        </div>
+        </section>
     );
 };
 

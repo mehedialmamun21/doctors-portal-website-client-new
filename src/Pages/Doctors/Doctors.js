@@ -15,20 +15,22 @@ const Doctors = () => {
     }
     return (
         <section>
-            <div class="overflow-x-auto mt-5 ">
+            <div class="overflow-x-auto mt-3 rounded-3xl border-4">
                 <table class="table w-full">
+
                     <thead>
                         <tr>
-                            <th>Doctor's Image</th>
+                            <th>Doctor Image</th>
                             <th>Name</th>
                             <th>Speciality</th>
-                            <th>Doctor's Email</th>
+                            <th>Doctor Email</th>
                         </tr>
                     </thead>
+
                     <tbody>
 
                         {
-                            doctors.map(doctor =>
+                            doctors.map((doctor) =>
                                 <tr>
                                     <td>
                                         <div class="avatar">
