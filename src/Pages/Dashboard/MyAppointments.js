@@ -40,7 +40,7 @@ const MyAppointments = () => {
             <h2 className='my-5 text-xl text-center text-slate-500 font-bold'>Your Appointments are : {appointments.length}</h2>
 
             <div class="overflow-x-auto">
-                <table class="table w-full">
+                <table class="table w-full border-4">
                     <thead>
                         <tr>
                             <th></th>

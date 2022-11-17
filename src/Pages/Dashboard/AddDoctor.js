@@ -77,7 +77,7 @@ const AddDoctor = () => {
 
             <form onSubmit={handleSubmit(onSubmit)}>
 
-                <div className='rounded-3xl px-5 lg:px-20 py-5 lg:py-5 bg-gray-200'>
+                <div className='px-5 lg:px-20 py-3 lg:py-5 bg-gray-200'>
                     <div className="form-control w-full max-w-xs">
                         <label className="label">
                             <span className="label-text font-bold">Name</span>

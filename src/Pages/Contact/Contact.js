@@ -4,7 +4,7 @@ import Footer from '../Shared/Footer';
 const Contact = () => {
 
     return (
-        <section className='px-5'>
+        <section className='px-5 lg:px-0'>
 
             <div className='flex flex-col md:flex-row lg:flex-row py-3'>
 
