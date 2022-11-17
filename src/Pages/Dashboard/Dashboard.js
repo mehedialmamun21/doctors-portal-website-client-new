@@ -17,7 +17,7 @@ const Dashboard = () => {
                     <Outlet></Outlet>
                 </div>
 
-                <div class="drawer-side">
+                <div class="drawer-side lg:mr-3">
                     <label for="dashboard-sidebar" class="drawer-overlay"></label>
                     <ul class="menu p-4 overflow-y-auto w-60 bg-orange-300">
                         {!admin && <>

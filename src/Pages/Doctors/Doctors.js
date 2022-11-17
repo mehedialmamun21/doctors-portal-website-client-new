@@ -15,8 +15,8 @@ const Doctors = () => {
     }
     return (
         <section>
-            <div class="overflow-x-auto mt-3 rounded-3xl border-4">
-                <table class="table w-full">
+            <div class="overflow-x-auto mt-3">
+                <table class="table w-full border-4">
 
                     <thead>
                         <tr>
