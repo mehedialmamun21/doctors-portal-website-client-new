@@ -19,7 +19,7 @@ const Navbar = () => {
       <li><Link to="/appointment"><span className="font-bold text-lg text-gray-800">Appointment</span></Link></li>
       <li><Link to="/doctors"><span className="font-bold text-lg text-gray-800">Doctors</span></Link></li>
       <li><Link to="/contact"><span className="font-bold text-lg text-gray-800">Contact</span></Link></li>
-      <li><Link to="/about"><span className="font-bold text-lg text-gray-800">About</span></Link></li>
+      {/* <li><Link to="/about"><span className="font-bold text-lg text-gray-800">About</span></Link></li> */}
       {
         user && <li><Link to="/dashboard"><span className="font-bold text-lg text-gray-800">Dashboard</span></Link></li>
       }
