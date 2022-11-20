@@ -19,7 +19,7 @@ const Dashboard = () => {
 
                 <div class="drawer-side lg:mr-3">
                     <label for="dashboard-sidebar" class="drawer-overlay"></label>
-                    <ul class="menu p-4 overflow-y-auto w-60 bg-orange-300">
+                    <ul class="menu p-4 overflow-y-auto w-60 bg-slate-200">
                         {!admin && <>
                             <li><Link to="/dashboard"><span className='px-3 py-2 font-bold rounded'>My Appointments</span></Link></li>
                             <li><Link to="/dashboard/review"><span className='px-3 py-2 font-bold rounded'>My Reviews</span></Link></li>

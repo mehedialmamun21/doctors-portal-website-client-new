@@ -77,7 +77,7 @@ const AddDoctor = () => {
 
             <form onSubmit={handleSubmit(onSubmit)}>
 
-                <div className='px-5 lg:px-20 py-3 lg:py-5 bg-gray-200'>
+                <div className='px-5 lg:px-20 py-3 lg:py-5 bg-slate-200'>
                     <div className="form-control w-full max-w-xs">
                         <label className="label">
                             <span className="label-text font-bold">Name</span>
@@ -161,7 +161,7 @@ const AddDoctor = () => {
                         </label>
                     </div>
 
-                    <input className="btn w-full max-w-xs font-bold bg-sky-600 hover:bg-sky-500 text-white border-none" type="submit" value="Add Doctor" />
+                    <input className="btn w-full max-w-xs font-bold bg-slate-600 hover:bg-slate-500 text-white border-none" type="submit" value="Add Doctor" />
                 </div>
 
             </form>
