@@ -1,7 +1,24 @@
-import React from 'react';
-import PrimaryButton from '../../component/PrimaryButton/PrimaryButton';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 const ContactUs = () => {
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_8c82sgd', 'template_ycoyo1p', form.current, 'WPhPoqlYxWHkHvPyC')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+
+        alert("Thank you! Your message has been successfully sent.");
+        e.target.reset()
+
+    };
 
     return (
         <section className='my-20'>
@@ -46,7 +63,7 @@ const ContactUs = () => {
                 </div>
 
                 <div className='w-full mt-8 md:mt-0 md:w-7/12 text-black'>
-                    <form className='row'>
+                    <form className='row' ref={form} onSubmit={sendEmail}>
 
                         <div className='flex flex-col gap-4 w-full'>
                             <div className='flex gap-4 w-full'>

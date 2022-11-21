@@ -5,6 +5,7 @@ import emailjs from '@emailjs/browser';
 // import qrCode from '../../../src/assets/images/qr-code.png';
 
 const Contact = () => {
+
     const form = useRef();
 
     const sendEmail = (e) => {
@@ -17,7 +18,9 @@ const Contact = () => {
                 console.log(error.text);
             });
 
+        alert("Thank you! Your message has been successfully sent.");
         e.target.reset()
+
     };
 
     return (
