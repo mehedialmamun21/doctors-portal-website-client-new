@@ -1,7 +1,24 @@
-import React from 'react';
-import qrCode from '../../../src/assets/images/qr-code.png';
 import Footer from '../Shared/Footer';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
+// import qrCode from '../../../src/assets/images/qr-code.png';
+
 const Contact = () => {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_8c82sgd', 'template_ycoyo1p', form.current, 'WPhPoqlYxWHkHvPyC')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+
+        e.target.reset()
+    };
 
     return (
         <section className='px-5 lg:px-0'>
@@ -46,8 +63,9 @@ const Contact = () => {
                 </div>
 
                 <div className='w-full mt-8 md:mt-0 md:w-7/12 text-black'>
-                    <form className='row'>
 
+
+                    <form className='row' ref={form} onSubmit={sendEmail}>
                         <div className='flex flex-col gap-4 w-full'>
                             <div className='flex gap-4 w-full'>
                                 <input type="text" name="user_name" placeholder='Your Name' className='form-control bg-[#EFEFEF] w-full py-4 px-3 outline-none rounded-sm' required />
@@ -63,11 +81,11 @@ const Contact = () => {
 
                             <input type="submit" value="Send Message" className='form-control btn bg-orange-600 hover:bg-orange-500 text-white w-2/4 lg:w-1/3 py-3 lg:px-8 mt-5 rounded-sm font-bold border-none' />
                         </div>
-
                     </form>
+
+
                 </div>
             </div>
-
 
 
             {/* <div className='lg:flex'>
