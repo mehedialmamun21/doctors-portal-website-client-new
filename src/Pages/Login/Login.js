@@ -122,7 +122,7 @@ const Login = () => {
             <input className="btn w-full max-w-xs font-bold hover:bg-slate-500 text-white border-none" type="submit" value="Login" />
           </form>
 
-          <small><p className="text-sm font-semibold">New to Doctors Portal? <Link className="text-primary font-bold ml-3 lg:ml-5" to="/signup" >Create new account</Link> </p></small>
+          <small><p className="text-sm font-semibold">New to Doctors Portal? <Link className="text-primary font-bold ml-1 lg:ml-5" to="/signup" >Create new account</Link> </p></small>
 
           <div className="divider">Or continue with</div>
 

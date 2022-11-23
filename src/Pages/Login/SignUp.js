@@ -133,7 +133,7 @@ const SignUp = () => {
                         <input className="btn w-full max-w-xs font-bold hover:bg-slate-500 text-white border-none" type="submit" value="Sign Up" />
                     </form>
 
-                    <small><p className='text-sm font-semibold'>Already have an account? <Link className="text-primary font-bold ml-12" to="/login" >Please login</Link> </p></small>
+                    <small><p className='text-sm font-semibold'>Already have an account? <Link className="text-primary font-bold ml-5 lg:ml-12" to="/login" >Please login</Link> </p></small>
 
                     <div className="divider">Or continue with</div>
 

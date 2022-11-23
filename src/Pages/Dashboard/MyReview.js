@@ -5,7 +5,7 @@ const MyReview = () => {
     const { register, handleSubmit } = useForm();
 
     const onSubmit = data => {
-        const url = "https://limitless-inlet-88208.herokuapp.com/review";
+        const url = "http://localhost:5000/review";
         fetch(url, {
             method: 'POST',
             headers: {
@@ -22,7 +22,7 @@ const MyReview = () => {
 
 
     return (
-        <div className='addItem w-50 mx-2 lg:mx-0 mt-20 px-5 lg:px-20 py-5 lg:py-5 bg-gray-200'>
+        <div className='addItem w-full mx-5 lg:mx-0 mt-10 lg:mt-20 px-5 lg:px-20 py-10 lg:py-10 bg-gray-200 rounded-lg'>
             <form className='flex flex-col items-center' onSubmit={handleSubmit(onSubmit)}>
                 <input className='input input-bordered w-full max-w-xs my-2' required placeholder="Give us Ratings (1-5)" type="number" {...register("rating")} />
                 <textarea className='input input-bordered w-full max-w-xs h-40 my-2' required placeholder="Share your valuable feedback.." {...register("description")} />

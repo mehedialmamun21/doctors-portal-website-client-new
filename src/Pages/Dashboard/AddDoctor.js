@@ -7,7 +7,7 @@ import Loading from '../Shared/Loading';
 const AddDoctor = () => {
     const { register, formState: { errors }, handleSubmit, reset } = useForm();
 
-    const { data: services, isLoading } = useQuery('services', () => fetch('https://limitless-inlet-88208.herokuapp.com/service').then(res => res.json()).then())
+    const { data: services, isLoading } = useQuery('services', () => fetch('http://localhost:5000/service').then(res => res.json()).then())
 
     const imageStorageKey = '41447f5ca3bd2f0fbc3fc9c2195a9bbc';
 
@@ -43,7 +43,7 @@ const AddDoctor = () => {
                         img: img
                     }
                     // send to your database
-                    fetch('https://limitless-inlet-88208.herokuapp.com/doctor', {
+                    fetch('http://localhost:5000/doctor', {
                         method: 'POST',
                         headers: {
                             'content-type': 'application/json',
@@ -72,17 +72,17 @@ const AddDoctor = () => {
 
 
     return (
-        <div className='flex justify-center mt-10'>
+        <div className='flex justify-center mt-10 lg:mt-20'>
             {/* <h2 className="text-2xl">Add a new Doctor</h2> */}
 
             <form onSubmit={handleSubmit(onSubmit)}>
 
-                <div className='px-10 lg:px-20 py-5 lg:py-5 bg-slate-200 rounded-xl'>
+                <div className='px-10 lg:px-40 py-5 lg:py-5 bg-gray-200 rounded-lg'>
                     <div className="form-control w-full max-w-xs">
                         <label className="label">
                             <span className="label-text font-bold">Name</span>
                         </label>
-                        <input type="text border-none"
+                        <input type="text"
                             placeholder="Doctor's Name"
                             className="input input-bordered w-full max-w-xs"
                             {...register("name", {
@@ -162,10 +162,10 @@ const AddDoctor = () => {
                     </div>
 
                     <input className="btn w-full max-w-xs font-bold bg-slate-600 hover:bg-slate-500 text-white border-none" type="submit" value="Add Doctor" />
+
                 </div>
 
             </form>
-
 
         </div>
     );
