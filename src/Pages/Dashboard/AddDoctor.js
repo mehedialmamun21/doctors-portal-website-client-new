@@ -7,7 +7,7 @@ import Loading from '../Shared/Loading';
 const AddDoctor = () => {
     const { register, formState: { errors }, handleSubmit, reset } = useForm();
 
-    const { data: services, isLoading } = useQuery('services', () => fetch('https://limitless-inlet-88208.herokuapp.com/service').then(res => res.json()).then())
+    const { data: services, isLoading } = useQuery('services', () => fetch('http://localhost:5000/service').then(res => res.json()).then())
 
     const imageStorageKey = '41447f5ca3bd2f0fbc3fc9c2195a9bbc';
 
@@ -43,7 +43,7 @@ const AddDoctor = () => {
                         img: img
                     }
                     // send to your database
-                    fetch('https://limitless-inlet-88208.herokuapp.com/doctor', {
+                    fetch('http://localhost:5000/doctor', {
                         method: 'POST',
                         headers: {
                             'content-type': 'application/json',
@@ -77,7 +77,7 @@ const AddDoctor = () => {
 
             <form onSubmit={handleSubmit(onSubmit)}>
 
-                <div className='px-10 lg:px-40 py-5 lg:py-5 bg-gray-200 rounded-lg'>
+                <div className='px-10 lg:px-60 py-7 lg:py-8 shadow-2xl rounded-2xl'>
                     <div className="form-control w-full max-w-xs">
                         <label className="label">
                             <span className="label-text font-bold">Name</span>
