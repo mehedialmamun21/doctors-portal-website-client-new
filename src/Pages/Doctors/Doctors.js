@@ -4,7 +4,7 @@ import Loading from '../Shared/Loading';
 import Footer from '../Shared/Footer';
 
 const Doctors = () => {
-    const { data: doctors, isLoading } = useQuery('doctors', () => fetch('http://localhost:5000/doctor', {
+    const { data: doctors, isLoading } = useQuery('doctors', () => fetch('https://limitless-inlet-88208.herokuapp.com/doctor', {
         headers: {
             authorization: `Bearer ${localStorage.getItem('accessToken')}`
         }
