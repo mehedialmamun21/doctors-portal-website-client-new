@@ -22,12 +22,14 @@ const MyReview = () => {
 
 
     return (
-        <div className='addItem mx-5 lg:mx-40 mt-10 lg:mt-20 px-5 lg:px-20 py-10 lg:py-10 shadow-2xl rounded-2xl'>
-            <form className='flex flex-col items-center' onSubmit={handleSubmit(onSubmit)}>
-                <input className='input input-bordered w-full max-w-xs my-2 shadow-lg' required placeholder="Give us Ratings (1-5)" type="number" {...register("rating")} />
-                <textarea className='input input-bordered w-full max-w-xs h-40 my-2 shadow-lg' required placeholder="Share your valuable feedback.." {...register("description")} />
-                <input className="btn w-full max-w-xs bg-slate-600 hover:bg-slate-500 text-white font-semibold mt-3 border-none" type="submit" value="Add Review" />
-            </form>
+        <div className='addItem mx-5 lg:mx-40 mt-10 px-5 lg:px-20 py-10 lg:py-10 shadow-2xl'>
+            <div className='py-5 bg-secondary'>
+                <form className='flex flex-col items-center' onSubmit={handleSubmit(onSubmit)}>
+                    <input className='input input-bordered w-full max-w-xs my-2 shadow-lg' required placeholder="Give us Ratings (1-5)" type="number" {...register("rating")} />
+                    <textarea className='input input-bordered w-full max-w-xs h-40 my-2 shadow-lg' required placeholder="Share your valuable feedback.." {...register("description")} />
+                    <input className="btn w-full max-w-xs bg-slate-600 hover:bg-slate-500 text-white font-semibold mt-3 border-none" type="submit" value="Add Review" />
+                </form>
+            </div>
         </div>
     );
 };
