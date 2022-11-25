@@ -23,7 +23,8 @@ const Doctors = () => {
                             <th>Doctor Image</th>
                             <th>Name</th>
                             <th>Speciality</th>
-                            <th>Doctor Email</th>
+                            <th>Email</th>
+                            <th>Doctor Entry</th>
                         </tr>
                     </thead>
 
@@ -42,6 +43,7 @@ const Doctors = () => {
                                     <td>{doctor.name}</td>
                                     <td>{doctor.speciality}</td>
                                     <td>{doctor.email}</td>
+                                    <td>{<button class="btn btn-sm btn-success text-white px-3 font-semibold">Enter</button>}</td>
                                 </tr>
                             )
                         }

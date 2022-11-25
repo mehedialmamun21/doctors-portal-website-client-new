@@ -65,7 +65,7 @@ const Contact = () => {
                     </div>
                 </div>
 
-                <div className='w-full mt-8 md:mt-0 md:w-7/12 text-black p-6 rounded-xl shadow-2xl'>
+                <div className='w-full mt-8 md:mt-0 md:w-7/12 text-black p-10 rounded-xl shadow-2xl'>
 
                     <form className='row' ref={form} onSubmit={sendEmail}>
                         <div className='flex flex-col gap-4 w-full'>
@@ -81,7 +81,7 @@ const Contact = () => {
                                 <textarea name='message' rows="4" placeholder='Type Your Message' className='form-control bg-[#EFEFEF] w-full mt-2 py-4 px-3 outline-none rounded-sm shadow-md' required />
                             </div>
 
-                            <input type="submit" value="Send Message" className='form-control btn bg-orange-600 hover:bg-orange-500 text-white w-2/4 lg:w-1/3 py-3 lg:px-8 mt-5 rounded-3xl font-bold border-none' />
+                            <input type="submit" value="Send Message" className='form-control btn bg-orange-600 hover:bg-orange-500 text-white w-2/4 lg:w-1/3 py-3 lg:px-8 mt-5 font-bold border-none' />
                         </div>
                     </form>
 
