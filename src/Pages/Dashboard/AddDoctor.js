@@ -79,7 +79,7 @@ const AddDoctor = () => {
 
                 <div className='px-3 lg:px-40 py-3 lg:py-10 shadow-2xl'>
 
-                    <div className='px-3 lg:px-14 py-3 lg:py-5 bg-secondary'>
+                    <div className='px-3 lg:px-20 py-3 lg:py-5 bg-secondary'>
 
 
                         <div className="form-control w-full max-w-xs">
@@ -88,7 +88,7 @@ const AddDoctor = () => {
                             </label>
                             <input type="text"
                                 placeholder="Doctor's Name"
-                                className="input input-bordered w-full max-w-xs"
+                                className="input input-bordered w-full max-w-xs rounded-sm"
                                 {...register("name", {
                                     required: {
                                         value: true,
@@ -110,7 +110,7 @@ const AddDoctor = () => {
                             </label>
                             <input type="email"
                                 placeholder="Doctor's Email"
-                                className="input input-bordered w-full max-w-xs"
+                                className="input input-bordered w-full max-w-xs rounded-sm"
                                 {...register("email", {
                                     required: {
                                         value: true,
@@ -134,7 +134,7 @@ const AddDoctor = () => {
                             <label className="label">
                                 <span className="label-text font-bold">Speciality</span>
                             </label>
-                            <select {...register('speciality')} class="select input-bordered w-full max-w-xs">
+                            <select {...register('speciality')} class="select input-bordered w-full max-w-xs rounded-sm">
                                 {
                                     services.map(service => <option
                                         key={service._id}
@@ -150,7 +150,7 @@ const AddDoctor = () => {
                                 <span className="label-text font-bold  mt-3">Photo</span>
                             </label>
                             <input type="file"
-                                className="input input-bordered w-full max-w-xs"
+                                className="input input-bordered w-full max-w-xs rounded-sm"
                                 {...register("image", {
                                     required: {
                                         value: true,

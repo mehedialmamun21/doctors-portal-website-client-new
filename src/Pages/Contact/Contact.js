@@ -65,7 +65,7 @@ const Contact = () => {
                     </div>
                 </div>
 
-                <div className='w-full mt-8 lg:mt-0 lg:w-8/12 text-black px-5 lg:px-16 py-5 lg:py-8 shadow-2xl bg-secondary'>
+                <div className='w-full mt-8 lg:mt-0 lg:w-8/12 text-black px-5 lg:px-16 py-5 lg:py-12 shadow-2xl bg-secondary'>
 
                     <form className='row' ref={form} onSubmit={sendEmail}>
 
