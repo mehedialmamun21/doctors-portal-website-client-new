@@ -40,10 +40,10 @@ const Doctors = () => {
                                             </div>
                                         </div>
                                     </td>
-                                    <td>{doctor.name}</td>
-                                    <td>{doctor.speciality}</td>
-                                    <td>{doctor.email}</td>
-                                    <td>{<button class="btn btn-sm btn-success text-white px-3 font-semibold">Enter</button>}</td>
+                                    <td className='text-secondary font-bold'>{doctor.name}</td>
+                                    <td className='font-bold'>{doctor.speciality}</td>
+                                    <td className='font-bold'>{doctor.email}</td>
+                                    <td>{<button class="btn btn-sm btn-success text-white px-3 lg:px-5 font-semibold rounded-sm">Enter</button>}</td>
                                 </tr>
                             )
                         }
