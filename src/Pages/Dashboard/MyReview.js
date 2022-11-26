@@ -22,8 +22,8 @@ const MyReview = () => {
 
 
     return (
-        <div className='addItem mx-5 lg:mx-40 mt-10 px-5 lg:px-20 py-10 lg:py-10 shadow-2xl'>
-            <div className='py-5 bg-secondary'>
+        <div className='addItem mx-5 lg:mx-40 mt-10 px-2 lg:px-10 py-2 lg:py-10 shadow-2xl'>
+            <div className='py-10 bg-secondary'>
                 <form className='flex flex-col items-center' onSubmit={handleSubmit(onSubmit)}>
                     <input className='input input-bordered w-full max-w-xs my-2 shadow-lg' required placeholder="Give us Ratings (1-5)" type="number" {...register("rating")} />
                     <textarea className='input input-bordered w-full max-w-xs h-40 my-2 shadow-lg' required placeholder="Share your valuable feedback.." {...register("description")} />

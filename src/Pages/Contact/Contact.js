@@ -65,24 +65,28 @@ const Contact = () => {
                     </div>
                 </div>
 
-                <div className='w-full mt-8 md:mt-0 md:w-7/12 text-black p-10 rounded-xl shadow-2xl'>
+                <div className='w-full mt-8 md:mt-0 md:w-7/12 text-black px-5 lg:px-10 py-5 shadow-2xl bg-secondary'>
 
                     <form className='row' ref={form} onSubmit={sendEmail}>
-                        <div className='flex flex-col gap-4 w-full'>
-                            <div className='flex gap-4 w-full'>
-                                <input type="text" name="user_name" placeholder='Your Name' className='form-control bg-[#EFEFEF] w-full py-4 px-3 outline-none rounded-sm shadow-md' required />
 
-                                <input type="email" name="user_email" placeholder='Your Email' className='form-control bg-[#EFEFEF] w-full py-4 px-3 outline-none rounded-sm shadow-md' required />
+                        <div className='flex flex-col gap-4 w-full'>
+
+                            <div className='flex gap-4 w-full'>
+                                <input type="text" name="user_name" placeholder='Your Name' className='form-control bg-white w-full py-4 px-3 outline-none rounded-sm shadow-md' required />
+
+                                <input type="email" name="user_email" placeholder='Your Email' className='form-control bg-white w-full py-4 px-3 outline-none rounded-sm shadow-md' required />
                             </div>
 
-                            <input name="user_subject" type="text" placeholder="Subject" className="form-control bg-[#EFEFEF] py-4 px-3 h-14 w-full mt-2 focus:outline-none rounded-sm shadow-md"></input>
+                            <input name="user_subject" type="text" placeholder="Subject" className="form-control bg-white py-4 px-3 h-14 w-full mt-2 focus:outline-none rounded-sm shadow-md"></input>
 
                             <div>
-                                <textarea name='message' rows="4" placeholder='Type Your Message' className='form-control bg-[#EFEFEF] w-full mt-2 py-4 px-3 outline-none rounded-sm shadow-md' required />
+                                <textarea name='message' rows="4" placeholder='Type Your Message' className='form-control bg-white w-full mt-2 py-4 px-3 outline-none rounded-sm shadow-md' required />
                             </div>
 
-                            <input type="submit" value="Send Message" className='form-control btn bg-orange-600 hover:bg-orange-500 text-white w-2/4 lg:w-1/3 py-3 lg:px-8 mt-5 font-bold border-none' />
+                            <input type="submit" value="Send Message" className='form-control btn hover:bg-orange-600 bg-orange-500 text-white w-2/4 lg:w-1/3 py-3 lg:px-8 mt-5 rounded-sm font-bold border-none' />
+
                         </div>
+
                     </form>
 
                 </div>

@@ -72,12 +72,12 @@ const AddDoctor = () => {
 
 
     return (
-        <div className='flex justify-center my-10 px-5 lg:px-0 '>
+        <div className='flex justify-center my-10 px-5 lg:px-0'>
             {/* <h2 className="text-2xl">Add a new Doctor</h2> */}
 
             <form onSubmit={handleSubmit(onSubmit)}>
 
-                <div className='px-10 lg:px-40 py-7 lg:py-8 shadow-2xl'>
+                <div className='px-2 lg:px-40 py-2 lg:py-8 shadow-2xl'>
 
                     <div className='px-20 py-5 bg-secondary'>
 

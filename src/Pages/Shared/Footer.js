@@ -31,7 +31,7 @@ const Footer = () => {
                 </div>
                 <div>
                     <span className="footer-title text-xl">Our Address</span>
-                    <a href='/#' className="link link-hover font-semibold text-stone-500"> <span className='font-bold text-primary'>DENTAL HUB</span> <br /> House- 06, Road-04, Dinajpur, Bangladesh. <br /> Specialized Dental Hospital</a>
+                    <a href='/#' className="link link-hover font-semibold text-stone-500"> <span className='font-bold text-lg'>DENTAL HUB</span> <br /> House- 06, Road-04, Dinajpur, Bangladesh. <br /> Specialized Dental Hospital</a>
                 </div>
             </div>
 

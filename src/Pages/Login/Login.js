@@ -51,8 +51,8 @@ const Login = () => {
   }
 
   return (
-    <div className="flex justify-center items-center h-fit lg:h-screen pt-2 lg:pt-0 px-2 lg:px-0">
-      <div className="card w-96 bg-base-100 shadow-2xl">
+    <div className="flex justify-center items-center h-screen px-2 lg:px-0 bg-secondary">
+      <div className="card w-96 bg-base-100 shadow-2xl rounded-sm">
         <div className="card-body">
 
           <form onSubmit={handleSubmit(onSubmit)}>
@@ -117,7 +117,7 @@ const Login = () => {
                 alert('Password Reset email sent..');
               }}
             >
-              <h5 className="pb-4 font-bold text-secondary">Forgot password?</h5>
+              <h5 className="pb-4 font-bold">Forgot password?</h5>
             </button>
             <input className="btn w-full max-w-xs font-bold hover:bg-slate-500 text-white border-none" type="submit" value="Login" />
           </form>
