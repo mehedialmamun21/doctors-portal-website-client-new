@@ -33,7 +33,7 @@ const ContactUs = () => {
                         <div>
                             <h2 className='text-2xl font-semibold'>Have a question?</h2>
                             <p class="text-gray-400">We are here to help</p>
-                            <p class="text-orange-500">Email us at "dentalhub@gmail.com"</p>
+                            <p class="text-orange-500">Email us at "dentalsolution@gmail.com"</p>
                         </div>
                     </div>
                     <div>
@@ -55,7 +55,7 @@ const ContactUs = () => {
                             </span>
                             <div>
                                 <h2 className='text-2xl font-semibold'>Contact With Us</h2>
-                                <p class="text-gray-400">Email: dentalhub@gmail.com</p>
+                                <p class="text-gray-400">Email: dentalsolution@gmail.com</p>
                                 <p class="text-orange-500">Phone : +8801521-413730</p>
                             </div>
                         </div>

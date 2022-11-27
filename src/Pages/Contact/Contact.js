@@ -2,8 +2,6 @@ import Footer from '../Shared/Footer';
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
-// import qrCode from '../../../src/assets/images/qr-code.png';
-
 const Contact = () => {
 
     const form = useRef();
@@ -28,6 +26,8 @@ const Contact = () => {
 
             <div className='flex flex-col lg:gap-8 md:flex-row lg:flex-row py-3 lg:py-20'>
 
+
+
                 <div className='w-full lg:w-4/12 space-y-5'>
                     <div className='flex gap-4 shadow-xl px-2 py-4'>
                         <span>
@@ -36,7 +36,7 @@ const Contact = () => {
                         <div>
                             <h2 className='text-2xl font-semibold'>Have a question?</h2>
                             <p class="text-gray-400">We are here to help</p>
-                            <p class="text-orange-600 font-semibold">Email us at "dentalhub@gmail.com"</p>
+                            <p class="text-orange-600 font-semibold">Email us at "dentalsolution@gmail.com"</p>
                         </div>
                     </div>
                     <div>
@@ -58,19 +58,18 @@ const Contact = () => {
                             </span>
                             <div>
                                 <h2 className='text-2xl font-semibold'>Contact With Us</h2>
-                                <p class="text-gray-400">Email: dentalhub@gmail.com</p>
+                                <p class="text-gray-400">Email: dentalsolution@gmail.com</p>
                                 <p class="text-orange-600 font-semibold">Phone : +8801521-413730</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div className='w-full mt-8 lg:mt-0 lg:w-8/12 text-black px-5 lg:px-16 py-5 lg:py-12 shadow-2xl bg-secondary'>
 
+
+                <div className='w-full mt-8 lg:mt-0 lg:w-8/12 text-black px-5 lg:px-24 py-5 lg:py-10 shadow-2xl bg-secondary'>
                     <form className='row' ref={form} onSubmit={sendEmail}>
-
                         <div className='flex flex-col gap-4 w-full'>
-
                             <div className='flex gap-4 w-full'>
                                 <input type="text" name="user_name" placeholder='Your Name' className='form-control bg-white w-full py-4 px-3 outline-none rounded-sm shadow-md' required />
 
@@ -84,57 +83,13 @@ const Contact = () => {
                             </div>
 
                             <input type="submit" value="Send Message" className='form-control btn hover:bg-orange-600 bg-orange-500 text-white w-2/4 lg:w-1/3 py-3 lg:px-8 mt-5 rounded-sm font-bold border-none' />
-
                         </div>
-
                     </form>
-
                 </div>
+
+
 
             </div>
-
-
-            {/* <div className='lg:flex'>
-
-                <div className='py-5 lg:w-1/2'>
-                    <p className="font-bold mb-3 text-primary text-lg pl-5">Our Location</p>
-                    <div className='border-l-8 border-orange-500'>
-                        <div className='pl-5'>
-                            <p> <span className="font-semibold">Address:</span> House- 06, Road-04, Dinajpur.</p>
-                            <br />
-                            <p> <span className="font-semibold">Phone: </span> 09666-710606, 01303-115423</p>
-                            <p> <span className="font-semibold">Fax: </span> +88 02 9615497</p>
-                            <p> <span className="font-semibold">Email: </span> <span className='font-bold'> dentalhub@gmail.com </span> </p>
-                            <p> <span className="font-semibold">Emergency: </span> 03444-768656</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="py-5 lg:py-5 lg:w-1/2">
-                    <p className="font-bold text-primary mb-3 text-lg pl-5">What Makes Us Special</p>
-                    <div className='border-l-8 border-purple-500 pl-5'>
-                        <div className='font-semibold'>
-                            <ul>
-                                <li>Laser Dentistry</li>
-                                <li>Oral & Maxillofacial Surgery</li>
-                                <li>Dental Implant</li>
-                                <li>Digital Smile Design</li>
-                                <li>Cosmetic Dentistry</li>
-                                <li>Autism and Special Patient Dentistry</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div className='py-5 lg:w-1/2'>
-                    <p className="font-bold text-primary mb-3 text-lg pl-5">QR Code</p>
-                    <div className='border-l-8 border-green-500 pl-5'>
-                        <img src={qrCode} alt="" className='w-44 lg:w-48 lg:h-36' />
-                    </div>
-                </div>
-
-            </div> */}
-
 
             <Footer></Footer>
 
