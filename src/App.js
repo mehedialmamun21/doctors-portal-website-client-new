@@ -21,6 +21,7 @@ import ManageDoctors from "./Pages/Dashboard/ManageDoctors";
 import Payment from "./Pages/Dashboard/Payment";
 import Contact from "./Pages/Contact/Contact";
 import Doctors from "./Pages/Doctors/Doctors";
+import DoctorDetails from "./Pages/Doctors/DoctorDetails";
 
 function App() {
   return (
@@ -46,6 +47,7 @@ function App() {
         <Route path="/about" element={<About></About>} />
         <Route path="/contact" element={<Contact></Contact>} />
         <Route path="/doctors" element={<Doctors></Doctors>} />
+        <Route path="/doctorDetails" element={<DoctorDetails></DoctorDetails>} />
         <Route path="/login" element={<Login></Login>} />
         <Route path="/signup" element={<SignUp></SignUp>} />
       </Routes>

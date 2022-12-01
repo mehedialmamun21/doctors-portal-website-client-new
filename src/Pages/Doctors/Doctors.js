@@ -2,6 +2,7 @@ import React from 'react';
 import { useQuery } from 'react-query';
 import Loading from '../Shared/Loading';
 import Footer from '../Shared/Footer';
+import { Link } from 'react-router-dom';
 
 const Doctors = () => {
     const { data: doctors, isLoading } = useQuery('doctors', () => fetch('https://limitless-inlet-88208.herokuapp.com/doctor', {
@@ -43,7 +44,7 @@ const Doctors = () => {
                                     <td className='text-secondary font-bold'>{doctor.name}</td>
                                     <td className='font-bold'>{doctor.speciality}</td>
                                     <td className='font-bold'>{doctor.email}</td>
-                                    <td>{<button class="btn btn-sm btn-success text-white px-3 lg:px-5 font-semibold rounded-sm">Enter</button>}</td>
+                                    <td>{<Link to="/doctorDetails" className="btn btn-sm btn-success text-white px-3 lg:px-5 font-semibold rounded-sm">Enter</Link>}</td>
                                 </tr>
                             )
                         }
