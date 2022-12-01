@@ -29,7 +29,7 @@ const Navbar = () => {
 
   return (
 
-    <div className="navbar px-10 py-4">
+    <div className="navbar px-5 lg:px-10 py-5">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex="0" className="btn btn-ghost lg:hidden">
@@ -47,7 +47,7 @@ const Navbar = () => {
             {menuItems}
           </ul>
         </div>
-        <a href="/" className="normal-case text-xl"><img className='rounded-2xl' src={img} width="80px" alt="" /></a>
+        <a href="/" className="normal-case text-xl mx-2 lg:mx-0"><img className='rounded-2xl' src={img} width="80px" alt="" /></a>
       </div>
       <div className="navbar-end hidden lg:flex">
         <ul className="menu menu-horizontal p-0 mt-5 text-lg">
@@ -67,7 +67,7 @@ const Navbar = () => {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
           </svg>
         </label>
-        {user ? <button className="btn btn-ghost font-bold bg-slate-500 hover:bg-slate-600 text-white px-2 lg:px-8 rounded-sm" onClick={logout} >Sign Out</button> : <Link to="/login" className="btn btn-ghost font-bold bg-slate-500 hover:bg-slate-600 text-white px-2 lg:px-8 rounded-sm">Login</Link>}
+        {user ? <button className="btn btn-ghost font-bold bg-slate-500 hover:bg-slate-600 text-white px-2 lg:px-8 mx-2 lg:mx-0 rounded-sm" onClick={logout} >Sign Out</button> : <Link to="/login" className="btn btn-ghost font-bold bg-slate-500 hover:bg-slate-600 text-white px-2 lg:px-8 mx-2 lg:mx-0 rounded-sm">Login</Link>}
       </div>
 
     </div>

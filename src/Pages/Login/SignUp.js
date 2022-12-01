@@ -63,7 +63,7 @@ const SignUp = () => {
                             </label>
                             <input type="text"
                                 placeholder="Your Name"
-                                className="input input-bordered w-full max-w-xs"
+                                className="input input-bordered w-full max-w-xs shadow-lg"
                                 {...register("name", {
                                     required: {
                                         value: true,
@@ -85,7 +85,7 @@ const SignUp = () => {
                             </label>
                             <input type="email"
                                 placeholder="Your Email"
-                                className="input input-bordered w-full max-w-xs"
+                                className="input input-bordered w-full max-w-xs shadow-lg"
                                 {...register("email", {
                                     required: {
                                         value: true,
@@ -111,7 +111,7 @@ const SignUp = () => {
                             </label>
                             <input type="password"
                                 placeholder="Password"
-                                className="input input-bordered w-full max-w-xs"
+                                className="input input-bordered w-full max-w-xs shadow-lg"
                                 {...register("password", {
                                     required: {
                                         value: true,

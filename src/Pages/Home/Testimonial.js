@@ -18,9 +18,9 @@ const Testimonial = () => {
             <div className='flex justify-between lg:px-5 py-5'>
                 <div className='py-5'>
                     <h4 className='text-2xl text-secondary font-bold'>Testimonial</h4>
-                    <h2 className='text-3xl font-semibold'>What Our Patient Says</h2>
+                    <h2 className='text-2xl lg:text-3xl font-semibold'>What Our Patient Says</h2>
                 </div>
-                <div>
+                <div className='ml-2 lg:ml-0'>
                     <img className='w-24 lg:w-40' src={quotePic} alt="" />
                 </div>
             </div>
