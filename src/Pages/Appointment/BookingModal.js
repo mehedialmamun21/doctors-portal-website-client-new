@@ -26,7 +26,7 @@ const BookingModal = ({ date, treatment, setTreatment, refetch }) => {
         }
 
 
-        fetch('http://localhost:5000/booking', {
+        fetch('https://limitless-inlet-88208.herokuapp.com/booking', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -55,7 +55,7 @@ const BookingModal = ({ date, treatment, setTreatment, refetch }) => {
             <div className="modal modal-bottom sm:modal-middle">
                 <div className="modal-box">
                     <label htmlFor="booking-modal" className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
-                    <h3 className="font-semibold text-lg text-center">Booking for - <span className='text-amber-600'>{name}</span></h3>
+                    <h3 className="font-semibold text-lg text-center">Booking for - <span className='text-orange-600'>{name}</span></h3>
                     <form onSubmit={handleBookingSubmit} className='grid grid-cols-1 gap-4 justify-items-center mt-4'>
                         <input type="text" disabled value={format(date, 'PP')} className="input input-bordered w-full max-w-xs" />
                         <select name='slot' className="select select-bordered w-full max-w-xs">
