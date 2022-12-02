@@ -7,7 +7,7 @@ import Loading from '../Shared/Loading';
 const AddDoctor = () => {
     const { register, formState: { errors }, handleSubmit, reset } = useForm();
 
-    const { data: services, isLoading } = useQuery('services', () => fetch('https://limitless-inlet-88208.herokuapp.com/service').then(res => res.json()).then())
+    const { data: services, isLoading } = useQuery('services', () => fetch('http://localhost:5000/service').then(res => res.json()).then())
 
     const imageStorageKey = '41447f5ca3bd2f0fbc3fc9c2195a9bbc';
 
@@ -43,7 +43,7 @@ const AddDoctor = () => {
                         img: img
                     }
                     // send to your database
-                    fetch('https://limitless-inlet-88208.herokuapp.com/doctor', {
+                    fetch('http://localhost:5000/doctor', {
                         method: 'POST',
                         headers: {
                             'content-type': 'application/json',
@@ -77,18 +77,18 @@ const AddDoctor = () => {
 
             <form onSubmit={handleSubmit(onSubmit)}>
 
-                <div className='px-3 lg:px-40 py-3 lg:py-10 shadow-2xl'>
+                <div className='px-5 lg:px-40 py-5 lg:py-10 shadow-2xl'>
 
-                    <div className='px-3 lg:px-20 py-3 lg:py-5 bg-secondary'>
+                    <div className='px-5 lg:px-28 py-5 lg:py-5 bg-gray-400'>
 
 
                         <div className="form-control w-full max-w-xs">
                             <label className="label">
-                                <span className="label-text font-bold">Name</span>
+                                <span className="label-text text-white font-semibold">Name</span>
                             </label>
                             <input type="text"
                                 placeholder="Doctor's Name"
-                                className="input input-bordered w-full max-w-xs rounded-sm"
+                                className="input input-bordered w-full max-w-xs rounded-sm bg-white"
                                 {...register("name", {
                                     required: {
                                         value: true,
@@ -106,11 +106,11 @@ const AddDoctor = () => {
 
                         <div className="form-control w-full max-w-xs">
                             <label className="label">
-                                <span className="label-text font-bold">Email</span>
+                                <span className="label-text text-white font-semibold">Email</span>
                             </label>
                             <input type="email"
                                 placeholder="Doctor's Email"
-                                className="input input-bordered w-full max-w-xs rounded-sm"
+                                className="input input-bordered w-full max-w-xs rounded-sm bg-white"
                                 {...register("email", {
                                     required: {
                                         value: true,
@@ -132,9 +132,9 @@ const AddDoctor = () => {
 
                         <div className="form-control w-full max-w-xs">
                             <label className="label">
-                                <span className="label-text font-bold">Speciality</span>
+                                <span className="label-text text-white font-semibold">Speciality</span>
                             </label>
-                            <select {...register('speciality')} class="select input-bordered w-full max-w-xs rounded-sm">
+                            <select {...register('speciality')} class="select input-bordered w-full max-w-xs rounded-sm bg-white">
                                 {
                                     services.map(service => <option
                                         key={service._id}
@@ -147,10 +147,10 @@ const AddDoctor = () => {
 
                         <div className="form-control w-full max-w-xs">
                             <label className="label">
-                                <span className="label-text font-bold  mt-3">Photo</span>
+                                <span className="label-text text-white font-semibold  mt-3">Photo</span>
                             </label>
                             <input type="file"
-                                className="input input-bordered w-full max-w-xs rounded-sm"
+                                className="input input-bordered w-full max-w-xs rounded-sm bg-white"
                                 {...register("image", {
                                     required: {
                                         value: true,
