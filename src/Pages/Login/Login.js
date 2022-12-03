@@ -42,7 +42,7 @@ const Login = () => {
   }
 
   if (error || gError || resError) {
-    signInError = <p className="text-red-500"> <small>{error?.message || gError?.message || resError}</small> </p>
+    signInError = <p className="text-white"> <small>{error?.message || gError?.message || resError}</small> </p>
   }
 
   const onSubmit = data => {
@@ -111,9 +111,7 @@ const Login = () => {
               </label>
             </div>
 
-
             {signInError}
-
 
             <button
               onClick={async () => {
@@ -144,4 +142,3 @@ const Login = () => {
 };
 
 export default Login;
-

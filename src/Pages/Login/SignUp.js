@@ -32,7 +32,7 @@ const SignUp = () => {
     }
 
     if (error || gError || updateError || verError) {
-        signInError = <p className="text-red-500"> <small>{error?.message || gError?.message || updateError?.message || verError?.message}</small> </p>
+        signInError = <p className="text-white"> <small>{error?.message || gError?.message || updateError?.message || verError?.message}</small> </p>
     }
 
     if (token) {
@@ -132,7 +132,8 @@ const SignUp = () => {
                         </div>
 
                         {signInError}
-                        <input className="btn rounded-sm w-full max-w-xs font-bold bg-slate-500 hover:bg-slate-600 text-white border-none" type="submit" value="Register" />
+
+                        <input className="btn rounded-sm w-full max-w-xs font-bold bg-slate-500 hover:bg-slate-600 text-white border-none mt-4" type="submit" value="Register" />
                     </form>
 
                     <small><p className='text-sm font-semibold'>Already have an account? <Link className="font-bold ml-10 lg:ml-10" to="/login" >Please login</Link> </p></small>
