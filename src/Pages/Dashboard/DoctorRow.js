@@ -14,8 +14,8 @@ const DoctorRow = ({ doctor, index, refetch, setDeletingDoctor }) => {
                     </div>
                 </div>
             </td>
-            <td className='text-secondary font-bold'>{name}</td>
-            <td className='font-bold'>{speciality}</td>
+            <td className='text-orange-600 font-semibold'>{name}</td>
+            <td className='font-semibold'>{speciality}</td>
             <td>
                 <label onClick={() => setDeletingDoctor(doctor)} for="delete-confirm-modal" class="btn btn-sm btn-error text-white px-3 rounded-sm font-bold">Delete</label>
             </td>

@@ -51,9 +51,11 @@ const SignUp = () => {
     }
 
     return (
-        <div className="flex justify-center items-center h-screen px-2 lg:px-0 bg-secondary">
-            <div className="card w-96 bg-base-100 shadow-2xl rounded-sm">
+        <div className="h-screen flex justify-center items-center px-2 lg:px-0 bg-orange-400">
+            <div className="card w-96 bg-base-50 rounded-sm">
                 <div className="card-body">
+
+                    <h2 className='text-center text-xl font-semibold'>Register</h2>
 
                     <form onSubmit={handleSubmit(onSubmit)}>
 
@@ -63,7 +65,7 @@ const SignUp = () => {
                             </label>
                             <input type="text"
                                 placeholder="Your Name"
-                                className="input input-bordered w-full max-w-xs shadow-lg"
+                                className="input w-full max-w-xs rounded-sm"
                                 {...register("name", {
                                     required: {
                                         value: true,
@@ -85,7 +87,7 @@ const SignUp = () => {
                             </label>
                             <input type="email"
                                 placeholder="Your Email"
-                                className="input input-bordered w-full max-w-xs shadow-lg"
+                                className="input w-full max-w-xs rounded-sm"
                                 {...register("email", {
                                     required: {
                                         value: true,
@@ -111,7 +113,7 @@ const SignUp = () => {
                             </label>
                             <input type="password"
                                 placeholder="Password"
-                                className="input input-bordered w-full max-w-xs shadow-lg"
+                                className="input w-full max-w-xs rounded-sm"
                                 {...register("password", {
                                     required: {
                                         value: true,
@@ -130,16 +132,16 @@ const SignUp = () => {
                         </div>
 
                         {signInError}
-                        <input className="btn w-full max-w-xs font-bold hover:bg-slate-500 text-white border-none" type="submit" value="Sign Up" />
+                        <input className="btn rounded-sm w-full max-w-xs font-bold bg-slate-500 hover:bg-slate-600 text-white border-none" type="submit" value="Register" />
                     </form>
 
-                    <small><p className='text-sm font-semibold'>Already have an account? <Link className="text-secondary font-bold ml-5 lg:ml-12" to="/login" >Please login</Link> </p></small>
+                    <small><p className='text-sm font-semibold'>Already have an account? <Link className="font-bold ml-10 lg:ml-10" to="/login" >Please login</Link> </p></small>
 
                     <div className="divider">Or continue with</div>
 
                     <button
                         onClick={() => signInWithGoogle()}
-                        className="btn btn-outline text-slate-600 border-2 border-slate-500 hover:bg-slate-500 hover:border-none"
+                        className="btn rounded-sm border-none text-white bg-slate-500 hover:bg-slate-600"
                     > <img src={googleIcon} alt="" /><b className="mx-2 font-bold">Google</b></button>
 
                 </div>

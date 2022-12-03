@@ -41,9 +41,9 @@ const Doctors = () => {
                                             </div>
                                         </div>
                                     </td>
-                                    <td className='text-secondary font-semibold'>{doctor.name}</td>
+                                    <td className='font-semibold text-orange-600'>{doctor.name}</td>
                                     <td className='font-semibold'>{doctor.speciality}</td>
-                                    <td className='font-semibold'>{doctor.email}</td>
+                                    <td className=''>{doctor.email}</td>
                                     <td>{<Link to="/doctorDetails" className="btn btn-sm bg-orange-500 text-white border-none hover:bg-orange-600 px-3 lg:px-7 font-semibold rounded-sm">Enter</Link>}</td>
                                 </tr>
                             )

@@ -22,43 +22,43 @@ const Contact = () => {
     };
 
     return (
-        <section className='px-5 lg:px-0'>
+        <section className='h:screen px-5 lg:px-0'>
 
-            <div className='flex flex-col lg:gap-8 md:flex-row lg:flex-row py-3 lg:py-20'>
+            <div className='flex flex-col lg:gap-8 md:flex-row lg:flex-row py-3 lg:py-20 px-5 lg:px-10 lg:bg-gray-100'>
 
 
 
                 <div className='w-full lg:w-4/12 space-y-5'>
-                    <div className='flex gap-4 shadow-xl px-2 py-5'>
+                    <div className='flex gap-4 shadow-2xl px-5 py-5'>
                         <span>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-8 text-orange-500"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
                         </span>
                         <div>
                             <h2 className='text-2xl font-semibold'>Have a question?</h2>
-                            <p class="text-gray-400">We are here to help</p>
+                            <p class="">We are here to help</p>
                             <p class="text-orange-600 font-semibold">Email us at "dentalsolution@gmail.com"</p>
                         </div>
                     </div>
                     <div>
-                        <div className='flex gap-4 shadow-xl px-2 py-5'>
+                        <div className='flex gap-4 shadow-2xl px-5 py-5'>
                             <span>
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-8 text-orange-500"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
                             </span>
                             <div>
                                 <h2 className='text-2xl font-semibold'>Current Location</h2>
-                                <p class="text-gray-400">Dinajpur,Bangladesh.</p>
+                                <p class="">Dinajpur,Bangladesh.</p>
                                 <p class="text-orange-600 font-semibold">Serving clients worldwide</p>
                             </div>
                         </div>
                     </div>
                     <div>
-                        <div className='flex gap-4 shadow-xl px-2 py-5'>
+                        <div className='flex gap-4 shadow-2xl px-5 py-5'>
                             <span>
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-8 text-orange-500"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
                             </span>
                             <div>
                                 <h2 className='text-2xl font-semibold'>Contact With Us</h2>
-                                <p class="text-gray-400">Email: dentalsolution@gmail.com</p>
+                                <p class="">Email: dentalsolution@gmail.com</p>
                                 <p class="text-orange-600 font-semibold">Phone : +8801521-413730</p>
                             </div>
                         </div>
@@ -67,7 +67,7 @@ const Contact = () => {
 
 
 
-                <div className='w-full mt-8 lg:mt-0 lg:w-8/12 text-black px-5 lg:px-24 py-5 lg:py-5 shadow-2xl bg-gray-400'>
+                <div className='w-full mt-8 lg:mt-0 lg:w-8/12 text-black px-5 lg:px-24 py-5 lg:py-7 bg-gray-500'>
                     <form className='row' ref={form} onSubmit={sendEmail}>
                         <div className='flex flex-col gap-4 w-full'>
                             <div className='flex gap-4 w-full'>
