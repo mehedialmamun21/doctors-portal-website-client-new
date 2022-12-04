@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useQuery } from 'react-query';
 import Loading from '../Shared/Loading';
 import Footer from '../Shared/Footer';
-import { Link } from 'react-router-dom';
+
+import Modal from "./Modal";
 
 const Doctors = () => {
+
+    const [modalOn, setModalOn] = useState(false);
+    const [choice, setChoice] = useState(false)
+
+
     const { data: doctors, isLoading } = useQuery('doctors', () => fetch('http://localhost:5000/doctor', {
         headers: {
             authorization: `Bearer ${localStorage.getItem('accessToken')}`
@@ -14,9 +20,18 @@ const Doctors = () => {
     if (isLoading) {
         return <Loading></Loading>
     }
+
+
+    const clicked = () => {
+        setModalOn(true)
+    }
+
+
     return (
         <section>
+
             <div class="overflow-x-auto mt-3">
+
                 <table class="table w-full border-4">
 
                     <thead>
@@ -41,18 +56,23 @@ const Doctors = () => {
                                             </div>
                                         </div>
                                     </td>
-                                    <td className='font-semibold text-orange-600'>{doctor.name}</td>
-                                    <td className='font-semibold'>{doctor.speciality}</td>
-                                    <td className=''>{doctor.email}</td>
-                                    <td>{<Link to="/doctorDetails" className="btn btn-sm bg-orange-500 text-white border-none hover:bg-orange-600 px-3 lg:px-7 font-semibold rounded-sm">Enter</Link>}</td>
+                                    <td className='font-semibold text-zinc-600'>{doctor.name}</td>
+                                    <td className='text-zinc-600'>{doctor.speciality}</td>
+                                    <td className='text-zinc-600'>{doctor.email}</td>
+                                    <td><button onClick={clicked} className='bg-success text-white font-semibold px-6 py-1 rounded-sm'>Enter</button></td>
                                 </tr>
                             )
                         }
 
                     </tbody>
                 </table>
+
+                {modalOn && < Modal setModalOn={setModalOn} setChoice={setChoice} />}
+
             </div>
+
             <Footer></Footer>
+
         </section>
 
     );

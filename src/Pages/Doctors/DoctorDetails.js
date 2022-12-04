@@ -10,7 +10,7 @@ const DoctorDetails = () => {
 
                 <div class="drawer-content">
                     <Outlet></Outlet>
-                    <h2 className='flex justify-center py-20 text-xl text-secondary font-semibold'>Coming soon..</h2>
+                    <h2 className='flex justify-center py-20 text-xl text-zinc-600 font-semibold'>Coming soon..</h2>
                 </div>
 
                 <div class="drawer-side lg:mr-3">
