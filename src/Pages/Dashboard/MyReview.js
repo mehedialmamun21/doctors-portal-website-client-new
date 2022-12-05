@@ -5,7 +5,7 @@ const MyReview = () => {
     const { register, handleSubmit } = useForm();
 
     const onSubmit = data => {
-        const url = "https://limitless-inlet-88208.herokuapp.com/review";
+        const url = "http://localhost:5000/review";
         fetch(url, {
             method: 'POST',
             headers: {
