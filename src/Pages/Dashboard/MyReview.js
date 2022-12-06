@@ -1,8 +1,9 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import { toast } from 'react-toastify';
 const MyReview = () => {
 
-    const { register, handleSubmit } = useForm();
+    const { register, handleSubmit, reset } = useForm();
 
     const onSubmit = data => {
         const url = "http://localhost:5000/review";
@@ -14,10 +15,22 @@ const MyReview = () => {
             body: JSON.stringify(data)
 
         })
+
+            // .then(res => res.json())
+            // .then(result => {
+            //     console.log(result);
+            // })
+
             .then(res => res.json())
-            .then(result => {
-                console.log(result);
+            .then(inserted => {
+                if (inserted.insertedId) {
+                    toast.success('Review added successfully');
+                    reset();
+                } else {
+                    toast.error('Failed to add the Review');
+                }
             })
+
     };
 
 

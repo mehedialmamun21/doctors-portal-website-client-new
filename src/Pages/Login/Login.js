@@ -51,9 +51,9 @@ const Login = () => {
   }
 
   return (
-    <div className="h-screen flex justify-center items-center px-2 lg:px-0 bg-orange-400">
+    <div className="h-screen flex justify-center items-center px-2 lg:px-0">
       <div className="card w-96 bg-base-50 rounded-sm">
-        <div className="card-body">
+        <div className="card-body bg-orange-400">
 
           <h2 className="text-center text-xl font-semibold">Login</h2>
 
