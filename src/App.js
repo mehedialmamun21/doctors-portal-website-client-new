@@ -24,7 +24,9 @@ import Doctors from "./Pages/Doctors/Doctors";
 import DoctorDetails from "./Pages/Doctors/DoctorDetails";
 
 function App() {
+
   return (
+
     <div className="max-w-7xl mx-auto">
       <Navbar></Navbar>
       <Routes>
@@ -53,6 +55,7 @@ function App() {
       </Routes>
       <ToastContainer />
     </div>
+
   );
 }
 

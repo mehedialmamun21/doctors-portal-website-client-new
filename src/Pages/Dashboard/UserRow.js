@@ -5,28 +5,31 @@ const UserRow = ({ user, refetch, index }) => {
     const { email, role } = user;
 
     const makeAdmin = () => {
-        fetch(`http://localhost:5000/user/admin/${email}`, {
-            method: 'PUT',
-            headers: {
-                authorization: `Bearer ${localStorage.getItem('accessToken')}`
-            }
-        })
-            .then(res => {
-                if (res.status === 403) {
-                    toast.error('Failed to make an admin');
-                }
-                return res.json()
-            })
-            .then(data => {
-                if (data.modifiedCount > 0) {
-                    refetch();
-                    toast.success(`Successfully made an admin`);
+        const proceed = window.confirm("Sure to make an Admin?");
+        if (proceed) {
+            fetch(`http://localhost:5000/user/admin/${email}`, {
+                method: 'PUT',
+                headers: {
+                    authorization: `Bearer ${localStorage.getItem('accessToken')}`
                 }
             })
+                .then(res => {
+                    if (res.status === 403) {
+                        toast.error('Failed to make an Admin');
+                    }
+                    return res.json()
+                })
+                .then(data => {
+                    if (data.modifiedCount > 0) {
+                        refetch();
+                        toast.success(`Successfully made an Admin`);
+                    }
+                })
+        }
     }
 
     const handleDelete = email => {
-        const proceed = window.confirm("sure to Delete the user?");
+        const proceed = window.confirm("Sure to Remove the user?");
         if (proceed) {
 
             fetch(`http://localhost:5000/user/${email}`, {
@@ -39,7 +42,7 @@ const UserRow = ({ user, refetch, index }) => {
                 .then(data => {
                     // console.log(data);
                     if (data.deletedCount) {
-                        toast.success(`User: ${email} is deleted.`);
+                        toast.success(`User: ${email} has Removed.`);
                         refetch();
                     }
                 })
