@@ -56,7 +56,7 @@ const Doctors = () => {
                                             </div>
                                         </div>
                                     </td>
-                                    <td className='font-semibold text-zinc-600'>{doctor.name}</td>
+                                    <td className='font-bold text-green-600'>{doctor.name}</td>
                                     <td className='text-zinc-600'>{doctor.speciality}</td>
                                     <td className='text-zinc-600'>{doctor.email}</td>
                                     <td><button onClick={clicked} className='bg-success text-white font-semibold px-6 py-1 rounded-sm'>Enter</button></td>

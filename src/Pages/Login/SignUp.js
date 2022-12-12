@@ -53,9 +53,9 @@ const SignUp = () => {
     return (
         <div className="h-screen flex justify-center items-center px-2 lg:px-0">
             <div className="card w-96 bg-base-50 rounded-sm">
-                <div className="card-body bg-orange-400">
+                <div className="card-body bg-green-500">
 
-                    <h2 className='text-center text-xl font-semibold'>Register</h2>
+                    <h2 className='text-center text-xl text-white font-semibold'>Register</h2>
 
                     <form onSubmit={handleSubmit(onSubmit)}>
 
@@ -133,7 +133,7 @@ const SignUp = () => {
 
                         {signInError}
 
-                        <input className="btn rounded-sm w-full max-w-xs font-bold bg-slate-500 hover:bg-slate-600 text-white border-none mt-4" type="submit" value="Register" />
+                        <input className="btn rounded-sm w-full max-w-xs font-semibold bg-slate-600 hover:bg-slate-500 text-white border-none mt-4" type="submit" value="Register" />
                     </form>
 
                     <small><p className='text-sm font-semibold'>Already have an account? <Link className="font-bold ml-10 lg:ml-10" to="/login" >Please login</Link> </p></small>
@@ -142,8 +142,8 @@ const SignUp = () => {
 
                     <button
                         onClick={() => signInWithGoogle()}
-                        className="btn rounded-sm border-none text-white bg-slate-500 hover:bg-slate-600"
-                    > <img src={googleIcon} alt="" /><b className="mx-2 font-bold">Google</b></button>
+                        className="btn rounded-sm border-none text-white bg-slate-600 hover:bg-slate-500"
+                    > <img src={googleIcon} alt="" /><b className="mx-2 font-semibold">Google</b></button>
 
                 </div>
             </div>

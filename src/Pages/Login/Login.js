@@ -53,9 +53,9 @@ const Login = () => {
   return (
     <div className="h-screen flex justify-center items-center px-2 lg:px-0">
       <div className="card w-96 bg-base-50 rounded-sm">
-        <div className="card-body bg-orange-400">
+        <div className="card-body bg-green-500 px-10">
 
-          <h2 className="text-center text-xl font-semibold">Login</h2>
+          <h2 className="text-center text-xl text-white font-semibold">Login</h2>
 
           <form onSubmit={handleSubmit(onSubmit)}>
 
@@ -121,7 +121,7 @@ const Login = () => {
             >
               <h5 className="pb-4 font-bold">Forgot password?</h5>
             </button>
-            <input className="btn rounded-sm w-full max-w-xs font-bold bg-slate-500 hover:bg-slate-600 text-white border-none" type="submit" value="Login" />
+            <input className="btn rounded-sm w-full max-w-xs font-semibold bg-slate-600 hover:bg-slate-500 text-white border-none" type="submit" value="Login" />
 
           </form>
 
@@ -133,8 +133,8 @@ const Login = () => {
 
           <button
             onClick={() => signInWithGoogle()}
-            className="btn rounded-sm border-none text-white bg-slate-500 hover:bg-slate-600"
-          > <img src={googleIcon} alt="" /><b className="mx-2 font-bold">Google</b></button>
+            className="btn rounded-sm border-none text-white bg-slate-600 hover:bg-slate-500"
+          > <img src={googleIcon} alt="" /><b className="mx-2 font-semibold">Google</b></button>
         </div>
       </div>
     </div>

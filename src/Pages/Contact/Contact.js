@@ -1,6 +1,9 @@
 import Footer from '../Shared/Footer';
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import Facebook from '../../assets/images/facebook.png';
+import Linkedin from '../../assets/images/linkedin.png';
+import Thumbup from '../../assets/images/thumbup.png';
 
 const Contact = () => {
 
@@ -24,8 +27,7 @@ const Contact = () => {
     return (
         <section className='h:screen px-5 lg:px-0'>
 
-            <div className='flex flex-col lg:gap-8 md:flex-row lg:flex-row py-3 lg:py-20 px-5 lg:px-10 lg:bg-gray-100'>
-
+            <div className='flex flex-col lg:gap-8 md:flex-row lg:flex-row py-3 lg:py-16 px-5 lg:px-10 lg:bg-gray-100'>
 
 
                 <div className='w-full lg:w-4/12 space-y-5'>
@@ -36,7 +38,7 @@ const Contact = () => {
                         <div>
                             <h2 className='text-2xl font-semibold'>Have a question?</h2>
                             <p class="">We are here to help</p>
-                            <p class="text-orange-600 font-semibold">Email us at "dentalsolution@gmail.com"</p>
+                            <p class="text-orange-500 font-semibold">Email us at "dentalsolution@gmail.com"</p>
                         </div>
                     </div>
                     <div>
@@ -47,7 +49,7 @@ const Contact = () => {
                             <div>
                                 <h2 className='text-2xl font-semibold'>Current Location</h2>
                                 <p class="">Dinajpur,Bangladesh.</p>
-                                <p class="text-orange-600 font-semibold">Serving clients worldwide</p>
+                                <p class="text-orange-500 font-semibold">Serving clients worldwide</p>
                             </div>
                         </div>
                     </div>
@@ -59,7 +61,20 @@ const Contact = () => {
                             <div>
                                 <h2 className='text-2xl font-semibold'>Contact With Us</h2>
                                 <p class="">Email: dentalsolution@gmail.com</p>
-                                <p class="text-orange-600 font-semibold">Phone : +8801521-413730</p>
+                                <p class="text-orange-500 font-semibold">Phone : +8801521-413730</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div className='shadow-2xl'>
+                            <div className='flex gap-12 py-5 justify-center'>
+                                <a href="https://www.facebook.com/">
+                                    <img className='w-14 shadow-2xl px-2 py-2' src={Facebook} alt="" />
+                                </a>
+                                <a href="https://www.linkedin.com/">
+                                    <img className='w-14 shadow-2xl px-2 py-2' src={Linkedin} alt="" />
+                                </a>
+                                <img className='w-14 px-1 py-1' src={Thumbup} alt="" />
                             </div>
                         </div>
                     </div>
@@ -68,6 +83,7 @@ const Contact = () => {
 
 
                 <div className='w-full mt-8 lg:mt-0 lg:w-8/12 text-black px-5 lg:px-24 py-5 lg:py-7 bg-gray-500'>
+                    <h2 className='text-2xl font-semibold pb-10 text-white'>Get In Touch</h2>
                     <form className='row' ref={form} onSubmit={sendEmail}>
                         <div className='flex flex-col gap-4 w-full'>
                             <div className='flex gap-4 w-full'>
@@ -82,7 +98,7 @@ const Contact = () => {
                                 <textarea name='message' rows="4" placeholder='Type Your Message' className='form-control bg-white w-full mt-2 py-4 px-3 outline-none rounded-sm shadow-md' required />
                             </div>
 
-                            <input type="submit" value="Send Message" className='form-control btn hover:bg-orange-600 bg-orange-500 text-white w-2/4 lg:w-1/3 py-3 lg:px-8 mt-5 rounded-sm font-bold border-none' />
+                            <input type="submit" value="Send Message" className='form-control btn hover:bg-orange-600 bg-orange-500 text-white w-2/4 lg:w-1/3 py-3 lg:px-8 mt-5 rounded-sm font-semibold border-none' />
                         </div>
                     </form>
                 </div>
