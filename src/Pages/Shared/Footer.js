@@ -12,7 +12,7 @@ const Footer = () => {
         <footer style={{
             backgroundImage: `url(${footerImg})`,
             backgroundPosition: 'center',
-            backgroundSize: 'cover'
+            backgroundSize: 'cover',
         }} className="p-5 mt-20">
 
             <div className='footer lg:mx-40'>

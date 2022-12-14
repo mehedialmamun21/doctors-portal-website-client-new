@@ -73,7 +73,6 @@ const AddDoctor = () => {
 
     return (
         <div className='flex justify-center my-10 px-5 lg:px-0'>
-            {/* <h2 className="text-2xl">Add a new Doctor</h2> */}
 
             <form onSubmit={handleSubmit(onSubmit)}>
 
@@ -165,7 +164,7 @@ const AddDoctor = () => {
                             </label>
                         </div>
 
-                        <input className="btn w-full font-bold hover:bg-blue-600 bg-blue-500 text-white rounded-sm mt-3 border-none" type="submit" value="Add Doctor" />
+                        <input className="btn w-full font-bold bg-blue-600 hover:bg-blue-500 text-white rounded-sm mt-3 border-none" type="submit" value="Add Doctor" />
 
                     </div>
 

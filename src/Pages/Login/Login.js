@@ -53,7 +53,7 @@ const Login = () => {
   return (
     <div className="h-screen flex justify-center items-center px-2 lg:px-0">
       <div className="card w-96 bg-base-50 rounded-sm">
-        <div className="card-body bg-green-500 px-10">
+        <div className="card-body px-10">
 
           <h2 className="text-center text-xl text-white font-semibold">Login</h2>
 
@@ -65,7 +65,7 @@ const Login = () => {
               </label>
               <input type="email"
                 placeholder="Your Email"
-                className="input w-full max-w-xs rounded-sm"
+                className="input w-full max-w-xs rounded-sm bg-slate-200"
                 {...register("email", {
                   required: {
                     value: true,
@@ -77,9 +77,9 @@ const Login = () => {
                   }
                 })}
               />
-              <label className="label">
-                {errors.email?.type === 'required' && <span className="label-text-alt text-white">{errors.email.message}</span>}
-                {errors.email?.type === 'pattern' && <span className="label-text-alt text-white">{errors.email.message}</span>}
+              <label className="label font-semibold">
+                {errors.email?.type === 'required' && <span className="label-text-alt text-red-500">{errors.email.message}</span>}
+                {errors.email?.type === 'pattern' && <span className="label-text-alt text-red-500">{errors.email.message}</span>}
 
               </label>
             </div>
@@ -93,7 +93,7 @@ const Login = () => {
 
               <input type="password"
                 placeholder="Password"
-                className="input w-full max-w-xs rounded-sm"
+                className="input w-full max-w-xs rounded-sm bg-slate-200"
                 {...register("password", {
                   required: {
                     value: true,
@@ -105,9 +105,9 @@ const Login = () => {
                   }
                 })}
               />
-              <label className="label">
-                {errors.password?.type === 'required' && <span className="label-text-alt text-white">{errors.password.message}</span>}
-                {errors.password?.type === 'minLength' && <span className="label-text-alt text-white">{errors.password.message}</span>}
+              <label className="label font-semibold">
+                {errors.password?.type === 'required' && <span className="label-text-alt text-red-500">{errors.password.message}</span>}
+                {errors.password?.type === 'minLength' && <span className="label-text-alt text-red-500">{errors.password.message}</span>}
               </label>
             </div>
 
