@@ -9,7 +9,9 @@ const AppointmentBanner = ({ date, setDate }) => {
                 <img src={dentistChair} alt="" className="lg:max-w-sm rounded-lg shadow-2xl lg:ml-20" />
                 <div className='lg:pr-10'>
                     <div>
-                        <h2 className='text-lg text-center pt-5 lg:pt-0'>Choose your appointment date below</h2>
+                        <marquee scrollamount="10" className='text-lg text-center text-blue-800 font-semibold rounded-2xl'>
+                            Choose your appointment date
+                        </marquee>
                         <div className='py-5'>
                             <DayPicker
                                 mode="single"
@@ -20,7 +22,7 @@ const AppointmentBanner = ({ date, setDate }) => {
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 

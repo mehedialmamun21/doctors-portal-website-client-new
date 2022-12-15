@@ -10,7 +10,7 @@ const ServicesCard = ({ service }) => {
             </figure>
             <div className="card-body items-center text-center text-zinc-700">
                 <h2 className="card-title">{service.name}</h2>
-                <p>{service.description}</p>
+                {/* <p>{service.description}</p> */}
             </div>
         </div>
 

@@ -68,10 +68,10 @@ const Contact = () => {
                     <div>
                         <div className='shadow-2xl'>
                             <div className='flex gap-12 py-5 justify-center'>
-                                <a href="https://www.facebook.com/">
+                                <a href="https://www.facebook.com/" target="_blank">
                                     <img className='w-14 shadow-2xl px-2 py-2' src={Facebook} alt="" />
                                 </a>
-                                <a href="https://www.linkedin.com/">
+                                <a href="https://www.linkedin.com/" target="_blank">
                                     <img className='w-14 shadow-2xl px-2 py-2' src={Linkedin} alt="" />
                                 </a>
                                 <img className='w-14 px-1 py-1' src={Thumbup} alt="" />
