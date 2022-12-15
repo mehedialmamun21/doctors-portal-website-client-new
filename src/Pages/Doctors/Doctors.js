@@ -59,7 +59,7 @@ const Doctors = () => {
                                     <td className='font-semibold text-zinc-600'>{doctor.name}</td>
                                     <td className='text-zinc-600'>{doctor.speciality}</td>
                                     <td className='text-zinc-600'>{doctor.email}</td>
-                                    <td><button onClick={clicked} className='bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-1 rounded-sm'>Enter</button></td>
+                                    <td><button onClick={clicked} className='bg-gradient-to-r from-secondary to-primary text-white font-semibold px-6 py-1 rounded-sm hover:scale-105 duration-300'>Enter</button></td>
                                 </tr>
                             )
                         }

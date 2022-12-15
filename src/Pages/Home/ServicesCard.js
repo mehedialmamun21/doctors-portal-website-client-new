@@ -9,8 +9,8 @@ const ServicesCard = ({ service }) => {
                 <img src={service.img} alt="" className="rounded-xl" />
             </figure>
             <div className="card-body items-center text-center text-zinc-700">
-                <h2 className="card-title">{service.name}</h2>
-                {/* <p>{service.description}</p> */}
+                <p className="card-title">{service.name}</p>
+                <p>{service.description}</p>
             </div>
         </div>
 

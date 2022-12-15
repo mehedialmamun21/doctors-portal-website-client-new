@@ -164,7 +164,7 @@ const AddDoctor = () => {
                             </label>
                         </div>
 
-                        <input className="btn w-full font-bold bg-blue-600 hover:bg-blue-500 text-white rounded-sm mt-3 border-none" type="submit" value="Add Doctor" />
+                        <input className="btn w-full font-bold bg-gradient-to-r from-secondary to-primary text-white rounded-sm mt-3 mb-3 border-none hover:scale-105 duration-300" type="submit" value="Add Doctor" />
 
                     </div>
 

@@ -26,17 +26,19 @@ const Payment = () => {
     }
 
     return (
-        <div>
-            <div class="card w-50 max-w-md bg-base-100 shadow-xl my-12">
-                <div class="card-body">
-                    <p>Hello, <span className="text-secondary">{appointment.patientName}</span></p>
-                    <h3 class="card-title text-lg"> <span>Please pay for :</span> <span className='text-secondary'>{appointment.treatment}</span> </h3>
-                    <p> <span className='font-semibold'>Your appointment :</span> <span className='text-orange-700'>{appointment.date}</span> at {appointment.slot}</p>
-                    <p> <span className='font-semibold text-blue-500'>Please pay :</span> <span className='font-bold'>{appointment.price}</span><span> Tk</span></p>
+        <div className='px-5 lg:px-40'>
+            <div class="card w-50 max-w-md bg-base-100 shadow-xl my-12 rounded-sm">
+                <div class="card-body py-10">
+                    <p>Hello, <span className="text-blue-500">{appointment.patientName}</span></p>
+                    {/* <p class="card-title"> <span className='text-lg'>Pay for :</span> <span className='text-secondary'>{appointment.treatment}</span> </p> */}
+                    <p> <span className=''>Pay for :</span> <span className='text-secondary font-semibold'>{appointment.treatment}</span> </p>
+                    <p> <span className=''>Appointment :</span> <span className='text-orange-700'>{appointment.date}</span> at {appointment.slot}</p>
+                    <br />
+                    <p> <span className=''>Please pay :</span> <span className='font-semibold border-2 border-zinc-400 px-3 py-1'>{appointment.price} Tk</span></p>
                 </div>
             </div>
-            <div class="card flex-shrink-0 w-50 max-w-md shadow-2xl bg-base-100">
-                <div class="card-body">
+            <div class="card flex-shrink-0 w-50 max-w-md shadow-xl bg-base-100 rounded-sm">
+                <div class="card-body py-10">
                     <Elements stripe={stripePromise}>
                         <CheckoutForm appointment={appointment} />
                     </Elements>

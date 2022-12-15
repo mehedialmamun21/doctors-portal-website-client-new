@@ -13,13 +13,13 @@ const Modal = ({ setModalOn, setChoice }) => {
 
             <div className="flex h-screen justify-center items-center ">
 
-                <div className="flex-col justify-center  bg-white py-12 px-24 border-4 border-zinc-400 rounded-lg ">
+                <div className="flex-col justify-center bg-white py-12 px-24 border-2 border-primary rounded-sm ">
 
                     <div className="flex justify-center text-xl text-zinc-700 pb-10 font-bold" >Are you a Doctor ?</div>
 
                     <div className="flex">
-                        <Link to="/doctorDetails"> <button className="rounded-sm px-6 py-2 ml-1 text-white bg-green-500 hover:bg-green-600">Yes</button> </Link>
-                        <button onClick={handleCancelClick} className="rounded-sm px-6 py-2 ml-4 text-white bg-red-500 hover:bg-red-600 ">No</button>
+                        <Link to="/doctorDetails"> <button className="rounded-sm px-6 py-1 ml-1 text-white bg-green-500 hover:bg-green-600">Yes</button> </Link>
+                        <button onClick={handleCancelClick} className="rounded-sm px-6 py-1 ml-4 text-white bg-red-500 hover:bg-red-600 ">No</button>
                     </div>
 
                 </div>

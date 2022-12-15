@@ -4,15 +4,16 @@ import 'react-day-picker/dist/style.css';
 
 const AppointmentBanner = ({ date, setDate }) => {
     return (
-        <div className="hero bg-banner-section-backImg pt-0 pb-0 lg:py-10">
+        <div className="hero bg-banner-section-backImg pt-0 pb-0 lg:py-14">
             <div className="hero-content flex-col lg:flex-row-reverse">
                 <img src={dentistChair} alt="" className="lg:max-w-sm rounded-lg shadow-2xl lg:ml-20" />
                 <div className='lg:pr-10'>
-                    <div>
-                        <marquee scrollamount="10" className='text-lg text-center text-blue-800 font-semibold rounded-2xl'>
-                            Choose your appointment date
-                        </marquee>
-                        <div className='py-5'>
+                    <div className='pt-7 lg:pt-0'>
+                        {/* <marquee scrollamount="10" className='text-lg text-center text-primary'>
+                            Choose your Appointment date
+                        </marquee> */}
+                        <p className='text-lg text-center text-primary'>Set your Appointment date here..</p>
+                        <div>
                             <DayPicker
                                 mode="single"
                                 date={date}

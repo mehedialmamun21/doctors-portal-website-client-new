@@ -20,8 +20,11 @@ const AvailableAppointments = ({ date }) => {
     }
 
     return (
-        <section className='my-10'>
-            <h4 className='text-center font-semibold text-2xl text-zinc-700'>Available Appointments on <br /> <span className='text-zinc-700 text-2xl'>{format(date, 'PP')}</span> </h4>
+        <section>
+            <div className='text-center text-2xl pt-7 pb-6 lg:pb-14'>
+                <div className='pb-4 text-zinc-700'>Available Appointments on</div>
+                <span className='text-primary text-2xl lg:font-semibold bg-slate-200 px-12 py-1 rounded-sm'>{format(date, 'PP')}</span>
+            </div>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-5 pt-10'>
                 {
                     services?.map(service => <Service

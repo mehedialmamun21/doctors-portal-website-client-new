@@ -42,7 +42,7 @@ const Login = () => {
   }
 
   if (error || gError || resError) {
-    signInError = <p className="text-white"> <small>{error?.message || gError?.message || resError}</small> </p>
+    signInError = <p className="text-red-500"> <small>{error?.message || gError?.message || resError}</small> </p>
   }
 
   const onSubmit = data => {
@@ -55,7 +55,7 @@ const Login = () => {
       <div className="card w-96 bg-base-50 rounded-sm">
         <div className="card-body px-10">
 
-          <h2 className="text-center text-xl text-white font-semibold">Login</h2>
+          <h2 className="text-center text-xl font-semibold">Login</h2>
 
           <form onSubmit={handleSubmit(onSubmit)}>
 
@@ -111,7 +111,7 @@ const Login = () => {
               </label>
             </div>
 
-            {signInError}
+
 
             <button
               onClick={async () => {
@@ -119,9 +119,12 @@ const Login = () => {
                 alert('Password Reset email sent..');
               }}
             >
-              <h5 className="pb-4 font-bold">Forgot password?</h5>
+              <h5 className="pb-2 font-semibold">Forgot password?</h5>
             </button>
-            <input className="btn rounded-sm w-full max-w-xs font-semibold bg-slate-600 hover:bg-slate-500 text-white border-none" type="submit" value="Login" />
+
+            {signInError}
+
+            <input className="btn mt-3 rounded-xl w-full max-w-xs font-semibold bg-gradient-to-r from-secondary to-primary text-white border-none hover:scale-105 duration-300" type="submit" value="Login" />
 
           </form>
 
@@ -133,7 +136,7 @@ const Login = () => {
 
           <button
             onClick={() => signInWithGoogle()}
-            className="btn rounded-sm border-none text-white bg-slate-600 hover:bg-slate-500"
+            className="btn rounded-xl border-none text-white bg-slate-600 hover:scale-105 duration-300"
           > <img src={googleIcon} alt="" /><b className="mx-2 font-semibold">Google</b></button>
         </div>
       </div>

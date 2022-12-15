@@ -32,7 +32,7 @@ const SignUp = () => {
     }
 
     if (error || gError || updateError || verError) {
-        signInError = <p className="text-white"> <small>{error?.message || gError?.message || updateError?.message || verError?.message}</small> </p>
+        signInError = <p className="text-red-500"> <small>{error?.message || gError?.message || updateError?.message || verError?.message}</small> </p>
     }
 
     if (token) {
@@ -55,7 +55,7 @@ const SignUp = () => {
             <div className="card w-96 bg-base-50 rounded-sm">
                 <div className="card-body">
 
-                    <h2 className='text-center text-xl text-white font-semibold'>Register</h2>
+                    <h2 className='text-center text-xl font-semibold'>Register</h2>
 
                     <form onSubmit={handleSubmit(onSubmit)}>
 
@@ -133,7 +133,7 @@ const SignUp = () => {
 
                         {signInError}
 
-                        <input className="btn rounded-sm w-full max-w-xs font-semibold bg-slate-600 hover:bg-slate-500 text-white border-none mt-4" type="submit" value="Register" />
+                        <input className="btn rounded-xl w-full max-w-xs font-semibold bg-gradient-to-r from-secondary to-primary text-white border-none mt-4 hover:scale-105 duration-300" type="submit" value="Register" />
                     </form>
 
                     <small><p className='text-sm font-semibold'>Already have an account? <Link className="font-bold ml-10 lg:ml-10" to="/login" >Please login</Link> </p></small>
@@ -142,7 +142,7 @@ const SignUp = () => {
 
                     <button
                         onClick={() => signInWithGoogle()}
-                        className="btn rounded-sm border-none text-white bg-slate-600 hover:bg-slate-500"
+                        className="btn rounded-xl border-none text-white bg-slate-600 hover:scale-105 duration-300"
                     > <img src={googleIcon} alt="" /><b className="mx-2 font-semibold">Google</b></button>
 
                 </div>

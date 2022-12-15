@@ -98,7 +98,7 @@ const Contact = () => {
                                 <textarea name='message' rows="4" placeholder='Type Your Message' className='form-control bg-white w-full mt-2 py-4 px-3 outline-none rounded-sm shadow-md' required />
                             </div>
 
-                            <input type="submit" value="Send Message" className='form-control btn hover:bg-orange-600 bg-orange-500 text-white w-2/4 lg:w-1/3 py-3 lg:px-8 mt-5 rounded-sm font-semibold border-none' />
+                            <input type="submit" value="Send Message" className='form-control hover:scale-105 duration-300 btn bg-gradient-to-r from-secondary to-primary text-white w-2/4 lg:w-1/3 py-3 lg:px-8 mt-5 rounded-sm font-semibold border-none' />
                         </div>
                     </form>
                 </div>
