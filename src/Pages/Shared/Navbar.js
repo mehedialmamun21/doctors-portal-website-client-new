@@ -19,7 +19,7 @@ const Navbar = () => {
       <li><Link to="/appointment"><span className="font-semibold text-lg text-zinc-800">Appointment</span></Link></li>
       <li><Link to="/doctors"><span className="font-semibold text-lg text-zinc-800">Doctors</span></Link></li>
       <li><Link to="/contact"><span className="font-semibold text-lg text-zinc-800">Contact</span></Link></li>
-      {/* <li><Link to="/about"><span className="font-bold text-lg text-gray-800">About</span></Link></li> */}
+      <li><Link to="/blog"><span className="font-semibold text-lg text-zinc-800">Blog</span></Link></li>
       {
         user && <li><Link to="/dashboard"><span className="font-semibold text-lg text-zinc-800">Dashboard</span></Link></li>
       }
@@ -29,7 +29,7 @@ const Navbar = () => {
 
   return (
 
-    <div className="navbar px-5 lg:px-10 py-5">
+    <div className="navbar px-5 lg:px-10 bg-blue-300 py-3 sticky top-0 z-30">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex="0" className="btn btn-ghost lg:hidden">
@@ -47,10 +47,11 @@ const Navbar = () => {
             {menuItems}
           </ul>
         </div>
-        <a href="/" className="normal-case text-xl mx-2 lg:mx-0"><img className='rounded-2xl' src={img} width="80px" alt="" /></a>
+        <a href="/" className="normal-case text-xl mx-2 lg:mx-0"><img className='rounded-2xl' src={img} style={{ width: "70px", height: "50px" }} alt="" /></a>
+        {/* <a href="/" className="normal-case text-xl font-semibold lg:mx-0"> <span>Dental Solution</span> </a> */}
       </div>
       <div className="navbar-end hidden lg:flex">
-        <ul className="menu menu-horizontal p-0 mt-5 text-lg">
+        <ul className="menu menu-horizontal p-0 text-lg">
           {menuItems}
         </ul>
       </div>

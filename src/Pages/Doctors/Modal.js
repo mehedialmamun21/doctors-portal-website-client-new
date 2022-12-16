@@ -9,7 +9,7 @@ const Modal = ({ setModalOn, setChoice }) => {
 
     return (
 
-        <div className="   bg-zinc-300 opacity-80 fixed inset-0 z-50   ">
+        <div className="bg-zinc-500 opacity-80 fixed inset-0 z-50   ">
 
             <div className="flex h-screen justify-center items-center ">
 

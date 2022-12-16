@@ -9,7 +9,10 @@ const Banner = () => {
             <div className="hero-content flex-col lg:flex-row-reverse">
                 <img src={chair} alt="" className="lg:max-w-sm rounded-lg lg:ml-20" />
                 <div>
-                    <h1 className="text-3xl pt-5 lg:pt-0 lg:text-4xl text-zinc-700 font-bold">Your New Smile Starts Here</h1>
+                    <marquee scrollamount="12" className='text-3xl pt-5 lg:pt-0 lg:text-4xl text-zinc-700 font-semibold'>
+                        Your new smile starts here
+                    </marquee>
+
                     {/* <p className="py-6 text-zinc-700 w-full lg:w-5/6">Our team is filled with experienced professionals who
                         are all dedicated to your continued dental health. It is our mission to
                         keep every patient educated and comfortable during their visits, and we

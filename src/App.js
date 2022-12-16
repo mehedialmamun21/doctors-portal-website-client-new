@@ -2,7 +2,6 @@ import "./App.css";
 import Navbar from "./Pages/Shared/Navbar";
 import { Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home/Home";
-import About from "./Pages/About/About";
 import Login from "./Pages/Login/Login";
 import Appointment from "./Pages/Appointment/Appointment";
 import SignUp from "./Pages/Login/SignUp";
@@ -22,6 +21,7 @@ import Payment from "./Pages/Dashboard/Payment";
 import Contact from "./Pages/Contact/Contact";
 import Doctors from "./Pages/Doctors/Doctors";
 import DoctorDetails from "./Pages/Doctors/DoctorDetails";
+import Blog from "./Pages/Blog/Blog";
 
 function App() {
 
@@ -46,7 +46,7 @@ function App() {
           <Route path="manageDoctor" element={<RequireAdmin><ManageDoctors></ManageDoctors></RequireAdmin>}></Route>
         </Route>
 
-        <Route path="/about" element={<About></About>} />
+        <Route path="/blog" element={<Blog></Blog>} />
         <Route path="/contact" element={<Contact></Contact>} />
         <Route path="/doctors" element={<Doctors></Doctors>} />
         <Route path="/doctorDetails" element={<DoctorDetails></DoctorDetails>} />

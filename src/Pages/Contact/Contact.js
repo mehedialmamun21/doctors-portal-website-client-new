@@ -27,10 +27,10 @@ const Contact = () => {
     return (
         <section className='h:screen px-5 lg:px-0'>
 
-            <div className='flex flex-col lg:gap-8 md:flex-row lg:flex-row py-3 lg:py-16 px-5 lg:px-10 lg:bg-gray-100'>
+            <div className='flex flex-col lg:gap-8 md:flex-row lg:flex-row py-3 lg:py-16 px-5 lg:px-10 '>
 
 
-                <div className='w-full lg:w-4/12 space-y-5'>
+                <div className='w-full lg:w-6/12 space-y-5'>
                     <div className='flex gap-4 shadow-2xl px-5 py-5'>
                         <span>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-8 text-orange-500"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
@@ -41,7 +41,7 @@ const Contact = () => {
                             <p class="text-orange-500 font-semibold">Email us at "dentalsolution@gmail.com"</p>
                         </div>
                     </div>
-                    <div>
+                    {/* <div>
                         <div className='flex gap-4 shadow-2xl px-5 py-5'>
                             <span>
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-8 text-orange-500"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
@@ -52,7 +52,7 @@ const Contact = () => {
                                 <p class="text-orange-500 font-semibold">Serving clients worldwide</p>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                     <div>
                         <div className='flex gap-4 shadow-2xl px-5 py-5'>
                             <span>
@@ -81,8 +81,7 @@ const Contact = () => {
                 </div>
 
 
-
-                <div className='w-full mt-8 lg:mt-0 lg:w-8/12 text-black px-5 lg:px-24 py-5 lg:py-7 bg-gray-500'>
+                <div className='w-full mt-8 lg:mt-0 lg:w-10/12 text-black px-5 lg:px-24 py-3 bg-gray-500'>
                     <h2 className='text-2xl font-semibold pb-10 text-white'>Get In Touch</h2>
                     <form className='row' ref={form} onSubmit={sendEmail}>
                         <div className='flex flex-col gap-4 w-full'>
@@ -102,8 +101,6 @@ const Contact = () => {
                         </div>
                     </form>
                 </div>
-
-
 
             </div>
 
