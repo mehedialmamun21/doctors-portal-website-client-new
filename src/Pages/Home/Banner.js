@@ -9,7 +9,7 @@ const Banner = () => {
             <div className="hero-content flex-col lg:flex-row-reverse">
                 <img src={chair} alt="" className="lg:max-w-sm rounded-lg lg:ml-20" />
                 <div>
-                    <marquee scrollamount="12" className='text-3xl pt-5 lg:pt-0 lg:text-4xl text-zinc-700 font-semibold'>
+                    <marquee scrollamount="12" className='text-2xl pt-5 lg:pt-0 lg:text-4xl text-zinc-700 font-semibold'>
                         Your new smile starts here
                     </marquee>
 

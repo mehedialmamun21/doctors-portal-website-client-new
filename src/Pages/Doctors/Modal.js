@@ -18,7 +18,7 @@ const Modal = ({ setModalOn, setChoice }) => {
                     <div className="flex justify-center text-xl text-zinc-700 pb-10 font-bold" >Are you a Doctor ?</div>
 
                     <div className="flex">
-                        <Link to="/doctorDetails"> <button className="rounded-sm px-6 py-1 ml-1 text-white bg-green-500 hover:bg-green-600">Yes</button> </Link>
+                        <Link to="/doctor"> <button className="rounded-sm px-6 py-1 ml-1 text-white bg-green-500 hover:bg-green-600">Yes</button> </Link>
                         <button onClick={handleCancelClick} className="rounded-sm px-6 py-1 ml-4 text-white bg-red-500 hover:bg-red-600 ">No</button>
                     </div>
 

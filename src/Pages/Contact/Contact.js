@@ -29,7 +29,6 @@ const Contact = () => {
 
             <div className='flex flex-col lg:gap-8 md:flex-row lg:flex-row py-3 lg:py-16 px-5 lg:px-10 '>
 
-
                 <div className='w-full lg:w-6/12 space-y-5'>
                     <div className='flex gap-4 shadow-2xl px-5 py-5'>
                         <span>
@@ -41,18 +40,7 @@ const Contact = () => {
                             <p class="text-orange-500 font-semibold">Email us at "dentalsolution@gmail.com"</p>
                         </div>
                     </div>
-                    {/* <div>
-                        <div className='flex gap-4 shadow-2xl px-5 py-5'>
-                            <span>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-8 text-orange-500"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
-                            </span>
-                            <div>
-                                <h2 className='text-2xl font-semibold'>Current Location</h2>
-                                <p class="">Dinajpur,Bangladesh.</p>
-                                <p class="text-orange-500 font-semibold">Serving clients worldwide</p>
-                            </div>
-                        </div>
-                    </div> */}
+
                     <div>
                         <div className='flex gap-4 shadow-2xl px-5 py-5'>
                             <span>
@@ -65,7 +53,21 @@ const Contact = () => {
                             </div>
                         </div>
                     </div>
+
                     <div>
+                        <div className='flex gap-4 shadow-2xl px-5 py-5'>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-8 text-orange-500"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
+                            </span>
+                            <div>
+                                <h2 className='text-2xl font-semibold'>Current Location</h2>
+                                <p class="">Dinajpur,Bangladesh.</p>
+                                <p class="text-orange-500 font-semibold">Serving clients worldwide</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* <div>
                         <div className='shadow-2xl'>
                             <div className='flex gap-12 py-5 justify-center'>
                                 <a href="https://www.facebook.com/" target="_blank">
@@ -77,12 +79,13 @@ const Contact = () => {
                                 <img className='w-14 px-1 py-1' src={Thumbup} alt="" />
                             </div>
                         </div>
-                    </div>
+                    </div> */}
+
                 </div>
 
 
-                <div className='w-full mt-8 lg:mt-0 lg:w-10/12 text-black px-5 lg:px-24 py-3 bg-gray-500'>
-                    <h2 className='text-2xl font-semibold pb-10 text-white'>Get In Touch</h2>
+                <div className='w-full mt-8 lg:mt-0 lg:w-10/12 text-black px-5 lg:px-24 py-5 bg-gray-500'>
+                    <h2 className='text-2xl font-semibold pb-5 text-white'>Get In Touch</h2>
                     <form className='row' ref={form} onSubmit={sendEmail}>
                         <div className='flex flex-col gap-4 w-full'>
                             <div className='flex gap-4 w-full'>
@@ -97,7 +100,7 @@ const Contact = () => {
                                 <textarea name='message' rows="4" placeholder='Type Your Message' className='form-control bg-white w-full mt-2 py-4 px-3 outline-none rounded-sm shadow-md' required />
                             </div>
 
-                            <input type="submit" value="Send Message" className='form-control hover:scale-105 duration-300 btn bg-gradient-to-r from-secondary to-primary text-white w-2/4 lg:w-1/3 py-3 lg:px-8 mt-5 rounded-sm font-semibold border-none' />
+                            <input type="submit" value="Send Message" className='form-control hover:scale-105 duration-300 btn bg-gradient-to-r from-secondary to-primary text-white w-2/4 lg:w-1/3 py-3 lg:px-8 mt-2 rounded-sm font-semibold border-none' />
                         </div>
                     </form>
                 </div>

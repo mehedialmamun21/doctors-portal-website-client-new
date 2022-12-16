@@ -19,17 +19,20 @@ import AddDoctor from "./Pages/Dashboard/AddDoctor";
 import ManageDoctors from "./Pages/Dashboard/ManageDoctors";
 import Payment from "./Pages/Dashboard/Payment";
 import Contact from "./Pages/Contact/Contact";
+import Blog from "./Pages/Blog/Blog";
 import Doctors from "./Pages/Doctors/Doctors";
 import DoctorDetails from "./Pages/Doctors/DoctorDetails";
-import Blog from "./Pages/Blog/Blog";
 
 function App() {
 
   return (
 
     <div className="max-w-7xl mx-auto">
+
       <Navbar></Navbar>
+
       <Routes>
+
         <Route path="/" element={<Home></Home>} />
         <Route path="/appointment" element={
           <RequireAuth>
@@ -48,12 +51,18 @@ function App() {
 
         <Route path="/blog" element={<Blog></Blog>} />
         <Route path="/contact" element={<Contact></Contact>} />
+
         <Route path="/doctors" element={<Doctors></Doctors>} />
-        <Route path="/doctorDetails" element={<DoctorDetails></DoctorDetails>} />
+        <Route path="/doctor" element={<DoctorDetails></DoctorDetails>} />
+        <Route path="/doctor/:doctorId" element={<DoctorDetails />}></Route>
+
         <Route path="/login" element={<Login></Login>} />
         <Route path="/signup" element={<SignUp></SignUp>} />
+
       </Routes>
+
       <ToastContainer />
+
     </div>
 
   );

@@ -4,8 +4,16 @@ import Loading from '../Shared/Loading';
 import Footer from '../Shared/Footer';
 
 import Modal from "./Modal";
+import { useNavigate } from 'react-router-dom';
 
 const Doctors = () => {
+
+    const navigate = useNavigate();
+
+    const navigateToDoctorDetail = id => {
+        navigate(`/doctor/${id}`);
+    }
+
 
     const [modalOn, setModalOn] = useState(false);
     const [choice, setChoice] = useState(false)
@@ -40,6 +48,7 @@ const Doctors = () => {
                             <th>Name</th>
                             <th>Speciality</th>
                             <th>Email</th>
+                            {/* <th>Id</th> */}
                             <th>Doctor Entry</th>
                         </tr>
                     </thead>
@@ -59,7 +68,9 @@ const Doctors = () => {
                                     <td className='font-semibold text-zinc-600'>{doctor.name}</td>
                                     <td className='text-zinc-600'>{doctor.speciality}</td>
                                     <td className='text-zinc-600'>{doctor.email}</td>
-                                    <td><button onClick={clicked} className='bg-gradient-to-r from-secondary to-primary text-white font-semibold px-6 py-1 rounded-sm hover:scale-105 duration-300'>Enter</button></td>
+                                    {/* <td className='text-zinc-600'>{doctor._id}</td> */}
+                                    {/* <td><button onClick={clicked} className='bg-gradient-to-r from-secondary to-primary text-white font-semibold px-6 py-1 rounded-sm hover:scale-105 duration-300'>Enter</button></td> */}
+                                    <td><button className='bg-gradient-to-r from-secondary to-primary text-white font-semibold px-6 py-1 rounded-sm hover:scale-105 duration-300' onClick={() => navigateToDoctorDetail(doctor._id)}>Enter</button></td>
                                 </tr>
                             )
                         }
