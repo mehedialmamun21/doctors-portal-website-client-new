@@ -14,7 +14,7 @@ const Testimonial = () => {
     }, []);
 
     return (
-        <section className='my-10 px-5 lg:px-10 lg:px-0'>
+        <section className='my-10 px-5 lg:px-10'>
 
             <div className='flex justify-between lg:px-5 py-5'>
                 <div className='pt-5 pb-14'>
@@ -26,7 +26,7 @@ const Testimonial = () => {
                 </div>
             </div>
 
-            <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {
                     reviews.map((review) => (
                         <Review
