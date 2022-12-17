@@ -46,7 +46,7 @@ const DoctorDetails = () => {
                         <ul class="symp m-0 pl-5 py-5 h-full list-disc" data-toggle="tooltip" data-placement="bottom" title="Click to edit."
                             contenteditable="true">
                         </ul>
-                        <div class="symp_action pb-5 pt-2">
+                        <div class="symp_action pb-5 pt-3">
                             <button id="symp_save" data-prescription_id="<?php echo $presc->prescription_id; ?>"
                                 class="btn btn-sm px-3 rounded-sm bg-green-500 hover:bg-green-600 border-none text-white save">Save</button>
                             <button class="btn btn-sm px-3 rounded-sm ml-2 bg-red-500 hover:bg-red-600 border-none cancel-btn text-white">Cancel</button>
@@ -57,7 +57,7 @@ const DoctorDetails = () => {
                         <ul class="symp m-0 pl-5 py-5 h-full" data-toggle="tooltip" data-placement="bottom" title="Click to edit."
                             contenteditable="true">
                         </ul>
-                        <div class="symp_action pb-5 pt-2">
+                        <div class="symp_action pb-5 pt-3">
                             <button id="symp_save" data-prescription_id="<?php echo $presc->prescription_id; ?>"
                                 class="btn btn-sm px-3 rounded-sm bg-green-500 hover:bg-green-600 border-none text-white save">Save</button>
                             <button class="btn btn-sm px-3 ml-2 rounded-sm bg-red-500 hover:bg-red-600 border-none cancel-btn text-white">Cancel</button>
@@ -68,7 +68,7 @@ const DoctorDetails = () => {
                         <ul class="symp m-0 pl-5 py-5 h-full" data-toggle="tooltip" data-placement="bottom" title="Click to edit."
                             contenteditable="true">
                         </ul>
-                        <div class="symp_action pb-5 pt-2">
+                        <div class="symp_action pb-5 pt-3">
                             <button id="symp_save" data-prescription_id="<?php echo $presc->prescription_id; ?>"
                                 class="btn btn-sm px-3 rounded-sm bg-green-500 hover:bg-green-600 border-none text-white save">Save</button>
                             <button class="btn btn-sm px-3 ml-2 rounded-sm bg-red-500 hover:bg-red-600 border-none cancel-btn text-white">Cancel</button>
@@ -76,15 +76,15 @@ const DoctorDetails = () => {
                     </div>
                 </div>
 
-                <div>
-                    <div className='w-8/12 pt-5 pl-3 border-t-white border-r-white border-b-white'>
+                <div className='px-5 py-5'>
+                    <div className='w-8/12 border-t-white border-r-white border-b-white'>
                         <img src={prescription2} style={{ width: 90 }} alt="" />
                     </div>
-                    <div className='pl-9 pt-10'>
-                        <ul class="symp m-0 pl-5 py-5 h-full w-full list-disc" data-toggle="tooltip" data-placement="bottom" title="Click to edit medicine name."
+                    <div className='pl-6 pt-10'>
+                        <ul class="symp m-0 pl-5 py-5 h-full w-full list-disc" data-toggle="tooltip" data-placement="bottom" title="Click here to add medicine."
                             contenteditable="true">
                         </ul>
-                        <div class="symp_action pb-5 pt-2">
+                        <div class="symp_action pb-5 pt-3">
                             <button id="symp_save" data-prescription_id="<?php echo $presc->prescription_id; ?>"
                                 class="btn btn-sm px-3 rounded-sm bg-green-500 hover:bg-green-600 border-none text-white save">Save</button>
                             <button class="btn btn-sm px-3 rounded-sm ml-2 bg-red-500 hover:bg-red-600 border-none cancel-btn text-white">Cancel</button>
