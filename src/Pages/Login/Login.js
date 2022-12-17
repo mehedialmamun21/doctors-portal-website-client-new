@@ -51,7 +51,7 @@ const Login = () => {
   }
 
   return (
-    <section className="bg-gray-500 h-screen flex justify-center items-center">
+    <section className="bg-zinc-500 h-screen flex justify-center items-center">
 
       <div className="bg-white w-1/2 flex justify-center items-center py-0">
         <div className="card w-96 bg-base-50 rounded-sm ">
@@ -67,7 +67,7 @@ const Login = () => {
                 </label>
                 <input type="email"
                   placeholder="Your Email"
-                  className="input w-full max-w-xs rounded-sm bg-slate-200"
+                  className="input w-full max-w-xs rounded-sm shadow-lg bg-slate-200"
                   {...register("email", {
                     required: {
                       value: true,
@@ -95,7 +95,7 @@ const Login = () => {
 
                 <input type="password"
                   placeholder="Password"
-                  className="input w-full max-w-xs rounded-sm bg-slate-200"
+                  className="input w-full max-w-xs rounded-sm shadow-lg bg-slate-200"
                   {...register("password", {
                     required: {
                       value: true,
@@ -127,7 +127,7 @@ const Login = () => {
 
               {signInError}
 
-              <input className="btn mt-3 rounded-xl w-full max-w-xs font-semibold bg-gradient-to-r from-secondary to-primary text-white border-none hover:scale-105 duration-300" type="submit" value="Login" />
+              <input className="btn mt-3 rounded-xl w-full max-w-xs font-semibold bg-gradient-to-r from-secondary to-primary shadow-lg text-white border-none hover:scale-105 duration-300" type="submit" value="Login" />
 
             </form>
 
@@ -139,7 +139,7 @@ const Login = () => {
 
             <button
               onClick={() => signInWithGoogle()}
-              className="btn rounded-xl border-none text-white bg-slate-600 hover:scale-105 duration-300"
+              className="btn rounded-xl border-none text-white bg-slate-600 shadow-lg hover:scale-105 duration-300"
             > <img src={googleIcon} alt="" /><b className="mx-2 font-semibold">Google</b></button>
           </div>
         </div>

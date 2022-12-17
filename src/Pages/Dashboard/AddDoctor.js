@@ -76,9 +76,9 @@ const AddDoctor = () => {
 
             <form onSubmit={handleSubmit(onSubmit)}>
 
-                <div className='px-5 lg:px-40 py-5 lg:py-10 shadow-2xl'>
+                <div className='px-5 lg:px-40 py-5 lg:py-10 shadow-2xl bg-zinc-500'>
 
-                    <div className='px-5 lg:px-28 py-5 lg:py-5 bg-gray-400'>
+                    <div className='px-5 lg:px-28 py-5 lg:py-5 bg-white'>
 
 
                         <div className="form-control w-full max-w-xs">
@@ -87,7 +87,7 @@ const AddDoctor = () => {
                             </label>
                             <input type="text"
                                 placeholder="Doctor's Name"
-                                className="input input-bordered w-full max-w-xs rounded-sm bg-white"
+                                className="input input-bordered w-full max-w-xs rounded-sm shadow-lg bg-slate-200"
                                 {...register("name", {
                                     required: {
                                         value: true,
@@ -97,7 +97,7 @@ const AddDoctor = () => {
                                 })}
                             />
                             <label className="label">
-                                {errors.name?.type === 'required' && <span className="label-text-alt text-red-500">{errors.name.message}</span>}
+                                {errors.name?.type === 'required' && <span className="label-text-alt text-red-500 font-semibold">{errors.name.message}</span>}
 
                             </label>
                         </div>
@@ -109,7 +109,7 @@ const AddDoctor = () => {
                             </label>
                             <input type="email"
                                 placeholder="Doctor's Email"
-                                className="input input-bordered w-full max-w-xs rounded-sm bg-white"
+                                className="input input-bordered w-full max-w-xs rounded-sm shadow-lg bg-slate-200"
                                 {...register("email", {
                                     required: {
                                         value: true,
@@ -122,8 +122,8 @@ const AddDoctor = () => {
                                 })}
                             />
                             <label className="label">
-                                {errors.email?.type === 'required' && <span className="label-text-alt text-red-500">{errors.email.message}</span>}
-                                {errors.email?.type === 'pattern' && <span className="label-text-alt text-red-500">{errors.email.message}</span>}
+                                {errors.email?.type === 'required' && <span className="label-text-alt text-red-500 font-semibold">{errors.email.message}</span>}
+                                {errors.email?.type === 'pattern' && <span className="label-text-alt text-red-500 font-semibold">{errors.email.message}</span>}
 
                             </label>
                         </div>
@@ -133,7 +133,7 @@ const AddDoctor = () => {
                             <label className="label">
                                 <span className="label-text text-white font-semibold">Speciality</span>
                             </label>
-                            <select {...register('speciality')} class="select input-bordered w-full max-w-xs rounded-sm bg-white">
+                            <select {...register('speciality')} class="select input-bordered w-full max-w-xs rounded-sm shadow-lg bg-slate-200">
                                 {
                                     services.map(service => <option
                                         key={service._id}
@@ -149,7 +149,7 @@ const AddDoctor = () => {
                                 <span className="label-text text-white font-semibold  mt-3">Photo</span>
                             </label>
                             <input type="file"
-                                className="input input-bordered w-full max-w-xs rounded-sm bg-white"
+                                className="input input-bordered w-full max-w-xs rounded-sm shadow-lg bg-slate-200"
                                 {...register("image", {
                                     required: {
                                         value: true,
@@ -159,12 +159,12 @@ const AddDoctor = () => {
                                 })}
                             />
                             <label className="label">
-                                {errors.image?.type === 'required' && <span className="label-text-alt text-red-500">{errors.image.message}</span>}
+                                {errors.image?.type === 'required' && <span className="label-text-alt text-red-500 font-semibold">{errors.image.message}</span>}
 
                             </label>
                         </div>
 
-                        <input className="btn w-full font-bold bg-gradient-to-r from-secondary to-primary text-white rounded-sm mt-3 mb-3 border-none hover:scale-105 duration-300" type="submit" value="Add Doctor" />
+                        <input className="btn w-full font-bold bg-gradient-to-r from-secondary to-primary shadow-lg text-white rounded-sm mt-3 mb-3 border-none hover:scale-105 duration-300" type="submit" value="Add Doctor" />
 
                     </div>
 
