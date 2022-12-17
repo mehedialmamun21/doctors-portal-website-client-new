@@ -65,9 +65,9 @@ const Doctors = () => {
                                             </div>
                                         </div>
                                     </td>
-                                    <td className='font-semibold text-zinc-600'>{doctor.name}</td>
-                                    <td className='text-zinc-600'>{doctor.speciality}</td>
-                                    <td className='text-zinc-600'>{doctor.email}</td>
+                                    <td className='font-bold text-zinc-600'>{doctor.name}</td>
+                                    <td className='text-zinc-600 font-semibold'>{doctor.speciality}</td>
+                                    <td className='text-zinc-600 font-semibold'>{doctor.email}</td>
                                     {/* <td className='text-zinc-600'>{doctor._id}</td> */}
                                     {/* <td><button onClick={clicked} className='bg-gradient-to-r from-secondary to-primary text-white font-semibold px-6 py-1 rounded-sm hover:scale-105 duration-300'>Enter</button></td> */}
                                     <td><button className='bg-gradient-to-r from-secondary to-primary text-white font-semibold px-6 py-1 rounded-sm hover:scale-105 duration-300' onClick={() => navigateToDoctorDetail(doctor._id)}>Enter</button></td>
