@@ -18,19 +18,19 @@ const DoctorDetails = () => {
     return (
         <section className='h-screen pt-5'>
 
-            <div className='flex justify-center py-10 border-2 border-b-zinc-400'>
-                <div className='pb-3 pr-40'>
+            <div className='flex justify-center py-5 border-2 border-b-zinc-400'>
+                <div className='pr-40'>
                     <img src={prescription1} style={{ width: 140 }} alt="" />
                 </div>
 
-                <div className='text-center pb-3 '>
+                <div className='text-center'>
                     <div className='text-zinc-700 text-xl font-bold'> <i>{doctor.name}</i> </div>
                     <span className='flex justify-center items-center pb-2 text-lg'><i>BDS, MS</i></span>
                     <span className='text-zinc-700 text-lg border-2 border-t-white border-l-white border-r-white border-b-zinc-400 px-12 py-2 rounded-sm'><i>Dental Surgeon</i></span>
                     <span className='flex justify-center items-center pt-3 text-lg'><i>BMDC Reg. No. {doctor._id}</i></span>
                 </div>
 
-                <div className='pl-20'>
+                <div className='pl-28'>
                     <p><i><span className='font-semibold'>Chamber: </span>Dental Solutions</i></p>
                     <p><i><span className='font-semibold'>Room No: </span><span>235</span></i></p>
                     <p><i><span className='font-semibold'>Address: </span>Dinajpur-5200</i></p>
@@ -39,17 +39,57 @@ const DoctorDetails = () => {
                 </div>
             </div>
 
-            <div className='flex border-2 h-3/4'>
-                <div className='w-4/12 px-10 pt-5'>
-                    <p className='bg-success text-white text-center py-1 text-xl font-bold mb-28'>Symptoms</p>
-                    <p className='bg-success text-white text-center py-1 text-xl font-bold mb-28'>Tests</p>
-                    <p className='bg-success text-white text-center py-1 text-xl font-bold'>Advice</p>
+            <div className='flex border-2'>
+                <div className='w-4/12 px-10 pt-5 border-2 border-r-zinc-300 border-t-white border-l-white border-b-white'>
+                    <div>
+                        <p className='bg-success text-white text-center mb-5 py-1 text-xl font-bold'>Symptoms</p>
+                        <ul class="symp m-0 pl-5 py-5 h-full list-disc" data-toggle="tooltip" data-placement="bottom" title="Click to edit."
+                            contenteditable="true">
+                        </ul>
+                        <div class="symp_action pb-5 pt-2">
+                            <button id="symp_save" data-prescription_id="<?php echo $presc->prescription_id; ?>"
+                                class="btn btn-sm px-3 rounded-sm bg-green-500 hover:bg-green-600 border-none text-white save">Save</button>
+                            <button class="btn btn-sm px-3 rounded-sm ml-2 bg-red-500 hover:bg-red-600 border-none cancel-btn text-white">Cancel</button>
+                        </div>
+                    </div>
+                    <div>
+                        <p className='bg-success text-white text-center py-1 text-xl font-bold mb-5'>Tests</p>
+                        <ul class="symp m-0 pl-5 py-5 h-full" data-toggle="tooltip" data-placement="bottom" title="Click to edit."
+                            contenteditable="true">
+                        </ul>
+                        <div class="symp_action pb-5 pt-2">
+                            <button id="symp_save" data-prescription_id="<?php echo $presc->prescription_id; ?>"
+                                class="btn btn-sm px-3 rounded-sm bg-green-500 hover:bg-green-600 border-none text-white save">Save</button>
+                            <button class="btn btn-sm px-3 ml-2 rounded-sm bg-red-500 hover:bg-red-600 border-none cancel-btn text-white">Cancel</button>
+                        </div>
+                    </div>
+                    <div>
+                        <p className='bg-success text-white text-center py-1 mb-5 text-xl font-bold'>Advice</p>
+                        <ul class="symp m-0 pl-5 py-5 h-full" data-toggle="tooltip" data-placement="bottom" title="Click to edit."
+                            contenteditable="true">
+                        </ul>
+                        <div class="symp_action pb-5 pt-2">
+                            <button id="symp_save" data-prescription_id="<?php echo $presc->prescription_id; ?>"
+                                class="btn btn-sm px-3 rounded-sm bg-green-500 hover:bg-green-600 border-none text-white save">Save</button>
+                            <button class="btn btn-sm px-3 ml-2 rounded-sm bg-red-500 hover:bg-red-600 border-none cancel-btn text-white">Cancel</button>
+                        </div>
+                    </div>
                 </div>
-                <div className='w-8/12 border-2 pt-5 pl-3 border-l-zinc-300 border-t-white border-r-white border-b-white'>
-                    <img src={prescription2} style={{ width: 90 }} alt="" />
 
-                    <p className='pt-14 pl-5 font-semibold'>Enter Medicine Name</p>
-
+                <div>
+                    <div className='w-8/12 pt-5 pl-3 border-t-white border-r-white border-b-white'>
+                        <img src={prescription2} style={{ width: 90 }} alt="" />
+                    </div>
+                    <div className='pl-9 pt-10'>
+                        <ul class="symp m-0 pl-5 py-5 h-full w-full list-disc" data-toggle="tooltip" data-placement="bottom" title="Click to edit medicine name."
+                            contenteditable="true">
+                        </ul>
+                        <div class="symp_action pb-5 pt-2">
+                            <button id="symp_save" data-prescription_id="<?php echo $presc->prescription_id; ?>"
+                                class="btn btn-sm px-3 rounded-sm bg-green-500 hover:bg-green-600 border-none text-white save">Save</button>
+                            <button class="btn btn-sm px-3 rounded-sm ml-2 bg-red-500 hover:bg-red-600 border-none cancel-btn text-white">Cancel</button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
