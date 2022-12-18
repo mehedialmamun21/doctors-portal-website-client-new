@@ -18,7 +18,7 @@ const DoctorDetails = () => {
     return (
         <section className='h-screen pt-5'>
 
-            <div className='flex justify-center py-5 border-2 border-b-zinc-400'>
+            <div className='flex justify-center py-5 border-2 border-b-zinc-400 bg-slate-200'>
                 <div className='pr-40'>
                     <img src={prescription1} style={{ width: 140 }} alt="" />
                 </div>
@@ -26,8 +26,8 @@ const DoctorDetails = () => {
                 <div className='text-center'>
                     <div className='text-zinc-700 text-xl font-bold'> <i>{doctor.name}</i> </div>
                     <span className='flex justify-center items-center pb-2 text-lg'><i>BDS, MS</i></span>
-                    <span className='text-zinc-700 text-lg border-2 border-t-white border-l-white border-r-white border-b-zinc-400 px-12 py-2 rounded-sm'><i>Dental Surgeon</i></span>
-                    <span className='flex justify-center items-center pt-3 text-lg'><i>BMDC Reg. No. {doctor._id}</i></span>
+                    <span className='text-zinc-700 text-lg border-4 border-b-zinc-400 px-12 py-2 rounded-sm'><i>Dental Surgeon</i></span>
+                    <span className='flex justify-center items-center pt-4 text-lg'><i>BMDC Reg. No. {doctor._id}</i></span>
                 </div>
 
                 <div className='pl-28'>
@@ -76,11 +76,11 @@ const DoctorDetails = () => {
                     </div>
                 </div>
 
-                <div className='px-5 py-5'>
+                <div className='px-5 py-5 w-full'>
                     <div className='w-8/12 border-t-white border-r-white border-b-white'>
                         <img src={prescription2} style={{ width: 90 }} alt="" />
                     </div>
-                    <div className='pl-6 pt-10'>
+                    <div className='pl-6 py-5'>
                         <ul class="symp m-0 pl-5 py-5 h-full w-full list-disc" data-toggle="tooltip" data-placement="bottom" title="Click here to add medicine."
                             contenteditable="true">
                         </ul>
