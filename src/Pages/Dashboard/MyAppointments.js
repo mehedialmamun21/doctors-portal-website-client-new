@@ -37,7 +37,7 @@ const MyAppointments = () => {
 
     return (
         <div>
-            <h2 className='my-5 text-xl text-center text-slate-500 font-bold'>Your Appointments are : {appointments.length}</h2>
+            <h2 className='my-5 text-xl text-center text-white bg-orange-400 p-2'><span className='border py-1 px-5'>Total Appointment - {appointments.length}</span></h2>
 
             <div class="overflow-x-auto">
                 <table class="table w-full border-4">
@@ -62,8 +62,8 @@ const MyAppointments = () => {
                                 <td>
                                     {(a.price && !a.paid) && <Link to={`/dashboard/payment/${a._id}`}> <button className='btn btn-sm bg-green-500 hover:bg-green-600 border-none text-white px-5 font-semibold text-sm rounded-sm'>Pay</button> </Link>}
                                     {(a.price && a.paid) && <div>
-                                        <p><span className='text-green-500 font-semibold text-lg'>Paid</span></p>
-                                        <p ><span className='font-bold text-sm text-zinc-600 '>Trans. ID : </span><span className='text-zinc-500 text-sm font-semibold'>{a.transactionId}</span> </p>
+                                        <p><span className='text-green-600 font-semibold text-lg'>Paid</span></p>
+                                        <p ><span className='font-bold text-sm text-zinc-600 '>Trans. ID : </span><span className='text-zinc-600 text-sm font-semibold'>{a.transactionId}</span> </p>
                                     </div>}
                                 </td>
                             </tr>)

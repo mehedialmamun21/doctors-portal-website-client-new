@@ -12,7 +12,7 @@ const AppointmentBanner = ({ date, setDate }) => {
                         {/* <marquee scrollamount="10" className='text-lg text-center text-primary'>
                             Choose your Appointment date
                         </marquee> */}
-                        <p className='text-lg text-center text-zinc-600 font-semibold'>Set your Appointment date from here</p>
+                        <p className='text-lg text-center text-zinc-700'>Set your Appointment date from here</p>
                         <div>
                             <DayPicker
                                 mode="single"

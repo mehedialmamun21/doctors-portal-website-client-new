@@ -32,7 +32,7 @@ const DoctorDetails = () => {
 
                 <div className='pl-28'>
                     <p><i><span className='font-semibold'>Chamber: </span>Dental Solutions</i></p>
-                    <p><i><span className='font-semibold'>Room No: </span><span>235</span></i></p>
+                    {/* <p><i><span className='font-semibold'>Room No: </span><span>235</span></i></p> */}
                     <p><i><span className='font-semibold'>Address: </span>Dinajpur-5200</i></p>
                     <p><i><span className='font-semibold'>Email: </span><span className='font-semibold text-primary'>{doctor.email}</span></i></p>
                     <p><i><span className='font-semibold'>Phone: </span><span>01521-413730</span></i></p>

@@ -116,7 +116,7 @@ const CheckoutForm = ({ appointment }) => {
                         },
                     }}
                 />
-                <button className='btn btn-success btn-sm mt-4 text-white' type="submit" disabled={!stripe || !clientSecret}>
+                <button className='btn bg-green-500 hover:bg-green-600 border-none rounded-sm px-5 btn-sm mt-10 mb-3 text-white' type="submit" disabled={!stripe || !clientSecret}>
                     Pay
                 </button>
             </form>
@@ -124,9 +124,9 @@ const CheckoutForm = ({ appointment }) => {
                 cardError && <p className='text-red-500'>{cardError}</p>
             }
             {
-                success && <div className='text-green-500'>
-                    <p>{success}</p>
-                    <p>Your transactionId : <span className="text-orange-500 font-bold">{transactionId}</span> </p>
+                success && <div className=''>
+                    <p className='font-semibold text-green-600'>{success}</p>
+                    <p>Transaction Id : <span className="font-semibold">{transactionId}</span> </p>
                 </div>
             }
         </>

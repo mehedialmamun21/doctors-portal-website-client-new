@@ -84,8 +84,8 @@ const Contact = () => {
                 </div>
 
 
-                <div className='w-full mt-8 lg:mt-0 lg:w-10/12 text-black px-5 lg:px-24 py-5 bg-gray-500'>
-                    <h2 className='text-2xl font-semibold pb-5 text-white'>Get In Touch</h2>
+                <div className='w-full mt-8 lg:mt-0 lg:w-10/12 text-black px-5 lg:px-24 pt-7 pb-8 bg-gray-500'>
+                    <h2 className='text-2xl font-semibold pb-6 text-white'>Get In Touch</h2>
                     <form className='row' ref={form} onSubmit={sendEmail}>
                         <div className='flex flex-col gap-4 w-full'>
                             <div className='flex gap-4 w-full'>

@@ -18,7 +18,9 @@ const Users = () => {
 
     return (
         <div>
-            <h2 className='text-xl text-center my-5 text-slate-500 font-bold p-2'>Users are : {users.length}</h2>
+
+            <h2 className='text-xl text-center my-5 text-white bg-orange-400 p-2'><span className='border py-1 px-5'>Total User - {users.length} </span> </h2>
+
             <div class="overflow-x-auto">
                 <table class="table w-full border-4">
                     <thead>
