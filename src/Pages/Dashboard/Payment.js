@@ -26,7 +26,7 @@ const Payment = () => {
     }
 
     return (
-        <div className='px-5 my-5 py-14 lg:px-24'>
+        <div className='px-5 my-5 lg:py-14 lg:px-24'>
 
             <div className='w-50 max-w-xl'>
                 <div class="card bg-slate-100 mb-12 rounded-sm border-2 border-dashed border-zinc-400">

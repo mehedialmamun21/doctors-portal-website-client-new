@@ -26,10 +26,11 @@ const ManageDoctors = () => {
 
                     <thead>
                         <tr>
-                            <th></th>
+                            <th>Index</th>
                             <th>Doctor Image</th>
                             <th>Name</th>
                             <th>Speciality</th>
+                            <th>Phone</th>
                             <th>Action ( delete )</th>
                         </tr>
                     </thead>

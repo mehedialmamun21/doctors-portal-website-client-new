@@ -26,15 +26,16 @@ const DoctorDetails = () => {
                 <div className='text-center'>
                     <div className='text-zinc-700 text-xl font-bold'> <i>{doctor.name}</i> </div>
                     <span className='flex justify-center items-center pb-2 text-lg'><i>BDS, MS</i></span>
-                    <span className='text-zinc-700 text-lg border-4 border-b-zinc-400 px-12 py-2 rounded-sm'><i>Dental Surgeon</i></span>
-                    <span className='flex justify-center items-center pt-4 text-lg'><i>BMDC Reg. No. {doctor._id}</i></span>
+                    <span className='text-zinc-700 text-lg border-2 border-b-zinc-400 px-12 py-2 rounded-sm'><i>Dental Surgeon</i></span>
+                    <span className='flex justify-center items-center pt-4 text-lg'><i>BMDC Reg. No. <span className='font-semibold text-cyan-600'>{doctor._id}</span> </i></span>
                 </div>
 
                 <div className='pl-28'>
-                    <p><i><span className='font-semibold'>Chamber: </span>Dental Solutions</i></p>
-                    <p><i><span className='font-semibold'>Address: </span>Dinajpur-5200</i></p>
-                    <p><i><span className='font-semibold'>Email: </span><span className='font-semibold text-primary'>{doctor.email}</span></i></p>
-                    <p><i><span className='font-semibold'>Phone: </span><span>01521-413730</span></i></p>
+                    <p><i><span className='font-semibold'>Chamber: </span>Dental Solutions, Dinajpur</i></p>
+                    <p><i><span className='font-semibold'>Time: </span><span className='font-semibold text-cyan-600'>{doctor.time}</span></i></p>
+                    <p><i><span className='font-semibold'>Email: </span><span className='font-semibold text-cyan-600'>{doctor.email}</span></i></p>
+                    <p><i><span className='font-semibold'>Phone: </span><span className='font-semibold text-cyan-600'>{doctor.phone}</span></i></p>
+                    <p><i><span className='font-semibold'>Room No: </span><span className='font-semibold text-cyan-600'>{doctor.room}</span></i></p>
                 </div>
             </div>
 

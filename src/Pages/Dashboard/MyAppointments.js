@@ -43,11 +43,12 @@ const MyAppointments = () => {
                 <table class="table w-full border-4">
                     <thead>
                         <tr>
-                            <th></th>
+                            <th>Index</th>
                             <th>Name</th>
                             <th>Date</th>
                             <th>Time</th>
                             <th>Treatment</th>
+                            <th>Phone</th>
                             <th>Payment</th>
                         </tr>
                     </thead>
@@ -59,6 +60,7 @@ const MyAppointments = () => {
                                 <td className='text-zinc-600'>{a.date}</td>
                                 <td className='text-zinc-600'>{a.slot}</td>
                                 <td className='text-zinc-600'>{a.treatment}</td>
+                                <td className='text-zinc-600'>{a.phone}</td>
                                 <td>
                                     {(a.price && !a.paid) && <Link to={`/dashboard/payment/${a._id}`}> <button className='btn btn-sm bg-green-500 hover:bg-green-600 border-none text-white px-5 font-semibold text-sm rounded-sm'>Pay</button> </Link>}
                                     {(a.price && a.paid) && <div>

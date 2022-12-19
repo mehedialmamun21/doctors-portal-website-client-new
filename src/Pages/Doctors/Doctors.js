@@ -47,7 +47,10 @@ const Doctors = () => {
                             <th>Doctor Image</th>
                             <th>Name</th>
                             <th>Speciality</th>
+                            <th>Time</th>
+                            <th>Room</th>
                             <th>Email</th>
+                            <th>Phone</th>
                             {/* <th>Id</th> */}
                             <th>Doctor Entry</th>
                         </tr>
@@ -60,14 +63,17 @@ const Doctors = () => {
                                 <tr>
                                     <td>
                                         <div class="avatar">
-                                            <div class="w-16 rounded-2xl">
+                                            <div class="w-14 rounded-sm">
                                                 <img src={doctor.img} alt={doctor.name} />
                                             </div>
                                         </div>
                                     </td>
-                                    <td className='font-bold text-zinc-700'>{doctor.name}</td>
+                                    <td className='text-cyan-600 font-semibold'>{doctor.name}</td>
                                     <td className='text-zinc-700 font-semibold'>{doctor.speciality}</td>
-                                    <td className='text-zinc-700 font-semibold'>{doctor.email}</td>
+                                    <td className='text-cyan-600 font-semibold'>{doctor.time}</td>
+                                    <td className='text-zinc-700 font-semibold'>{doctor.room}</td>
+                                    <td className='text-cyan-600 font-semibold'>{doctor.email}</td>
+                                    <td className='text-zinc-700 font-semibold'>{doctor.phone}</td>
                                     {/* <td className='text-zinc-600'>{doctor._id}</td> */}
                                     {/* <td><button onClick={clicked} className='bg-gradient-to-r from-secondary to-primary text-white font-semibold px-6 py-1 rounded-sm hover:scale-105 duration-300'>Enter</button></td> */}
                                     <td><button className='bg-gradient-to-r from-secondary to-primary text-white font-semibold px-6 py-1 rounded-sm hover:scale-105 duration-300' onClick={() => navigateToDoctorDetail(doctor._id)}>Enter</button></td>
