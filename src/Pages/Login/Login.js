@@ -42,7 +42,7 @@ const Login = () => {
   }
 
   if (error || gError || resError) {
-    signInError = <p className="text-red-500"> <small>{error?.message || gError?.message || resError}</small> </p>
+    signInError = <p className="text-red-500 font-semibold"> <small>{error?.message || gError?.message || resError}</small> </p>
   }
 
   const onSubmit = data => {

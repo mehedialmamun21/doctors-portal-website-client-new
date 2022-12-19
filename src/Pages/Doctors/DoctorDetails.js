@@ -32,7 +32,6 @@ const DoctorDetails = () => {
 
                 <div className='pl-28'>
                     <p><i><span className='font-semibold'>Chamber: </span>Dental Solutions</i></p>
-                    {/* <p><i><span className='font-semibold'>Room No: </span><span>235</span></i></p> */}
                     <p><i><span className='font-semibold'>Address: </span>Dinajpur-5200</i></p>
                     <p><i><span className='font-semibold'>Email: </span><span className='font-semibold text-primary'>{doctor.email}</span></i></p>
                     <p><i><span className='font-semibold'>Phone: </span><span>01521-413730</span></i></p>
@@ -47,8 +46,7 @@ const DoctorDetails = () => {
                             contenteditable="true">
                         </ul>
                         <div class="symp_action pb-5 pt-3">
-                            <button id="symp_save" data-prescription_id="<?php echo $presc->prescription_id; ?>"
-                                class="btn btn-sm px-3 rounded-sm bg-green-500 hover:bg-green-600 border-none text-white save">Save</button>
+                            <button class="btn btn-sm px-3 rounded-sm bg-green-500 hover:bg-green-600 border-none text-white save">Save</button>
                             <button class="btn btn-sm px-3 rounded-sm ml-2 bg-red-500 hover:bg-red-600 border-none cancel-btn text-white">Cancel</button>
                         </div>
                     </div>
@@ -58,8 +56,7 @@ const DoctorDetails = () => {
                             contenteditable="true">
                         </ul>
                         <div class="symp_action pb-5 pt-3">
-                            <button id="symp_save" data-prescription_id="<?php echo $presc->prescription_id; ?>"
-                                class="btn btn-sm px-3 rounded-sm bg-green-500 hover:bg-green-600 border-none text-white save">Save</button>
+                            <button class="btn btn-sm px-3 rounded-sm bg-green-500 hover:bg-green-600 border-none text-white save">Save</button>
                             <button class="btn btn-sm px-3 ml-2 rounded-sm bg-red-500 hover:bg-red-600 border-none cancel-btn text-white">Cancel</button>
                         </div>
                     </div>
@@ -69,8 +66,7 @@ const DoctorDetails = () => {
                             contenteditable="true">
                         </ul>
                         <div class="symp_action pb-5 pt-3">
-                            <button id="symp_save" data-prescription_id="<?php echo $presc->prescription_id; ?>"
-                                class="btn btn-sm px-3 rounded-sm bg-green-500 hover:bg-green-600 border-none text-white save">Save</button>
+                            <button class="btn btn-sm px-3 rounded-sm bg-green-500 hover:bg-green-600 border-none text-white save">Save</button>
                             <button class="btn btn-sm px-3 ml-2 rounded-sm bg-red-500 hover:bg-red-600 border-none cancel-btn text-white">Cancel</button>
                         </div>
                     </div>
@@ -80,13 +76,12 @@ const DoctorDetails = () => {
                     <div className='w-8/12 border-t-white border-r-white border-b-white'>
                         <img src={prescription2} style={{ width: 90 }} alt="" />
                     </div>
-                    <div className='pl-6 py-5'>
+                    <div className='px-6 py-5'>
                         <ul class="symp m-0 pl-5 py-5 h-full w-full list-disc" data-toggle="tooltip" data-placement="bottom" title="Click here to add medicine."
                             contenteditable="true">
                         </ul>
-                        <div class="symp_action pb-5 pt-3">
-                            <button id="symp_save" data-prescription_id="<?php echo $presc->prescription_id; ?>"
-                                class="btn btn-sm px-3 rounded-sm bg-green-500 hover:bg-green-600 border-none text-white save">Save</button>
+                        <div class="pb-5 pt-3">
+                            <button class="btn btn-sm px-3 rounded-sm bg-green-500 hover:bg-green-600 border-none text-white save">Save</button>
                             <button class="btn btn-sm px-3 rounded-sm ml-2 bg-red-500 hover:bg-red-600 border-none cancel-btn text-white">Cancel</button>
                         </div>
                     </div>
