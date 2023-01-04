@@ -10,7 +10,7 @@ const AppointmentBanner = ({ date, setDate }) => {
                 <div className='lg:pr-10'>
                     <div className='pt-7 lg:pt-0'>
                         {/* <p className='text-lg text-zinc-700'>Set your desired appointment date</p> */}
-                        <div className='border border-cyan-400 bg-slate-100 px-8 py-2'>
+                        <div className='border rounded-lg border-cyan-400 px-8 py-2'>
                             <DayPicker
                                 mode="single"
                                 date={date}
