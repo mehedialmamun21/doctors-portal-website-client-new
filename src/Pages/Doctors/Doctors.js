@@ -2,18 +2,11 @@ import React, { useState } from 'react';
 import { useQuery } from 'react-query';
 import Loading from '../Shared/Loading';
 import Footer from '../Shared/Footer';
+import { FaRegCaretSquareRight } from 'react-icons/fa';
 
 import Modal from "./Modal";
-import { useNavigate } from 'react-router-dom';
 
 const Doctors = () => {
-
-    const navigate = useNavigate();
-
-    const navigateToDoctorDetail = id => {
-        navigate(`/doctor/${id}`);
-    }
-
 
     const [modalOn, setModalOn] = useState(false);
     const [choice, setChoice] = useState(false)
@@ -38,7 +31,7 @@ const Doctors = () => {
     return (
         <section>
 
-            <div class="overflow-x-auto pt-5 pb-28">
+            <div class="overflow-x-auto pt-5">
 
                 <table class="table w-full border-4">
 
@@ -52,7 +45,6 @@ const Doctors = () => {
                             <th>Email</th>
                             <th>Phone</th>
                             {/* <th>Id</th> */}
-                            <th>Doctor Entry</th>
                         </tr>
                     </thead>
 
@@ -74,9 +66,7 @@ const Doctors = () => {
                                     <td className='text-zinc-700 font-semibold'>{doctor.room}</td>
                                     <td className='text-cyan-600 font-semibold'>{doctor.email}</td>
                                     <td className='text-zinc-700 font-semibold'>{doctor.phone}</td>
-                                    {/* <td className='text-zinc-600'>{doctor._id}</td> */}
-                                    {/* <td><button onClick={clicked} className='bg-gradient-to-r from-secondary to-primary text-white font-semibold px-6 py-1 rounded-sm hover:scale-105 duration-300'>Enter</button></td> */}
-                                    <td><button className='bg-gradient-to-r from-secondary to-primary text-white font-semibold px-6 py-1 rounded-sm hover:scale-105 duration-300' onClick={() => navigateToDoctorDetail(doctor._id)}>Enter</button></td>
+                                    {/* <td className='text-zinc-700'>{doctor._id}</td> */}
                                 </tr>
                             )
                         }
@@ -86,6 +76,15 @@ const Doctors = () => {
 
                 {modalOn && < Modal setModalOn={setModalOn} setChoice={setChoice} />}
 
+            </div>
+
+            <div className='flex justify-end items-end pt-5 pb-28'>
+                <span className='text-blue-400 py-2'>
+                    <FaRegCaretSquareRight size="30px" className='text-secondary' />
+                </span>
+                <div className='pl-5 py-2'>
+                    <button onClick={clicked} className='bg-gradient-to-r from-secondary to-primary text-white text-lg font-semibold px-16 py-2 rounded-sm hover:scale-105 duration-300'>Doctor Entry</button>
+                </div>
             </div>
 
             <Footer></Footer>

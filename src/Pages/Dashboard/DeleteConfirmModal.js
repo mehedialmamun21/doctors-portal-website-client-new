@@ -32,8 +32,8 @@ const DeleteConfirmModal = ({ deletingDoctor, refetch, setDeletingDoctor }) => {
                 <div class="modal-box">
                     <h3 class="text-lg text-red-600">Are you sure to delete <span className='text-zinc-700'>{name} ?</span></h3>
                     <div class="modal-action">
-                        <button onClick={() => handleDelete()} class="btn btn-xs bg-red-500 hover:bg-red-600 border-none text-white px-3 py-1 rounded-sm">Delete</button>
-                        <label for="delete-confirm-modal" class="btn btn-xs text-white px-3 py-1 rounded-sm">Cancel</label>
+                        <button onClick={() => handleDelete()} class="btn btn-xs bg-red-400 hover:bg-red-500 border-none text-white px-3 py-1 rounded-sm">Delete</button>
+                        <label for="delete-confirm-modal" class="btn btn-xs bg-slate-600 hover:bg-slate-700 text-white px-3 py-1 rounded-sm">Cancel</label>
                     </div>
                 </div>
             </div>

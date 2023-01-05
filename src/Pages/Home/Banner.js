@@ -5,13 +5,13 @@ import { RxDotFilled } from 'react-icons/rx';
 const Banner = () => {
     const slides = [
         {
+            url: 'https://i.postimg.cc/rpSVRGyX/wentworth-family-dental-general-and-family-dentist-sw-calgary-4617-1280x780.jpg'
+        },
+        {
             url: 'https://i.postimg.cc/ZK7Pd49x/1668-000-N19-medium-1280x780.jpg'
         },
         {
             url: 'https://i.postimg.cc/tgckKPQf/st-charles-dental-clinic-alain-carle-architecte-26-1280x780.jpg'
-        },
-        {
-            url: 'https://i.postimg.cc/rpSVRGyX/wentworth-family-dental-general-and-family-dentist-sw-calgary-4617-1280x780.jpg'
         }
     ]
 
