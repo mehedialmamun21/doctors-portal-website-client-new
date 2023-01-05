@@ -3,7 +3,8 @@ import React from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { Link } from "react-router-dom";
 import auth from "../../firebase.init";
-import img from "../../assets/images/navLogo.png"
+// import img from "../../assets/images/navLogo.png"
+import { FaCalendarCheck, FaHome, FaHandHoldingMedical, FaPhone, FaCube, FaChessBoard, FaBookmark, FaBookDead, FaBookOpen, FaBookReader, FaRegFileExcel, FaDashcube, FaBorderAll } from 'react-icons/fa';
 
 const Navbar = () => {
   const [user, loading, error] = useAuthState(auth);
@@ -15,13 +16,14 @@ const Navbar = () => {
 
   const menuItems = (
     <>
-      <li><Link to="/"> <span className="font-semibold text-lg text-zinc-800">Home</span> </Link></li>
-      <li><Link to="/appointment"><span className="font-semibold text-lg text-zinc-800">Appointment</span></Link></li>
-      <li><Link to="/doctors"><span className="font-semibold text-lg text-zinc-800">Doctors</span></Link></li>
-      <li><Link to="/contact"><span className="font-semibold text-lg text-zinc-800">Contact</span></Link></li>
-      <li><Link to="/blog"><span className="font-semibold text-lg text-zinc-800">Blog</span></Link></li>
+      <li><Link to="/"> <span className="font-semibold text-lg text-zinc-800 flex"> <span className="flex justify-center items-center pr-1"><FaHome /></span> <span>Home</span> </span> </Link></li>
+      {/* <li><Link to="/appointment"><span className="font-semibold text-lg text-zinc-800">Appointment</span></Link></li> */}
+      <li><Link to="/appointment"><span className="font-semibold text-lg text-zinc-800 flex"> <span className="flex justify-center items-center pr-1"><FaCalendarCheck /></span> <span>Appointment</span> </span></Link></li>
+      <li><Link to="/doctors"><span className="font-semibold text-lg text-zinc-800 flex"> <span className="flex justify-center items-center pr-1"> <FaHandHoldingMedical /> </span> <span>Doctors</span> </span></Link></li>
+      <li><Link to="/contact"><span className="font-semibold text-lg text-zinc-800 flex"> <span className="flex justify-center items-center pr-1"> <FaPhone /> </span> <span>Contact</span> </span></Link></li>
+      {/* <li><Link to="/blog"><span className="font-semibold text-lg text-zinc-800">Blog</span></Link></li> */}
       {
-        user && <li><Link to="/dashboard"><span className="font-semibold text-lg text-zinc-800">Dashboard</span></Link></li>
+        user && <li><Link to="/dashboard"><span className="font-semibold text-lg text-zinc-800 flex"> <span className="flex justify-center items-center pr-1"> <FaBorderAll /> </span> <span>Dashboard</span> </span></Link></li>
       }
 
     </>
@@ -29,7 +31,7 @@ const Navbar = () => {
 
   return (
 
-    <div className="navbar px-5 lg:px-10 bg-gray-100 py-3 sticky top-0 z-30">
+    <div className="navbar px-5 lg:px-5 bg-gray-100 py-3 sticky top-0 z-30">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex="0" className="btn btn-ghost lg:hidden">
@@ -43,12 +45,12 @@ const Navbar = () => {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
             </svg>
           </label>
-          <ul tabIndex="0" className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+          <ul tabIndex="0" className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-sm w-52">
             {menuItems}
           </ul>
         </div>
-        <a href="/" className="normal-case text-xl mx-2 lg:mx-0"><img className='rounded-2xl' src={img} style={{ width: "70px", height: "50px" }} alt="" /></a>
-        {/* <a href="/" className="normal-case text-xl font-semibold lg:mx-0"> <span>Dental Solution</span> </a> */}
+        {/* <a href="/" className="normal-case text-xl mx-2 lg:mx-0"><img className='rounded-2xl' src={img} style={{ width: "70px", height: "50px" }} alt="" /></a> */}
+        <a href="/" className="normal-case border-2 rounded-2xl border-t-gray-100 border-l-gray-100 border-r-gray-100 border-b-orange-500 border-sm px-3 py-1 text-orange-500 text-lg lg:text-xl font-bold lg:mx-0"> <span>Dental Solution</span> </a>
       </div>
       <div className="navbar-end hidden lg:flex">
         <ul className="menu menu-horizontal p-0 text-lg">

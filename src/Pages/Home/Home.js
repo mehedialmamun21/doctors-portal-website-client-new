@@ -11,13 +11,15 @@ import Testimonial from "./Testimonial";
 const Home = () => {
   return (
     <div>
-      <Banner></Banner>
-      <Info></Info>
-      <Services></Services>
-      {/* <ExCare></ExCare> */}
-      <MakeAppointment></MakeAppointment>
-      <Testimonial></Testimonial>
-      <ContactUs></ContactUs>
+      <div className="pb-28">
+        <Banner></Banner>
+        <Info></Info>
+        <Services></Services>
+        {/* <ExCare></ExCare> */}
+        <MakeAppointment></MakeAppointment>
+        <Testimonial></Testimonial>
+        <ContactUs></ContactUs>
+      </div>
       <Footer></Footer>
     </div>
   );

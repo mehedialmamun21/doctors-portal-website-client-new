@@ -34,7 +34,7 @@ const Banner = () => {
 
     return (
 
-        <div className='max-w-[1400px] lg:h-[485px] pt-2 w-full px-5 lg:px-0 relative group'>
+        <div className='max-w-[1400px] lg:h-[485px] w-full px-5 lg:px-0 relative group'>
 
             <div style={{ backgroundImage: `url(${slides[currentIndex].url})` }} className='w-full h-[480px] object-cover bg-center bg-no-repeat'>
                 {/* Left Arrow */}
@@ -48,7 +48,7 @@ const Banner = () => {
                 </div>
             </div>
 
-            <div className='flex top-4 justify-center py-2'>
+            <div className='flex top-4 justify-center py-3'>
                 {slides.map((slide, slideIndex) => (
                     <div key={slideIndex}
                         onClick={() => goToSlide(slideIndex)}

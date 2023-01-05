@@ -38,7 +38,7 @@ const Doctors = () => {
     return (
         <section>
 
-            <div class="overflow-x-auto py-5">
+            <div class="overflow-x-auto pt-5 pb-28">
 
                 <table class="table w-full border-4">
 
