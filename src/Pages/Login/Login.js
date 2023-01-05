@@ -51,7 +51,7 @@ const Login = () => {
   }
 
   return (
-    <section className="bg-zinc-500 h-screen flex justify-center items-center">
+    <section className="h-screen flex justify-center items-center">
 
       <div className="bg-white w-1/2 flex justify-center items-center py-0">
         <div className="card w-96 bg-base-50 rounded-sm ">

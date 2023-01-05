@@ -15,7 +15,7 @@ const Footer = () => {
             backgroundSize: 'cover',
         }} className="p-5 mt-20">
 
-            <div className='footer lg:mx-40'>
+            <div className='footer lg:pl-40'>
                 <div>
                     <span className="footer-title text-xl">Services</span>
                     <a href='/#' className="link link-hover font-semibold text-stone-500">Monthly Checkup</a>
