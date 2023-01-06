@@ -31,7 +31,7 @@ const Modal = ({ setModalOn, setChoice }) => {
 
             <div className="flex h-screen justify-center items-center">
 
-                <div className="flex-col justify-center bg-white py-12 pl-6 mx-10 border-2 border-primary rounded-sm ">
+                <div className="flex-col justify-center bg-white py-12 pl-6 mx-10 rounded-sm ">
 
                     <div className="flex justify-center text-2xl text-zinc-700 font-bold" >Want to Enter in Your Profile?</div>
 

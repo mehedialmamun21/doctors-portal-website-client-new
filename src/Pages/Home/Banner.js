@@ -1,17 +1,20 @@
 import React from 'react';
 import { useState } from 'react';
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
-import { RxDotFilled } from 'react-icons/rx';
+import { RxDot } from 'react-icons/rx';
 const Banner = () => {
     const slides = [
+        {
+            url: 'https://i.postimg.cc/qR0RFKDB/banani-dental-2.png'
+        },
+        {
+            url: 'https://i.postimg.cc/BbQC4dzy/banani-dental-1-scaled.png'
+        },
         {
             url: 'https://i.postimg.cc/rpSVRGyX/wentworth-family-dental-general-and-family-dentist-sw-calgary-4617-1280x780.jpg'
         },
         {
-            url: 'https://i.postimg.cc/ZK7Pd49x/1668-000-N19-medium-1280x780.jpg'
-        },
-        {
-            url: 'https://i.postimg.cc/tgckKPQf/st-charles-dental-clinic-alain-carle-architecte-26-1280x780.jpg'
+            url: 'https://i.postimg.cc/J0fSTNKP/1668-000-N19-medium.jpg'
         }
     ]
 
@@ -34,26 +37,26 @@ const Banner = () => {
 
     return (
 
-        <div className='max-w-[1400px] lg:h-[485px] w-full px-5 lg:px-0 relative group'>
+        <div className='lg:h-[485px] px-5 lg:px-0 relative group mb-28'>
 
-            <div style={{ backgroundImage: `url(${slides[currentIndex].url})` }} className='w-full h-[480px] object-cover bg-center bg-no-repeat'>
+            <div style={{ backgroundImage: `url(${slides[currentIndex].url})` }} className='h-[575px] bg-center bg-no-repeat object-cover mb-3'>
                 {/* Left Arrow */}
-                <div className='absolute top=[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 hover:bg-white/50 bg-black/50 text-white hover:text-black cursor-pointer mt-60'>
+                <div className='absolute top=[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 hover:bg-white/50 bg-black/30 text-white hover:text-black cursor-pointer mt-60'>
                     <BsChevronCompactLeft onClick={prevSlide} size={30} />
                 </div>
 
                 {/* Right Arrow */}
-                <div className='absolute top=[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 hover:bg-white/50 bg-black/50 text-white hover:text-black cursor-pointer mt-60'>
+                <div className='absolute top=[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 hover:bg-white/50 bg-black/30 text-white hover:text-black cursor-pointer mt-60'>
                     <BsChevronCompactRight onClick={nextSlide} size={30} />
                 </div>
             </div>
 
-            <div className='flex top-4 justify-center py-3'>
+            <div className='flex top-4 justify-center'>
                 {slides.map((slide, slideIndex) => (
                     <div key={slideIndex}
                         onClick={() => goToSlide(slideIndex)}
-                        className='text-xl cursor-pointer'>
-                        <RxDotFilled />
+                        className='text-xl cursor-pointer text-black hover:text-orange-700'>
+                        <RxDot />
                     </div>
                 ))}
             </div>

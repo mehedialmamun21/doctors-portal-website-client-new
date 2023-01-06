@@ -50,10 +50,10 @@ const Services = () => {
 
 
     return (
-        <div className='px-5 lg:px-10 pt-10 pb-20 lg:pb-40'>
+        <div className='px-5 lg:px-40 pt-10 pb-20 lg:pb-40'>
 
             <div className='text-center pb-20'>
-                <h4 className='text-primary text-xl font-bold uppercase pb-2'>Our Services</h4>
+                <h4 className='text-primary text-xl font-semibold uppercase pb-2'>Our Services</h4>
                 <h3 className='text-4xl pb-2 text-zinc-700'>Services We Provide</h3>
             </div>
 

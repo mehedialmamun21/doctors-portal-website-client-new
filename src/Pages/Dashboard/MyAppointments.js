@@ -36,7 +36,7 @@ const MyAppointments = () => {
     }, [user])
 
     return (
-        <div>
+        <div className='pr-5'>
             <h2 className='my-5 text-xl text-center text-white bg-orange-400 p-2'><span className='border py-1 px-5'>Total Appointment - {appointments.length}</span></h2>
 
             <div class="overflow-x-auto">

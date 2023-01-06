@@ -31,7 +31,7 @@ const Doctors = () => {
     return (
         <section>
 
-            <div class="overflow-x-auto pt-5">
+            <div class="overflow-x-auto pt-5 px-5">
 
                 <table class="table w-full border-4">
 
@@ -82,16 +82,14 @@ const Doctors = () => {
 
             </div>
 
-            <div className='flex justify-end items-end pt-5 pb-28'>
-                <span className='text-blue-400 py-2'>
+            <div className='flex justify-end items-end pt-2 pb-28 px-5'>
+                <span className='pb-3'>
                     <FaRegCaretSquareRight size="30px" className='text-secondary' />
                 </span>
                 <div className='pl-5 py-2'>
-                    <button onClick={clicked} className='bg-gradient-to-r from-secondary to-primary text-white text-lg font-semibold px-16 py-2 rounded-sm hover:scale-105 duration-300'>Doctor Entry</button>
+                    <button onClick={clicked} className='bg-gradient-to-r from-secondary to-primary text-white text-lg font-semibold px-16 py-2 rounded-sm hover:scale-105 duration-300'>Doctor's Entry</button>
                 </div>
             </div>
-
-            <Footer></Footer>
 
         </section>
 

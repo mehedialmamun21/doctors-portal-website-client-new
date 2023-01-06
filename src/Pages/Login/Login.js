@@ -5,7 +5,9 @@ import auth from '../../firebase.init'
 import Loading from "../Shared/Loading";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import useToken from "../../hooks/useToken";
-import googleIcon from '../../assets/images/google.png'
+import googleIcon from '../../assets/images/google.png';
+import { FaSignInAlt } from 'react-icons/fa';
+
 
 const Login = () => {
 
@@ -54,10 +56,15 @@ const Login = () => {
     <section className="h-screen flex justify-center items-center">
 
       <div className="bg-white w-1/2 flex justify-center items-center py-0">
-        <div className="card w-96 bg-base-50 rounded-sm ">
-          <div className="card-body ">
 
-            {/* <h2 className="text-center text-xl font-semibold">Login</h2> */}
+        <div className="card w-96 bg-base-50 rounded-sm ">
+
+          <div className="flex justify-center items-center text-xl font-bold">
+            <span className="flex justify-center items-center"><FaSignInAlt /></span>
+            <span className="pl-4">Login</span>
+          </div>
+
+          <div className="card-body ">
 
             <form onSubmit={handleSubmit(onSubmit)}>
 

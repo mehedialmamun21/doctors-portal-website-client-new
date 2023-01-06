@@ -26,7 +26,7 @@ const Payment = () => {
     }
 
     return (
-        <div className='px-5 my-5 lg:py-14 lg:px-24'>
+        <div className='px-5 lg:pt-10 lg:px-24'>
 
             <div className='w-50 max-w-xl'>
                 <div class="card bg-slate-100 mb-12 rounded-lg border border-zinc-400">
@@ -36,7 +36,7 @@ const Payment = () => {
                         <p> <span className=''>Pay for :</span> <span className='text-secondary text-lg font-semibold'>{appointment.treatment}</span> </p>
                         <p> <span className=''>Appointment :</span> <span className='text-orange-500 font-semibold'>{appointment.date}</span> at <span className='text-blue-500 font-semibold'>{appointment.slot}</span> </p>
                         <br />
-                        <p> <span className=''>Please pay :</span> <span className='font-semibold border-2 border-zinc-400 px-3 py-1'>{appointment.price} Tk</span></p>
+                        <p> <span className=''>Please pay :</span> <span className='font-semibold border rounded-md border-zinc-500 px-3 py-1'>{appointment.price} Tk</span></p>
                     </div>
                 </div>
 

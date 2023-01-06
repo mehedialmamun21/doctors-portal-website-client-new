@@ -23,11 +23,22 @@ import Blog from "./Pages/Blog/Blog";
 import Doctors from "./Pages/Doctors/Doctors";
 import DoctorDetails from "./Pages/Doctors/DoctorDetails";
 
+import { FaFacebook, FaYoutube, FaTwitter } from 'react-icons/fa';
+
 function App() {
 
   return (
 
-    <div className="max-w-7xl mx-auto">
+    // <div className="max-w-7xl mx-auto">
+    <div className="mx-auto">
+
+      <div className="flex justify-end pr-64 py-4 text-white bg-gray-100">
+        <a href="/facebook" target="_blank"><FaFacebook className="mr-6 cursor-pointer text-blue-600 text-lg" /></a>
+        <a href="/youTube" target="_blank"><FaYoutube className="mr-6 cursor-pointer text-red-600 text-lg" /></a>
+        <a href="/Twitter" target="_blank"><FaTwitter className="cursor-pointer text-blue-400 text-lg" /></a>
+      </div>
+
+      <hr />
 
       <Navbar></Navbar>
 

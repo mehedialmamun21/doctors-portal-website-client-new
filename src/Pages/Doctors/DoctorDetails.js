@@ -14,9 +14,9 @@ const DoctorDetails = () => {
         fetch(url)
             .then(res => res.json())
             .then(data => setDoctor(data))
-    }, [doctor]);
+    }, [doctor, doctorId]);
     return (
-        <div className='h-screen my-5'>
+        <div className='h-screen my-5 px-5'>
 
             <div className='flex justify-center py-5 border-2 border-b-zinc-400 bg-slate-200'>
                 <div className='pr-40'>
@@ -43,7 +43,7 @@ const DoctorDetails = () => {
                 <div className='w-4/12 px-10 pt-5 border-2 border-r-zinc-300 border-t-white border-l-white border-b-white'>
                     <div>
                         <p className='bg-slate-500 text-white text-center mb-5 py-1 text-xl font-bold'>Symptoms</p>
-                        <ul class="symp m-0 pl-5 py-5 h-24 bg-gray-200 focus:outline-none" data-toggle="tooltip" data-placement="bottom" title="Click to edit."
+                        <ul class="symp m-0 pl-5 py-5 h-18 bg-gray-200 focus:outline-none" data-toggle="tooltip" data-placement="bottom" title="Click to edit."
                             contenteditable="true">
                         </ul>
                         <div class="symp_action pb-8 pt-3">
@@ -53,7 +53,7 @@ const DoctorDetails = () => {
                     </div>
                     <div>
                         <p className='bg-slate-500 text-white text-center py-1 text-xl font-bold mb-5'>Tests</p>
-                        <ul class="symp m-0 pl-5 py-5 h-24 bg-gray-200 focus:outline-none" data-toggle="tooltip" data-placement="bottom" title="Click to edit."
+                        <ul class="symp m-0 pl-5 py-5 h-18 bg-gray-200 focus:outline-none" data-toggle="tooltip" data-placement="bottom" title="Click to edit."
                             contenteditable="true">
                         </ul>
                         <div class="symp_action pb-5 pt-3">
@@ -78,7 +78,7 @@ const DoctorDetails = () => {
                         <img src={prescription2} style={{ width: 90 }} alt="" />
                     </div>
                     <div className='px-6 py-5'>
-                        <ul class="symp m-0 pl-5 py-5 h-60 w-full list-disc bg-gray-200 focus:outline-none" data-toggle="tooltip" data-placement="bottom" title="Click here to add medicine."
+                        <ul class="symp m-0 pl-5 py-5 h-44 w-full list-disc bg-gray-200 focus:outline-none" data-toggle="tooltip" data-placement="bottom" title="Click here to add medicine."
                             contenteditable="true">
                         </ul>
                         <div class="pt-3">
@@ -93,10 +93,6 @@ const DoctorDetails = () => {
 
                 </div>
             </div>
-
-            {/* Extraa - for testing purposes only */}
-            <span className='pb-5 font-bold text-lg'>For tesing purposes only :</span>
-            <p>{doctor.description}</p>
 
         </div>
     );

@@ -25,7 +25,7 @@ const Contact = () => {
     };
 
     return (
-        <section className='h:screen px-5 lg:px-0'>
+        <section className='h:screen px-5 lg:px-5'>
 
             <div className='flex flex-col lg:gap-8 md:flex-row lg:flex-row py-3 lg:pt-5 lg:pb-28 px-5 lg:px-0 '>
 

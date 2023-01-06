@@ -30,7 +30,7 @@ const Navbar = () => {
 
   return (
 
-    <div className="navbar px-5 lg:px-5 bg-gray-100 py-0 sticky top-0 z-30">
+    <div className="navbar px-5 lg:pr-14 lg:pl-10 bg-gray-100 py-0 sticky top-0 z-30">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex="0" className="btn btn-ghost lg:hidden">
