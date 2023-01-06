@@ -39,9 +39,10 @@ const Doctors = () => {
                         <tr>
                             <th>Doctor Image</th>
                             <th>Name</th>
+                            <th>Degree</th>
                             <th>Speciality</th>
                             <th>Time</th>
-                            <th>Room</th>
+                            {/* <th>Room</th> */}
                             <th>Email</th>
                             <th>Phone</th>
                             {/* <th>Id</th> */}
@@ -61,11 +62,14 @@ const Doctors = () => {
                                         </div>
                                     </td>
                                     <td className='text-cyan-600 font-semibold'>{doctor.name}</td>
-                                    <td className='text-zinc-700 font-semibold'>{doctor.speciality}</td>
-                                    <td className='text-cyan-600 font-semibold'>{doctor.time}</td>
-                                    <td className='text-zinc-700 font-semibold'>{doctor.room}</td>
+                                    <td className='text-zinc-700 font-semibold'>{doctor.degree}</td>
+                                    <td className='text-cyan-600 font-semibold'>{doctor.speciality}</td>
+                                    <td className='text-zinc-700 font-semibold'>{doctor.time}</td>
+                                    {/* <td className='text-zinc-700 font-semibold'>{doctor.room}</td> */}
                                     <td className='text-cyan-600 font-semibold'>{doctor.email}</td>
                                     <td className='text-zinc-700 font-semibold'>{doctor.phone}</td>
+                                    {/* <td className='text-zinc-700 font-semibold'>{doctor.detail}</td> */}
+
                                     {/* <td className='text-zinc-700'>{doctor._id}</td> */}
                                 </tr>
                             )

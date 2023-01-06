@@ -42,6 +42,8 @@ const AddDoctor = () => {
                         phone: data.phone,
                         room: data.room,
                         speciality: data.speciality,
+                        degree: data.degree,
+                        description: data.description,
                         time: data.time,
                         img: img
                     }
@@ -75,13 +77,13 @@ const AddDoctor = () => {
 
 
     return (
-        <div className='flex justify-center my-5 lg:my-10 px-5 lg:px-0'>
+        <div className='flex justify-center my-5 lg:my-5 px-5 lg:px-0'>
 
             <form onSubmit={handleSubmit(onSubmit)}>
 
-                <div className='px-10 lg:px-28 py-7 lg:py-14 shadow-2xl bg-zinc-500'>
+                <div className='px-10 lg:px-28 py-5 lg:py-10 shadow-2xl bg-zinc-500'>
 
-                    <div className='px-10 lg:px-12 py-5 lg:py-5 bg-white lg:grid lg:grid-cols-2 lg:gap-12'>
+                    <div className='px-10 lg:px-12 py-5 lg:py-3 bg-white lg:grid lg:grid-cols-2 lg:gap-12'>
 
                         <div>
                             <div className="form-control w-full max-w-xs">
@@ -121,6 +123,51 @@ const AddDoctor = () => {
                             </div>
 
 
+
+                            <div className="form-control w-full max-w-xs">
+                                <label className="label">
+                                    <span className="label-text font-semibold">Degree</span>
+                                </label>
+                                <input type="text"
+                                    placeholder="Doctor's Degree"
+                                    className="input input-bordered w-full max-w-xs rounded-sm shadow-lg bg-slate-200"
+                                    {...register("degree", {
+                                        required: {
+                                            value: true,
+                                            message: 'Degree required'
+                                        },
+
+                                    })}
+                                />
+                                <label className="label">
+                                    {errors.degree?.type === 'required' && <span className="label-text-alt text-red-500 font-semibold">{errors.degree.message}</span>}
+
+                                </label>
+                            </div>
+
+
+                            <div className="form-control w-full max-w-xs">
+                                <label className="label">
+                                    <span className="label-text font-semibold">Photo</span>
+                                </label>
+                                <input type="file"
+                                    className="input input-bordered w-full max-w-xs rounded-sm shadow-lg bg-slate-200"
+                                    {...register("image", {
+                                        required: {
+                                            value: true,
+                                            message: 'Image is required'
+                                        },
+
+                                    })}
+                                />
+                                <label className="label">
+                                    {errors.image?.type === 'required' && <span className="label-text-alt text-red-500 font-semibold">{errors.image.message}</span>}
+
+                                </label>
+                            </div>
+
+
+
                             <div className="form-control w-full max-w-xs">
                                 <label className="label">
                                     <span className="label-text font-semibold">Email</span>
@@ -147,6 +194,13 @@ const AddDoctor = () => {
                             </div>
 
 
+                        </div>
+
+
+
+
+                        <div>
+
                             <div className="form-control w-full max-w-xs">
 
                                 <label className="label">
@@ -169,10 +223,7 @@ const AddDoctor = () => {
                                 </label>
 
                             </div>
-                        </div>
 
-
-                        <div>
                             <div className="form-control w-full max-w-xs">
                                 <label className="label">
                                     <span className="label-text font-semibold">Time</span>
@@ -216,28 +267,28 @@ const AddDoctor = () => {
                                 </label>
                             </div>
 
-
                             <div className="form-control w-full max-w-xs">
                                 <label className="label">
-                                    <span className="label-text font-semibold  mt-3">Photo</span>
+                                    <span className="label-text font-semibold">More Details</span>
                                 </label>
-                                <input type="file"
-                                    className="input input-bordered w-full max-w-xs rounded-sm shadow-lg bg-slate-200"
-                                    {...register("image", {
+                                <textarea type="text"
+                                    placeholder="More about Doctor.."
+                                    className='input input-bordered w-full max-w-xs h-28 rounded-sm shadow-lg bg-slate-200'
+                                    {...register("description", {
                                         required: {
                                             value: true,
-                                            message: 'Image is required'
+                                            message: 'Description required'
                                         },
 
                                     })}
                                 />
                                 <label className="label">
-                                    {errors.image?.type === 'required' && <span className="label-text-alt text-red-500 font-semibold">{errors.image.message}</span>}
+                                    {errors.description?.type === 'required' && <span className="label-text-alt text-red-500 font-semibold">{errors.description.message}</span>}
 
                                 </label>
                             </div>
 
-                            <input className="btn w-full font-bold bg-gradient-to-r from-secondary to-primary shadow-lg text-white rounded-sm mt-3 mb-3 border-none hover:scale-105 duration-300" type="submit" value="Add Doctor" />
+                            <input className="btn w-full font-bold bg-gradient-to-r from-secondary to-primary mt-2 shadow-lg text-white rounded-sm border-none hover:scale-105 duration-300" type="submit" value="Add Doctor" />
 
                         </div>
 
