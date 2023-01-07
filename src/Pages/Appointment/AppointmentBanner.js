@@ -2,8 +2,7 @@
 import { format } from 'date-fns';
 import { DayPicker } from 'react-day-picker';
 import 'react-day-picker/dist/style.css';
-
-// import { FaLongArrowAltRight } from 'react-icons/fa';
+import { BsChevronCompactRight } from 'react-icons/bs';
 
 const AppointmentBanner = ({ date, setDate }) => {
     return (
@@ -24,12 +23,12 @@ const AppointmentBanner = ({ date, setDate }) => {
                 </div>
 
                 <div className='flex justify-center items-center text-gray-500'>
-                    {/* <FaLongArrowAltRight size='2rem' /> */}
+                    <BsChevronCompactRight size={30} />
                 </div>
 
                 <div className='text-center text-2xl'>
                     <div className='pb-7 font-semibold text-zinc-700'>Available Appointments on</div>
-                    <span className='text-zinc-700 text-xl border bg-white px-16 py-4 rounded-sm font-semibold'>{format(date, 'PP')}</span>
+                    <span className='text-primary text-xl border bg-white px-16 py-4 rounded-sm font-semibold'>{format(date, 'PP')}</span>
                 </div>
 
             </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 import { RxDot } from 'react-icons/rx';
+import { Link } from 'react-router-dom';
 const Banner = () => {
     const slides = [
         {
@@ -40,6 +41,7 @@ const Banner = () => {
         <div className='lg:h-[485px] px-5 lg:px-0 relative group mb-28'>
 
             <div style={{ backgroundImage: `url(${slides[currentIndex].url})` }} className='h-[575px] bg-center bg-no-repeat object-cover mb-3'>
+
                 {/* Left Arrow */}
                 <div className='absolute top=[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 hover:bg-white/50 bg-black/30 text-white hover:text-black cursor-pointer mt-60'>
                     <BsChevronCompactLeft onClick={prevSlide} size={30} />
@@ -48,6 +50,19 @@ const Banner = () => {
                 {/* Right Arrow */}
                 <div className='absolute top=[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 hover:bg-white/50 bg-black/30 text-white hover:text-black cursor-pointer mt-60'>
                     <BsChevronCompactRight onClick={nextSlide} size={30} />
+                </div>
+
+                <div className='absolute top=[80%] -translate-x-[-70%] translate-y-[700%] cursor-pointer'>
+                    <p className='text-white font-semibold text-4xl'>Our Professional Team</p>
+                </div>
+
+                <div className='absolute top=[80%] -translate-x-[-46%] translate-y-[1620%] cursor-pointer'>
+                    <p className='text-white text-sm'>DENTAL SOLUTION is always promised to provide the best dental treatment to the patients</p>
+                </div>
+
+                <div className='absolute top=[80%] -translate-x-[-144%] translate-y-[905%] cursor-pointer'>
+                    <Link to="/appointment"><p className='border border-y-white text-white hover:bg-white px-5 py-2 hover:text-blue-600 font-semibold'>Book Appointment</p></Link>
+
                 </div>
             </div>
 
