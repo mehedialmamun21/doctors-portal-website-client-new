@@ -134,7 +134,7 @@ const Login = () => {
 
               {signInError}
 
-              <input className="btn mt-3 rounded-xl w-full max-w-xs font-semibold bg-gradient-to-r from-secondary to-primary shadow-lg text-white border-none hover:scale-105 duration-300" type="submit" value="Login" />
+              <input className="btn mt-3 rounded-sm w-full max-w-xs font-semibold bg-gradient-to-r from-secondary to-primary shadow-lg text-white border-none hover:scale-105 duration-300" type="submit" value="Login" />
 
             </form>
 
@@ -146,7 +146,7 @@ const Login = () => {
 
             <button
               onClick={() => signInWithGoogle()}
-              className="btn rounded-xl border-none text-white bg-slate-600 shadow-lg hover:scale-105 duration-300"
+              className="btn rounded-sm border-none text-white bg-slate-600 shadow-lg hover:scale-105 duration-300"
             > <img src={googleIcon} alt="" /><b className="mx-2 font-semibold">Google</b></button>
           </div>
         </div>

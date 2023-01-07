@@ -23,7 +23,8 @@ import Blog from "./Pages/Blog/Blog";
 import Doctors from "./Pages/Doctors/Doctors";
 import DoctorDetails from "./Pages/Doctors/DoctorDetails";
 
-import { FaFacebook, FaYoutube, FaTwitter } from 'react-icons/fa';
+import { FaFacebook, FaYoutube, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import UDoctors from "./Pages/UDoctors/UDoctors";
 
 function App() {
 
@@ -35,7 +36,9 @@ function App() {
       <div className="flex justify-end pr-64 py-4 text-white bg-gray-100">
         <a href="/facebook" target="_blank"><FaFacebook className="mr-6 cursor-pointer text-blue-600 text-lg" /></a>
         <a href="/youTube" target="_blank"><FaYoutube className="mr-6 cursor-pointer text-red-600 text-lg" /></a>
-        <a href="/Twitter" target="_blank"><FaTwitter className="cursor-pointer text-blue-400 text-lg" /></a>
+        <a href="/Twitter" target="_blank"><FaTwitter className="mr-6 cursor-pointer text-blue-400 text-lg" /></a>
+        <a href="/Instagram" target="_blank"><FaInstagram className="mr-6 cursor-pointer text-pink-500 text-lg" /></a>
+        <a href="/LinkedIn" target="_blank"><FaLinkedin className="cursor-pointer text-blue-500 text-lg" /></a>
       </div>
 
       <hr />
@@ -63,7 +66,11 @@ function App() {
         <Route path="/blog" element={<Blog></Blog>} />
         <Route path="/contact" element={<Contact></Contact>} />
 
-        <Route path="/doctors" element={<Doctors></Doctors>} />
+        {/* <Route path="/doctors" element={<Doctors></Doctors>} /> */}
+        <Route path="/dashboard/doctors" element={<Doctors></Doctors>} />
+
+        <Route path="/udoctors" element={<UDoctors></UDoctors>} />
+
         <Route path="/doctor" element={<DoctorDetails></DoctorDetails>} />
         <Route path="/doctor/:doctorId" element={<DoctorDetails />}></Route>
 

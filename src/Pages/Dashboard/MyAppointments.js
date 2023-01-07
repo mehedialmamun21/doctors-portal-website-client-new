@@ -56,11 +56,11 @@ const MyAppointments = () => {
                         {
                             appointments.map((a, index) => <tr key={a._id}>
                                 <th>{index + 1}</th>
-                                <td className='text-zinc-600'>{a.patientName}</td>
-                                <td className='text-zinc-600'>{a.date}</td>
-                                <td className='text-zinc-600'>{a.slot}</td>
-                                <td className='text-zinc-600'>{a.treatment}</td>
-                                <td className='text-zinc-600'>{a.phone}</td>
+                                <td className='text-cyan-600 font-semibold'>{a.patientName}</td>
+                                <td className='text-zinc-600 font-semibold'>{a.date}</td>
+                                <td className='text-cyan-600 font-semibold'>{a.slot}</td>
+                                <td className='text-zinc-600 font-semibold'>{a.treatment}</td>
+                                <td className='text-zinc-600 font-semibold'>{a.phone}</td>
                                 <td>
                                     {(a.price && !a.paid) && <Link to={`/dashboard/payment/${a._id}`}> <button className='btn btn-sm bg-green-500 hover:bg-green-600 border-none text-white px-5 font-semibold text-sm rounded-sm'>Pay</button> </Link>}
                                     {(a.price && a.paid) && <div>

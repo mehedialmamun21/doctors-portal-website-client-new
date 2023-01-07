@@ -28,6 +28,7 @@ const Dashboard = () => {
                             <li><Link to="/dashboard/users"> <span className='px-9 lg:px-12 py-3 font-bold rounded-sm shadow-lg bg-white'> Make Admin</span></Link></li>
                             <li><Link to="/dashboard/addDoctor"> <span className='px-9 lg:px-11 py-3 font-bold rounded-sm shadow-lg bg-white'>Add a Doctor</span> </Link></li>
                             <li><Link to="/dashboard/manageDoctor"><span className='px-6 lg:px-8 py-3 font-bold rounded-sm shadow-lg bg-white'>Manage Doctors</span></Link></li>
+                            <li><Link to="/dashboard/doctors"><span className='px-6 lg:px-9 py-3 font-bold rounded-sm shadow-lg bg-white'>Doctor's Profile</span></Link></li>
                         </>}
                     </ul>
                 </div>

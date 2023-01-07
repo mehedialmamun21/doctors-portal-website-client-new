@@ -18,7 +18,8 @@ const Navbar = () => {
     <>
       <li><Link to="/"> <span className="font-semibold text-lg text-zinc-800 flex"> <span className="flex justify-center items-center pr-2 text-blue-400"><FaHome size='1.25rem' /></span> <span>Home</span> </span> </Link></li>
       <li><Link to="/appointment"><span className="font-semibold text-lg text-zinc-800 flex"> <span className="flex justify-center items-center pr-2 text-blue-400"><FaCalendarCheck /></span> <span>Appointment</span> </span></Link></li>
-      <li><Link to="/doctors"><span className="font-semibold text-lg text-zinc-800 flex"> <span className="flex justify-center items-center pr-2 text-blue-400"> <FaHandHoldingMedical /> </span> <span>Doctors</span> </span></Link></li>
+      {/* <li><Link to="/doctors"><span className="font-semibold text-lg text-zinc-800 flex"> <span className="flex justify-center items-center pr-2 text-blue-400"> <FaHandHoldingMedical /> </span> <span>Dr.Profiles</span> </span></Link></li> */}
+      <li><Link to="/udoctors"><span className="font-semibold text-lg text-zinc-800 flex"> <span className="flex justify-center items-center pr-2 text-blue-400"> <FaHandHoldingMedical /> </span> <span className="">Doctors</span> </span></Link></li>
       <li><Link to="/contact"><span className="font-semibold text-lg text-zinc-800 flex"> <span className="flex justify-center items-center pr-2 text-blue-400"> <FaPhone /> </span> <span>Contact</span> </span></Link></li>
       {/* <li><Link to="/blog"><span className="font-semibold text-lg text-zinc-800">Blog</span></Link></li> */}
       {
@@ -69,7 +70,9 @@ const Navbar = () => {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
           </svg>
         </label>
+
         {user ? <button className="btn btn-ghost font-bold hover:bg-slate-600 bg-slate-700 text-white px-2 lg:px-8 mx-2 lg:mx-0 rounded-sm" onClick={logout} >Sign Out</button> : <Link to="/login" className="btn btn-ghost font-bold hover:bg-slate-600 bg-slate-700 text-white px-2 lg:px-8 mx-2 lg:mx-0 rounded-sm">Login</Link>}
+
       </div>
 
     </div>

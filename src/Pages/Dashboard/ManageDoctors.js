@@ -27,9 +27,10 @@ const ManageDoctors = () => {
                     <thead>
                         <tr>
                             <th>Index</th>
-                            <th>Doctor Image</th>
+                            {/* <th>Doctor Image</th> */}
                             <th>Name</th>
                             <th>Speciality</th>
+                            <th>Email</th>
                             <th>Phone</th>
                             <th>Action ( delete )</th>
                         </tr>

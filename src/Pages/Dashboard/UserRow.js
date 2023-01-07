@@ -2,7 +2,7 @@ import React from 'react';
 import { toast } from 'react-toastify';
 
 const UserRow = ({ user, refetch, index }) => {
-    const { email, role } = user;
+    const { _id, email, role } = user;
 
     const makeAdmin = () => {
         const proceed = window.confirm("Sure to make an Admin?");
@@ -53,6 +53,7 @@ const UserRow = ({ user, refetch, index }) => {
     return (
         <tr>
             <th>{index + 1}</th>
+            <td className='font-semibold text-cyan-600'>{_id}</td>
             <td className='font-semibold'>{email}</td>
             <td>{role !== 'admin' && <button onClick={makeAdmin} class="btn btn-sm bg-green-500 hover:bg-green-600 border-none text-white px-3 font-semibold rounded-sm">Make Admin</button>}</td>
             <td><button onClick={() => handleDelete(email)} class="btn btn-sm bg-red-400 hover:bg-red-500 border-none text-white px-3 font-semibold rounded-sm">Remove User</button></td>

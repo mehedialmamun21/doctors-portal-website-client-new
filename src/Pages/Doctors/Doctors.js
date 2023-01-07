@@ -5,6 +5,7 @@ import Footer from '../Shared/Footer';
 import { FaRegCaretSquareRight } from 'react-icons/fa';
 
 import Modal from "./Modal";
+import DoctorsTable from './DoctorsTable';
 
 const Doctors = () => {
 
@@ -29,7 +30,7 @@ const Doctors = () => {
 
 
     return (
-        <section>
+        <section className='h-screen'>
 
             <div class="overflow-x-auto pt-5 px-5">
 
@@ -37,7 +38,8 @@ const Doctors = () => {
 
                     <thead>
                         <tr>
-                            <th>Doctor Image</th>
+                            <th>Index</th>
+                            {/* <th>Doctor Image</th> */}
                             <th>Name</th>
                             <th>Degree</th>
                             <th>Speciality</th>
@@ -52,27 +54,11 @@ const Doctors = () => {
                     <tbody>
 
                         {
-                            doctors.map((doctor) =>
-                                <tr>
-                                    <td>
-                                        <div class="avatar">
-                                            <div class="w-14 rounded-sm">
-                                                <img src={doctor.img} alt={doctor.name} />
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td className='text-cyan-600 font-semibold'>{doctor.name}</td>
-                                    <td className='text-zinc-700 font-semibold'>{doctor.degree}</td>
-                                    <td className='text-cyan-600 font-semibold'>{doctor.speciality}</td>
-                                    <td className='text-zinc-700 font-semibold'>{doctor.time}</td>
-                                    {/* <td className='text-zinc-700 font-semibold'>{doctor.room}</td> */}
-                                    <td className='text-cyan-600 font-semibold'>{doctor.email}</td>
-                                    <td className='text-zinc-700 font-semibold'>{doctor.phone}</td>
-                                    {/* <td className='text-zinc-700 font-semibold'>{doctor.detail}</td> */}
-
-                                    {/* <td className='text-zinc-700'>{doctor._id}</td> */}
-                                </tr>
-                            )
+                            doctors.map((doctor, index) => <DoctorsTable
+                                key={doctor._id}
+                                doctor={doctor}
+                                index={index}
+                            ></DoctorsTable>)
                         }
 
                     </tbody>

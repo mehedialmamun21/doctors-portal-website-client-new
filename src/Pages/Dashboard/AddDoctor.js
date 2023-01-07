@@ -77,81 +77,76 @@ const AddDoctor = () => {
 
 
     return (
-        <div className='flex justify-center my-5 lg:my-5 px-5 lg:px-0'>
+        <div className='flex justify-center py-5 lg:py-14 my-5 lg:my-5 px-5 lg:mr-5 bg-zinc-300'>
 
             <form onSubmit={handleSubmit(onSubmit)}>
 
-                <div className='px-10 lg:px-28 py-5 lg:py-10 shadow-2xl bg-zinc-500'>
+                <div className='px-10 lg:px-44 py-5 lg:py-10 bg-zinc-600 lg:grid lg:grid-cols-2 lg:gap-12'>
 
-                    <div className='px-10 lg:px-12 py-5 lg:py-3 bg-white lg:grid lg:grid-cols-2 lg:gap-12'>
-
-                        <div>
-                            <div className="form-control w-full max-w-xs">
-                                <label className="label">
+                    <div>
+                        <div className="form-control w-full max-w-xs">
+                            {/* <label className="label">
                                     <span className="label-text font-semibold">Name</span>
-                                </label>
-                                <input type="text"
-                                    placeholder="Doctor's Name"
-                                    className="input input-bordered w-full max-w-xs rounded-sm shadow-lg bg-slate-200"
-                                    {...register("name", {
-                                        required: {
-                                            value: true,
-                                            message: 'Name is required'
-                                        },
+                                </label> */}
+                            <input type="text"
+                                placeholder="Doctor's Name"
+                                className="input input-bordered w-full max-w-xs rounded-sm shadow-lg"
+                                {...register("name", {
+                                    required: {
+                                        value: true,
+                                        message: 'Name required'
+                                    },
 
-                                    })}
-                                />
-                                <label className="label">
-                                    {errors.name?.type === 'required' && <span className="label-text-alt text-red-500 font-semibold">{errors.name.message}</span>}
+                                })}
+                            />
+                            <label className="label">
+                                {errors.name?.type === 'required' && <span className="label-text-alt text-red-500 font-semibold">{errors.name.message}</span>}
+                            </label>
+                        </div>
 
-                                </label>
-                            </div>
 
-
-                            <div className="form-control w-full max-w-xs">
-                                <label className="label">
+                        <div className="form-control w-full max-w-xs pb-4">
+                            {/* <label className="label">
                                     <span className="label-text font-semibold">Speciality</span>
-                                </label>
-                                <select {...register('speciality')} class="select input-bordered w-full max-w-xs rounded-sm shadow-lg bg-slate-200">
-                                    {
-                                        services.map(service => <option
-                                            key={service._id}
-                                            value={service.name}
-                                        >{service.name}</option>)
-                                    }
-                                </select>
-                            </div>
+                                </label> */}
+                            <select {...register('speciality')} class="select input-bordered w-full max-w-xs rounded-sm shadow-lg">
+                                {
+                                    services.map(service => <option
+                                        key={service._id}
+                                        value={service.name}
+                                    >{service.name}</option>)
+                                }
+                            </select>
+                        </div>
 
 
-
-                            <div className="form-control w-full max-w-xs">
-                                <label className="label">
+                        <div className="form-control w-full max-w-xs">
+                            {/* <label className="label">
                                     <span className="label-text font-semibold">Degree</span>
-                                </label>
-                                <input type="text"
-                                    placeholder="Doctor's Degree"
-                                    className="input input-bordered w-full max-w-xs rounded-sm shadow-lg bg-slate-200"
-                                    {...register("degree", {
-                                        required: {
-                                            value: true,
-                                            message: 'Degree required'
-                                        },
+                                </label> */}
+                            <input type="text"
+                                placeholder="Doctor's Degree"
+                                className="input input-bordered w-full max-w-xs rounded-sm shadow-lg"
+                                {...register("degree", {
+                                    required: {
+                                        value: true,
+                                        message: 'Degree required'
+                                    },
 
-                                    })}
-                                />
-                                <label className="label">
-                                    {errors.degree?.type === 'required' && <span className="label-text-alt text-red-500 font-semibold">{errors.degree.message}</span>}
+                                })}
+                            />
+                            <label className="label">
+                                {errors.degree?.type === 'required' && <span className="label-text-alt text-red-500 font-semibold">{errors.degree.message}</span>}
+                            </label>
+                        </div>
 
-                                </label>
-                            </div>
 
-
-                            <div className="form-control w-full max-w-xs">
+                        {/* <div className="form-control w-full max-w-xs">
                                 <label className="label">
                                     <span className="label-text font-semibold">Photo</span>
                                 </label>
                                 <input type="file"
-                                    className="input input-bordered w-full max-w-xs rounded-sm shadow-lg bg-slate-200"
+                                    className="input input-bordered w-full max-w-xs rounded-sm shadow-lg"
                                     {...register("image", {
                                         required: {
                                             value: true,
@@ -164,133 +159,125 @@ const AddDoctor = () => {
                                     {errors.image?.type === 'required' && <span className="label-text-alt text-red-500 font-semibold">{errors.image.message}</span>}
 
                                 </label>
-                            </div>
+                            </div> */}
 
 
-
-                            <div className="form-control w-full max-w-xs">
-                                <label className="label">
+                        <div className="form-control w-full max-w-xs">
+                            {/* <label className="label">
                                     <span className="label-text font-semibold">Email</span>
-                                </label>
-                                <input type="email"
-                                    placeholder="Doctor's Email"
-                                    className="input input-bordered w-full max-w-xs rounded-sm shadow-lg bg-slate-200"
-                                    {...register("email", {
-                                        required: {
-                                            value: true,
-                                            message: 'Email is required'
-                                        },
-                                        pattern: {
-                                            value: /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/,
-                                            message: 'Provide a valid Email'
-                                        }
-                                    })}
-                                />
-                                <label className="label">
-                                    {errors.email?.type === 'required' && <span className="label-text-alt text-red-500 font-semibold">{errors.email.message}</span>}
-                                    {errors.email?.type === 'pattern' && <span className="label-text-alt text-red-500 font-semibold">{errors.email.message}</span>}
-
-                                </label>
-                            </div>
-
-
+                                </label> */}
+                            <input type="email"
+                                placeholder="Doctor's Email"
+                                className="input input-bordered w-full max-w-xs rounded-sm shadow-lg"
+                                {...register("email", {
+                                    required: {
+                                        value: true,
+                                        message: 'Email required'
+                                    },
+                                    pattern: {
+                                        value: /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/,
+                                        message: 'Provide a valid Email'
+                                    }
+                                })}
+                            />
+                            <label className="label">
+                                {errors.email?.type === 'required' && <span className="label-text-alt text-red-500 font-semibold">{errors.email.message}</span>}
+                                {errors.email?.type === 'pattern' && <span className="label-text-alt text-red-500 font-semibold">{errors.email.message}</span>}
+                            </label>
                         </div>
 
-
-
-
-                        <div>
-
-                            <div className="form-control w-full max-w-xs">
-
-                                <label className="label">
+                        <div className="form-control w-full max-w-xs">
+                            {/* <label className="label">
                                     <span className="label-text font-semibold">Phone</span>
-                                </label>
-                                <input type="input" name='phone'
-                                    placeholder="Phone Number"
-                                    className="input input-bordered w-full max-w-xs rounded-sm shadow-lg bg-slate-200"
-                                    {...register("phone", {
-                                        required: {
-                                            value: true,
-                                            message: 'Phone no. is required'
-                                        },
+                                </label> */}
+                            <input type="input" name='phone'
+                                placeholder="Phone Number"
+                                className="input input-bordered w-full max-w-xs rounded-sm shadow-lg"
+                                {...register("phone", {
+                                    required: {
+                                        value: true,
+                                        message: 'Phone no. required'
+                                    },
 
-                                    })}
-                                />
+                                })}
+                            />
 
-                                <label className="label">
-                                    {errors.phone?.type === 'required' && <span className="label-text-alt text-red-500 font-semibold">{errors.phone.message}</span>}
-                                </label>
-
-                            </div>
-
-                            <div className="form-control w-full max-w-xs">
-                                <label className="label">
-                                    <span className="label-text font-semibold">Time</span>
-                                </label>
-                                <input type="text"
-                                    placeholder="Time to see the patient"
-                                    className="input input-bordered w-full max-w-xs rounded-sm shadow-lg bg-slate-200"
-                                    {...register("time", {
-                                        required: {
-                                            value: true,
-                                            message: 'Time is required'
-                                        },
-
-                                    })}
-                                />
-                                <label className="label">
-                                    {errors.time?.type === 'required' && <span className="label-text-alt text-red-500 font-semibold">{errors.time.message}</span>}
-
-                                </label>
-                            </div>
-
-
-                            <div className="form-control w-full max-w-xs">
-                                <label className="label">
-                                    <span className="label-text font-semibold">Room</span>
-                                </label>
-                                <input type="input" name='room'
-                                    placeholder="Room Number"
-                                    className="input input-bordered w-full max-w-xs rounded-sm shadow-lg bg-slate-200"
-                                    {...register("room", {
-                                        required: {
-                                            value: true,
-                                            message: 'Room no. is required'
-                                        },
-
-                                    })}
-                                />
-                                <label className="label">
-                                    {errors.room?.type === 'required' && <span className="label-text-alt text-red-500 font-semibold">{errors.room.message}</span>}
-
-                                </label>
-                            </div>
-
-                            <div className="form-control w-full max-w-xs">
-                                <label className="label">
-                                    <span className="label-text font-semibold">More Details</span>
-                                </label>
-                                <textarea type="text"
-                                    placeholder="More about Doctor.."
-                                    className='input input-bordered w-full max-w-xs h-28 rounded-sm shadow-lg bg-slate-200'
-                                    {...register("description", {
-                                        required: {
-                                            value: true,
-                                            message: 'Description required'
-                                        },
-
-                                    })}
-                                />
-                                <label className="label">
-                                    {errors.description?.type === 'required' && <span className="label-text-alt text-red-500 font-semibold">{errors.description.message}</span>}
-
-                                </label>
-                            </div>
-
-                            <input className="btn w-full font-bold bg-gradient-to-r from-secondary to-primary mt-2 shadow-lg text-white rounded-sm border-none hover:scale-105 duration-300" type="submit" value="Add Doctor" />
+                            <label className="label">
+                                {errors.phone?.type === 'required' && <span className="label-text-alt text-red-500 font-semibold">{errors.phone.message}</span>}
+                            </label>
 
                         </div>
+
+                    </div>
+
+
+
+
+
+
+                    <div>
+
+                        <div className="form-control w-full max-w-xs">
+                            {/* <label className="label">
+                                    <span className="label-text font-semibold">Time</span>
+                                </label> */}
+                            <input type="text"
+                                placeholder="Time to see the patient"
+                                className="input input-bordered w-full max-w-xs rounded-sm shadow-lg"
+                                {...register("time", {
+                                    required: {
+                                        value: true,
+                                        message: 'Time required'
+                                    },
+
+                                })}
+                            />
+                            <label className="label">
+                                {errors.time?.type === 'required' && <span className="label-text-alt text-red-500 font-semibold">{errors.time.message}</span>}
+                            </label>
+                        </div>
+
+                        <div className="form-control w-full max-w-xs">
+                            {/* <label className="label">
+                                    <span className="label-text font-semibold">Room</span>
+                                </label> */}
+                            <input type="input" name='room'
+                                placeholder="Room Number"
+                                className="input input-bordered w-full max-w-xs rounded-sm shadow-lg"
+                                {...register("room", {
+                                    required: {
+                                        value: true,
+                                        message: 'Room no. required'
+                                    },
+
+                                })}
+                            />
+                            <label className="label">
+                                {errors.room?.type === 'required' && <span className="label-text-alt text-red-500 font-semibold">{errors.room.message}</span>}
+                            </label>
+                        </div>
+
+                        <div className="form-control w-full max-w-xs">
+                            {/* <label className="label">
+                                    <span className="label-text font-semibold">More Details</span>
+                                </label> */}
+                            <textarea type="text"
+                                placeholder="More about Doctor.."
+                                className='input input-bordered w-full max-w-xs h-40 rounded-sm shadow-lg'
+                                {...register("description", {
+                                    required: {
+                                        value: true,
+                                        message: 'Description required'
+                                    },
+
+                                })}
+                            />
+                            <label className="label">
+                                {errors.description?.type === 'required' && <span className="label-text-alt text-red-500 font-semibold">{errors.description.message}</span>}
+                            </label>
+                        </div>
+
+                        <input className="btn w-full font-bold bg-gradient-to-r from-secondary to-primary mt-2 shadow-lg text-white rounded-sm border-none hover:scale-105 duration-300" type="submit" value="Add Doctor" />
 
                     </div>
 
