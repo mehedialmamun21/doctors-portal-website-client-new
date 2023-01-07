@@ -1,8 +1,8 @@
 import React from 'react';
 import ServicesCard from './ServicesCard';
-import fluoride from '../../assets/images/fluoride.png'
-import cavity from '../../assets/images/cavity.png'
-import whitening from '../../assets/images/whitening.png'
+// import fluoride from '../../assets/images/fluoride.png'
+// import cavity from '../../assets/images/cavity.png'
+// import whitening from '../../assets/images/whitening.png'
 
 const Services = () => {
 
@@ -10,40 +10,45 @@ const Services = () => {
 
         {
             _id: 1,
-            name: "Fluoride Treatment",
-            description: "Fluoride treatments are typically professional treatments containing a high concentration of fluoride that a dentist will apply to a person's teeth to reduce the risk of cavities.",
-            img: fluoride
+            name: "Orthodontic Braces",
+            description: "This is the procedure that makes a dentist a true artist. In this specialized area we can change your smile by correcting your crowded and malposed tooth. We make this service reachable to all.",
+            url: "https://i.postimg.cc/hvnf1p2D/clear-braces.png"
         },
         {
             _id: 2,
-            name: "Cavity Fillings",
-            description: "To treat a cavity your dentist will remove the decayed portion of the tooth and then fill the area on the tooth where the decayed material was removed.",
-            img: cavity
+            name: "Scaling with Polishing",
+            description: "Scaling with polishing is a mandatory treatment for all individuals for at least once a year. It completely clean your teeth, removes stains and provide you a happy and bright smile.",
+            url: "https://i.postimg.cc/L8f9sz92/Scaling-and-Polishing.png"
+
         },
         {
             _id: 3,
-            name: "Teeth Whitening",
-            description: "Everyone notices a bright, white, glowing smile. That's why we utilize long-lasting Teeth Whitening procedure — because we want you to glow with pride and confidence.",
-            img: whitening
+            name: "Dental Bridge",
+            description: "This is the conventional procedure for replacement of missing tooth. Advanced lab technology and adequate training is our strength to provide the best dental bridge to our patients.",
+            url: "https://i.postimg.cc/63GLDYJJ/Dental-Bridges1-1024x854.png"
         },
+
         {
             _id: 4,
-            name: "Root Canal Therapy",
-            description: "A root canal is a dental procedure that is used to repair teeth that are infected or badly decayed. It is also called endodontic treatment.",
-            img: whitening
+            name: "Teeth Whitening",
+            description: "Everyone notices a bright, white, glowing smile. That's why we utilize long-lasting Teeth Whitening procedure — because we want you to glow with pride and confidence.",
+            url: "https://i.postimg.cc/wBhVqbRH/teeth-whitening3-compressed.png"
         },
+
         {
             _id: 5,
-            name: "Cosmetic Fillings",
-            description: "Cosmetic fillings, or tooth- colored fillings, are made of composite resin and glass particle. Cosmetic fillings can improve the appearance of your smile.",
-            img: fluoride
+            name: "Dental Implant",
+            description: "Are you tensed with your missing tooth? Don`t worry. We are now prepared with the world`s most advanced technology to replace your tooth. Dental Implant is the most recent procedure to replace tooth.",
+            url: "https://i.postimg.cc/7ZJ9cLx5/i-Stock-543979766-2.png"
         },
+
         {
             _id: 6,
-            name: "Teeth Extractions",
-            description: "A tooth extraction is a procedure to remove a tooth from the gum socket. In some cases, dentists extract teeth to prepare the patient's mouth for orthodontic treatment.",
-            img: cavity
+            name: "Root Canal Therapy",
+            description: "Root Canal Treatment (RCT) is a very specialized treatment which needs skilled experienced hand as well as modern instrumental support. We are very much able to provide you world class RCT.",
+            url: "https://i.postimg.cc/y6fT8RxJ/maxresdefault.png"
         }
+
 
     ];
 
@@ -53,7 +58,7 @@ const Services = () => {
         <div className='px-5 lg:px-40 pt-10 pb-20 lg:pb-40'>
 
             <div className='text-center pb-20'>
-                <h4 className='text-primary text-xl font-semibold uppercase pb-2'>Our Services</h4>
+                <h4 className='text-blue-600 text-xl font-semibold uppercase pb-2'>Our Services</h4>
                 <h3 className='text-4xl pb-2 text-zinc-700'>Services We Provide</h3>
             </div>
 
