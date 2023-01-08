@@ -8,6 +8,8 @@ import useToken from '../../hooks/useToken';
 import googleIcon from '../../assets/images/google.png';
 import { FaSignOutAlt } from 'react-icons/fa';
 
+import { FcGoogle } from 'react-icons/fc';
+
 const SignUp = () => {
 
     const [email, setEmail] = useState('');
@@ -58,10 +60,10 @@ const SignUp = () => {
 
                 <div className="card w-96 bg-base-50 rounded-sm">
 
-                    <div className="flex justify-center items-center text-xl font-bold">
+                    {/* <div className="flex justify-center items-center text-xl font-bold">
                         <span className="flex justify-center items-center"><FaSignOutAlt /></span>
                         <span className="pl-4">Register</span>
-                    </div>
+                    </div> */}
 
                     <div className="card-body">
 
@@ -139,24 +141,32 @@ const SignUp = () => {
                                 </label>
                             </div>
 
-                            {signInError}
+                            <button type="submit" className="py-2 rounded-sm w-full max-w-xs font-semibold bg-gradient-to-r from-secondary to-primary shadow-lg text-white border-none mt-0 hover:scale-105 duration-300">
+                                <p className='flex justify-center'>
+                                    <FaSignOutAlt size="2rem" />
+                                    <span className='pl-3 flex items-center text-lg'>REGISTER</span>
+                                </p>
+                            </button>
 
-                            <input className="btn rounded-sm w-full max-w-xs font-semibold bg-gradient-to-r from-secondary to-primary shadow-lg text-white border-none mt-4 hover:scale-105 duration-300" type="submit" value="Register" />
                         </form>
 
-                        <small><p className='text-sm font-semibold'>Already have an account? <Link className="font-bold ml-10 lg:ml-10" to="/login" >Please login</Link> </p></small>
+                        <small><p className='text-sm font-semibold'>Already have an Account ? <Link className="font-bold ml-10 lg:ml-14" to="/login" >Please Login</Link> </p></small>
 
                         <div className="divider">Or continue with</div>
 
-                        <button
-                            onClick={() => signInWithGoogle()}
-                            className="btn rounded-sm border-none text-white shadow-lg bg-slate-600 hover:scale-105 duration-300"
-                        > <img src={googleIcon} alt="" /><b className="mx-2 font-semibold">Google</b></button>
+                        {signInError}
+
+                        <button onClick={() => signInWithGoogle()} className="btn rounded-sm border-none text-white bg-slate-800 hover:bg-slate-800 shadow-lg hover:scale-105 duration-300">
+                            <p className='flex justify-center'>
+                                <FcGoogle size="2rem" />
+                                <span className="pl-3 flex items-center text-md">Google</span>
+                            </p>
+                        </button>
 
                     </div>
                 </div>
             </div>
-        </section>
+        </section >
 
     );
 };
