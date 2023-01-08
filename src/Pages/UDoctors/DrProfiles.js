@@ -23,7 +23,7 @@ const DrProfiles = () => {
         },
         {
             _id: 3,
-            name: "Dr. Rumana Shaarmin",
+            name: "Dr. Fatema Tuz Zohura",
             description1: "BDS (DHAKA)",
             description2: "Oral & Dental Surgeon",
             description3: "Dental Solution, Dinajpur",

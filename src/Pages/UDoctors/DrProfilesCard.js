@@ -6,11 +6,11 @@ const DrProfilesCard = ({ profile }) => {
         <div className='card lg:max-w-lg bg-base-100 shadow-2xl pt-4 rounded-sm'>
             <div className='cursor-pointer'>
                 <figure>
-                    <img src={profile.url} alt="" className="border-2 rounded-sm border-orange-500 hover:scale-105 duration-500" />
-                    <p className='text-white border-2 rounded-sm border-orange-500 bg-blue-500 hover:bg-gray-600 px-4 font-semibold text-lg absolute top=[80%] -translate-x-[22%] translate-y-[444%]'>{profile.name}</p>
+                    <img src={profile.url} alt="" className="border-2 rounded-sm border-blue-500 hover:scale-110 duration-300" />
+                    <p className='text-white rounded-sm bg-blue-500 hover:bg-gray-600 px-4 font-semibold text-lg absolute top=[80%] -translate-x-[23%] translate-y-[498%]'>{profile.name}</p>
                 </figure>
             </div>
-            <div className="card-body pt-10 text-zinc-700">
+            <div className="card-body pt-10 pl-14 text-zinc-700">
                 <div>
                     <p className='text-black'>{profile.description1}</p>
                 </div>
@@ -23,7 +23,7 @@ const DrProfilesCard = ({ profile }) => {
                 <div className='mt-3 flex pl-48'>
                     <p className='text-blue-600 text-lg'><BsChevronCompactRight /></p>
                     <p className='text-blue-600 text-lg'><BsChevronCompactRight /></p>
-                    <p className='cursor-pointer rounded-sm text-blue-600 text-sm font-semibold '>more..</p>
+                    <p className='cursor-pointer rounded-sm text-blue-700 text-md font-semibold '>more..</p>
                 </div>
 
             </div>

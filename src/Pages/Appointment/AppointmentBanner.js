@@ -7,9 +7,9 @@ import { BsChevronCompactRight } from 'react-icons/bs';
 const AppointmentBanner = ({ date, setDate }) => {
     return (
         // <div className="hero bg-banner-section-backImg lg:px-80 py-5">
-        <div className="hero lg:px-72 py-5">
+        <div className="hero lg:px-72 pt-5 pb-11">
 
-            <div className="hero-content grid grid-cols-1 lg:grid-cols-3 gap-0 lg:border-2 rounded-lg bg-gray-100 lg:border-gray-300">
+            <div className="hero-content grid grid-cols-1 lg:grid-cols-3 rounded-sm text-lg text-white bg-gradient-to-r from-primary to-secondary">
 
                 <div className='pt-7 lg:pt-0 flex justify-center items-center'>
 
@@ -22,13 +22,13 @@ const AppointmentBanner = ({ date, setDate }) => {
                     </div>
                 </div>
 
-                <div className='flex justify-center items-center text-gray-500'>
-                    <BsChevronCompactRight size={30} />
+                <div className='flex justify-center items-center text-white'>
+                    <BsChevronCompactRight size="3rem" />
                 </div>
 
                 <div className='text-center text-2xl'>
-                    <div className='pb-7 font-semibold text-zinc-700'>Available Appointments on</div>
-                    <span className='text-primary text-xl border bg-white px-16 py-4 rounded-sm font-semibold'>{format(date, 'PP')}</span>
+                    <div className='pb-7 font-semibold text-white'>Available Appointments on</div>
+                    <span className='text-black text-xl border bg-white px-16 py-4 rounded-sm font-semibold'>{format(date, 'PP')}</span>
                 </div>
 
             </div>

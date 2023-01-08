@@ -31,7 +31,7 @@ const Navbar = () => {
 
   return (
 
-    <div className="navbar px-5 lg:pr-14 lg:pl-10 bg-gray-100 py-0 sticky top-0 z-30">
+    <div className="navbar px-5 lg:pr-14 lg:pl-10 bg-gray-200 py-2 sticky top-0 z-30">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex="0" className="btn btn-ghost lg:hidden">
@@ -49,7 +49,7 @@ const Navbar = () => {
             {menuItems}
           </ul>
         </div>
-        <a href="/" className="normal-case text-xl mx-2 lg:mx-0"><img className='rounded-2xl' src={img} style={{ width: "170px", height: "70px" }} alt="" /></a>
+        <a href="/" className="normal-case text-xl mx-2 lg:mx-0 border border-red-800"><img className='rounded-2xl' src={img} style={{ width: "170px", height: "70px" }} alt="" /></a>
         {/* <a href="/" className="normal-case border-2 rounded-2xl border-t-orange-400 border-l-gray-100 border-r-gray-100 border-b-orange-400 border-sm px-3 py-1 text-orange-400 text-lg lg:text-xl font-bold lg:mx-0"> <span>Dental Solution</span> </a> */}
       </div>
       <div className="navbar-end hidden lg:flex">
@@ -71,7 +71,7 @@ const Navbar = () => {
           </svg>
         </label>
 
-        {user ? <button className="btn btn-ghost font-bold hover:bg-slate-600 bg-slate-700 text-white px-2 lg:px-8 mx-2 lg:mx-0 rounded-sm" onClick={logout} >Sign Out</button> : <Link to="/login" className="btn btn-ghost font-bold hover:bg-slate-600 bg-slate-700 text-white px-2 lg:px-8 mx-2 lg:mx-0 rounded-sm">Login</Link>}
+        {user ? <button className="btn btn-ghost font-bold border-2 border-black px-2 lg:px-8 mx-2 lg:mx-0 rounded-sm" onClick={logout} >Sign Out</button> : <Link to="/login" className="btn btn-ghost font-bold border-2 border-black px-2 lg:px-11 mx-2 lg:mx-0 rounded-sm">Login</Link>}
 
       </div>
 
