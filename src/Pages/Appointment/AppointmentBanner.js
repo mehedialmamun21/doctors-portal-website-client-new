@@ -13,7 +13,7 @@ const AppointmentBanner = ({ date, setDate }) => {
 
                 <div className='pt-7 lg:pt-0 flex justify-center items-center'>
 
-                    <div className='rounded-lg w-96'>
+                    <div className='rounded-lg w-96 font-mono'>
                         <DayPicker
                             mode="single"
                             date={date}
@@ -27,8 +27,8 @@ const AppointmentBanner = ({ date, setDate }) => {
                 </div>
 
                 <div className='text-center text-2xl'>
-                    <div className='pb-7 font-semibold text-white'>Available Appointments on</div>
-                    <span className='text-black text-xl border bg-white px-16 py-4 rounded-sm font-semibold'>{format(date, 'PP')}</span>
+                    <div className='pb-7 font-semibold text-white font-mono'>Available Appointments on</div>
+                    <span className='text-black text-xl border bg-white px-16 py-4 rounded-sm font-semibold font-mono'>{format(date, 'PP')}</span>
                 </div>
 
             </div>

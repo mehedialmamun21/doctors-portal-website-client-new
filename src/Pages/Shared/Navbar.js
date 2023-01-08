@@ -16,14 +16,14 @@ const Navbar = () => {
 
   const menuItems = (
     <>
-      <li><Link to="/"> <span className="font-semibold text-lg text-zinc-800 flex"> <span className="flex justify-center items-center pr-2 text-blue-400"><FaHome size='1.25rem' /></span> <span>Home</span> </span> </Link></li>
-      <li><Link to="/appointment"><span className="font-semibold text-lg text-zinc-800 flex"> <span className="flex justify-center items-center pr-2 text-blue-400"><FaCalendarCheck /></span> <span>Appointment</span> </span></Link></li>
-      {/* <li><Link to="/doctors"><span className="font-semibold text-lg text-zinc-800 flex"> <span className="flex justify-center items-center pr-2 text-blue-400"> <FaHandHoldingMedical /> </span> <span>Dr.Profiles</span> </span></Link></li> */}
-      <li><Link to="/udoctors"><span className="font-semibold text-lg text-zinc-800 flex"> <span className="flex justify-center items-center pr-2 text-blue-400"> <FaHandHoldingMedical /> </span> <span className="">Doctors</span> </span></Link></li>
-      <li><Link to="/contact"><span className="font-semibold text-lg text-zinc-800 flex"> <span className="flex justify-center items-center pr-2 text-blue-400"> <FaPhone /> </span> <span>Contact</span> </span></Link></li>
+      <li><Link to="/"> <span className="font-semibold text-lg text-zinc-800 flex"> <span className="flex justify-center items-center pr-2 text-cyan-500"><FaHome size='1.25rem' /></span> <span className="font-mono">Home</span> </span> </Link></li>
+      <li><Link to="/appointment"><span className="font-semibold text-lg text-zinc-800 flex"> <span className="flex justify-center items-center pr-2 text-cyan-500"><FaCalendarCheck /></span> <span className="font-mono">Appointment</span> </span></Link></li>
+      {/* <li><Link to="/doctors"><span className="font-semibold text-lg text-zinc-800 flex"> <span className="flex justify-center items-center pr-2 text-cyan-500"> <FaHandHoldingMedical /> </span> <span>Dr.Profiles</span> </span></Link></li> */}
+      <li><Link to="/udoctors"><span className="font-semibold text-lg text-zinc-800 flex"> <span className="flex justify-center items-center pr-2 text-cyan-500"> <FaHandHoldingMedical /> </span> <span className="font-mono">Doctors</span> </span></Link></li>
+      <li><Link to="/contact"><span className="font-semibold text-lg text-zinc-800 flex"> <span className="flex justify-center items-center pr-2 text-cyan-500"> <FaPhone /> </span> <span className="font-mono">Contact</span> </span></Link></li>
       {/* <li><Link to="/blog"><span className="font-semibold text-lg text-zinc-800">Blog</span></Link></li> */}
       {
-        user && <li><Link to="/dashboard"><span className="font-semibold text-lg text-zinc-800 flex"> <span className="flex justify-center items-center pr-2 text-blue-400"> <FaBorderAll /> </span> <span>Dashboard</span> </span></Link></li>
+        user && <li><Link to="/dashboard"><span className="font-semibold text-lg text-zinc-800 flex"> <span className="flex justify-center items-center pr-2 text-cyan-500"> <FaBorderAll /> </span> <span className="font-mono">Dashboard</span> </span></Link></li>
       }
 
     </>

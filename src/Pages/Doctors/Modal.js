@@ -33,7 +33,7 @@ const Modal = ({ setModalOn, setChoice }) => {
 
                 <div className="flex-col justify-center bg-white py-12 pl-6 mx-10 rounded-sm ">
 
-                    <div className="flex justify-center text-2xl text-zinc-700 font-bold" >Want to Enter in Your Profile?</div>
+                    <div className="flex justify-center text-2xl text-zinc-900 font-bold font-mono" >Want to Enter in Your Profile?</div>
 
                     <div className="flex pt-16">
 
@@ -41,7 +41,7 @@ const Modal = ({ setModalOn, setChoice }) => {
                             doctors.map((doctor) =>
                                 <div className="flex mr-7">
                                     <div className="flex items-center justify-center bg-secondary px-2 py-5">
-                                        <p className="font-semibold text-white"> {doctor.name} </p> <br />
+                                        <p className="font-semibold text-white font-serif"> {doctor.name} </p> <br />
                                     </div>
 
                                     <div className="flex items-center justify-center border-2 border-secondary px-2 py-5">

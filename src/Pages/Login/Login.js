@@ -46,7 +46,7 @@ const Login = () => {
   }
 
   if (error || gError || resError) {
-    signInError = <p className="text-red-500 font-semibold"> <small>{error?.message || gError?.message || resError}</small> </p>
+    signInError = <p className="text-red-500 font-semibold font-mono"> <small>{error?.message || gError?.message || resError}</small> </p>
   }
 
   const onSubmit = data => {
@@ -72,11 +72,11 @@ const Login = () => {
 
               <div className="form-control w-full max-w-xs">
                 <label className="label">
-                  <span className="label-text">Email</span>
+                  <span className="label-text font-mono">Email</span>
                 </label>
                 <input type="email"
                   placeholder="Your Email"
-                  className="input w-full max-w-xs rounded-sm shadow-lg bg-slate-200"
+                  className="input w-full max-w-xs rounded-sm shadow-lg bg-slate-200 font-mono"
                   {...register("email", {
                     required: {
                       value: true,
@@ -89,8 +89,8 @@ const Login = () => {
                   })}
                 />
                 <label className="label font-semibold">
-                  {errors.email?.type === 'required' && <span className="label-text-alt text-red-500">{errors.email.message}</span>}
-                  {errors.email?.type === 'pattern' && <span className="label-text-alt text-red-500">{errors.email.message}</span>}
+                  {errors.email?.type === 'required' && <span className="label-text-alt text-red-500 font-mono">{errors.email.message}</span>}
+                  {errors.email?.type === 'pattern' && <span className="label-text-alt text-red-500 font-mono">{errors.email.message}</span>}
 
                 </label>
               </div>
@@ -99,12 +99,12 @@ const Login = () => {
               <div className="form-control w-full max-w-xs">
 
                 <label className="label">
-                  <span className="label-text">Password</span>
+                  <span className="label-text font-mono">Password</span>
                 </label>
 
                 <input type="password"
                   placeholder="Password"
-                  className="input w-full max-w-xs rounded-sm shadow-lg bg-slate-200"
+                  className="input w-full max-w-xs rounded-sm shadow-lg bg-slate-200 font-mono"
                   {...register("password", {
                     required: {
                       value: true,
@@ -118,8 +118,8 @@ const Login = () => {
                 />
 
                 <label className="label font-semibold">
-                  {errors.password?.type === 'required' && <span className="label-text-alt text-red-500">{errors.password.message}</span>}
-                  {errors.password?.type === 'minLength' && <span className="label-text-alt text-red-500">{errors.password.message}</span>}
+                  {errors.password?.type === 'required' && <span className="label-text-alt text-red-500 font-mono">{errors.password.message}</span>}
+                  {errors.password?.type === 'minLength' && <span className="label-text-alt text-red-500 font-mono">{errors.password.message}</span>}
                 </label>
 
               </div>
@@ -131,20 +131,20 @@ const Login = () => {
                   alert('Password Reset email sent..');
                 }}
               >
-                <h5 className="pb-2 font-semibold">Forgot Password?</h5>
+                <h5 className="pb-2 font-semibold font-mono">Forgot Password ?</h5>
               </button>
 
-              <button type="submit" className="py-2 rounded-sm w-full max-w-xs font-semibold bg-gradient-to-r from-secondary to-primary shadow-lg text-white border-none mt-0 hover:scale-105 duration-300">
-                <p className='flex justify-center'>
-                  <FaSignInAlt size="2rem" />
-                  <span className='pl-3 flex items-center text-lg'>LOGIN</span>
+              <button type="submit" className="py-3 rounded-sm w-full max-w-xs font-semibold bg-gradient-to-r from-secondary to-primary shadow-lg text-white border-none mt-2 hover:scale-105 duration-300">
+                <p className='flex justify-center items-center'>
+                  <FaSignInAlt size="1rem" />
+                  <span className='pl-3 flex items-center text-md'>LOGIN</span>
                 </p>
               </button>
             </form>
 
             <small><p className="text-sm font-semibold">New to Doctors Portal ? <Link className="font-bold ml-4 lg:ml-5" to="/signup" >Create a new Account</Link> </p></small>
 
-            <div className="divider">Or continue with</div>
+            <div className="divider font-mono">Or continue with</div>
 
             {signInError}
 

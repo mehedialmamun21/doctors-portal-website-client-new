@@ -35,7 +35,7 @@ const SignUp = () => {
     }
 
     if (error || gError || updateError || verError) {
-        signInError = <p className="text-red-500 font-semibold"> <small>{error?.message || gError?.message || updateError?.message || verError?.message}</small> </p>
+        signInError = <p className="text-red-500 font-semibold font-mono"> <small>{error?.message || gError?.message || updateError?.message || verError?.message}</small> </p>
     }
 
     if (token) {
@@ -71,11 +71,11 @@ const SignUp = () => {
 
                             <div className="form-control w-full max-w-xs">
                                 <label className="label">
-                                    <span className="label-text">Name</span>
+                                    <span className="label-text font-mono">Name</span>
                                 </label>
                                 <input type="text"
                                     placeholder="Your Name"
-                                    className="input w-full max-w-xs rounded-sm shadow-lg bg-slate-200"
+                                    className="input w-full max-w-xs rounded-sm shadow-lg font-mono bg-slate-200"
                                     {...register("name", {
                                         required: {
                                             value: true,
@@ -84,8 +84,8 @@ const SignUp = () => {
 
                                     })}
                                 />
-                                <label className="label font-semibold">
-                                    {errors.name?.type === 'required' && <span className="label-text-alt text-red-500">{errors.name.message}</span>}
+                                <label className="label font-semibold ">
+                                    {errors.name?.type === 'required' && <span className="label-text-alt text-red-500 font-mono">{errors.name.message}</span>}
 
                                 </label>
                             </div>
@@ -93,11 +93,11 @@ const SignUp = () => {
 
                             <div className="form-control w-full max-w-xs">
                                 <label className="label">
-                                    <span className="label-text">Email</span>
+                                    <span className="label-text font-mono">Email</span>
                                 </label>
                                 <input type="email"
                                     placeholder="Your Email"
-                                    className="input w-full max-w-xs rounded-sm shadow-lg bg-slate-200"
+                                    className="input w-full max-w-xs rounded-sm shadow-lg bg-slate-200 font-mono"
                                     {...register("email", {
                                         required: {
                                             value: true,
@@ -110,8 +110,8 @@ const SignUp = () => {
                                     })}
                                 />
                                 <label className="label font-semibold">
-                                    {errors.email?.type === 'required' && <span className="label-text-alt text-red-500">{errors.email.message}</span>}
-                                    {errors.email?.type === 'pattern' && <span className="label-text-alt text-red-500">{errors.email.message}</span>}
+                                    {errors.email?.type === 'required' && <span className="label-text-alt text-red-500 font-mono">{errors.email.message}</span>}
+                                    {errors.email?.type === 'pattern' && <span className="label-text-alt text-red-500 font-mono">{errors.email.message}</span>}
 
                                 </label>
                             </div>
@@ -119,11 +119,11 @@ const SignUp = () => {
 
                             <div className="form-control w-full max-w-xs">
                                 <label className="label">
-                                    <span className="label-text">Password</span>
+                                    <span className="label-text font-mono">Password</span>
                                 </label>
                                 <input type="password"
                                     placeholder="Password"
-                                    className="input w-full max-w-xs rounded-sm shadow-lg bg-slate-200"
+                                    className="input w-full max-w-xs rounded-sm shadow-lg bg-slate-200 font-mono"
                                     {...register("password", {
                                         required: {
                                             value: true,
@@ -136,15 +136,15 @@ const SignUp = () => {
                                     })}
                                 />
                                 <label className="label font-semibold">
-                                    {errors.password?.type === 'required' && <span className="label-text-alt text-red-500">{errors.password.message}</span>}
-                                    {errors.password?.type === 'minLength' && <span className="label-text-alt text-red-500">{errors.password.message}</span>}
+                                    {errors.password?.type === 'required' && <span className="label-text-alt text-red-500 font-mono">{errors.password.message}</span>}
+                                    {errors.password?.type === 'minLength' && <span className="label-text-alt text-red-500 font-mono">{errors.password.message}</span>}
                                 </label>
                             </div>
 
-                            <button type="submit" className="py-2 rounded-sm w-full max-w-xs font-semibold bg-gradient-to-r from-secondary to-primary shadow-lg text-white border-none mt-0 hover:scale-105 duration-300">
-                                <p className='flex justify-center'>
-                                    <FaSignOutAlt size="2rem" />
-                                    <span className='pl-3 flex items-center text-lg'>REGISTER</span>
+                            <button type="submit" className="py-3 rounded-sm w-full max-w-xs font-semibold bg-gradient-to-r from-secondary to-primary shadow-lg text-white border-none mt-2 hover:scale-105 duration-300">
+                                <p className='flex justify-center items-center'>
+                                    <FaSignOutAlt size="1rem" />
+                                    <span className='pl-3 flex items-center text-md'>REGISTER</span>
                                 </p>
                             </button>
 
@@ -152,7 +152,7 @@ const SignUp = () => {
 
                         <small><p className='text-sm font-semibold'>Already have an Account ? <Link className="font-bold ml-10 lg:ml-14" to="/login" >Please Login</Link> </p></small>
 
-                        <div className="divider">Or continue with</div>
+                        <div className="divider font-mono">Or continue with</div>
 
                         {signInError}
 

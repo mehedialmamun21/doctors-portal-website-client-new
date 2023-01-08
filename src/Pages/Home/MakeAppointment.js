@@ -14,9 +14,9 @@ const MakeAppointment = () => {
                 <img className='mt-[-354px]' src={doctor} alt="" />
             </div>
             <div className='flex-1 lg:px-10 py-5'>
-                <h3 className='text-2xl text-primary py-2'>Appointment</h3>
-                <h2 className='text-3xl text-white'>Make an appointment Today</h2>
-                <p className='text-white pt-6 pb-10'>The first step towards a beautiful,
+                <h3 className='text-2xl text-primary py-2 font-mono'>Appointment</h3>
+                <h2 className='text-3xl text-white font-mono'>Make an appointment Today</h2>
+                <p className='text-white pt-6 pb-10 font-mono'>The first step towards a beautiful,
                     healthy smile is to schedule an appointment.
                     Please contact our office by phone or complete the appointment request form.
                     Our practice is conveniently located Spearwood.

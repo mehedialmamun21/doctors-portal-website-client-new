@@ -14,10 +14,10 @@ const DoctorRow = ({ doctor, index, refetch, setDeletingDoctor }) => {
                     </div>
                 </div>
             </td> */}
-            <td className='text-cyan-600 font-semibold'>{name}</td>
-            <td className='text-zinc-600 font-semibold'>{speciality}</td>
-            <td className='text-cyan-600 font-semibold'>{email}</td>
-            <td className='text-zinc-600 font-semibold'>{phone}</td>
+            <td className='text-cyan-600 font-semibold font-mono'>{name}</td>
+            <td className='text-zinc-600 font-semibold font-mono'>{speciality}</td>
+            <td className='text-cyan-600 font-semibold font-mono'>{email}</td>
+            <td className='text-zinc-600 font-semibold font-mono'>{phone}</td>
             <td>
                 <label onClick={() => setDeletingDoctor(doctor)} for="delete-confirm-modal" class="btn btn-sm bg-red-400 hover:bg-red-500 border-none text-white px-6 rounded-sm font-bold">Delete</label>
             </td>

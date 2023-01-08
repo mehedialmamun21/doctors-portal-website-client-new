@@ -55,10 +55,10 @@ const BookingModal = ({ date, treatment, setTreatment, refetch }) => {
             <div className="modal modal-bottom sm:modal-middle">
                 <div className="modal-box">
                     <label htmlFor="booking-modal" className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
-                    <h3 className="text-lg text-center"> <span className=''>Booking for -</span> <span className='text-cyan-600 font-semibold'>{name}</span></h3>
+                    <h3 className="text-lg text-center"> <span className='font-mono'>Booking for -</span> <span className='text-cyan-600 font-semibold font-mono'>{name}</span></h3>
                     <form onSubmit={handleBookingSubmit} className='grid grid-cols-1 gap-4 justify-items-center mt-4'>
-                        <input type="text" disabled value={format(date, 'PP')} className="input input-bordered w-full max-w-xs" />
-                        <select name='slot' className="select select-bordered w-full max-w-xs">
+                        <input type="text" disabled value={format(date, 'PP')} className="input input-bordered w-full max-w-xs font-mono" />
+                        <select name='slot' className="select select-bordered w-full max-w-xs font-mono">
                             {
                                 slots.map((slot, index) => <option
                                     key={index}
@@ -67,9 +67,9 @@ const BookingModal = ({ date, treatment, setTreatment, refetch }) => {
                                 >{slot}</option>)
                             }
                         </select>
-                        <input type="text" name='name' disabled value={user?.displayName || ''} className="input input-bordered w-full max-w-xs" />
-                        <input type="email" name='email' disabled value={user?.email || ''} className="input input-bordered w-full max-w-xs" />
-                        <input type="input" name='phone' placeholder="Phone Number" className="input input-bordered w-full max-w-xs" required />
+                        <input type="text" name='name' disabled value={user?.displayName || ''} className="input input-bordered w-full max-w-xs font-mono" />
+                        <input type="email" name='email' disabled value={user?.email || ''} className="input input-bordered w-full max-w-xs font-mono" />
+                        <input type="input" name='phone' placeholder="Enter Phone Number" className="input input-bordered w-full max-w-xs font-mono" required />
                         <input type="submit" value="Submit" className="btn hover:scale-105 duration-300 bg-gradient-to-r from-secondary to-primary w-full max-w-xs text-white font-semibold rounded-sm border-none" />
                     </form>
                 </div>

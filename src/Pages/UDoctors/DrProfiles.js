@@ -6,7 +6,7 @@ const DrProfiles = () => {
 
         {
             _id: 1,
-            name: "Dr. Shamim Al Mamun",
+            name: "Dr. Shamim Araf Mamun",
             description1: "BDS (DDC), FCPS (Orthodontics)",
             description2: "Special Training on Dental Implant",
             description3: "Asst. Prof. Dept. of Orthodontics",
@@ -35,7 +35,7 @@ const DrProfiles = () => {
     return (
         <div>
 
-            <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 shadow-2xl'>
+            <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 drop-shadow-2xl'>
                 {
                     profiles.map(profile => <DrProfilesCard
                         key={profile._id}

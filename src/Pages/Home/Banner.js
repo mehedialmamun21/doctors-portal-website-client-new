@@ -1,8 +1,11 @@
 import React from 'react';
 import { useState } from 'react';
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
-import { RxDot } from 'react-icons/rx';
+import { RxDot, RxDotFilled } from 'react-icons/rx';
 import { Link } from 'react-router-dom';
+
+import { FaRegHandPointLeft } from 'react-icons/fa';
+
 const Banner = () => {
     const slides = [
         {
@@ -13,9 +16,6 @@ const Banner = () => {
         },
         {
             // url: 'https://i.postimg.cc/rpSVRGyX/wentworth-family-dental-general-and-family-dentist-sw-calgary-4617-1280x780.jpg'
-        },
-        {
-            // url: 'https://i.postimg.cc/J0fSTNKP/1668-000-N19-medium.jpg'
         },
         {
             // url: 'https://i.postimg.cc/J0fSTNKP/1668-000-N19-medium.jpg'
@@ -59,23 +59,25 @@ const Banner = () => {
                 </div>
 
                 <div className='absolute top=[80%] -translate-x-[-61%] translate-y-[500%] cursor-pointer'>
-                    <p className='text-white font-semibold font-serif text-4xl'>Our Professional Team</p>
+                    <p className='text-white font-semibold font-mono text-4xl'>Our Professional Team</p>
                 </div>
 
-                <div className='absolute top=[80%] -translate-x-[-40%] translate-y-[1070%] cursor-pointer'>
-                    <p className='text-white font-serif text-md'>DENTAL SOLUTION is always promised to provide the best dental treatment to the patients</p>
+                <div className='absolute top=[80%] -translate-x-[-33%] translate-y-[1070%] cursor-pointer'>
+                    <p className='text-white font-mono text-md'>DENTAL SOLUTION is always promised to provide the best dental treatment to the patients</p>
                 </div>
 
-                <div className='absolute top=[80%] -translate-x-[-144%] translate-y-[905%] cursor-pointer'>
-                    <Link to="/appointment"><p className='border-2 border-white text-white hover:bg-white px-5 py-2 hover:text-blue-600 font-semibold'>Book Appointment</p></Link>
-
+                <div className='absolute top=[80%] -translate-x-[-108%] translate-y-[905%] cursor-pointer'>
+                    <div className='flex items-center justify-center'>
+                        <Link to="/appointment"><p className='border-2 border-white hover:text-white font-mono bg-white px-5 py-2 text-black hover:bg-secondary font-semibold'>Book Appointment</p></Link>
+                        <FaRegHandPointLeft className='ml-5 text-white' size="2rem" />
+                    </div>
                 </div>
-                <div className='flex top-4 justify-center translate-y-[2505%]'>
+                <div className='flex top-4 justify-center translate-y-[2600%]'>
                     {slides.map((slide, slideIndex) => (
                         <div key={slideIndex}
                             onClick={() => goToSlide(slideIndex)}
                             className='text-2xl cursor-pointer text-white hover:text-black'>
-                            <RxDot />
+                            <RxDotFilled />
                         </div>
                     ))}
                 </div>

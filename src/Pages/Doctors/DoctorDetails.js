@@ -24,25 +24,25 @@ const DoctorDetails = () => {
                 </div>
 
                 <div className='text-center'>
-                    <div className='text-zinc-700 text-xl font-bold'> <i>{doctor.name}</i> </div>
+                    <div className='text-zinc-700 text-xl font-bold font-serif'> <i>{doctor.name}</i> </div>
                     <span className='flex justify-center items-center pb-2 text-lg text-cyan-600'><i>{doctor.degree}</i></span>
-                    <span className='text-zinc-700 text-lg border-2 border-b-zinc-400 px-12 py-2 rounded-sm'><i>Dental Surgeon</i></span>
-                    <span className='flex justify-center items-center pt-4 text-lg'><i>BMDC Reg. No. <span className='font-semibold text-cyan-600'>{doctor._id}</span> </i></span>
+                    <span className='text-zinc-700 text-lg border-2 border-b-zinc-400 px-12 py-2 rounded-sm font-mono'><i>Dental Surgeon</i></span>
+                    <span className='flex justify-center items-center pt-4 text-lg font-mono'><i>BMDC Reg. No. <span className='font-semibold text-cyan-600'>{doctor._id}</span> </i></span>
                 </div>
 
                 <div className='pl-28'>
-                    <p className='pb-2'><i><span className='font-semibold'>Chamber: </span>Dental Solutions, Dinajpur</i></p>
-                    <p><i><span className='font-semibold'>Time: </span><span className='font-semibold text-cyan-600'>{doctor.time}</span></i></p>
-                    <p><i><span className='font-semibold'>Room No: </span><span className='font-semibold text-cyan-600'>{doctor.room}</span></i></p>
-                    <p><i><span className='font-semibold'>Email: </span><span className='font-semibold text-cyan-600'>{doctor.email}</span></i></p>
-                    <p><i><span className='font-semibold'>Phone: </span><span className='font-semibold text-cyan-600'>{doctor.phone}</span></i></p>
+                    <p className='pb-2 font-mono'><i><span className='font-semibold'>Chamber: </span>Dental Solutions, Dinajpur</i></p>
+                    <p className='font-mono'><i><span className='font-semibold'>Time: </span><span className='font-semibold text-cyan-600'>{doctor.time}</span></i></p>
+                    <p className='font-mono'><i><span className='font-semibold'>Room No: </span><span className='font-semibold text-cyan-600'>{doctor.room}</span></i></p>
+                    <p className='font-mono'><i><span className='font-semibold'>Email: </span><span className='font-semibold text-cyan-600'>{doctor.email}</span></i></p>
+                    <p className='font-mono'><i><span className='font-semibold'>Phone: </span><span className='font-semibold text-cyan-600'>{doctor.phone}</span></i></p>
                 </div>
             </div>
 
             <div className='flex border-2'>
                 <div className='w-4/12 px-10 pt-5 border-2 border-r-zinc-300 border-t-white border-l-white border-b-white'>
                     <div>
-                        <p className='bg-slate-500 text-white text-center mb-5 py-1 text-xl font-bold'>Symptoms</p>
+                        <p className='bg-slate-500 text-white text-center mb-5 py-1 text-xl font-bold font-mono'>Symptoms</p>
                         <ul class="symp m-0 pl-5 py-5 h-18 bg-gray-200 focus:outline-none" data-toggle="tooltip" data-placement="bottom" title="Click to edit."
                             contenteditable="true">
                         </ul>
@@ -52,7 +52,7 @@ const DoctorDetails = () => {
                         </div>
                     </div>
                     <div>
-                        <p className='bg-slate-500 text-white text-center py-1 text-xl font-bold mb-5'>Tests</p>
+                        <p className='bg-slate-500 text-white text-center py-1 text-xl font-bold mb-5 font-mono'>Tests</p>
                         <ul class="symp m-0 pl-5 py-5 h-18 bg-gray-200 focus:outline-none" data-toggle="tooltip" data-placement="bottom" title="Click to edit."
                             contenteditable="true">
                         </ul>
@@ -88,7 +88,7 @@ const DoctorDetails = () => {
                     </div>
 
                     <div className='flex justify-end items-end px-6'>
-                        <button className="btn btn-ghost font-semibold bg-gradient-to-r from-secondary to-primary text-white px-2 lg:px-16 hover:scale-105 duration-300 rounded-sm">Print</button>
+                        <button className="btn btn-ghost font-semibold bg-gradient-to-r from-secondary to-primary text-white px-2 lg:px-16 hover:scale-105 duration-300 rounded-sm font-mono text-lg">Print</button>
                     </div>
 
                 </div>

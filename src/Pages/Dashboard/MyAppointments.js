@@ -37,7 +37,7 @@ const MyAppointments = () => {
 
     return (
         <div className='pr-5'>
-            <h2 className='my-5 text-xl text-center text-white bg-orange-400 p-2'><span className='border py-1 px-5'>Total Appointment - {appointments.length}</span></h2>
+            <h2 className='my-5 text-xl text-center text-white bg-cyan-500 py-3'><span className='border py-1 px-7 font-mono'>Total Appointment - {appointments.length}</span></h2>
 
             <div class="overflow-x-auto">
                 <table class="table w-full border-4">
@@ -56,16 +56,16 @@ const MyAppointments = () => {
                         {
                             appointments.map((a, index) => <tr key={a._id}>
                                 <th>{index + 1}</th>
-                                <td className='text-cyan-600 font-semibold'>{a.patientName}</td>
-                                <td className='text-zinc-600 font-semibold'>{a.date}</td>
-                                <td className='text-cyan-600 font-semibold'>{a.slot}</td>
-                                <td className='text-zinc-600 font-semibold'>{a.treatment}</td>
-                                <td className='text-zinc-600 font-semibold'>{a.phone}</td>
+                                <td className='text-cyan-500 font-semibold font-mono'>{a.patientName}</td>
+                                <td className='text-zinc-600 font-semibold font-mono'>{a.date}</td>
+                                <td className='text-cyan-500 font-semibold font-mono'>{a.slot}</td>
+                                <td className='text-zinc-600 font-semibold font-mono'>{a.treatment}</td>
+                                <td className='text-cyan-500 font-semibold font-mono'>{a.phone}</td>
                                 <td>
-                                    {(a.price && !a.paid) && <Link to={`/dashboard/payment/${a._id}`}> <button className='btn btn-sm bg-green-500 hover:bg-green-600 border-none text-white px-5 font-semibold text-sm rounded-sm'>Pay</button> </Link>}
+                                    {(a.price && !a.paid) && <Link to={`/dashboard/payment/${a._id}`}> <button className='btn btn-sm bg-green-500 hover:bg-green-600 border-none text-white px-5 font-semibold rounded-sm'>Pay</button> </Link>}
                                     {(a.price && a.paid) && <div>
-                                        <p><span className='text-green-600 font-semibold text-lg'>Paid</span></p>
-                                        <p ><span className='font-bold text-sm text-zinc-600 '>Trans. ID : </span><span className='text-zinc-600 text-sm'>{a.transactionId}</span> </p>
+                                        <p><span className='text-green-600 font-semibold text-lg font-mono'>Paid</span></p>
+                                        <p ><span className='font-bold text-sm text-zinc-600 font-mono'>Trans. ID : </span><span className='text-zinc-600 text-sm font-mono'>{a.transactionId}</span> </p>
                                     </div>}
                                 </td>
                             </tr>)

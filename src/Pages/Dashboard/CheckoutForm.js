@@ -121,12 +121,12 @@ const CheckoutForm = ({ appointment }) => {
                 </button>
             </form>
             {
-                cardError && <p className='text-red-500'>{cardError}</p>
+                cardError && <p className='text-red-500 font-mono'>{cardError}</p>
             }
             {
                 success && <div className=''>
-                    <p className='font-semibold text-green-600'>{success}</p>
-                    <p>Transaction Id : <span className="font-semibold">{transactionId}</span> </p>
+                    <p className='font-semibold text-green-600 font-mono'>{success}</p>
+                    <p className='font-mono'>Transaction Id : <span className="font-semibold font-mono">{transactionId}</span> </p>
                 </div>
             }
         </>

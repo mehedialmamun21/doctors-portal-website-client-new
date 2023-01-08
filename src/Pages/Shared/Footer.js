@@ -17,26 +17,26 @@ const Footer = () => {
 
             <div className='footer lg:pl-40'>
                 <div>
-                    <span className="footer-title text-xl">Services</span>
-                    <a href='/#' className="link link-hover font-semibold text-stone-500">Monthly Checkup</a>
-                    <a href='/#' className="link link-hover font-semibold text-stone-500">Emergency Checkup</a>
-                    <a href='/#' className="link link-hover font-semibold text-stone-500">Weekly Checkup</a>
-                    <a href='/#' className="link link-hover font-semibold text-stone-500">Deep Checkup</a>
+                    <span className="footer-title text-xl text-zinc-900">Services</span>
+                    <a href='/#' className="link link-hover font-semibold text-stone-500 font-mono text-sm">Monthly Checkup</a>
+                    <a href='/#' className="link link-hover font-semibold text-stone-500 font-mono">Emergency Checkup</a>
+                    <a href='/#' className="link link-hover font-semibold text-stone-500 font-mono">Weekly Checkup</a>
+                    <a href='/#' className="link link-hover font-semibold text-stone-500 font-mono">Deep Checkup</a>
                 </div>
                 <div>
-                    <span className="footer-title text-xl">Oral Health</span>
-                    <a href='/#' className="link link-hover font-semibold text-stone-500">Fluoride Treatment</a>
-                    <a href='/#' className="link link-hover font-semibold text-stone-500">Cavity Checking</a>
-                    <a href='/#' className="link link-hover font-semibold text-stone-500">Teeth Whitening</a>
+                    <span className="footer-title text-xl text-zinc-900">Oral Health</span>
+                    <a href='/#' className="link link-hover font-semibold text-stone-500 font-mono">Fluoride Treatment</a>
+                    <a href='/#' className="link link-hover font-semibold text-stone-500 font-mono">Cavity Checking</a>
+                    <a href='/#' className="link link-hover font-semibold text-stone-500 font-mono">Teeth Whitening</a>
                 </div>
                 <div>
-                    <span className="footer-title text-xl">Our Address</span>
-                    <a href='/#' className="link link-hover font-semibold text-stone-500"> <span className='font-bold text-lg'>DENTAL SOLUTION</span> <br /> House- 06, Road-04, Dinajpur, Bangladesh. <br /> Specialized Dental Hospital</a>
+                    <span className="footer-title text-xl text-zinc-900">Our Address</span>
+                    <a href='/#' className="link link-hover font-semibold text-stone-500"> <span className='font-bold text-lg text-zinc-900'>DENTAL SOLUTION</span> <br /> <br /> Kazi's Heritage, House-49, Road-11 <br /> Specialized Dental Hospital</a>
                 </div>
             </div>
 
             <div className='text-center text-gray-500 py-20 lg:py-10'>
-                <p className='font-semibold'>Copyright © <span className='font-semibold'>{date}</span> <span className='font-bold'> Dental Solution.</span> All rights are reserved.</p>
+                <p className='font-semibold font-mono'>Copyright © <span className='font-semibold'>{date}</span> <span className='font-bold'> Dental Solution.</span> All rights are reserved.</p>
             </div>
 
         </footer>

@@ -90,7 +90,7 @@ const AddDoctor = () => {
                                 </label> */}
                             <input type="text"
                                 placeholder="Doctor's Name"
-                                className="input input-bordered w-full max-w-xs rounded-sm shadow-lg"
+                                className="input input-bordered w-full max-w-xs rounded-sm shadow-lg font-mono"
                                 {...register("name", {
                                     required: {
                                         value: true,
@@ -100,7 +100,7 @@ const AddDoctor = () => {
                                 })}
                             />
                             <label className="label">
-                                {errors.name?.type === 'required' && <span className="label-text-alt text-red-500 font-semibold">{errors.name.message}</span>}
+                                {errors.name?.type === 'required' && <span className="label-text-alt text-red-500 font-mono">{errors.name.message}</span>}
                             </label>
                         </div>
 
@@ -109,7 +109,7 @@ const AddDoctor = () => {
                             {/* <label className="label">
                                     <span className="label-text font-semibold">Speciality</span>
                                 </label> */}
-                            <select {...register('speciality')} class="select input-bordered w-full max-w-xs rounded-sm shadow-lg">
+                            <select {...register('speciality')} class="select input-bordered w-full max-w-xs rounded-sm shadow-lg font-mono">
                                 {
                                     services.map(service => <option
                                         key={service._id}
@@ -126,7 +126,7 @@ const AddDoctor = () => {
                                 </label> */}
                             <input type="text"
                                 placeholder="Doctor's Degree"
-                                className="input input-bordered w-full max-w-xs rounded-sm shadow-lg"
+                                className="input input-bordered w-full max-w-xs rounded-sm shadow-lg font-mono"
                                 {...register("degree", {
                                     required: {
                                         value: true,
@@ -136,7 +136,7 @@ const AddDoctor = () => {
                                 })}
                             />
                             <label className="label">
-                                {errors.degree?.type === 'required' && <span className="label-text-alt text-red-500 font-semibold">{errors.degree.message}</span>}
+                                {errors.degree?.type === 'required' && <span className="label-text-alt text-red-500 font-mono">{errors.degree.message}</span>}
                             </label>
                         </div>
 
@@ -168,7 +168,7 @@ const AddDoctor = () => {
                                 </label> */}
                             <input type="email"
                                 placeholder="Doctor's Email"
-                                className="input input-bordered w-full max-w-xs rounded-sm shadow-lg"
+                                className="input input-bordered w-full max-w-xs rounded-sm shadow-lg font-mono"
                                 {...register("email", {
                                     required: {
                                         value: true,
@@ -181,8 +181,8 @@ const AddDoctor = () => {
                                 })}
                             />
                             <label className="label">
-                                {errors.email?.type === 'required' && <span className="label-text-alt text-red-500 font-semibold">{errors.email.message}</span>}
-                                {errors.email?.type === 'pattern' && <span className="label-text-alt text-red-500 font-semibold">{errors.email.message}</span>}
+                                {errors.email?.type === 'required' && <span className="label-text-alt text-red-500 font-mono">{errors.email.message}</span>}
+                                {errors.email?.type === 'pattern' && <span className="label-text-alt text-red-500 font-mono">{errors.email.message}</span>}
                             </label>
                         </div>
 
@@ -192,7 +192,7 @@ const AddDoctor = () => {
                                 </label> */}
                             <input type="input" name='phone'
                                 placeholder="Phone Number"
-                                className="input input-bordered w-full max-w-xs rounded-sm shadow-lg"
+                                className="input input-bordered w-full max-w-xs rounded-sm shadow-lg font-mono"
                                 {...register("phone", {
                                     required: {
                                         value: true,
@@ -203,7 +203,7 @@ const AddDoctor = () => {
                             />
 
                             <label className="label">
-                                {errors.phone?.type === 'required' && <span className="label-text-alt text-red-500 font-semibold">{errors.phone.message}</span>}
+                                {errors.phone?.type === 'required' && <span className="label-text-alt text-red-500 font-mono">{errors.phone.message}</span>}
                             </label>
 
                         </div>
@@ -222,8 +222,8 @@ const AddDoctor = () => {
                                     <span className="label-text font-semibold">Time</span>
                                 </label> */}
                             <input type="text"
-                                placeholder="Time to see the patient"
-                                className="input input-bordered w-full max-w-xs rounded-sm shadow-lg"
+                                placeholder="Time to see patients"
+                                className="input input-bordered w-full max-w-xs rounded-sm shadow-lg font-mono"
                                 {...register("time", {
                                     required: {
                                         value: true,
@@ -233,7 +233,7 @@ const AddDoctor = () => {
                                 })}
                             />
                             <label className="label">
-                                {errors.time?.type === 'required' && <span className="label-text-alt text-red-500 font-semibold">{errors.time.message}</span>}
+                                {errors.time?.type === 'required' && <span className="label-text-alt text-red-500 font-mono">{errors.time.message}</span>}
                             </label>
                         </div>
 
@@ -243,7 +243,7 @@ const AddDoctor = () => {
                                 </label> */}
                             <input type="input" name='room'
                                 placeholder="Room Number"
-                                className="input input-bordered w-full max-w-xs rounded-sm shadow-lg"
+                                className="input input-bordered w-full max-w-xs rounded-sm shadow-lg font-mono"
                                 {...register("room", {
                                     required: {
                                         value: true,
@@ -253,7 +253,7 @@ const AddDoctor = () => {
                                 })}
                             />
                             <label className="label">
-                                {errors.room?.type === 'required' && <span className="label-text-alt text-red-500 font-semibold">{errors.room.message}</span>}
+                                {errors.room?.type === 'required' && <span className="label-text-alt text-red-500 font-mono">{errors.room.message}</span>}
                             </label>
                         </div>
 
@@ -263,7 +263,7 @@ const AddDoctor = () => {
                                 </label> */}
                             <textarea type="text"
                                 placeholder="More about Doctor.."
-                                className='input input-bordered w-full max-w-xs h-40 rounded-sm shadow-lg'
+                                className='input input-bordered w-full max-w-xs h-40 rounded-sm shadow-lg font-mono'
                                 {...register("description", {
                                     required: {
                                         value: true,
@@ -273,7 +273,7 @@ const AddDoctor = () => {
                                 })}
                             />
                             <label className="label">
-                                {errors.description?.type === 'required' && <span className="label-text-alt text-red-500 font-semibold">{errors.description.message}</span>}
+                                {errors.description?.type === 'required' && <span className="label-text-alt text-red-500 font-mono">{errors.description.message}</span>}
                             </label>
                         </div>
 
