@@ -23,7 +23,7 @@ const ContactUs = () => {
     return (
         <section className='my-20'>
 
-            <div className='flex flex-col md:flex-row lg:flex-row  bg-contact-section-backImg px-16 py-10'>
+            <div className='flex flex-col md:flex-row lg:flex-row  bg-gray-600 px-40 py-10'>
 
                 <div className='w-full md:w-5/12 space-y-5 text-white'>
                     <div className='flex gap-4'>

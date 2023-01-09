@@ -10,10 +10,10 @@ const Footer = () => {
 
     return (
         <footer style={{
-            backgroundImage: `url(${footerImg})`,
-            backgroundPosition: 'center',
-            backgroundSize: 'cover',
-        }} className="p-5 mt-20">
+            // backgroundImage: `url(${footerImg})`,
+            // backgroundPosition: 'center',
+            // backgroundSize: 'cover',
+        }} className="p-5 mt-20 bg-slate-300 pt-28">
 
             <div className='footer lg:pl-40'>
                 <div>
@@ -33,9 +33,14 @@ const Footer = () => {
                     <span className="footer-title text-xl text-zinc-900">Our Address</span>
                     <a href='/#' className="link link-hover font-semibold text-stone-500"> <span className='font-bold text-lg text-zinc-900'>DENTAL SOLUTION</span> <br /> <br /> Kazi's Heritage, House-49, Road-11 <br /> Specialized Dental Hospital</a>
                 </div>
+
+                <div>
+                    <span className="footer-title text-xl text-zinc-900">Our Address</span>
+                    <a href='/#' className="link link-hover font-semibold text-stone-500"> <span className='font-bold text-lg text-zinc-900'>DENTAL SOLUTION</span> <br /> <br /> Kazi's Heritage, House-49, Road-11 <br /> Specialized Dental Hospital</a>
+                </div>
             </div>
 
-            <div className='text-center text-gray-500 py-20 lg:py-10'>
+            <div className='text-center text-gray-500 py-20 lg:pt-28'>
                 <p className='font-semibold font-mono'>Copyright © <span className='font-semibold'>{date}</span> <span className='font-bold'> Dental Solution.</span> All rights are reserved.</p>
             </div>
 

@@ -14,7 +14,7 @@ const Testimonial = () => {
     }, []);
 
     return (
-        <section className='my-10 px-5 lg:px-40'>
+        <section className='pt-10 pb-20 px-5 lg:px-40'>
 
             <div className='flex justify-between lg:px-0 py-5'>
                 <div className='pt-5 pb-14'>
