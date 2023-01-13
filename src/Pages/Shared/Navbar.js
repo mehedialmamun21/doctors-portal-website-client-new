@@ -6,6 +6,8 @@ import auth from "../../firebase.init";
 import img from "../../assets/images/navLogo.png";
 import { FaCalendarCheck, FaHome, FaHandHoldingMedical, FaPhone, FaBorderAll } from 'react-icons/fa';
 
+import { AiOutlineLogin, AiOutlineLogout } from 'react-icons/ai';
+
 const Navbar = () => {
   const [user, loading, error] = useAuthState(auth);
 
@@ -71,7 +73,7 @@ const Navbar = () => {
           </svg>
         </label>
 
-        {user ? <button className="btn btn-ghost font-bold border-2 border-black px-2 lg:px-8 mx-2 lg:mx-0 rounded-sm" onClick={logout} >Sign Out</button> : <Link to="/login" className="btn btn-ghost font-bold border-2 border-black px-2 lg:px-11 mx-2 lg:mx-0 rounded-sm">Login</Link>}
+        {user ? <button className="btn btn-ghost font-bold px-2 lg:px-5 mx-2 lg:mx-0 rounded-sm" onClick={logout} > <AiOutlineLogout size="2rem" /> <span className="pl-3">Sign Out</span> </button> : <Link to="/login" className="btn btn-ghost font-bold px-2 lg:px-8 mx-2 lg:mx-0 rounded-sm"> <AiOutlineLogin size="2rem" /> <span className="pl-3">Login</span> </Link>}
 
       </div>
 

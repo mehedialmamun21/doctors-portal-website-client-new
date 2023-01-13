@@ -33,7 +33,7 @@ function App() {
     // <div className="max-w-7xl mx-auto">
     <div className="mx-auto">
 
-      <div className="flex justify-end pr-64 py-6 text-white bg-gray-200 border-2 border-t-secondary">
+      <div className="flex justify-end pr-64 py-6 text-white bg-gray-200 border border-t-secondary">
         <a href="/facebook" target="_blank"><FaFacebook className="mr-6 cursor-pointer text-blue-600 text-xl" /></a>
         <a href="/youTube" target="_blank"><FaYoutube className="mr-6 cursor-pointer text-red-600 text-xl" /></a>
         <a href="/Twitter" target="_blank"><FaTwitter className="mr-6 cursor-pointer text-blue-400 text-xl" /></a>
