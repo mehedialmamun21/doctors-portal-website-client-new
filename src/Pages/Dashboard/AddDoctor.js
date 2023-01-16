@@ -81,7 +81,7 @@ const AddDoctor = () => {
 
             <form onSubmit={handleSubmit(onSubmit)}>
 
-                <div className='px-10 lg:px-44 py-5 lg:py-10 bg-slate-500 lg:grid lg:grid-cols-2 lg:gap-12'>
+                <div className='px-10 lg:px-44 py-5 lg:py-10 bg-slate-600 lg:grid lg:grid-cols-2 lg:gap-12'>
 
                     <div>
                         <div className="form-control w-full max-w-xs">

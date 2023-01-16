@@ -31,7 +31,7 @@ const MyReview = () => {
 
     return (
         <div className='addItem mr-5 mt-5 lg:mt-5 px-5 lg:px-44 py-5 lg:py-14 bg-slate-200'>
-            <div className='py-10 px-5 lg:px-0 bg-slate-500'>
+            <div className='py-10 px-5 lg:px-0 bg-slate-600'>
                 <form className='flex flex-col items-center' onSubmit={handleSubmit(onSubmit)}>
                     <input className='input input-bordered w-full max-w-xs my-2 rounded-sm shadow-lg font-mono' required placeholder="Your Name" type="text" {...register("name")} />
                     <input className='input input-bordered w-full max-w-xs my-2 rounded-sm shadow-lg font-mono' required placeholder="Give us Ratings  (1-5)" type="number" {...register("rating")} />
