@@ -31,7 +31,7 @@ const Footer = () => {
                 </div>
                 <div>
                     <span className="footer-title text-xl text-white">Our Address</span>
-                    <a href='/#' className="link link-hover font-semibold text-white"> <span className='font-bold text-lg text-white'>DENTAL SOLUTION</span> <br /> <br /> Kazi's Heritage, House-49, Road-11 <br /> Specialized Dental Hospital</a>
+                    <a href='/#' className="link link-hover font-semibold text-white"> <span className='font-bold text-lg text-primary'>DENTAL SOLUTIONS</span> <br /> <br /> Kazi's Heritage, House-49, Road-11 <br /> Specialized Dental Hospital</a>
                 </div>
 
                 <div>
@@ -42,7 +42,7 @@ const Footer = () => {
 
             <div className='grid grid-cols-2 gap-40 text-center text-white mt-24'>
                 <p className='font-semibold font-mono'>© <span className='font-semibold'>{date}</span> <span className='font-bold'>Copyright Dental Solutions, Dinajpur.</span> <br /> All rights are reserved.</p>
-                <p>Powered by: <a href="/#" className='text-xl font-bold'> <u>Dental Solutions, Dinajpur</u> </a> </p>
+                <p>Powered by : <a href="/#" className='text-lg font-semibold'> <u>Dental Solutions - Dinajpur</u> </a> </p>
             </div>
 
         </footer>

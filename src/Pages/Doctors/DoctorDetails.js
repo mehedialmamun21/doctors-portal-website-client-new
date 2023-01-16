@@ -18,7 +18,7 @@ const DoctorDetails = () => {
     return (
         <div className='h-screen my-5 px-5'>
 
-            <div className='flex justify-center py-5 border-2 border-b-zinc-400 bg-slate-200'>
+            <div className='flex justify-center py-5 border-2 border-gray-400'>
                 <div className='pr-40'>
                     <img src={prescription1} style={{ width: 140 }} alt="" />
                 </div>
@@ -26,7 +26,7 @@ const DoctorDetails = () => {
                 <div className='text-center'>
                     <div className='text-zinc-700 text-xl font-bold font-serif'> <i>{doctor.name}</i> </div>
                     <span className='flex justify-center items-center pb-2 text-lg text-cyan-600'><i>{doctor.degree}</i></span>
-                    <span className='text-zinc-700 text-lg border-2 border-b-zinc-400 px-12 py-2 rounded-sm font-mono'><i>Dental Surgeon</i></span>
+                    <span className='text-zinc-700 text-lg border-2 border-b-zinc-400 border-t-white border-l-white border-r-white px-12 py-2 rounded-sm font-mono'><i>Dental Surgeon</i></span>
                     <span className='flex justify-center items-center pt-4 text-lg font-mono'><i>BMDC Reg. No. <span className='font-semibold text-cyan-600'>{doctor._id}</span> </i></span>
                 </div>
 
@@ -39,11 +39,11 @@ const DoctorDetails = () => {
                 </div>
             </div>
 
-            <div className='flex border-2'>
-                <div className='w-4/12 px-10 pt-5 border-2 border-r-zinc-300 border-t-white border-l-white border-b-white'>
+            <div className='flex border-2 border-t-white border-l-gray-400 border-r-gray-400 border-b-gray-400'>
+                <div className='w-4/12 px-10 pt-5 border-2 border-r-gray-400 border-t-white border-l-white border-b-white'>
                     <div>
                         <p className='bg-slate-500 text-white text-center mb-5 py-1 text-xl font-bold font-mono'>Symptoms</p>
-                        <ul class="symp m-0 pl-5 py-5 h-18 bg-gray-200 focus:outline-none" data-toggle="tooltip" data-placement="bottom" title="Click to edit."
+                        <ul class="symp m-0 pl-5 py-5 h-18 bg-gray-100 focus:outline-none" data-toggle="tooltip" data-placement="bottom" title="Click to edit."
                             contenteditable="true">
                         </ul>
                         <div class="symp_action pb-8 pt-3">
@@ -53,7 +53,7 @@ const DoctorDetails = () => {
                     </div>
                     <div>
                         <p className='bg-slate-500 text-white text-center py-1 text-xl font-bold mb-5 font-mono'>Tests</p>
-                        <ul class="symp m-0 pl-5 py-5 h-18 bg-gray-200 focus:outline-none" data-toggle="tooltip" data-placement="bottom" title="Click to edit."
+                        <ul class="symp m-0 pl-5 py-5 h-18 bg-gray-100 focus:outline-none" data-toggle="tooltip" data-placement="bottom" title="Click to edit."
                             contenteditable="true">
                         </ul>
                         <div class="symp_action pb-5 pt-3">
@@ -78,10 +78,10 @@ const DoctorDetails = () => {
                         <img src={prescription2} style={{ width: 90 }} alt="" />
                     </div>
                     <div className='px-6 py-5'>
-                        <ul class="symp m-0 pl-5 py-5 h-44 w-full list-disc bg-gray-200 focus:outline-none" data-toggle="tooltip" data-placement="bottom" title="Click here to add medicine."
+                        <ul class="symp m-0 pl-5 py-5 h-44 w-full list-disc bg-gray-100 focus:outline-none" data-toggle="tooltip" data-placement="bottom" title="Click here to add medicine."
                             contenteditable="true">
                         </ul>
-                        <div class="pt-3">
+                        <div class="pt-5">
                             <button class="btn btn-sm px-3 rounded-sm bg-green-500 hover:bg-green-600 border-none text-white save">Save</button>
                             <button class="btn btn-sm px-3 rounded-sm ml-2 bg-red-500 hover:bg-red-600 border-none cancel-btn text-white">Cancel</button>
                         </div>

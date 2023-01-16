@@ -68,15 +68,15 @@ const ContactUs = () => {
                         <div className='flex flex-col gap-4 w-full'>
 
                             <div className='flex gap-4 w-full'>
-                                <input type="text" name="user_name" placeholder='Your Name' className='form-control bg-gray-100 border border-zinc-500 w-full py-4 px-3 outline-none rounded-sm font-mono' required />
+                                <input type="text" name="user_name" placeholder='Your Name' className='form-control border-2 border-slate-500 w-full py-4 px-3 outline-none rounded-sm font-mono' required />
 
-                                <input type="email" name="user_email" placeholder='Your Email' className='form-control bg-gray-100 border border-zinc-500 w-full py-4 px-3 outline-none rounded-sm font-mono' required />
+                                <input type="email" name="user_email" placeholder='Your Email' className='form-control border-2 border-slate-500 w-full py-4 px-3 outline-none rounded-sm font-mono' required />
                             </div>
 
-                            <input name="user_subject" type="text" placeholder="Your Subject" className="form-control bg-gray-100 border border-zinc-500 py-4 px-3 h-14 w-full mt-2 focus:outline-none rounded-sm font-mono"></input>
+                            <input name="user_subject" type="text" placeholder="Your Subject" className="form-control border-2 border-slate-500 py-4 px-3 h-14 w-full mt-2 focus:outline-none rounded-sm font-mono"></input>
 
                             <div>
-                                <textarea name='message' rows="4" placeholder='Type Your Message' className='form-control bg-gray-100 border border-zinc-500 w-full mt-2 py-4 px-3 outline-none rounded-sm font-mono' required />
+                                <textarea name='message' rows="4" placeholder='Type Your Message' className='form-control border-2 border-slate-500 w-full mt-2 py-4 px-3 outline-none rounded-sm font-mono' required />
                             </div>
 
                             <input type="submit" value="Send Message" className='form-control hover:scale-105 duration-300 btn bg-gradient-to-r from-secondary to-primary text-white w-2/4 lg:w-1/3 py-3 lg:px-8 mt-5 rounded-sm font-semibold border-none' />
