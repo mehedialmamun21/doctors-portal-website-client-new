@@ -263,7 +263,7 @@ const AddDoctor = () => {
                                 </label> */}
                             <textarea type="text"
                                 placeholder="More about Doctor.."
-                                className='input input-bordered w-full max-w-xs h-40 rounded-sm shadow-lg font-mono'
+                                className='input input-bordered w-full max-w-xs h-44 rounded-sm shadow-lg font-mono'
                                 {...register("description", {
                                     required: {
                                         value: true,
