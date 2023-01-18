@@ -22,6 +22,9 @@ const Banner = () => {
         },
         {
             // url: 'https://i.postimg.cc/J0fSTNKP/1668-000-N19-medium.jpg'
+        },
+        {
+            // url: 'https://i.postimg.cc/J0fSTNKP/1668-000-N19-medium.jpg'
         }
     ]
 
@@ -44,7 +47,7 @@ const Banner = () => {
 
     return (
 
-        <div className='lg:h-[660px] px-5 lg:px-0 relative group mb-28 bg-secondary'>
+        <div className='lg:h-[737px] px-5 lg:px-0 relative group mb-28 bg-secondary'>
 
             <div style={{ backgroundImage: `url(${slides[currentIndex].url})` }} className='h-[665px] bg-center bg-no-repeat object-cover mb-3'>
 
@@ -72,7 +75,7 @@ const Banner = () => {
                         <FaRegHandPointLeft className='ml-5 text-white' size="2rem" />
                     </div>
                 </div>
-                <div className='flex top-4 justify-center translate-y-[2600%]'>
+                <div className='flex top-4 justify-center translate-y-[2850%]'>
                     {slides.map((slide, slideIndex) => (
                         <div key={slideIndex}
                             onClick={() => goToSlide(slideIndex)}

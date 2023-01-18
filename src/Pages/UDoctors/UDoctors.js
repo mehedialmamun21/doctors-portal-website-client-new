@@ -1,9 +1,11 @@
 import React from 'react';
-import DrProfiles from './DrProfiles';
 
 import Footer from "../Shared/Footer";
 
+import DrProfiles from './DrProfiles';
+
 const UDoctors = () => {
+
     return (
         <div className='h-screen'>
 
@@ -16,6 +18,7 @@ const UDoctors = () => {
                 <div className='pt-10'>
                     <DrProfiles></DrProfiles>
                 </div>
+
             </div>
 
             <Footer></Footer>

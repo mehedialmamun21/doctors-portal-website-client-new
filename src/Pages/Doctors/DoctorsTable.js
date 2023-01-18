@@ -25,6 +25,7 @@ const DoctorsTable = ({ doctor, index }) => {
             <td className='text-zinc-700 font-semibold font-mono'>{doctor.phone}</td>
 
             {/* <td className='text-zinc-700 font-semibold'>{doctor.detail}</td> */}
+
             {/* <td className='text-zinc-700'>{doctor._id}</td> */}
         </tr>
 

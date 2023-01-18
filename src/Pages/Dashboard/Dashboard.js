@@ -25,6 +25,9 @@ const Dashboard = () => {
                             <li><Link to="/dashboard/review"><span className='px-9 py-3 font-bold rounded-sm shadow-lg font-mono'>My Reviews</span></Link></li>
                         </>}
                         {admin && <>
+                            {/* extra */}
+                            {/* <li><Link to="/dashboard"><span className='px-4 py-3 font-bold rounded-sm shadow-lg font-mono'>My Appointments</span></Link></li> */}
+
                             <li><Link to="/dashboard/users"> <span className='px-9 lg:px-16 py-3 font-bold rounded-sm shadow-lg font-mono'> Make Admin</span></Link></li>
                             <li><Link to="/dashboard/addDoctor"> <span className='px-9 lg:px-14 py-3 font-bold rounded-sm shadow-lg font-mono'>Add a Doctor</span> </Link></li>
                             <li><Link to="/dashboard/manageDoctor"><span className='px-6 lg:px-12 py-3 font-bold rounded-sm shadow-lg font-mono'>Manage Doctors</span></Link></li>
