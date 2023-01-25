@@ -29,7 +29,7 @@ const Payment = () => {
         <div className='px-5 lg:pt-24 lg:pb-10 lg:pl-80 lg:pr-24'>
 
             <div className='w-50 max-w-xl'>
-                <div class="card bg-slate-100 mb-12 rounded-sm">
+                <div class="card bg-slate-100 mb-12 rounded-sm border border-slate-400">
                     <div class="card-body">
                         <p className='pb-3 font-mono'>Hello, <span className="font-semibold">{appointment.patientName}</span></p>
                         {/* <p class="card-title"> <span className='text-lg'>Pay for :</span> <span className='text-secondary'>{appointment.treatment}</span> </p> */}

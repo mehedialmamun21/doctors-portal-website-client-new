@@ -52,6 +52,7 @@ const CheckoutForm = ({ appointment }) => {
 
         setSuccess('');
         setProcessing(true);
+
         // confirm card payment
         const { paymentIntent, error: intentError } = await stripe.confirmCardPayment(
             clientSecret,
