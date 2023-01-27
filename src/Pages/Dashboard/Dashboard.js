@@ -32,7 +32,6 @@ const Dashboard = () => {
                             <li><Link to="/dashboard/users"> <span className='px-9 lg:px-16 py-3 font-bold rounded-sm shadow-lg font-mono'> Make Admin</span></Link></li>
                             <li><Link to="/dashboard/addDoctor"> <span className='px-9 lg:px-14 py-3 font-bold rounded-sm shadow-lg font-mono'>Add a Doctor</span> </Link></li>
                             <li><Link to="/dashboard/manageDoctor"><span className='px-6 lg:px-12 py-3 font-bold rounded-sm shadow-lg font-mono'>Manage Doctors</span></Link></li>
-
                             <li><Link to="/dashboard/doctors"><span className='px-6 lg:px-10 py-3 font-bold rounded-sm shadow-lg font-mono'>Doctor's Profile</span></Link></li>
                         </>}
 

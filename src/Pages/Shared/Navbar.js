@@ -18,14 +18,25 @@ const Navbar = () => {
 
   const menuItems = (
     <>
-      <li><Link to="/"> <span className="font-semibold text-lg text-zinc-800 flex"> <span className="flex justify-center items-center pr-2 text-cyan-500"><FaHome size='1.25rem' /></span> <span className="font-mono">Home</span> </span> </Link></li>
-      <li><Link to="/appointment"><span className="font-semibold text-lg text-zinc-800 flex"> <span className="flex justify-center items-center pr-2 text-cyan-500"><FaCalendarCheck /></span> <span className="font-mono">Appointment</span> </span></Link></li>
-      {/* <li><Link to="/doctors"><span className="font-semibold text-lg text-zinc-800 flex"> <span className="flex justify-center items-center pr-2 text-cyan-500"> <FaHandHoldingMedical /> </span> <span>Dr.Profiles</span> </span></Link></li> */}
-      <li><Link to="/udoctors"><span className="font-semibold text-lg text-zinc-800 flex"> <span className="flex justify-center items-center pr-2 text-cyan-500"> <FaHandHoldingMedical /> </span> <span className="font-mono">Doctors</span> </span></Link></li>
-      <li><Link to="/contact"><span className="font-semibold text-lg text-zinc-800 flex"> <span className="flex justify-center items-center pr-2 text-cyan-500"> <FaPhone /> </span> <span className="font-mono">Contact</span> </span></Link></li>
-      {/* <li><Link to="/blog"><span className="font-semibold text-lg text-zinc-800">Blog</span></Link></li> */}
-      {
+
+      {/* <li><Link to="/"> <span className="font-semibold text-lg text-zinc-800 flex"> <span className="flex justify-center items-center pr-2 text-cyan-500"><FaHome size='1.25rem' /></span> <span className="font-mono">Home</span> </span> </Link></li> */}
+      <li><Link to="/"> <span className="font-semibold text-lg text-zinc-800 flex"> <span className="font-mono">Home</span> </span> </Link></li>
+
+      {/* <li><Link to="/appointment"><span className="font-semibold text-lg text-zinc-800 flex"> <span className="flex justify-center items-center pr-2 text-cyan-500"><FaCalendarCheck /></span> <span className="font-mono">Appointment</span> </span></Link></li> */}
+      <li><Link to="/appointment"><span className="font-semibold text-lg text-zinc-800 flex"> <span className="font-mono">Appointment</span> </span></Link></li>
+
+      {/* <li><Link to="/udoctors"><span className="font-semibold text-lg text-zinc-800 flex"> <span className="flex justify-center items-center pr-2 text-cyan-500"> <FaHandHoldingMedical /> </span> <span className="font-mono">Doctors</span> </span></Link></li> */}
+      <li><Link to="/udoctors"><span className="font-semibold text-lg text-zinc-800 flex"> <span className="font-mono">Doctors</span> </span></Link></li>
+
+      {/* <li><Link to="/contact"><span className="font-semibold text-lg text-zinc-800 flex"> <span className="flex justify-center items-center pr-2 text-cyan-500"> <FaPhone /> </span> <span className="font-mono">Contact</span> </span></Link></li> */}
+      <li><Link to="/contact"><span className="font-semibold text-lg text-zinc-800 flex"> <span className="font-mono">Contact</span> </span></Link></li>
+
+      {/* {
         user && <li><Link to="/dashboard"><span className="font-semibold text-lg text-zinc-800 flex"> <span className="flex justify-center items-center pr-2 text-cyan-500"> <FaBorderAll /> </span> <span className="font-mono">Dashboard</span> </span></Link></li>
+      } */}
+
+      {
+        user && <li><Link to="/dashboard"><span className="font-semibold text-lg text-zinc-800 flex"> <span className="font-mono">Dashboard</span> </span></Link></li>
       }
 
     </>
@@ -73,7 +84,7 @@ const Navbar = () => {
           </svg>
         </label>
 
-        {user ? <button className="btn btn-ghost font-bold px-2 lg:px-5 mx-2 lg:mx-0 rounded-sm" onClick={logout} > <AiOutlineLogout size="2rem" /> <span className="pl-3">Sign Out</span> </button> : <Link to="/login" className="btn btn-ghost font-bold px-2 lg:px-8 mx-2 lg:mx-0 rounded-sm"> <AiOutlineLogin size="2rem" /> <span className="pl-3">Login</span> </Link>}
+        {user ? <button className="btn btn-ghost font-bold px-2 lg:px-5 mx-2 lg:mx-0 rounded-sm" onClick={logout} > <AiOutlineLogout className="text-red-600" size="2rem" /> <span className="pl-3">Sign Out</span> </button> : <Link to="/login" className="btn btn-ghost font-bold px-2 lg:px-8 mx-2 lg:mx-0 rounded-sm"> <AiOutlineLogin className="text-green-600" size="2rem" /> <span className="pl-3">Login</span> </Link>}
 
       </div>
 

@@ -23,6 +23,7 @@ import Blog from "./Pages/Blog/Blog";
 import Doctors from "./Pages/Doctors/Doctors";
 import DoctorDetails from "./Pages/Doctors/DoctorDetails";
 import UDoctors from "./Pages/UDoctors/UDoctors";
+import DrDetails from "./Pages/UDoctors/DrDetails";
 
 function App() {
 
@@ -30,8 +31,6 @@ function App() {
 
     // <div className="max-w-7xl mx-auto">
     <div className="mx-auto">
-
-
 
       <Navbar></Navbar>
 
@@ -56,13 +55,14 @@ function App() {
         <Route path="/blog" element={<Blog></Blog>} />
         <Route path="/contact" element={<Contact></Contact>} />
 
-        {/* <Route path="/doctors" element={<Doctors></Doctors>} /> */}
         <Route path="/dashboard/doctors" element={<Doctors></Doctors>} />
 
         <Route path="/udoctors" element={<UDoctors></UDoctors>} />
 
         <Route path="/doctor" element={<DoctorDetails></DoctorDetails>} />
         <Route path="/doctor/:doctorId" element={<DoctorDetails />}></Route>
+
+        <Route path='/drDetails/:doctorId' element={<DrDetails></DrDetails>}></Route>
 
         <Route path="/login" element={<Login></Login>} />
         <Route path="/signup" element={<SignUp></SignUp>} />

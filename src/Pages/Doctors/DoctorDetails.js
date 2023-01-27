@@ -6,6 +6,7 @@ import prescription1 from '../../assets/images/prescription1.png'
 import prescription2 from '../../assets/images/prescription2.png'
 
 const DoctorDetails = () => {
+
     const { doctorId } = useParams();
     const [doctor, setDoctor] = useState({});
 
@@ -15,6 +16,7 @@ const DoctorDetails = () => {
             .then(res => res.json())
             .then(data => setDoctor(data))
     }, [doctor, doctorId]);
+
     return (
         <div className='h-screen my-5 px-5'>
 

@@ -141,25 +141,25 @@ const AddDoctor = () => {
                         </div>
 
 
-                        {/* <div className="form-control w-full max-w-xs">
-                                <label className="label">
-                                    <span className="label-text font-semibold">Photo</span>
-                                </label>
-                                <input type="file"
-                                    className="input input-bordered w-full max-w-xs rounded-sm shadow-lg"
-                                    {...register("image", {
-                                        required: {
-                                            value: true,
-                                            message: 'Image is required'
-                                        },
+                        <div className="form-control w-full max-w-xs">
+                            {/* <label className="label">
+                                <span className="label-text font-semibold">Photo</span>
+                            </label> */}
+                            <input type="file"
+                                className="input input-bordered w-full max-w-xs rounded-sm shadow-lg"
+                                {...register("image", {
+                                    required: {
+                                        value: true,
+                                        message: 'Image is required'
+                                    },
 
-                                    })}
-                                />
-                                <label className="label">
-                                    {errors.image?.type === 'required' && <span className="label-text-alt text-red-500 font-semibold">{errors.image.message}</span>}
+                                })}
+                            />
+                            <label className="label">
+                                {errors.image?.type === 'required' && <span className="label-text-alt text-red-500 font-semibold">{errors.image.message}</span>}
 
-                                </label>
-                            </div> */}
+                            </label>
+                        </div>
 
 
                         <div className="form-control w-full max-w-xs">
@@ -277,7 +277,7 @@ const AddDoctor = () => {
                             </label>
                         </div>
 
-                        <input className="btn w-full font-bold bg-gradient-to-r from-secondary to-primary mt-2 shadow-lg text-white rounded-sm border-none hover:scale-105 duration-300" type="submit" value="Add Doctor" />
+                        <input className="btn w-full font-bold bg-gradient-to-r from-secondary to-primary  shadow-lg text-white rounded-sm border-none hover:scale-105 duration-300" type="submit" value="Add Doctor" />
 
                     </div>
 

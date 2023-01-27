@@ -22,9 +22,6 @@ const Banner = () => {
         },
         {
             // url: 'https://i.postimg.cc/J0fSTNKP/1668-000-N19-medium.jpg'
-        },
-        {
-            // url: 'https://i.postimg.cc/J0fSTNKP/1668-000-N19-medium.jpg'
         }
     ]
 
@@ -47,7 +44,7 @@ const Banner = () => {
 
     return (
 
-        <div className='lg:h-[737px] px-5 lg:px-0 relative group mb-28 bg-secondary'>
+        <div className='lg:h-[737px] px-5 lg:px-0 relative group mb-28 bg-gradient-to-r from-secondary to-primary'>
 
             <div style={{ backgroundImage: `url(${slides[currentIndex].url})` }} className='h-[665px] bg-center bg-no-repeat object-cover mb-3'>
 

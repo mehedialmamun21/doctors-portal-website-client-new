@@ -5,7 +5,6 @@ import DrProfilesCard from './DrProfilesCard';
 
 const DrProfiles = ({ doctor }) => {
 
-
     const { data: doctors, isLoading } = useQuery('doctors', () => fetch('http://localhost:5000/doctor', {
         headers: {
             authorization: `Bearer ${localStorage.getItem('accessToken')}`
@@ -15,7 +14,6 @@ const DrProfiles = ({ doctor }) => {
     if (isLoading) {
         return <Loading></Loading>
     }
-
 
     return (
         <div>

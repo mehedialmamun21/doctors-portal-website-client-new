@@ -15,8 +15,8 @@ const MakeAppointment = () => {
                 <img className='h-84 flex justify-center items-center' src={doctor} alt="" />
             </div>
             <div className='flex-1 lg:px-10 py-5'>
-                <div className='pb-14'>
-                    <h3 className='text-2xl text-cyan-500 pb-2 font-mono'>Appointment</h3>
+                <div className='pb-20'>
+                    {/* <h3 className='text-2xl text-cyan-500 pb-2 font-mono'>Appointment</h3> */}
                     <h2 className='text-3xl text-white font-mono'>Make an appointment Today</h2>
                 </div>
                 {/* <p className='text-white pt-6 pb-7 font-mono'>The first step towards a beautiful,
@@ -27,7 +27,7 @@ const MakeAppointment = () => {
                     We are accessible via public transport. After - hours care is available.
                     We are open on Saturdays and Sundays. We are committed to give you the best service.
                     Thank you..</p> */}
-                <Link to="/appointment"><PrimaryButton>Get Started</PrimaryButton></Link>
+                <center><Link to="/appointment"><PrimaryButton>Get Started</PrimaryButton></Link></center>
             </div>
         </section>
     );
