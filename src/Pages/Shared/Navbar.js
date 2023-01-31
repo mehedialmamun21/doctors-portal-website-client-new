@@ -84,7 +84,7 @@ const Navbar = () => {
           </svg>
         </label>
 
-        {user ? <button className="btn btn-ghost font-bold px-2 mx-2 lg:mx-0 rounded-sm" onClick={logout} > <AiOutlineLogout className="text-red-500" size="2rem" /> <span className="pl-3 text-white">Sign Out</span> </button> : <Link to="/login" className="btn btn-ghost font-bold px-2 lg:px-8 mx-2 lg:mx-0 rounded-sm"> <AiOutlineLogin className="text-green-500" size="2rem" /> <span className="pl-3 text-white">Login</span> </Link>}
+        {user ? <button className="btn btn-ghost font-bold" onClick={logout} > <AiOutlineLogout className="text-red-500" size="2rem" /> <span className="pl-3 text-white">Sign Out</span> </button> : <Link to="/login" className="btn btn-ghost font-bold"> <AiOutlineLogin className="text-green-500" size="2rem" /> <span className="pl-3 text-white">Login</span> </Link>}
 
       </div>
 

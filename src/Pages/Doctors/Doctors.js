@@ -33,7 +33,7 @@ const Doctors = () => {
         <section className='h-screen'>
 
             <div className='px-40'>
-                <div class="overflow-x-auto pt-12 px-5">
+                <div class="overflow-x-auto pt-12">
 
                     <table class="table w-full border-4">
 
@@ -70,11 +70,11 @@ const Doctors = () => {
                 </div>
 
                 <div className='flex justify-end items-end pt-2 pb-28 px-5'>
-                    <span className='pb-8 flex justify-center items-center'>
+                    <span className='pb-9 flex justify-center items-center'>
                         <FaRegCaretSquareRight size="30px" className='text-white' />
                     </span>
                     <div className='pl-5 py-7'>
-                        <button onClick={clicked} className='bg-gradient-to-r from-secondary to-primary text-white text-lg font-semibold px-16 py-2 rounded-sm hover:scale-105 duration-300'>Doctor's Entry</button>
+                        <button onClick={clicked} className='bg-gradient-to-r from-secondary to-primary text-white text-lg font-semibold px-16 py-2 rounded-sm hover:scale-105 duration-300 border border-white hover:border-white'>Doctor's Entry</button>
                     </div>
                 </div>
             </div>

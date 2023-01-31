@@ -46,12 +46,12 @@ const Banner = () => {
             <div style={{ backgroundImage: `url(${slides[currentIndex].url})` }} className='h-[665px] bg-center bg-no-repeat object-cover mb-3'>
 
                 {/* Left Arrow */}
-                <div className='absolute top=[50%] -translate-x-0 translate-y-[150%] left-5 text-2xl rounded-full p-2 hover:bg-white/50 bg-black/30 text-white hover:text-black cursor-pointer mt-60'>
+                <div className='absolute top=[50%] -translate-x-[-70%] translate-y-[160%] left-5 text-2xl rounded-full p-2 hover:bg-white/50 bg-black/30 text-white hover:text-black cursor-pointer mt-60'>
                     <BsChevronCompactLeft onClick={prevSlide} size={30} />
                 </div>
 
                 {/* Right Arrow */}
-                <div className='absolute top=[50%] -translate-x-0 translate-y-[150%] right-5 text-2xl rounded-full p-2 hover:bg-white/50 bg-black/30 text-white hover:text-black cursor-pointer mt-60'>
+                <div className='absolute top=[50%] -translate-x-[70%] translate-y-[160%] right-5 text-2xl rounded-full p-2 hover:bg-white/50 bg-black/30 text-white hover:text-black cursor-pointer mt-60'>
                     <BsChevronCompactRight onClick={nextSlide} size={30} />
                 </div>
 

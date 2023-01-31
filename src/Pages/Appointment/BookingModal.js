@@ -50,7 +50,7 @@ const BookingModal = ({ date, treatment, setTreatment, refetch }) => {
 
     return (
 
-        <div>
+        <div className=''>
             <input type="checkbox" id="booking-modal" className="modal-toggle" />
             <div className="modal modal-bottom sm:modal-middle">
                 <div className="modal-box">

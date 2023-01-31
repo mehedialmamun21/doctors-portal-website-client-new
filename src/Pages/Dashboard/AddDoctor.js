@@ -77,7 +77,7 @@ const AddDoctor = () => {
 
 
     return (
-        <div className='flex justify-center py-5 lg:py-14 my-5 lg:mt-12 px-5 lg:mr-5 bg-slate-200'>
+        <div className='flex justify-center py-5 lg:py-14 my-5 lg:mt-12 px-5 bg-slate-200'>
 
             <form onSubmit={handleSubmit(onSubmit)}>
 
@@ -85,9 +85,7 @@ const AddDoctor = () => {
 
                     <div>
                         <div className="form-control w-full max-w-xs">
-                            {/* <label className="label">
-                                    <span className="label-text font-semibold">Name</span>
-                                </label> */}
+
                             <input type="text"
                                 placeholder="Doctor's Name"
                                 className="input input-bordered w-full max-w-xs rounded-sm shadow-lg font-mono"
@@ -106,9 +104,7 @@ const AddDoctor = () => {
 
 
                         <div className="form-control w-full max-w-xs pb-4">
-                            {/* <label className="label">
-                                    <span className="label-text font-semibold">Speciality</span>
-                                </label> */}
+
                             <select {...register('speciality')} class="select input-bordered w-full max-w-xs rounded-sm shadow-lg font-mono">
                                 {
                                     services.map(service => <option
@@ -121,9 +117,7 @@ const AddDoctor = () => {
 
 
                         <div className="form-control w-full max-w-xs">
-                            {/* <label className="label">
-                                    <span className="label-text font-semibold">Degree</span>
-                                </label> */}
+
                             <input type="text"
                                 placeholder="Doctor's Degree"
                                 className="input input-bordered w-full max-w-xs rounded-sm shadow-lg font-mono"
@@ -142,9 +136,7 @@ const AddDoctor = () => {
 
 
                         <div className="form-control w-full max-w-xs">
-                            {/* <label className="label">
-                                <span className="label-text font-semibold">Photo</span>
-                            </label> */}
+
                             <input type="file"
                                 className="input input-bordered w-full max-w-xs rounded-sm shadow-lg"
                                 {...register("image", {
@@ -163,9 +155,7 @@ const AddDoctor = () => {
 
 
                         <div className="form-control w-full max-w-xs">
-                            {/* <label className="label">
-                                    <span className="label-text font-semibold">Email</span>
-                                </label> */}
+
                             <input type="email"
                                 placeholder="Doctor's Email"
                                 className="input input-bordered w-full max-w-xs rounded-sm shadow-lg font-mono"
@@ -187,9 +177,7 @@ const AddDoctor = () => {
                         </div>
 
                         <div className="form-control w-full max-w-xs">
-                            {/* <label className="label">
-                                    <span className="label-text font-semibold">Phone</span>
-                                </label> */}
+
                             <input type="input" name='phone'
                                 placeholder="Phone Number"
                                 className="input input-bordered w-full max-w-xs rounded-sm shadow-lg font-mono"
@@ -218,9 +206,7 @@ const AddDoctor = () => {
                     <div>
 
                         <div className="form-control w-full max-w-xs">
-                            {/* <label className="label">
-                                    <span className="label-text font-semibold">Time</span>
-                                </label> */}
+
                             <input type="text"
                                 placeholder="Time to see patients"
                                 className="input input-bordered w-full max-w-xs rounded-sm shadow-lg font-mono"
@@ -238,9 +224,7 @@ const AddDoctor = () => {
                         </div>
 
                         <div className="form-control w-full max-w-xs">
-                            {/* <label className="label">
-                                    <span className="label-text font-semibold">Room</span>
-                                </label> */}
+
                             <input type="input" name='room'
                                 placeholder="Room Number"
                                 className="input input-bordered w-full max-w-xs rounded-sm shadow-lg font-mono"
@@ -258,9 +242,7 @@ const AddDoctor = () => {
                         </div>
 
                         <div className="form-control w-full max-w-xs">
-                            {/* <label className="label">
-                                    <span className="label-text font-semibold">More Details</span>
-                                </label> */}
+
                             <textarea type="text"
                                 placeholder="More about Doctor.."
                                 className='input input-bordered w-full max-w-xs h-44 rounded-sm shadow-lg font-mono'
@@ -277,7 +259,7 @@ const AddDoctor = () => {
                             </label>
                         </div>
 
-                        <input className="btn w-full font-bold bg-gradient-to-r from-secondary to-primary  shadow-lg text-white rounded-sm border-none hover:scale-105 duration-300" type="submit" value="Add Doctor" />
+                        <input className="btn w-full font-bold bg-gradient-to-r from-secondary to-primary  shadow-lg text-white rounded-sm border border-white hover:border-white hover:scale-105 duration-300" type="submit" value="Add Doctor" />
 
                     </div>
 

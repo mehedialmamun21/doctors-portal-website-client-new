@@ -156,7 +156,7 @@ const SignUp = () => {
 
                         {signInError}
 
-                        <button onClick={() => signInWithGoogle()} className="btn rounded-sm border-none text-white bg-slate-800 hover:bg-slate-800 shadow-lg hover:scale-105 duration-300">
+                        <button onClick={() => signInWithGoogle()} className="btn rounded-sm  border border-slate-400 hover:border-slate-400 text-white bg-slate-800 hover:bg-slate-800 shadow-lg hover:scale-105 duration-300">
                             <p className='flex justify-center'>
                                 <FcGoogle size="2rem" />
                                 <span className="pl-3 flex items-center text-md">Google</span>

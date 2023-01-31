@@ -79,7 +79,7 @@ const ContactUs = () => {
                                 <textarea name='message' rows="4" placeholder='Type Your Message' className='form-control border-2 border-slate-500 w-full mt-2 py-4 px-3 outline-none rounded-sm font-mono' required />
                             </div>
 
-                            <input type="submit" value="Send Message" className='form-control hover:scale-105 duration-300 btn bg-gradient-to-r from-secondary to-primary text-white w-2/4 lg:w-1/3 py-3 lg:px-8 mt-5 rounded-sm font-semibold border-none' />
+                            <input type="submit" value="Send Message" className='form-control hover:scale-105 duration-300 btn bg-gradient-to-r from-secondary to-primary text-white w-2/4 lg:w-1/3 py-3 lg:px-8 mt-5 rounded-sm font-semibold border border-white hover:border-white' />
                         </div>
 
                     </form>

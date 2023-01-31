@@ -61,11 +61,6 @@ const Login = () => {
 
         <div className="card w-96 bg-base-50 rounded-sm ">
 
-          {/* <div className="flex justify-center items-center text-xl font-bold">
-            <span className="flex justify-center items-center"><FaSignInAlt /></span>
-            <span className="pl-4">Login</span>
-          </div> */}
-
           <div className="card-body ">
 
             <form onSubmit={handleSubmit(onSubmit)}>
@@ -148,7 +143,7 @@ const Login = () => {
 
             {signInError}
 
-            <button onClick={() => signInWithGoogle()} className="btn rounded-sm border-none text-white bg-slate-800 hover:bg-slate-800 shadow-lg hover:scale-105 duration-300">
+            <button onClick={() => signInWithGoogle()} className="btn rounded-sm border border-slate-400 hover:border-slate-400 text-white bg-slate-800 hover:bg-slate-800 shadow-lg hover:scale-105 duration-300">
               <p className='flex justify-center'>
                 <FcGoogle size="2rem" />
                 <span className="pl-3 flex items-center text-md">Google</span>
