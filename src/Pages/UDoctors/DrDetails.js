@@ -22,11 +22,12 @@ const DrDetails = () => {
                 <div>
                     <div className='text-center'>
                         <center><img className='rounded' src={doctor.img} style={{ width: 250, height: 200 }} alt="" /></center>
-                        <div className='pt-7 pb-5'>
+                        <div className='pt-5 pb-5'>
                             <p className='font-mono text-lg text-slate-300'>{doctor.degree}</p>
-                            <p className='text-white text-xl font-bold font-mono pt-3'> {doctor.name} </p>
+                            <p className='text-white text-xl font-bold font-mono'> {doctor.name} </p>
                             <p className='font-mono text-xl text-primary pt-3'>{doctor.speciality}</p>
-                            <p className='font-mono text-md text-slate-300 pt-3'> Time : {doctor.time}</p>
+                            <p className='font-mono text-md text-slate-300'> Time: {doctor.time}</p>
+                            <p className='font-mono text-md text-slate-300'> Room no: {doctor.room}</p>
                         </div>
                     </div>
                     <div>

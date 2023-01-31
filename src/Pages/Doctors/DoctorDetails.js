@@ -18,7 +18,7 @@ const DoctorDetails = () => {
     }, [doctor, doctorId]);
 
     return (
-        <div className='h-screen mt-12 px-5'>
+        <div className='h-screen mt-12 px-40'>
 
             <div className='flex justify-center py-5 border-2 border-gray-400'>
                 <div className='pr-40'>

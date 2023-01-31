@@ -56,7 +56,7 @@ const SignUp = () => {
     return (
         <section className="h-screen flex justify-center items-center">
 
-            <div className="bg-cyan-500 w-1/2 flex justify-center items-center py-0">
+            <div className="w-1/2 flex justify-center items-center py-0">
 
                 <div className="card w-96 bg-base-50 rounded-sm">
 
@@ -71,7 +71,7 @@ const SignUp = () => {
 
                             <div className="form-control w-full max-w-xs">
                                 <label className="label">
-                                    <span className="label-text font-mono">Name</span>
+                                    <span className="label-text font-mono text-slate-300">Name</span>
                                 </label>
                                 <input type="text"
                                     placeholder="Your Name"
@@ -93,7 +93,7 @@ const SignUp = () => {
 
                             <div className="form-control w-full max-w-xs">
                                 <label className="label">
-                                    <span className="label-text font-mono">Email</span>
+                                    <span className="label-text font-mono text-slate-300">Email</span>
                                 </label>
                                 <input type="email"
                                     placeholder="Your Email"
@@ -119,7 +119,7 @@ const SignUp = () => {
 
                             <div className="form-control w-full max-w-xs">
                                 <label className="label">
-                                    <span className="label-text font-mono">Password</span>
+                                    <span className="label-text font-mono text-slate-300">Password</span>
                                 </label>
                                 <input type="password"
                                     placeholder="Password"
@@ -142,7 +142,7 @@ const SignUp = () => {
                             </div>
 
                             <button type="submit" className="py-3 rounded-sm w-full max-w-xs font-semibold bg-gradient-to-r from-secondary to-primary shadow-lg text-white border mt-2 hover:scale-105 duration-300">
-                                <p className='flex justify-center items-center'>
+                                <p className='flex justify-center items-center text-black'>
                                     <FaSignOutAlt size="1rem" />
                                     <span className='pl-3 flex items-center text-md'>REGISTER</span>
                                 </p>
@@ -150,9 +150,9 @@ const SignUp = () => {
 
                         </form>
 
-                        <small><p className='text-sm font-semibold'>Already have an Account ? <Link className="font-bold ml-10 lg:ml-14" to="/login" >Please Login</Link> </p></small>
+                        <small><p className='text-sm font-semibold text-slate-300'>Already have an Account ? <Link className="font-bold ml-10 lg:ml-14" to="/login" >Please Login</Link> </p></small>
 
-                        <div className="divider font-mono">Or continue with</div>
+                        <div className="divider font-mono text-slate-300">Or continue with</div>
 
                         {signInError}
 

@@ -40,9 +40,9 @@ const Footer = () => {
                     <span className="footer-title text-xl text-white">Help Center</span>
                     <a href='/#' className="link link-hover font-semibold text-white"> 01521 - 413730 <br /> 01303 - 114858</a>
                     <div className="flex justify-end pr-64 py-5 text-white">
-                        <a href="/facebook" target="_blank"><FaFacebook className="mr-6 cursor-pointer text-blue-600 text-xl" /></a>
+                        <a href="/facebook" target="_blank"><FaFacebook className="mr-6 cursor-pointer text-blue-500 text-xl" /></a>
                         <a href="/youTube" target="_blank"><FaYoutube className="mr-6 cursor-pointer text-red-600 text-xl" /></a>
-                        <a href="/Twitter" target="_blank"><FaTwitter className="mr-6 cursor-pointer text-blue-400 text-xl" /></a>
+                        <a href="/Twitter" target="_blank"><FaTwitter className="mr-6 cursor-pointer text-blue-600 text-xl" /></a>
                         <a href="/Instagram" target="_blank"><FaInstagram className="mr-6 cursor-pointer text-pink-500 text-xl" /></a>
                         <a href="/LinkedIn" target="_blank"><FaLinkedin className="cursor-pointer text-blue-500 text-xl" /></a>
                     </div>
