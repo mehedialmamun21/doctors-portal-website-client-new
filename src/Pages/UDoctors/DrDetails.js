@@ -18,18 +18,19 @@ const DrDetails = () => {
     return (
         <div className='min-h-screen'>
 
-            <div className='px-60 pt-20'>
+            <div className='px-60 pt-16'>
                 <div>
                     <div className='text-center'>
-                        <center><img src={doctor.img} style={{ width: 250, height: 200 }} alt="" /></center>
-                        <div className='py-7'>
-                            <p className='font-semibold font-mono'>{doctor.degree}</p>
-                            <p className='text-cyan-500 text-xl font-bold font-mono'> {doctor.name} </p>
-                            <p className='font-mono pt-3'>{doctor.speciality}</p>
+                        <center><img className='rounded' src={doctor.img} style={{ width: 250, height: 200 }} alt="" /></center>
+                        <div className='pt-7 pb-5'>
+                            <p className='font-mono text-lg text-slate-300'>{doctor.degree}</p>
+                            <p className='text-white text-xl font-bold font-mono pt-3'> {doctor.name} </p>
+                            <p className='font-mono text-xl text-primary pt-3'>{doctor.speciality}</p>
+                            <p className='font-mono text-md text-slate-300 pt-3'> Time : {doctor.time}</p>
                         </div>
                     </div>
                     <div>
-                        <p className='font-sarif border border-gray-500 px-5 py-5 rounded-md'>{doctor.description}</p>
+                        <p className='font-sarif border-l-2 border-primary text-white px-5 py-5 rounded-md'>{doctor.description}</p>
                     </div>
                 </div>
                 <div>

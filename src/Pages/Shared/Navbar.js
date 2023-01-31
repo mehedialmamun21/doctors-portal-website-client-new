@@ -20,23 +20,23 @@ const Navbar = () => {
     <>
 
       {/* <li><Link to="/"> <span className="font-semibold text-lg text-zinc-800 flex"> <span className="flex justify-center items-center pr-2 text-cyan-500"><FaHome size='1.25rem' /></span> <span className="font-mono">Home</span> </span> </Link></li> */}
-      <li><Link to="/"> <span className="font-semibold text-lg text-zinc-800 flex"> <span className="font-mono">Home</span> </span> </Link></li>
+      <li><Link to="/"> <span className="font-semibold text-lg text-white flex"> <span className="font-mono">Home</span> </span> </Link></li>
 
       {/* <li><Link to="/appointment"><span className="font-semibold text-lg text-zinc-800 flex"> <span className="flex justify-center items-center pr-2 text-cyan-500"><FaCalendarCheck /></span> <span className="font-mono">Appointment</span> </span></Link></li> */}
-      <li><Link to="/appointment"><span className="font-semibold text-lg text-zinc-800 flex"> <span className="font-mono">Appointment</span> </span></Link></li>
+      <li><Link to="/appointment"><span className="font-semibold text-lg text-white flex"> <span className="font-mono">Appointment</span> </span></Link></li>
 
       {/* <li><Link to="/udoctors"><span className="font-semibold text-lg text-zinc-800 flex"> <span className="flex justify-center items-center pr-2 text-cyan-500"> <FaHandHoldingMedical /> </span> <span className="font-mono">Doctors</span> </span></Link></li> */}
-      <li><Link to="/udoctors"><span className="font-semibold text-lg text-zinc-800 flex"> <span className="font-mono">Doctors</span> </span></Link></li>
+      <li><Link to="/udoctors"><span className="font-semibold text-lg text-white flex"> <span className="font-mono">Doctors</span> </span></Link></li>
 
       {/* <li><Link to="/contact"><span className="font-semibold text-lg text-zinc-800 flex"> <span className="flex justify-center items-center pr-2 text-cyan-500"> <FaPhone /> </span> <span className="font-mono">Contact</span> </span></Link></li> */}
-      <li><Link to="/contact"><span className="font-semibold text-lg text-zinc-800 flex"> <span className="font-mono">Contact</span> </span></Link></li>
+      <li><Link to="/contact"><span className="font-semibold text-lg text-white flex"> <span className="font-mono">Contact</span> </span></Link></li>
 
       {/* {
         user && <li><Link to="/dashboard"><span className="font-semibold text-lg text-zinc-800 flex"> <span className="flex justify-center items-center pr-2 text-cyan-500"> <FaBorderAll /> </span> <span className="font-mono">Dashboard</span> </span></Link></li>
       } */}
 
       {
-        user && <li><Link to="/dashboard"><span className="font-semibold text-lg text-zinc-800 flex"> <span className="font-mono">Dashboard</span> </span></Link></li>
+        user && <li><Link to="/dashboard"><span className="font-semibold text-lg text-white flex"> <span className="font-mono">Dashboard</span> </span></Link></li>
       }
 
     </>
@@ -44,7 +44,7 @@ const Navbar = () => {
 
   return (
 
-    <div className="navbar px-5 lg:pr-14 lg:pl-10 bg-slate-200 py-2 sticky top-0 z-30">
+    <div className="navbar px-5 lg:px-40 bg-cyan-800 py-0 sticky top-0 z-30">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex="0" className="btn btn-ghost lg:hidden">
@@ -62,7 +62,7 @@ const Navbar = () => {
             {menuItems}
           </ul>
         </div>
-        <a href="/" className="normal-case text-xl mx-2 lg:mx-0 border border-red-800"><img className='rounded-2xl' src={img} style={{ width: "170px", height: "70px" }} alt="" /></a>
+        <a href="/" className="normal-case text-xl mx-2 lg:mx-0 bg-white rounded-sm"><img className='rounded-2xl' src={img} style={{ width: "170px", height: "70px" }} alt="" /></a>
         {/* <a href="/" className="normal-case border-2 rounded-2xl border-t-orange-400 border-l-gray-100 border-r-gray-100 border-b-orange-400 border-sm px-3 py-1 text-orange-400 text-lg lg:text-xl font-bold lg:mx-0"> <span>Dental Solution</span> </a> */}
       </div>
       <div className="navbar-end hidden lg:flex">
@@ -84,7 +84,7 @@ const Navbar = () => {
           </svg>
         </label>
 
-        {user ? <button className="btn btn-ghost font-bold px-2 lg:px-5 mx-2 lg:mx-0 rounded-sm" onClick={logout} > <AiOutlineLogout className="text-red-600" size="2rem" /> <span className="pl-3">Sign Out</span> </button> : <Link to="/login" className="btn btn-ghost font-bold px-2 lg:px-8 mx-2 lg:mx-0 rounded-sm"> <AiOutlineLogin className="text-green-600" size="2rem" /> <span className="pl-3">Login</span> </Link>}
+        {user ? <button className="btn btn-ghost font-bold px-2 mx-2 lg:mx-0 rounded-sm" onClick={logout} > <AiOutlineLogout className="text-red-500" size="2rem" /> <span className="pl-3 text-white">Sign Out</span> </button> : <Link to="/login" className="btn btn-ghost font-bold px-2 lg:px-8 mx-2 lg:mx-0 rounded-sm"> <AiOutlineLogin className="text-green-500" size="2rem" /> <span className="pl-3 text-white">Login</span> </Link>}
 
       </div>
 

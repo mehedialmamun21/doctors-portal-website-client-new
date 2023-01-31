@@ -57,7 +57,7 @@ const Login = () => {
   return (
     <section className="h-screen flex justify-center items-center">
 
-      <div className="bg-white w-1/2 flex justify-center items-center py-0">
+      <div className="bg-cyan-500 w-1/2 flex justify-center items-center py-0">
 
         <div className="card w-96 bg-base-50 rounded-sm ">
 
@@ -134,7 +134,7 @@ const Login = () => {
                 <h5 className="pb-2 font-semibold font-mono">Forgot Password ?</h5>
               </button>
 
-              <button type="submit" className="py-3 rounded-sm w-full max-w-xs font-semibold bg-gradient-to-r from-secondary to-primary shadow-lg text-white border-none mt-2 hover:scale-105 duration-300">
+              <button type="submit" className="py-3 rounded-sm w-full max-w-xs font-semibold bg-gradient-to-r from-secondary to-primary shadow-lg text-white border mt-2 hover:scale-105 duration-300">
                 <p className='flex justify-center items-center'>
                   <FaSignInAlt size="1rem" />
                   <span className='pl-3 flex items-center text-md'>LOGIN</span>

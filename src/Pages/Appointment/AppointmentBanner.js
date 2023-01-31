@@ -7,7 +7,7 @@ import { BsChevronCompactRight } from 'react-icons/bs';
 const AppointmentBanner = ({ date, setDate }) => {
     return (
         // <div className="hero bg-banner-section-backImg lg:px-80 py-5">
-        <div className="hero lg:px-72 pt-5 pb-11">
+        <div className="hero lg:px-72 pt-10 pb-11">
 
             <div className="hero-content grid grid-cols-1 lg:grid-cols-3 rounded-sm text-lg text-white bg-gradient-to-r from-primary to-secondary">
 

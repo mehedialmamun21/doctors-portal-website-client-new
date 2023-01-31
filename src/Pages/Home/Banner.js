@@ -19,9 +19,6 @@ const Banner = () => {
         },
         {
             // url: 'https://i.postimg.cc/J0fSTNKP/1668-000-N19-medium.jpg'
-        },
-        {
-            // url: 'https://i.postimg.cc/J0fSTNKP/1668-000-N19-medium.jpg'
         }
     ]
 
@@ -44,7 +41,7 @@ const Banner = () => {
 
     return (
 
-        <div className='lg:h-[737px] px-5 lg:px-0 relative group mb-28 bg-gradient-to-r from-secondary to-primary'>
+        <div className='lg:h-[755px] px-5 lg:px-0 relative group mb-28 bg-cyan-800'>
 
             <div style={{ backgroundImage: `url(${slides[currentIndex].url})` }} className='h-[665px] bg-center bg-no-repeat object-cover mb-3'>
 
@@ -68,11 +65,11 @@ const Banner = () => {
 
                 <div className='absolute top=[80%] -translate-x-[-108%] translate-y-[905%] cursor-pointer'>
                     <div className='flex items-center justify-center'>
-                        <Link to="/appointment"><p className='border-2 border-white hover:text-white font-mono bg-white px-5 py-2 text-black hover:bg-secondary font-semibold'>Book Appointment</p></Link>
+                        <Link to="/appointment"><p className='border-2 border-white text-white font-mono hover:bg-white hover:text-black px-5 py-2 font-semibold'>Book Appointment</p></Link>
                         <FaRegHandPointLeft className='ml-5 text-white' size="2rem" />
                     </div>
                 </div>
-                <div className='flex top-4 justify-center translate-y-[2850%]'>
+                <div className='flex top-4 justify-center translate-y-[2960%]'>
                     {slides.map((slide, slideIndex) => (
                         <div key={slideIndex}
                             onClick={() => goToSlide(slideIndex)}
