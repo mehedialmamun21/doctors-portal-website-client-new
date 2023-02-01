@@ -27,7 +27,7 @@ const Contact = () => {
     return (
         <section className='h:screen'>
 
-            <div className='flex flex-col lg:gap-14 md:flex-row lg:flex-row pt-3 lg:pt-10 lg:pb-28 px-5 lg:px-40 '>
+            <div className='flex flex-col lg:gap-20 md:flex-row lg:flex-row pt-3 lg:pt-10 lg:pb-28 px-5 lg:px-40 '>
 
                 <div className='w-full lg:w-6/12 space-y-5'>
 

@@ -10,7 +10,7 @@ const UDoctors = () => {
         <div className='h-screen'>
 
             <div className='pb-28 mx-40'>
-                <div className='pt-10'>
+                <div className='pt-14'>
                     <p className='text-primary text-xl'>Professionals</p>
                     <p className='text-3xl font-mono text-white'>Our Doctors</p>
                 </div>
