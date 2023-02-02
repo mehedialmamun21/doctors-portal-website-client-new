@@ -26,7 +26,7 @@ const DrProfilesCard = ({ doctor }) => {
 
                 <div>
                     <div>
-                        <p className='text-white font-semibold font-mono text-lg border-b-2 border-zinc-300 pb-1'>{doctor.name}</p>
+                        <p className='text-slate-300 font-semibold font-mono text-lg border-b-2 border-zinc-300 pb-1'>{doctor.name}</p>
                     </div>
                     <div>
                         <p className='text-slate-300 font-mono text-lg pt-5'>{degree}</p>
@@ -37,9 +37,9 @@ const DrProfilesCard = ({ doctor }) => {
                 </div>
 
                 <div className='pt-5 flex pl-52'>
-                    <p className='text-white text-lg'><BsChevronCompactRight /></p>
-                    <p className='text-white text-lg'><BsChevronCompactRight /></p>
-                    <button className='rounded-sm text-slate-300 text-md font-semibold font-mono cursor-pointer' onClick={() => navigateToPurchasePage(_id)}> <span className='hover:text-black text-white'>more</span> </button>
+                    <p className='text-slate-300 text-lg'><BsChevronCompactRight /></p>
+                    <p className='text-slate-300 text-lg'><BsChevronCompactRight /></p>
+                    <button className='rounded-sm text-white text-md font-semibold font-mono cursor-pointer' onClick={() => navigateToPurchasePage(_id)}> <span className='hover:text-black text-slate-300'>more</span> </button>
                 </div>
 
             </div>

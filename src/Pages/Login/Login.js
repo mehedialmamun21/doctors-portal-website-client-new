@@ -129,7 +129,7 @@ const Login = () => {
                 <h5 className="pb-2 font-semibold font-mono text-slate-300">Forgot Password ?</h5>
               </button>
 
-              <button type="submit" className="py-3 rounded-sm w-full max-w-xs font-semibold bg-gradient-to-r from-secondary to-primary shadow-lg text-white border mt-2 hover:scale-105 duration-300">
+              <button type="submit" className="py-3 rounded-sm w-full max-w-xs font-semibold bg-gradient-to-r from-secondary to-primary shadow-lg text-slate-300 mt-2 hover:scale-105 duration-300">
                 <p className='flex justify-center items-center text-black'>
                   <FaSignInAlt size="1rem" />
                   <span className='pl-3 flex items-center text-md'>LOGIN</span>
@@ -143,7 +143,7 @@ const Login = () => {
 
             {signInError}
 
-            <button onClick={() => signInWithGoogle()} className="btn rounded-sm border border-slate-400 hover:border-slate-400 text-white bg-slate-800 hover:bg-slate-800 shadow-lg hover:scale-105 duration-300">
+            <button onClick={() => signInWithGoogle()} className="btn rounded-sm border border-slate-400 hover:border-slate-400 text-slate-300 bg-slate-800 hover:bg-slate-800 shadow-lg hover:scale-105 duration-300">
               <p className='flex justify-center'>
                 <FcGoogle size="2rem" />
                 <span className="pl-3 flex items-center text-md">Google</span>

@@ -3,10 +3,9 @@ import React from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { Link } from "react-router-dom";
 import auth from "../../firebase.init";
-import img from "../../assets/images/navLogo.png";
-import { FaCalendarCheck, FaHome, FaHandHoldingMedical, FaPhone, FaBorderAll } from 'react-icons/fa';
-
+// import { FaCalendarCheck, FaHome, FaHandHoldingMedical, FaPhone, FaBorderAll } from 'react-icons/fa';
 import { AiOutlineLogin, AiOutlineLogout } from 'react-icons/ai';
+import { TbDental } from "react-icons/tb";
 
 const Navbar = () => {
   const [user, loading, error] = useAuthState(auth);
@@ -20,23 +19,23 @@ const Navbar = () => {
     <>
 
       {/* <li><Link to="/"> <span className="font-semibold text-lg text-zinc-800 flex"> <span className="flex justify-center items-center pr-2 text-cyan-500"><FaHome size='1.25rem' /></span> <span className="font-mono">Home</span> </span> </Link></li> */}
-      <li><Link to="/"> <span className="font-semibold text-lg text-white flex"> <span className="font-mono">Home</span> </span> </Link></li>
+      <li><Link to="/"> <span className="font-semibold text-lg text-gray-300 flex"> <span className="font-mono">Home</span> </span> </Link></li>
 
       {/* <li><Link to="/appointment"><span className="font-semibold text-lg text-zinc-800 flex"> <span className="flex justify-center items-center pr-2 text-cyan-500"><FaCalendarCheck /></span> <span className="font-mono">Appointment</span> </span></Link></li> */}
-      <li><Link to="/appointment"><span className="font-semibold text-lg text-white flex"> <span className="font-mono">Appointment</span> </span></Link></li>
+      <li><Link to="/appointment"><span className="font-semibold text-lg text-gray-300 flex"> <span className="font-mono">Appointment</span> </span></Link></li>
 
       {/* <li><Link to="/udoctors"><span className="font-semibold text-lg text-zinc-800 flex"> <span className="flex justify-center items-center pr-2 text-cyan-500"> <FaHandHoldingMedical /> </span> <span className="font-mono">Doctors</span> </span></Link></li> */}
-      <li><Link to="/udoctors"><span className="font-semibold text-lg text-white flex"> <span className="font-mono">Doctors</span> </span></Link></li>
+      <li><Link to="/udoctors"><span className="font-semibold text-lg text-gray-300 flex"> <span className="font-mono">Doctors</span> </span></Link></li>
 
       {/* <li><Link to="/contact"><span className="font-semibold text-lg text-zinc-800 flex"> <span className="flex justify-center items-center pr-2 text-cyan-500"> <FaPhone /> </span> <span className="font-mono">Contact</span> </span></Link></li> */}
-      <li><Link to="/contact"><span className="font-semibold text-lg text-white flex"> <span className="font-mono">Contact</span> </span></Link></li>
+      <li><Link to="/contact"><span className="font-semibold text-lg text-gray-300 flex"> <span className="font-mono">Contact</span> </span></Link></li>
 
       {/* {
         user && <li><Link to="/dashboard"><span className="font-semibold text-lg text-zinc-800 flex"> <span className="flex justify-center items-center pr-2 text-cyan-500"> <FaBorderAll /> </span> <span className="font-mono">Dashboard</span> </span></Link></li>
       } */}
 
       {
-        user && <li><Link to="/dashboard"><span className="font-semibold text-lg text-white flex"> <span className="font-mono">Dashboard</span> </span></Link></li>
+        user && <li><Link to="/dashboard"><span className="font-semibold text-lg text-gray-300 flex"> <span className="font-mono">Dashboard</span> </span></Link></li>
       }
 
     </>
@@ -44,7 +43,8 @@ const Navbar = () => {
 
   return (
 
-    <div className="navbar px-5 py-0 lg:px-40 bg-cyan-800 sticky top-0 z-30">
+    // <div className="navbar px-5 py-0 lg:px-40 bg-cyan-800 sticky top-0 z-30">
+    <div className="navbar px-5 py-0 lg:px-40 bg-slate-900 sticky top-0 z-30 shadow-sm bg-opacity-80 backdrop-blur-lg border-b border-gray-700">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex="0" className="btn btn-ghost lg:hidden">
@@ -62,8 +62,9 @@ const Navbar = () => {
             {menuItems}
           </ul>
         </div>
-        <a href="/" className="normal-case bg-slate-300 text-xl mx-2 lg:mx-0"><img className='rounded-2xl' src={img} style={{ width: 170, height: 50 }} alt="" /></a>
-        {/* <a href="/" className="normal-case border-2 rounded-2xl border-t-orange-400 border-l-gray-100 border-r-gray-100 border-b-orange-400 border-sm px-3 py-1 text-orange-400 text-lg lg:text-xl font-bold lg:mx-0"> <span>Dental Solution</span> </a> */}
+
+        <a href="/" className="flex px-2 py-1 bg-white rounded-sm"><TbDental size="2rem" className="text-slate-900 flex justify-center items-center" /> <span className="text-slate-900 pl-1 flex justify-center items-center text-2xl font-semibold">Solution</span> </a>
+
       </div>
       <div className="navbar-end hidden lg:flex">
         <ul className="menu menu-horizontal p-0 text-lg">
@@ -84,7 +85,7 @@ const Navbar = () => {
           </svg>
         </label>
 
-        {user ? <button className="btn btn-ghost font-bold" onClick={logout} > <AiOutlineLogout className="text-red-500" size="2rem" /> <span className="pl-3 text-white">Sign Out</span> </button> : <Link to="/login" className="btn btn-ghost font-bold"> <AiOutlineLogin className="text-green-500" size="2rem" /> <span className="pl-3 text-white">Login</span> </Link>}
+        {user ? <button className="btn btn-ghost font-bold" onClick={logout} > <AiOutlineLogout className="text-red-500" size="2rem" /> <span className="pl-3 text-gray-300">Sign Out</span> </button> : <Link to="/login" className="btn btn-ghost font-bold"> <AiOutlineLogin className="text-green-500" size="2rem" /> <span className="pl-3 text-gray-300">Login</span> </Link>}
 
       </div>
 

@@ -1,9 +1,8 @@
 import React from 'react';
 import { useState } from 'react';
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
-import { RxDot, RxDotFilled } from 'react-icons/rx';
+// import { RxDot, RxDotFilled } from 'react-icons/rx';
 import { Link } from 'react-router-dom';
-
 import { FaRegHandPointLeft } from 'react-icons/fa';
 
 const Banner = () => {
@@ -41,43 +40,43 @@ const Banner = () => {
 
     return (
 
-        <div className='lg:h-[764px] px-5 lg:px-0 relative group mb-28 bg-cyan-800'>
+        <div className='px-5 lg:px-0 relative group bg-cyan-900'>
 
-            <div style={{ backgroundImage: `url(${slides[currentIndex].url})` }} className='h-[665px] bg-center bg-no-repeat object-cover mb-3'>
+            <div style={{ backgroundImage: `url(${slides[currentIndex].url})` }} className='h-[665px] bg-center bg-no-repeat object-cover'>
 
                 {/* Left Arrow */}
-                <div className='absolute top=[50%] -translate-x-[-70%] translate-y-[160%] left-5 text-2xl rounded-full p-2 hover:bg-white/50 bg-black/30 text-white hover:text-black cursor-pointer mt-60'>
+                <div className='absolute top=[50%] -translate-x-[-70%] translate-y-[160%] left-5 text-2xl rounded-full p-2 hover:bg-white/50 bg-black/30 text-slate-300 hover:text-black cursor-pointer mt-60'>
                     <BsChevronCompactLeft onClick={prevSlide} size={30} />
                 </div>
 
                 {/* Right Arrow */}
-                <div className='absolute top=[50%] -translate-x-[70%] translate-y-[160%] right-5 text-2xl rounded-full p-2 hover:bg-white/50 bg-black/30 text-white hover:text-black cursor-pointer mt-60'>
+                <div className='absolute top=[50%] -translate-x-[70%] translate-y-[160%] right-5 text-2xl rounded-full p-2 hover:bg-white/50 bg-black/30 text-slate-300 hover:text-black cursor-pointer mt-60'>
                     <BsChevronCompactRight onClick={nextSlide} size={30} />
                 </div>
 
                 <div className='absolute top=[80%] -translate-x-[-61%] translate-y-[500%] cursor-pointer'>
-                    <p className='text-white font-semibold font-mono text-4xl'>Our Professional Team</p>
+                    <p className='text-slate-300 font-semibold font-mono text-4xl'>Our Professional Team</p>
                 </div>
 
                 <div className='absolute top=[80%] -translate-x-[-33%] translate-y-[1070%] cursor-pointer'>
-                    <p className='text-white font-mono text-md'>DENTAL SOLUTION is always promised to provide the best dental treatment to the patients</p>
+                    <p className='text-slate-300 font-mono text-md'>DENTAL SOLUTION is always promised to provide the best dental treatment to the patients</p>
                 </div>
 
                 <div className='absolute top=[80%] -translate-x-[-108%] translate-y-[905%] cursor-pointer'>
                     <div className='flex items-center justify-center'>
-                        <Link to="/appointment"><p className='border-2 border-white text-white font-mono hover:bg-white hover:text-black px-5 py-2 font-semibold'>Book Appointment</p></Link>
-                        <FaRegHandPointLeft className='ml-5 text-white' size="2rem" />
+                        <Link to="/appointment"><p className='font-mono text-white border-2 border-slate-300 px-5 py-2 font-semibold rounded-sm'>Book Appointment</p></Link>
+                        <FaRegHandPointLeft className='ml-5 text-slate-300' size="2rem" />
                     </div>
                 </div>
-                <div className='flex top-4 justify-center translate-y-[2960%]'>
+                {/* <div className='flex top-4 justify-center translate-y-[2960%]'>
                     {slides.map((slide, slideIndex) => (
                         <div key={slideIndex}
                             onClick={() => goToSlide(slideIndex)}
-                            className='text-2xl cursor-pointer text-white hover:text-black'>
+                            className='text-2xl cursor-pointer text-slate-300 hover:text-black'>
                             <RxDotFilled />
                         </div>
                     ))}
-                </div>
+                </div> */}
             </div>
 
             {/* <div className='flex top-4 justify-center'>

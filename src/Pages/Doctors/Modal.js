@@ -45,8 +45,8 @@ const Modal = ({ setModalOn, setChoice }) => {
                                     </div>
 
                                     <div className="flex items-center justify-center border-2 border-cyan-800 px-2 py-5">
-                                        <button onClick={() => navigateToDoctorDetail(doctor._id)} className="rounded-sm px-4 py-1 text-white bg-green-500 hover:bg-green-600">Yes</button>
-                                        <button onClick={handleCancelClick} className="rounded-sm px-4 py-1 ml-2 text-white bg-red-500 hover:bg-red-600 ">No</button>
+                                        <button onClick={() => navigateToDoctorDetail(doctor._id)} className="rounded-sm px-4 py-1 text-white bg-green-600 hover:bg-green-700">Yes</button>
+                                        <button onClick={handleCancelClick} className="rounded-sm px-4 py-1 ml-2 text-white bg-red-600 hover:bg-red-700 ">No</button>
                                     </div>
                                 </div>
                             )

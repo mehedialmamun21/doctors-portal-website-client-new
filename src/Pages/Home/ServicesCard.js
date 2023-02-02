@@ -9,9 +9,9 @@ const ServicesCard = ({ service }) => {
                 <img src={service.url} alt="" className="hover:scale-x-125 hover:scale-y-125 duration-700 cursor-pointer" />
             </figure>
             <div className="card-body items-center text-center text-zinc-700">
-                <p className="card-title text-white font-mono">{service.name}</p>
-                {/* <span className='text-sm text-white font-mono'>(In Services)</span> */}
-                <p className='border-t-2 border-zinc-300 text-white font-mono pt-2'>{service.description}</p>
+                <p className="card-title text-slate-300 font-mono">{service.name}</p>
+                {/* <span className='text-sm text-slate-300 font-mono'>(In Services)</span> */}
+                <p className='border-t border-zinc-300 text-slate-300 font-mono pt-2'>{service.description}</p>
             </div>
         </div>
 

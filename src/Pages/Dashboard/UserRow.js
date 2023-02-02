@@ -55,8 +55,8 @@ const UserRow = ({ user, refetch, index }) => {
             <th>{index + 1}</th>
             <td className='font-semibold text-cyan-600 font-mono'>{_id}</td>
             <td className='font-semibold font-mono'>{email}</td>
-            <td>{role !== 'admin' && <button onClick={makeAdmin} class="btn btn-sm bg-green-500 hover:bg-green-600 border-none text-white px-3 font-semibold rounded-sm">Make Admin</button>}</td>
-            <td><button onClick={() => handleDelete(email)} class="btn btn-sm bg-red-400 hover:bg-red-500 border-none text-white px-3 font-semibold rounded-sm">Remove User</button></td>
+            <td>{role !== 'admin' && <button onClick={makeAdmin} class="btn btn-sm bg-green-600 hover:bg-green-700 border-none text-white px-3 font-semibold rounded-sm">Make Admin</button>}</td>
+            <td><button onClick={() => handleDelete(email)} class="btn btn-sm bg-red-500 hover:bg-red-600 border-none text-white px-3 font-semibold rounded-sm">Remove User</button></td>
         </tr>
     );
 };

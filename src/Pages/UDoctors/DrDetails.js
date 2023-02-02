@@ -27,7 +27,7 @@ const DrDetails = () => {
                                 <center><img className='rounded' src={doctor.img} style={{ width: 250, height: 200 }} alt="" /></center>
                                 <div className='pt-5 pb-5'>
                                     <p className='font-mono text-lg text-slate-300'>{doctor.degree}</p>
-                                    <p className='text-white text-xl font-bold font-mono'> {doctor.name} </p>
+                                    <p className='text-slate-300 text-xl font-bold font-mono'> {doctor.name} </p>
 
                                 </div>
                             </div>
@@ -46,8 +46,8 @@ const DrDetails = () => {
                 </div>
 
                 <div>
-                    <div>
-                        <p className='font-sarif border-white text-white px-5 py-5 rounded-md'>{doctor.description}</p>
+                    <div className='bg-slate-800 px-5 py-2 rounded-sm'>
+                        <p className='font-sarif border-white text-slate-300 px-5 py-5 rounded-md'>{doctor.description}</p>
                     </div>
                 </div>
             </div>

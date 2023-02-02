@@ -26,7 +26,7 @@ const Dashboard = () => {
                         <ul class="menu pt-9 overflow-y-auto w-60 lg:w-full">
 
                             {!admin && <>
-                                <li><Link to="/dashboard"><span className='px-4 py-3 font-bold rounded-sm shadow-lg bg-cyan-800 font-mono text-white border border-white'>My Appointments</span></Link></li>
+                                <li><Link to="/dashboard"><span className='px-4 py-3 font-bold rounded-sm shadow-lg bg-cyan-800 font-mono text-white border border-white relative'>My Appointments</span></Link></li>
                                 <li><Link to="/dashboard/review"><span className='px-9 py-3 font-bold rounded-sm shadow-lg bg-cyan-800 font-mono text-white border border-white'>My Reviews</span></Link></li>
                             </>}
 

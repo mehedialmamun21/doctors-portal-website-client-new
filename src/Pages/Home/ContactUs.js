@@ -21,17 +21,17 @@ const ContactUs = () => {
     };
 
     return (
-        <section className='mt-20'>
+        <section className='mt-20 border-t border-gray-700'>
 
             <div className='flex flex-col md:flex-row lg:flex-row px-40 pt-24 pb-16'>
 
-                <div className='w-full md:w-5/12 space-y-5 text-white'>
+                <div className='w-full md:w-5/12 space-y-5 text-slate-300'>
                     <div className='flex gap-4'>
                         <span>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-8"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
                         </span>
                         <div>
-                            <h2 className='text-2xl text-white font-semibold font-mono'>Have a Question?</h2>
+                            <h2 className='text-2xl text-slate-300 font-semibold font-mono'>Have a Question?</h2>
                             <p class="text-slate-400 font-mono">We are here to help</p>
                             <p class="text-slate-400 font-mono">Email us at "dentalsolution@gmail.com"</p>
                         </div>
@@ -42,7 +42,7 @@ const ContactUs = () => {
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-8"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
                             </span>
                             <div>
-                                <h2 className='text-2xl text-white font-semibold font-mono'>Current Location</h2>
+                                <h2 className='text-2xl text-slate-300 font-semibold font-mono'>Current Location</h2>
                                 <p class="text-slate-400 font-mono">Dinajpur,Bangladesh.</p>
                                 <p class="text-slate-400 font-mono">Serving clients worldwide</p>
                             </div>
@@ -54,7 +54,7 @@ const ContactUs = () => {
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-8"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
                             </span>
                             <div>
-                                <h2 className='text-2xl text-white font-semibold font-mono'>Contact With Us</h2>
+                                <h2 className='text-2xl text-slate-300 font-semibold font-mono'>Contact With Us</h2>
                                 <p class="text-slate-400 font-mono">Email: dentalsolution@gmail.com</p>
                                 <p class="text-slate-400 font-mono">Phone : +8801521-413730</p>
                             </div>
@@ -68,18 +68,18 @@ const ContactUs = () => {
                         <div className='flex flex-col gap-4 w-full'>
 
                             <div className='flex gap-4 w-full'>
-                                <input type="text" name="user_name" placeholder='Your Name' className='form-control border-2 border-slate-500 w-full py-4 px-3 outline-none rounded-sm font-mono' required />
+                                <input type="text" name="user_name" placeholder='Your Name' className='form-control bg-slate-300 w-full py-4 px-3 outline-none rounded-sm font-mono' required />
 
-                                <input type="email" name="user_email" placeholder='Your Email' className='form-control border-2 border-slate-500 w-full py-4 px-3 outline-none rounded-sm font-mono' required />
+                                <input type="email" name="user_email" placeholder='Your Email' className='form-control bg-slate-300 w-full py-4 px-3 outline-none rounded-sm font-mono' required />
                             </div>
 
-                            <input name="user_subject" type="text" placeholder="Your Subject" className="form-control border-2 border-slate-500 py-4 px-3 h-14 w-full mt-2 focus:outline-none rounded-sm font-mono"></input>
+                            <input name="user_subject" type="text" placeholder="Your Subject" className="form-control bg-slate-300 py-4 px-3 h-14 w-full mt-2 focus:outline-none rounded-sm font-mono"></input>
 
                             <div>
-                                <textarea name='message' rows="4" placeholder='Type Your Message' className='form-control border-2 border-slate-500 w-full mt-2 py-4 px-3 outline-none rounded-sm font-mono' required />
+                                <textarea name='message' rows="4" placeholder='Type Your Message' className='form-control bg-slate-300 w-full mt-2 py-4 px-3 outline-none rounded-sm font-mono' required />
                             </div>
 
-                            <input type="submit" value="Send Message" className='form-control hover:scale-105 duration-300 btn bg-gradient-to-r from-secondary to-primary text-white w-2/4 lg:w-1/3 py-3 lg:px-8 mt-5 rounded-sm font-semibold border border-white hover:border-white' />
+                            <input type="submit" value="Send Message" className='form-control hover:scale-105 duration-300 btn bg-gradient-to-r from-secondary to-primary text-white w-2/4 lg:w-1/3 py-3 lg:px-8 mt-2 rounded-sm font-semibold' />
                         </div>
 
                     </form>
