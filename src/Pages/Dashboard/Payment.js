@@ -31,12 +31,12 @@ const Payment = () => {
             <div className='w-50 max-w-xl'>
                 <div class="card bg-slate-100 mb-12 rounded-sm border border-slate-400">
                     <div class="card-body">
-                        <p className='pb-3 font-mono'>Hello, <span className="font-semibold">{appointment.patientName}</span></p>
+                        <p className='font-mono'>Hello, <span className="font-semibold">{appointment.patientName}</span></p>
                         {/* <p class="card-title"> <span className='text-lg'>Pay for :</span> <span className='text-secondary'>{appointment.treatment}</span> </p> */}
-                        <p> <span className='font-mono'>Pay for :</span> <span className='text-cyan-500 text-lg font-semibold'>{appointment.treatment}</span> </p>
-                        <p> <span className='font-mono'>Appointment :</span> <span className='text-orange-600 font-semibold'>{appointment.date}</span> at <span className='text-cyan-500 font-semibold'>{appointment.slot}</span> </p>
+                        <p> <span className='font-mono'>Pay for :</span> <span className='text-cyan-600 text-lg font-semibold'>{appointment.treatment}</span> </p>
+                        <p> <span className='font-mono'>Appointment :</span> <span className='text-orange-600 font-semibold'>{appointment.date}</span> at <span className='text-cyan-600 font-semibold'>{appointment.slot}</span> </p>
                         <br />
-                        <p> <span className='font-mono'>Please pay :</span> <span className='font-semibold border rounded-sm border-zinc-500 px-3 py-1'>{appointment.price} Tk</span></p>
+                        <p> <span className='font-mono'>Please pay :</span> <span className='font-semibold border-2 rounded-sm border-green-500 px-3 py-1'>{appointment.price} Tk</span></p>
                     </div>
                 </div>
 
