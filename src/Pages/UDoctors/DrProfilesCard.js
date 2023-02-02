@@ -13,7 +13,7 @@ const DrProfilesCard = ({ doctor }) => {
     }
 
     return (
-        <div className='card lg:max-w-lg bg-cyan-700 shadow-2xl rounded-sm border'>
+        <div className='card lg:max-w-lg bg-cyan-800 shadow-2xl rounded-sm border'>
 
 
             <div className=''>

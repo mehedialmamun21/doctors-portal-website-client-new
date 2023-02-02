@@ -31,7 +31,7 @@ const DrDetails = () => {
                         </div>
                     </div>
                     <div>
-                        <p className='font-sarif border-l-2 border-primary text-white px-5 py-5 rounded-md'>{doctor.description}</p>
+                        <p className='font-sarif border-l-2 border-cyan-700 text-white px-5 py-5 rounded-md'>{doctor.description}</p>
                     </div>
                 </div>
                 <div>

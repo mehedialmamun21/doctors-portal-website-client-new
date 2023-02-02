@@ -41,7 +41,7 @@ const Banner = () => {
 
     return (
 
-        <div className='lg:h-[755px] px-5 lg:px-0 relative group mb-28 bg-cyan-800'>
+        <div className='lg:h-[764px] px-5 lg:px-0 relative group mb-28 bg-cyan-800'>
 
             <div style={{ backgroundImage: `url(${slides[currentIndex].url})` }} className='h-[665px] bg-center bg-no-repeat object-cover mb-3'>
 

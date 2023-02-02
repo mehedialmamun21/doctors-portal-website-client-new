@@ -30,7 +30,8 @@ function App() {
   return (
 
     // <div className="max-w-7xl mx-auto">
-    <div className="mx-auto bg-cyan-900">
+    // <div className="mx-auto bg-cyan-900">
+    <div className="mx-auto bg-slate-800">
 
       <Navbar></Navbar>
 

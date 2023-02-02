@@ -15,7 +15,7 @@ const Footer = () => {
             // backgroundImage: `url(${footerImg})`,
             // backgroundPosition: 'center',
             // backgroundSize: 'cover',
-        }} className="p-5 mt-20 bg-gray-800 pt-28">
+        }} className="p-5 mt-20 bg-gray-900 pt-28">
 
             <div className='footer lg:pl-40'>
                 <div>
