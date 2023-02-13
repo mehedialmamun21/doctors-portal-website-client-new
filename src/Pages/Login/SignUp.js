@@ -71,7 +71,7 @@ const SignUp = () => {
 
                             <div className="form-control w-full max-w-xs">
                                 <label className="label">
-                                    <span className="label-text font-mono text-slate-300">Name</span>
+                                    <span className="label-text font-mono text-slate-600">Name</span>
                                 </label>
                                 <input type="text"
                                     placeholder="Your Name"
@@ -93,7 +93,7 @@ const SignUp = () => {
 
                             <div className="form-control w-full max-w-xs">
                                 <label className="label">
-                                    <span className="label-text font-mono text-slate-300">Email</span>
+                                    <span className="label-text font-mono text-slate-600">Email</span>
                                 </label>
                                 <input type="email"
                                     placeholder="Your Email"
@@ -119,7 +119,7 @@ const SignUp = () => {
 
                             <div className="form-control w-full max-w-xs">
                                 <label className="label">
-                                    <span className="label-text font-mono text-slate-300">Password</span>
+                                    <span className="label-text font-mono text-slate-600">Password</span>
                                 </label>
                                 <input type="password"
                                     placeholder="Password"
@@ -141,8 +141,8 @@ const SignUp = () => {
                                 </label>
                             </div>
 
-                            <button type="submit" className="py-3 rounded-sm w-full max-w-xs font-semibold bg-gradient-to-r from-secondary to-primary shadow-lg text-slate-300 mt-2 hover:scale-105 duration-300">
-                                <p className='flex justify-center items-center text-black'>
+                            <button type="submit" className="py-3 rounded-sm w-full max-w-xs font-semibold bg-gradient-to-r from-secondary to-primary shadow-lg text-slate-600 mt-2 hover:scale-105 duration-300">
+                                <p className='flex justify-center items-center text-white'>
                                     <FaSignOutAlt size="1rem" />
                                     <span className='pl-3 flex items-center text-md'>REGISTER</span>
                                 </p>
@@ -150,16 +150,16 @@ const SignUp = () => {
 
                         </form>
 
-                        <small><p className='text-sm font-semibold text-slate-300'>Already have an Account ? <Link className="font-bold ml-10 lg:ml-14" to="/login" >Please Login</Link> </p></small>
+                        <small><p className='text-sm font-semibold text-slate-600'>Already have an Account ? <Link className="font-bold ml-10 lg:ml-14" to="/login" >Please Login</Link> </p></small>
 
-                        <div className="divider font-mono text-slate-300">Or continue with</div>
+                        <div className="divider font-mono text-slate-600">Or continue with</div>
 
                         {signInError}
 
-                        <button onClick={() => signInWithGoogle()} className="btn rounded-sm  border border-slate-400 hover:border-slate-400 text-slate-300 bg-slate-800 hover:bg-slate-800 shadow-lg hover:scale-105 duration-300">
+                        <button onClick={() => signInWithGoogle()} className="btn rounded-sm  border border-slate-400 hover:border-slate-400 text-slate-600 bg-slate-800 hover:bg-slate-800 shadow-lg hover:scale-105 duration-300">
                             <p className='flex justify-center'>
                                 <FcGoogle size="2rem" />
-                                <span className="pl-3 flex items-center text-md">Google</span>
+                                <span className="pl-3 flex items-center text-white text-md">Google</span>
                             </p>
                         </button>
 

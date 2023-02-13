@@ -26,18 +26,18 @@ const DrDetails = () => {
                             <div>
                                 <center><img className='rounded' src={doctor.img} style={{ width: 250, height: 200 }} alt="" /></center>
                                 <div className='pt-5 pb-5'>
-                                    <p className='font-mono text-lg text-slate-300'>{doctor.degree}</p>
-                                    <p className='text-slate-300 text-xl font-bold font-mono'> {doctor.name} </p>
+                                    <p className='font-mono text-lg text-slate-600'>{doctor.degree}</p>
+                                    <p className='text-slate-600 text-xl font-bold font-mono'> {doctor.name} </p>
 
                                 </div>
                             </div>
                             <div className='pl-40'>
-                                <div className='pt-5 pb-5 border rounded-sm px-14 py-5'>
+                                <div className='pt-5 pb-5 border border-slate-500 rounded-sm px-14 py-5'>
                                     <p className='font-mono text-lg text-cyan-400 pb-2'>{doctor.speciality}</p>
                                     <center><BiDownArrow className='text-orange-500' /></center>
                                     <div className='pt-2'>
-                                        <p className='font-mono text-md text-slate-300'> Time: {doctor.time}</p>
-                                        <p className='font-mono text-md text-slate-300'> Room: {doctor.room}</p>
+                                        <p className='font-mono text-md text-slate-600'> Time: {doctor.time}</p>
+                                        <p className='font-mono text-md text-slate-600'> Room: {doctor.room}</p>
                                     </div>
                                 </div>
                             </div>
@@ -46,8 +46,11 @@ const DrDetails = () => {
                 </div>
 
                 <div>
-                    <div className='bg-slate-800 px-5 py-2 rounded-sm'>
-                        <p className='font-sarif border-white text-slate-300 px-5 py-5 rounded-md'>{doctor.description}</p>
+                    <div className='bg-slate-200 px-5 py-1 rounded-sm'>
+                        <p className='font-sarif border-white text-slate-700 px-5 py-5 rounded-md'>{doctor.description}</p>
+                    </div>
+                    <div className='flex justify-end items-end pt-7'>
+                        <button className="btn btn-ghost bg-gradient-to-r from-secondary to-primary text-white px-2 lg:px-16 hover:scale-105 duration-300 rounded-sm font-mono text-lg">Previous..</button>
                     </div>
                 </div>
             </div>

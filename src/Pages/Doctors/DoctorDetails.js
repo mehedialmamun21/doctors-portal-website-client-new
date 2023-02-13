@@ -22,7 +22,7 @@ const DoctorDetails = () => {
         <div>
             <div className='h-screen mt-12 px-40'>
 
-                <div className='flex justify-center py-5 border-l border-gray-400 border-t border-r bg-slate-700'>
+                <div className='flex justify-center py-5 border-l border-gray-400 border-t border-r bg-slate-600'>
                     <div className='pr-40'>
                         <img src={prescription1} style={{ width: 140 }} alt="" />
                     </div>
@@ -43,11 +43,11 @@ const DoctorDetails = () => {
                     </div>
                 </div>
 
-                <div className='flex border border-gray-400 bg-slate-800'>
+                <div className='flex border border-gray-400 bg-slate-600'>
                     <div className='w-4/12 px-10 pt-5 border-r border-gray-400'>
                         <div>
-                            <p className='border text-slate-300 text-center mb-5 py-1 text-xl font-bold font-mono'>Symptoms</p>
-                            <ul class="symp m-0 pl-5 py-5 h-18 bg-slate-300 focus:outline-none" data-toggle="tooltip" data-placement="bottom" title="Click to edit."
+                            <p className='border rounded-2xl text-slate-300 text-center mb-5 py-1 text-xl font-bold font-mono'>Symptoms</p>
+                            <ul class="symp m-0 pl-5 py-5 h-18 bg-slate-100 focus:outline-none" data-toggle="tooltip" data-placement="bottom" title="Click to edit."
                                 contenteditable="true">
                             </ul>
                             <div class="symp_action pb-8 pt-3">
@@ -56,8 +56,8 @@ const DoctorDetails = () => {
                             </div>
                         </div>
                         <div>
-                            <p className='border text-slate-300 text-center py-1 text-xl font-bold mb-5 font-mono'>Tests</p>
-                            <ul class="symp m-0 pl-5 py-5 h-18 bg-slate-300 focus:outline-none" data-toggle="tooltip" data-placement="bottom" title="Click to edit."
+                            <p className='border rounded-2xl text-slate-300 text-center py-1 text-xl font-bold mb-5 font-mono'>Tests</p>
+                            <ul class="symp m-0 pl-5 py-5 h-18 bg-slate-100 focus:outline-none" data-toggle="tooltip" data-placement="bottom" title="Click to edit."
                                 contenteditable="true">
                             </ul>
                             <div class="symp_action pb-5 pt-3">
@@ -72,8 +72,8 @@ const DoctorDetails = () => {
                         <div className='w-8/12'>
                             <TbPrescription size="4rem" className="text-slate-300" />
                         </div>
-                        <div className='px-6 py-5'>
-                            <ul class="symp m-0 pl-5 py-5 h-52 w-full list-disc bg-slate-300 focus:outline-none" data-toggle="tooltip" data-placement="bottom" title="Click here to add medicine."
+                        <div className='px-4 py-5'>
+                            <ul class="symp m-0 pl-5 py-5 h-60 w-full list-disc bg-slate-100 focus:outline-none" data-toggle="tooltip" data-placement="bottom" title="Click here to add medicine."
                                 contenteditable="true">
                             </ul>
                             <div class="pt-5">

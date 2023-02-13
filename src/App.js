@@ -31,7 +31,8 @@ function App() {
 
     // <div className="max-w-7xl mx-auto">
     // <div className="mx-auto bg-cyan-900">
-    <div className="mx-auto bg-slate-900">
+    // <div className="mx-auto bg-slate-900">
+    <div className="mx-auto">
 
       <Navbar></Navbar>
 

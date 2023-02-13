@@ -12,7 +12,7 @@ const UDoctors = () => {
             <div className='pb-28 mx-40'>
                 <div className='pt-14'>
                     <p className='text-primary text-xl'>Professionals</p>
-                    <p className='text-3xl font-mono text-slate-300'>Our Doctors</p>
+                    <p className='text-3xl font-mono text-slate-600'>Our Doctors</p>
                 </div>
 
                 <div className='pt-10'>

@@ -16,17 +16,17 @@ const DrProfilesCard = ({ doctor }) => {
         <div className='card lg:max-w-lg bg-cyan-800 shadow-2xl rounded-sm border'>
 
 
-            <div className=''>
+            {/* <div className=''>
                 <figure>
                     <img src={doctor.img} alt="" className="border rounded border-gray-500 scale-x-110 hover:scale-x-125 duration-500 scale-y-75 hover:scale-y-95 cursor-pointer" />
                 </figure>
-            </div>
+            </div> */}
 
             <div className="card-body pt-0 pl-14 text-zinc-700">
 
                 <div>
                     <div>
-                        <p className='text-slate-300 font-semibold font-mono text-lg border-b-2 border-zinc-300 pb-1'>{doctor.name}</p>
+                        <p className='text-slate-300 font-semibold font-mono text-lg border-b pt-5 border-zinc-300 pb-1'>{doctor.name}</p>
                     </div>
                     <div>
                         <p className='text-slate-300 font-mono text-lg pt-5'>{degree}</p>

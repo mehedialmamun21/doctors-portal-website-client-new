@@ -67,7 +67,7 @@ const Login = () => {
 
               <div className="form-control w-full max-w-xs">
                 <label className="label">
-                  <span className="label-text font-mono text-slate-300">Email</span>
+                  <span className="label-text font-mono text-slate-600">Email</span>
                 </label>
                 <input type="email"
                   placeholder="Your Email"
@@ -94,7 +94,7 @@ const Login = () => {
               <div className="form-control w-full max-w-xs">
 
                 <label className="label">
-                  <span className="label-text font-mono text-slate-300">Password</span>
+                  <span className="label-text font-mono text-slate-600">Password</span>
                 </label>
 
                 <input type="password"
@@ -126,27 +126,27 @@ const Login = () => {
                   alert('Password Reset email sent..');
                 }}
               >
-                <h5 className="pb-2 font-semibold font-mono text-slate-300">Forgot Password ?</h5>
+                <h5 className="pb-2 font-semibold font-mono text-slate-600">Forgot Password ?</h5>
               </button>
 
-              <button type="submit" className="py-3 rounded-sm w-full max-w-xs font-semibold bg-gradient-to-r from-secondary to-primary shadow-lg text-slate-300 mt-2 hover:scale-105 duration-300">
-                <p className='flex justify-center items-center text-black'>
+              <button type="submit" className="py-3 rounded-sm w-full max-w-xs font-semibold bg-gradient-to-r from-secondary to-primary shadow-lg text-slate-600 mt-2 hover:scale-105 duration-300">
+                <p className='flex justify-center items-center text-white'>
                   <FaSignInAlt size="1rem" />
                   <span className='pl-3 flex items-center text-md'>LOGIN</span>
                 </p>
               </button>
             </form>
 
-            <small><p className="text-sm font-semibold text-slate-300">New to Doctors Portal ? <Link className="font-bold ml-4 lg:ml-5" to="/signup" >Create a new Account</Link> </p></small>
+            <small><p className="text-sm font-semibold text-slate-600">New to Doctors Portal ? <Link className="font-bold ml-4 lg:ml-5" to="/signup" >Create a new Account</Link> </p></small>
 
-            <div className="divider font-mono text-slate-300">Or continue with</div>
+            <div className="divider font-mono text-slate-600">Or continue with</div>
 
             {signInError}
 
-            <button onClick={() => signInWithGoogle()} className="btn rounded-sm border border-slate-400 hover:border-slate-400 text-slate-300 bg-slate-800 hover:bg-slate-800 shadow-lg hover:scale-105 duration-300">
+            <button onClick={() => signInWithGoogle()} className="btn rounded-sm border border-slate-400 hover:border-slate-400 text-slate-600 bg-slate-800 hover:bg-slate-800 shadow-lg hover:scale-105 duration-300">
               <p className='flex justify-center'>
                 <FcGoogle size="2rem" />
-                <span className="pl-3 flex items-center text-md">Google</span>
+                <span className="pl-3 flex items-center text-md text-white">Google</span>
               </p>
             </button>
 

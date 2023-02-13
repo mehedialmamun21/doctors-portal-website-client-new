@@ -25,10 +25,24 @@ const Navbar = () => {
       <li><Link to="/appointment"><span className="font-semibold text-lg text-gray-300 flex"> <span className="font-mono">Appointment</span> </span></Link></li>
 
       {/* <li><Link to="/udoctors"><span className="font-semibold text-lg text-zinc-800 flex"> <span className="flex justify-center items-center pr-2 text-cyan-500"> <FaHandHoldingMedical /> </span> <span className="font-mono">Doctors</span> </span></Link></li> */}
+
+
+
+
       <li><Link to="/udoctors"><span className="font-semibold text-lg text-gray-300 flex"> <span className="font-mono">Doctors</span> </span></Link></li>
 
+
+
+
       {/* <li><Link to="/contact"><span className="font-semibold text-lg text-zinc-800 flex"> <span className="flex justify-center items-center pr-2 text-cyan-500"> <FaPhone /> </span> <span className="font-mono">Contact</span> </span></Link></li> */}
-      <li><Link to="/contact"><span className="font-semibold text-lg text-gray-300 flex"> <span className="font-mono">Contact</span> </span></Link></li>
+
+
+
+
+      {/* <li><Link to="/contact"><span className="font-semibold text-lg text-gray-300 flex"> <span className="font-mono">Contact</span> </span></Link></li> */}
+
+
+
 
       {/* {
         user && <li><Link to="/dashboard"><span className="font-semibold text-lg text-zinc-800 flex"> <span className="flex justify-center items-center pr-2 text-cyan-500"> <FaBorderAll /> </span> <span className="font-mono">Dashboard</span> </span></Link></li>
@@ -63,7 +77,7 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <a href="/" className="flex px-2 py-1 bg-white rounded-sm"><TbDental size="2rem" className="text-slate-900 flex justify-center items-center" /> <span className="text-slate-900 pl-1 flex justify-center items-center text-2xl font-semibold">Solution</span> </a>
+        <a href="/" className="flex px-2 py-1 bg-white rounded-2xl"><TbDental size="2rem" className="text-slate-900 flex justify-center items-center" /> <span className="text-slate-900 pl-1 flex justify-center items-center text-2xl font-semibold">Solution</span> </a>
 
       </div>
       <div className="navbar-end hidden lg:flex">

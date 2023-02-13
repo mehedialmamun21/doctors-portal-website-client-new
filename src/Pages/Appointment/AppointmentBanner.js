@@ -9,7 +9,7 @@ const AppointmentBanner = ({ date, setDate }) => {
         // <div className="hero bg-banner-section-backImg lg:px-80 py-5">
         <div className="hero lg:px-72 pt-10 pb-11">
 
-            <div className="hero-content grid grid-cols-1 lg:grid-cols-3 rounded-sm text-lg text-slate-300">
+            <div className="hero-content grid grid-cols-1 lg:grid-cols-3 rounded-sm text-lg text-slate-600">
 
                 <div className='pt-7 lg:pt-0 flex justify-center items-center'>
 
@@ -22,12 +22,12 @@ const AppointmentBanner = ({ date, setDate }) => {
                     </div>
                 </div>
 
-                <div className='flex justify-center items-center text-slate-300'>
+                <div className='flex justify-center items-center text-slate-400'>
                     <BsChevronCompactRight size="3rem" />
                 </div>
 
                 <div className='text-center text-2xl'>
-                    <div className='pb-7 font-semibold text-slate-300 font-mono'>Available Appointments on</div>
+                    <div className='pb-7 font-semibold text-slate-600 font-mono'>Available Appointments on</div>
                     <span className='text-black text-xl border bg-slate-300 px-16 py-4 rounded-sm font-semibold font-mono'>{format(date, 'PP')}</span>
                 </div>
 

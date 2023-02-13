@@ -36,7 +36,7 @@ const Payment = () => {
                         <p> <span className='font-mono'>Pay for :</span> <span className='text-cyan-600 text-lg font-semibold'>{appointment.treatment}</span> </p>
                         <p> <span className='font-mono'>Appointment :</span> <span className='text-orange-600 font-semibold'>{appointment.date}</span> at <span className='text-cyan-600 font-semibold'>{appointment.slot}</span> </p>
                         <br />
-                        <p> <span className='font-mono'>Please pay :</span> <span className='font-semibold border-2 rounded-sm border-green-500 px-3 py-1'>{appointment.price} Tk</span></p>
+                        <p> <span className='font-mono'>Please pay :</span> <span className='font-semibold border-2 rounded-sm border-slate-600 px-3 py-1'>{appointment.price} Tk</span></p>
                     </div>
                 </div>
 
