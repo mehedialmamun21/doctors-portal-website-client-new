@@ -40,7 +40,7 @@ const Banner = () => {
 
     return (
 
-        <div className='px-5 lg:px-0 relative group bg-cyan-900'>
+        <div className='px-5 lg:px-0 relative group bg-cyan-600'>
 
             <div style={{ backgroundImage: `url(${slides[currentIndex].url})` }} className='h-[665px] bg-center bg-no-repeat object-cover'>
 
@@ -55,16 +55,16 @@ const Banner = () => {
                 </div>
 
                 <div className='absolute top=[80%] -translate-x-[-61%] translate-y-[500%] cursor-pointer'>
-                    <p className='text-slate-300 font-semibold font-mono text-4xl'>Our Professional Team</p>
+                    <p className='text-slate-200 font-semibold font-mono text-4xl'>Our Professional Team</p>
                 </div>
 
                 <div className='absolute top=[80%] -translate-x-[-33%] translate-y-[1070%] cursor-pointer'>
-                    <p className='text-slate-300 font-mono text-md'>DENTAL SOLUTION is always promised to provide the best dental treatment to the patients</p>
+                    <p className='text-slate-200 font-mono text-md'>DENTAL SOLUTION is always promised to provide the best dental treatment to the patients</p>
                 </div>
 
-                <div className='absolute top=[80%] -translate-x-[-108%] translate-y-[905%] cursor-pointer'>
+                <div className='absolute top=[80%] -translate-x-[-108%] translate-y-[920%] cursor-pointer'>
                     <div className='flex items-center justify-center'>
-                        <Link to="/appointment"><p className='font-mono text-white border-2 border-slate-300 px-5 py-2 font-semibold rounded-sm'>Book Appointment</p></Link>
+                        <Link to="/appointment"><p className='font-mono text-md text-cyan-800 hover:text-black bg-white px-5 py-2 font-bold rounded-sm'>Book Appointment</p></Link>
                         <FaRegHandPointLeft className='ml-5 text-slate-300' size="2rem" />
                     </div>
                 </div>

@@ -1,6 +1,7 @@
 import { Elements } from '@stripe/react-stripe-js';
 import { loadStripe } from '@stripe/stripe-js';
 import React from 'react';
+import { BiDownArrow } from 'react-icons/bi';
 import { useQuery } from 'react-query';
 import { useParams } from 'react-router-dom';
 import Loading from '../Shared/Loading';
@@ -29,18 +30,21 @@ const Payment = () => {
         <div className='px-5 lg:pt-12 lg:pb-10 lg:pl-48 lg:pr-24'>
 
             <div className='w-50 max-w-xl'>
-                <div class="card bg-slate-100 mb-12 rounded-sm border border-slate-400">
+
+                <div class="card bg-base-200 mb-4 rounded-sm border border-cyan-600">
                     <div class="card-body">
-                        <p className='font-mono'>Hello, <span className="font-semibold">{appointment.patientName}</span></p>
+                        <p className='font-mono'>Hello, <span className="font-semibold text-purple-800 ">{appointment.patientName}</span></p>
                         {/* <p class="card-title"> <span className='text-lg'>Pay for :</span> <span className='text-secondary'>{appointment.treatment}</span> </p> */}
-                        <p> <span className='font-mono'>Pay for :</span> <span className='text-cyan-600 text-lg font-semibold'>{appointment.treatment}</span> </p>
-                        <p> <span className='font-mono'>Appointment :</span> <span className='text-orange-600 font-semibold'>{appointment.date}</span> at <span className='text-cyan-600 font-semibold'>{appointment.slot}</span> </p>
+                        <p> <span className='font-mono'>Pay for:</span> <span className='text-cyan-700 text-lg font-semibold'>{appointment.treatment}</span> </p>
+                        <p> <span className='font-mono'>Appointment:</span> <span className='text-black font-semibold'>{appointment.date}</span> at <span className='text-cyan-700 font-semibold'>{appointment.slot}</span> </p>
                         <br />
-                        <p> <span className='font-mono'>Please pay :</span> <span className='font-semibold border-2 rounded-sm border-slate-600 px-3 py-1'>{appointment.price} Tk</span></p>
+                        <p> <span className='font-mono'>Please pay:</span> <span className='font-semibold border rounded-sm border-slate-600 px-3 py-1'> <span className='text-black'>{appointment.price} Tk</span> </span></p>
                     </div>
                 </div>
 
-                <div class="card flex-shrink-0 bg-base-100 rounded-sm border-2 border-zinc-500">
+                <center><BiDownArrow className='text-orange-500 text-3xl' /></center>
+
+                <div class="card flex-shrink-0 bg-base-200 mt-4 rounded-sm border border-cyan-600">
                     <div class="card-body py-8">
                         <Elements stripe={stripePromise}>
                             <CheckoutForm appointment={appointment} />

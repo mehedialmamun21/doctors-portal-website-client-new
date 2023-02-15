@@ -33,8 +33,8 @@ const DrDetails = () => {
                             </div>
                             <div className='pl-40'>
                                 <div className='pt-5 pb-5 border border-slate-500 rounded-sm px-14 py-5'>
-                                    <p className='font-mono text-lg text-cyan-400 pb-2'>{doctor.speciality}</p>
-                                    <center><BiDownArrow className='text-orange-500' /></center>
+                                    <p className='font-mono font-semibold text-lg text-cyan-600 pb-2'>{doctor.speciality}</p>
+                                    <center><BiDownArrow className='text-orange-500 font-bold text-xl' /></center>
                                     <div className='pt-2'>
                                         <p className='font-mono text-md text-slate-600'> Time: {doctor.time}</p>
                                         <p className='font-mono text-md text-slate-600'> Room: {doctor.room}</p>

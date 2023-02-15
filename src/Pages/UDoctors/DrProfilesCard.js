@@ -13,7 +13,7 @@ const DrProfilesCard = ({ doctor }) => {
     }
 
     return (
-        <div className='card lg:max-w-lg bg-cyan-800 shadow-2xl rounded-sm border'>
+        <div className='card lg:max-w-lg bg-cyan-700 shadow-2xl rounded-sm border'>
 
 
             {/* <div className=''>
@@ -26,7 +26,7 @@ const DrProfilesCard = ({ doctor }) => {
 
                 <div>
                     <div>
-                        <p className='text-slate-300 font-semibold font-mono text-lg border-b pt-5 border-zinc-300 pb-1'>{doctor.name}</p>
+                        <p className='text-white font-semibold font-mono text-lg border-b pt-5 border-zinc-300 pb-1'>{doctor.name}</p>
                     </div>
                     <div>
                         <p className='text-slate-300 font-mono text-lg pt-5'>{degree}</p>
@@ -36,10 +36,10 @@ const DrProfilesCard = ({ doctor }) => {
                     </div>
                 </div>
 
-                <div className='pt-5 flex pl-52'>
+                <div className='pt-3 flex pl-52'>
                     <p className='text-slate-300 text-lg'><BsChevronCompactRight /></p>
                     <p className='text-slate-300 text-lg'><BsChevronCompactRight /></p>
-                    <button className='rounded-sm text-white text-md font-semibold font-mono cursor-pointer' onClick={() => navigateToPurchasePage(_id)}> <span className='hover:text-black text-slate-300'>more</span> </button>
+                    <button className='rounded-sm text-white text-md font-mono cursor-pointer' onClick={() => navigateToPurchasePage(_id)}> <span className='text-white hover:text-slate-300'>more</span> </button>
                 </div>
 
             </div>

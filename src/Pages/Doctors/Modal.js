@@ -40,11 +40,11 @@ const Modal = ({ setModalOn, setChoice }) => {
                         {
                             doctors.map((doctor) =>
                                 <div className="flex mr-7">
-                                    <div className="flex items-center justify-center bg-cyan-800 px-2 py-5">
+                                    <div className="flex items-center justify-center bg-cyan-700 px-2 py-8">
                                         <p className="font-semibold text-white font-serif"> {doctor.name} </p> <br />
                                     </div>
 
-                                    <div className="flex items-center justify-center border-2 border-cyan-800 px-2 py-5">
+                                    <div className="flex items-center justify-center border-2 border-cyan-700 px-2 py-5">
                                         <button onClick={() => navigateToDoctorDetail(doctor._id)} className="rounded-sm px-4 py-1 text-white bg-green-600 hover:bg-green-700">Yes</button>
                                         <button onClick={handleCancelClick} className="rounded-sm px-4 py-1 ml-2 text-white bg-red-600 hover:bg-red-700 ">No</button>
                                     </div>
