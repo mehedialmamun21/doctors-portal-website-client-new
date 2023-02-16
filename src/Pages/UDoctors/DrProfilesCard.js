@@ -13,7 +13,7 @@ const DrProfilesCard = ({ doctor }) => {
     }
 
     return (
-        <div className='card lg:max-w-lg bg-cyan-700 shadow-2xl rounded-sm border'>
+        <div className='card lg:max-w-lg bg-cyan-600 shadow-2xl rounded-sm border'>
 
 
             {/* <div className=''>
@@ -29,10 +29,10 @@ const DrProfilesCard = ({ doctor }) => {
                         <p className='text-white font-semibold font-mono text-lg border-b pt-5 border-zinc-300 pb-1'>{doctor.name}</p>
                     </div>
                     <div>
-                        <p className='text-slate-300 font-mono text-lg pt-5'>{degree}</p>
+                        <p className='text-slate-200 font-mono text-lg pt-5'>{degree}</p>
                     </div>
                     <div>
-                        <p className='text-slate-300 font-mono text-lg'>{speciality}</p>
+                        <p className='text-slate-200 font-mono text-lg'>{speciality}</p>
                     </div>
                 </div>
 

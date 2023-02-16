@@ -15,9 +15,9 @@ const MakeAppointment = () => {
                 <img className='h-90 flex justify-center items-center' src={doctor} alt="" />
             </div>
             <div className='flex-1 lg:px-10 py-7'>
-                <div className='pb-10'>
+                <div className='pb-14'>
                     {/* <h3 className='text-2xl text-cyan-500 pb-2 font-mono'>Appointment</h3> */}
-                    <h2 className='text-3xl text-slate-300 font-mono text-center'>Make an appointment Today</h2>
+                    <h2 className='text-4xl text-slate-200 font-mono text-center'>Make an appointment Today</h2>
                 </div>
                 {/* <p className='text-slate-300 pt-6 pb-7 font-mono'>The first step towards a beautiful,
                     healthy smile is to schedule for an appointment.

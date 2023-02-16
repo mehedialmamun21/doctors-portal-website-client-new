@@ -28,7 +28,7 @@ const AppointmentBanner = ({ date, setDate }) => {
 
                 <div className='text-center text-2xl'>
                     <div className='pb-7 font-semibold text-slate-600 font-mono'>Available Appointments on</div>
-                    <span className='text-black text-xl border bg-slate-300 px-16 py-4 rounded-sm font-semibold font-mono'>{format(date, 'PP')}</span>
+                    <span className='text-black text-xl border bg-slate-200 px-16 py-4 rounded-sm font-semibold font-mono'>{format(date, 'PP')}</span>
                 </div>
 
             </div>

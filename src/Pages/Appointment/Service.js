@@ -5,7 +5,7 @@ const Service = ({ service, setTreatment }) => {
     return (
         <div className="card lg:max-w-lg bg-cyan-700 border shadow-xl rounded-sm hover:scale-x-110 hover:scale-y-125 duration-700">
             <div className="card-body text-center rounded-sm border">
-                <h2 className="card-title justify-center text-slate-300 text-lg lg:text-xl font-mono">{name}</h2>
+                <h2 className="card-title justify-center text-white text-lg lg:text-xl font-mono">{name}</h2>
                 <p className='text-sm py-0.5 font-mono text-slate-300'>
                     {
                         slots.length > 0 ?
@@ -15,7 +15,7 @@ const Service = ({ service, setTreatment }) => {
                     }
                 </p>
                 <p className='text-md py-0.5 font-mono text-slate-300'>{slots.length} {slots.length > 1 ? 'spaces' : 'space'} available</p>
-                <p className='font-mono text-slate-300'> <span className='text-slate-300'>Price :</span> <span className=''> {price} </span> Tk </p>
+                <p className='font-mono text-slate-300'> <span className='text-slate-300'>Price:</span> <span className='text-white'> {price} Tk</span> </p>
                 <div className="card-actions justify-center">
                     <label htmlFor="booking-modal"
                         disabled={slots.length === 0}

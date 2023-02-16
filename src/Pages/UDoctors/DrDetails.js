@@ -32,7 +32,7 @@ const DrDetails = () => {
                                 </div>
                             </div>
                             <div className='pl-40'>
-                                <div className='pt-5 pb-5 border border-slate-500 rounded-sm px-14 py-5'>
+                                <div className='pt-5 pb-5 bg-base-200 rounded-sm px-14 py-5'>
                                     <p className='font-mono font-semibold text-lg text-cyan-600 pb-2'>{doctor.speciality}</p>
                                     <center><BiDownArrow className='text-orange-500 font-bold text-xl' /></center>
                                     <div className='pt-2'>
@@ -46,7 +46,7 @@ const DrDetails = () => {
                 </div>
 
                 <div>
-                    <div className='bg-slate-200 px-5 py-1 rounded-sm'>
+                    <div className='bg-base-200 px-5 py-1 rounded-sm'>
                         <p className='font-sarif border-white text-slate-700 px-5 py-5 rounded-md'>{doctor.description}</p>
                     </div>
                     <div className='flex justify-end items-end pt-7'>
