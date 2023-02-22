@@ -87,7 +87,7 @@ const DoctorDetails = () => {
                     </div>
                 </div>
 
-                <div className='flex justify-end items-end pt-5'>
+                <div className='flex justify-end items-end pt-2'>
                     <button className="btn btn-ghost bg-gradient-to-r from-secondary to-primary text-white px-2 lg:px-16 hover:scale-105 duration-300 rounded-sm font-mono text-lg">Print</button>
                 </div>
 

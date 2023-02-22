@@ -7,6 +7,7 @@ import { BiDownArrow } from 'react-icons/bi';
 const DrDetails = () => {
 
     const { doctorId } = useParams();
+
     const [doctor, setDoctor] = useState({});
 
     useEffect(() => {

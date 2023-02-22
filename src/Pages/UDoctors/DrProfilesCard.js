@@ -8,13 +8,12 @@ const DrProfilesCard = ({ doctor }) => {
 
     const navigate = useNavigate();
 
-    const navigateToPurchasePage = id => {
+    const navigateToDetailsPage = id => {
         navigate(`/drDetails/${id}`);
     }
 
     return (
         <div className='card lg:max-w-lg bg-cyan-600 shadow-2xl rounded-sm border'>
-
 
             {/* <div className=''>
                 <figure>
@@ -29,21 +28,20 @@ const DrProfilesCard = ({ doctor }) => {
                         <p className='text-white font-semibold font-mono text-lg border-b pt-5 border-zinc-300 pb-1'>{doctor.name}</p>
                     </div>
                     <div>
-                        <p className='text-slate-200 font-mono text-lg pt-5'>{degree}</p>
+                        <p className='text-slate-100 font-mono text-lg pt-5'>{degree}</p>
                     </div>
                     <div>
-                        <p className='text-slate-200 font-mono text-lg'>{speciality}</p>
+                        <p className='text-slate-100 font-mono text-lg'>{speciality}</p>
                     </div>
                 </div>
 
                 <div className='pt-3 flex pl-52'>
-                    <p className='text-slate-300 text-lg'><BsChevronCompactRight /></p>
-                    <p className='text-slate-300 text-lg'><BsChevronCompactRight /></p>
-                    <button className='rounded-sm text-white text-md font-mono cursor-pointer' onClick={() => navigateToPurchasePage(_id)}> <span className='text-white hover:text-slate-300'>more</span> </button>
+                    <p className='text-white text-lg'><BsChevronCompactRight /></p>
+                    <p className='text-white text-lg'><BsChevronCompactRight /></p>
+                    <button className='rounded-sm text-white text-md font-mono cursor-pointer' onClick={() => navigateToDetailsPage(_id)}> <span className='text-white hover:text-slate-200'>more</span> </button>
                 </div>
 
             </div>
-
 
         </div>
     );
