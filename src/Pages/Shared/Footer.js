@@ -1,5 +1,5 @@
 import React from 'react';
-import footerImg from '../../assets/images/footer.png';
+// import footerImg from '../../assets/images/footer.png';
 
 import { FaFacebook, FaYoutube, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
@@ -17,23 +17,20 @@ const Footer = () => {
             // backgroundSize: 'cover',
         }} className="p-5 mt-20 bg-gray-900 pt-28 border-t border-gray-700">
 
-            <div className='footer lg:pl-40'>
+            <div className='footer lg:pl-40 grid lg:grid-cols-4'>
                 <div>
                     <span className="footer-title text-xl text-slate-300">Services</span>
-                    <a href='/#' className="link link-hover font-semibold text-slate-300 font-mono text-sm">Monthly Checkup</a>
-                    <a href='/#' className="link link-hover font-semibold text-slate-300 font-mono">Emergency Checkup</a>
-                    <a href='/#' className="link link-hover font-semibold text-slate-300 font-mono">Weekly Checkup</a>
-                    <a href='/#' className="link link-hover font-semibold text-slate-300 font-mono">Deep Checkup</a>
+                    <a href='/#' className="link link-hover font-semibold text-slate-300 font-mono text-sm">Farm Management</a>
+                    <a href='/#' className="link link-hover font-semibold text-slate-300 font-mono">Crop and Soil Monitoring</a>
+                    <a href='/#' className="link link-hover font-semibold text-slate-300 font-mono">Training and Capacity Building</a>
+                    <a href='/#' className="link link-hover font-semibold text-slate-300 font-mono">Supply Agricultural Inputs</a>
+                    <a href='/#' className="link link-hover font-semibold text-slate-300 font-mono">Market Access and Advisory Services</a>
+                    <a href='/#' className="link link-hover font-semibold text-slate-300 font-mono">Farm Machinery and Equipment</a>
                 </div>
-                <div>
-                    <span className="footer-title text-xl text-slate-300">Oral Health</span>
-                    <a href='/#' className="link link-hover font-semibold text-slate-300 font-mono">Fluoride Treatment</a>
-                    <a href='/#' className="link link-hover font-semibold text-slate-300 font-mono">Cavity Checking</a>
-                    <a href='/#' className="link link-hover font-semibold text-slate-300 font-mono">Teeth Whitening</a>
-                </div>
+
                 <div>
                     <span className="footer-title text-xl text-slate-300">Our Address</span>
-                    <a href='/#' className="link link-hover font-semibold text-slate-300"> <span className='font-bold text-lg text-primary'>DENTAL SOLUTIONS</span> <br /> <br /> Kazi's Heritage, House-49, Road-11 <br /> Specialized Dental Hospital</a>
+                    <a href='/#' className="link link-hover font-semibold text-slate-300"> <img src="https://i.postimg.cc/fRTFj31C/cropped-logo-web-1-1.png" alt="" /> <br /> <br /> Kazi's Heritage, House-49, Road-11</a>
                 </div>
 
                 <div>
@@ -47,11 +44,20 @@ const Footer = () => {
                         <a href="/LinkedIn" target="_blank"><FaLinkedin className="cursor-pointer text-blue-500 text-xl" /></a>
                     </div>
                 </div>
+
+                <div>
+                    <img src="https://i.postimg.cc/j58bPM3V/stripe-logo-strip-payment-options-1.png" className='w-2/3' alt="" />
+                    <img src="https://i.postimg.cc/GmJh9xRR/bkash-payment-logo-removebg-preview.png" className='w-2/3' alt="" />
+                </div>
             </div>
 
-            <div className='grid grid-cols-2 gap-40 text-center text-slate-300 mt-24'>
-                <p className='font-semibold font-mono'>© <span className='font-semibold'>{date}</span> <span className='font-bold'>Copyright Dental Solutions, Dinajpur.</span> <br /> All rights are reserved.</p>
-                <p>Powered by : <a href="/#" className='text-lg font-semibold'> <u>Dental Solutions - Dinajpur</u> </a> </p>
+            <div className='grid lg:grid-cols-2 gap-40 text-center text-slate-300 mt-20'>
+                <p className='font-semibold font-mono'>© <span className='font-semibold'>{date}</span> <span className='font-bold'>Copyright AjkerKrishi, Dinajpur.</span> <br /> All rights are reserved.</p>
+                {/* <p>Powered by <a href="/#" className='text-lg font-semibold'> <span className='border px-2 py-1'> AjkerKrishi - Dinajpur </span> </a> </p> */}
+                <div className='lg:flex lg:items-center lg:justify-center'>
+                    <p className='lg:pr-5 pb-2 lg:pb-0'>Powered by</p>
+                    <p className='border px-2 py-1'>AjkerKrishi - Dinajpur</p>
+                </div>
             </div>
 
         </footer>

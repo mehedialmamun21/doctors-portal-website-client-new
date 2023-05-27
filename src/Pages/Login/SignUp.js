@@ -56,7 +56,7 @@ const SignUp = () => {
     return (
         <section className="h-screen flex justify-center items-center">
 
-            <div className="w-1/2 flex justify-center items-center py-0">
+            <div className="w-full flex justify-center items-center py-0">
 
                 <div className="card w-96 bg-base-50 rounded-sm">
 

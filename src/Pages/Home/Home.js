@@ -7,13 +7,17 @@ import Info from "./Info";
 import MakeAppointment from "./MakeAppointment";
 import Services from "./Services";
 import Testimonial from "./Testimonial";
+import Bann from "./Bann";
+import AgriInfo from "./AgriInfo";
 
 const Home = () => {
   return (
     <div className="">
       <div className="pb-14">
-        <Banner></Banner>
-        <Info></Info>
+        {/* <Banner></Banner> */}
+        <Bann></Bann>
+        {/* <Info></Info> */}
+        <AgriInfo></AgriInfo>
         <Services></Services>
         {/* <ExCare></ExCare> */}
         <MakeAppointment></MakeAppointment>

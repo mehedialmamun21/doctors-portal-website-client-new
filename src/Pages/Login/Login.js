@@ -57,7 +57,7 @@ const Login = () => {
   return (
     <section className="h-screen flex justify-center items-center">
 
-      <div className="w-1/2 flex justify-center items-center py-0">
+      <div className="w-full flex justify-center items-center py-0">
 
         <div className="card w-96 bg-base-50 rounded-sm ">
 
@@ -137,7 +137,7 @@ const Login = () => {
               </button>
             </form>
 
-            <small><p className="text-sm font-semibold text-slate-600">New to Doctors Portal ? <Link className="font-bold ml-4 lg:ml-5" to="/signup" >Create a new Account</Link> </p></small>
+            <small><p className="text-sm font-semibold text-slate-600">New to AjkerKrishi ? <Link className="font-bold ml-4 lg:ml-5" to="/signup" >Create a new Account</Link> </p></small>
 
             <div className="divider font-mono text-slate-600">Or continue with</div>
 

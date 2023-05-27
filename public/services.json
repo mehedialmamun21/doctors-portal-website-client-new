@@ -1,7 +1,7 @@
 [
     {
         "_id":1,
-        "name": "Teeth Orthodontics", 
+        "name": "Technology Consultation",
         "price": "99",
         "slots": [
             "08.00 AM - 08.30 AM",
@@ -24,7 +24,7 @@
     },
     {
         "_id":2,
-        "name": "Cosmetics Dentistry",
+        "name": "Farm Assessment",
         "price": "99",
         "slots": [
             "08.00 AM - 08.30 AM",
@@ -47,7 +47,7 @@
     },
     {
         "_id":3,
-        "name": "Teeth Cleaning",
+        "name": "Product Demonstration",
         "price": "99",
         "slots": [
             "08.00 AM - 08.30 AM",
@@ -70,7 +70,7 @@
     },
     {
         "_id":4,
-        "name": "Cavity Protection",
+        "name": "Data Analysis and Insights",
         "price": "99",
         "slots": [
             "08.00 AM - 08.30 AM",
@@ -93,7 +93,7 @@
     },
     {
         "_id":5,
-        "name": "Pediatric Dental",
+        "name": "Technical Support",
         "price": "99",
         "slots": [
             "08.00 AM - 08.30 AM",
@@ -116,7 +116,7 @@
     },
     {
         "_id":6,
-        "name": "Oral Surgery",
+        "name": "Training and Education",
         "price": "99",
         "slots": [
             "08.00 AM - 08.30 AM",
