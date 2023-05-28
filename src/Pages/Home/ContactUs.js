@@ -23,7 +23,7 @@ const ContactUs = () => {
     return (
         <section className='mt-20'>
 
-            <h4 className='text-3xl text-secondary pb-5 pl-5 lg:pl-40 lg:pb-10'>Contact With Us</h4>
+            <h4 className='text-3xl text-secondary pb-5 pl-5 lg:pl-40 lg:pb-5'>Contact With Us</h4>
 
             <div className='flex flex-col md:flex-row lg:flex-row lg:px-40 px-5 pb-5 lg:pb-16'>
 
