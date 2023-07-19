@@ -58,11 +58,11 @@ const Services = () => {
         <div className='px-5 pt-8 lg:px-40 lg:pb-28'>
 
             <div className='text-center pb-10 lg:pb-16'>
-                <h1 className='text-2xl text-center font-bold'>আমাদের সেবাসমূহঃ</h1>
-                {/* <h3 className='text-4xl pb-2 font-mono text-slate-600'>Services We Provide</h3> */}
+                <h1 className='text-2xl text-center text-secondary font-semibold'>Our Services</h1>
+                <h3 className='text-4xl pb-2 font-mono text-slate-600'>Services We Provide</h3>
             </div>
 
-            <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 drop-shadow-2xl'>
+            <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 drop-shadow-2xl'>
                 {
                     services.map(service => <ServicesCard
                         key={service._id}

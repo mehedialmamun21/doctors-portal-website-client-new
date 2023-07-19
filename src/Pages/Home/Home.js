@@ -9,6 +9,7 @@ import Services from "./Services";
 import Testimonial from "./Testimonial";
 import Bann from "./Bann";
 import AgriInfo from "./AgriInfo";
+// import Servicess from "./Services/Servicess";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
         {/* <Info></Info> */}
         <AgriInfo></AgriInfo>
         <Services></Services>
+        {/* <Servicess></Servicess> */}
         {/* <ExCare></ExCare> */}
         <MakeAppointment></MakeAppointment>
         <Testimonial></Testimonial>
