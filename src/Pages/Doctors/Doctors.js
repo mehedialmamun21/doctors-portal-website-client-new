@@ -74,7 +74,7 @@ const Doctors = () => {
                         <FaRegCaretSquareRight size="30px" className='text-orange-500 pt-1' />
                     </span>
                     <div className='pl-5 py-7'>
-                        <button onClick={clicked} className='bg-gradient-to-r from-secondary to-primary text-white text-lg font-semibold px-16 py-2 rounded-sm hover:scale-105 duration-300'>Enter</button>
+                        <button onClick={clicked} className='bg-gradient-to-r from-secondary to-primary text-white text-lg font-semibold px-16 py-2 rounded-sm hover:scale-105 duration-300'>Doctor's Entry</button>
                     </div>
                 </div>
             </div>

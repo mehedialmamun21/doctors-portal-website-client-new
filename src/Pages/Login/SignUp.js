@@ -56,7 +56,7 @@ const SignUp = () => {
     return (
         <section className="h-screen flex justify-center items-center">
 
-            <div className="w-full flex justify-center items-center py-0">
+            <div className="w-full lg:w-1/2 flex justify-center items-center py-0">
 
                 <div className="card w-96 bg-base-50 rounded-sm">
 
@@ -150,7 +150,7 @@ const SignUp = () => {
 
                         </form>
 
-                        <small><p className='text-sm font-semibold text-slate-600'>Already have an Account ? <Link className="font-bold ml-10 lg:ml-14" to="/login" >Please Login</Link> </p></small>
+                        <small><p className='text-sm font-semibold text-slate-600'>Have an Account ? <Link className="font-bold ml-3 lg:ml-5 text-cyan-500" to="/login" >Login</Link> </p></small>
 
                         <div className="divider font-mono text-slate-600">Or continue with</div>
 

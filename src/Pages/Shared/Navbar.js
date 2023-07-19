@@ -5,8 +5,7 @@ import { Link } from "react-router-dom";
 import auth from "../../firebase.init";
 // import { FaCalendarCheck, FaHome, FaHandHoldingMedical, FaPhone, FaBorderAll } from 'react-icons/fa';
 import { AiOutlineLogin, AiOutlineLogout } from 'react-icons/ai';
-// import { TbDental } from "react-icons/tb";
-import cropin_logo from "../../assets/images/cropin-logo.png";
+import { TbDental } from "react-icons/tb";
 
 const Navbar = () => {
   const [user, loading, error] = useAuthState(auth);
@@ -19,41 +18,17 @@ const Navbar = () => {
   const menuItems = (
     <>
 
-      {/* <li><Link to="/"> <span className="font-semibold text-lg text-zinc-800 flex"> <span className="flex justify-center items-center pr-2 text-cyan-500"><FaHome size='1.25rem' /></span> <span className="font-mono">Home</span> </span> </Link></li> */}
-      <li><Link to="/"> <span className="font-semibold text-lg text-gray-700 flex"> <span className="font-mono">Home</span> </span> </Link></li>
+      <li><Link to="/"> <span className="font-semibold text-xl text-black flex"> <span className="font-mono">Home</span> </span> </Link></li>
 
-      {/* <li><Link to="/appointment"><span className="font-semibold text-lg text-zinc-800 flex"> <span className="flex justify-center items-center pr-2 text-cyan-500"><FaCalendarCheck /></span> <span className="font-mono">Appointment</span> </span></Link></li> */}
-      <li><Link to="/appointment"><span className="font-semibold text-lg text-gray-700 flex"> <span className="font-mono">Appointment</span> </span></Link></li>
+      <li><Link to="/appointment"><span className="font-semibold text-xl text-black flex"> <span className="font-mono">Appointment</span> </span></Link></li>
 
-      {/* <li><Link to="/udoctors"><span className="font-semibold text-lg text-zinc-800 flex"> <span className="flex justify-center items-center pr-2 text-cyan-500"> <FaHandHoldingMedical /> </span> <span className="font-mono">Doctors</span> </span></Link></li> */}
+      <li><Link to="/udoctors"><span className="font-semibold text-xl text-black flex"> <span className="font-mono">Doctors</span> </span></Link></li>
 
-
-
-
-      <li><Link to="/udoctors"><span className="font-semibold text-lg text-gray-700 flex"> <span className="font-mono">Consultant</span> </span></Link></li>
-
-
-
-
-      {/* <li><Link to="/contact"><span className="font-semibold text-lg text-zinc-800 flex"> <span className="flex justify-center items-center pr-2 text-cyan-500"> <FaPhone /> </span> <span className="font-mono">Contact</span> </span></Link></li> */}
-
-
-
-
-      {/* <li><Link to="/contact"><span className="font-semibold text-lg text-gray-700 flex"> <span className="font-mono">Contact</span> </span></Link></li> */}
-
-
-
-
-      {/* {
-        user && <li><Link to="/dashboard"><span className="font-semibold text-lg text-zinc-800 flex"> <span className="flex justify-center items-center pr-2 text-cyan-500"> <FaBorderAll /> </span> <span className="font-mono">Dashboard</span> </span></Link></li>
-      } */}
+      <li><Link to="/contact"><span className="font-semibold text-xl text-black flex"> <span className="font-mono">Contact</span> </span></Link></li>
 
       {
-        user && <li><Link to="/dashboard"><span className="font-semibold text-lg text-gray-700 flex"> <span className="font-mono">Dashboard</span> </span></Link></li>
+        user && <li><Link to="/dashboard"><span className="font-semibold text-xl text-black flex"> <span className="font-mono">Dashboard</span> </span></Link></li>
       }
-
-      <li><Link to="/contact"><span className="font-semibold text-lg text-gray-700 flex"> <span className="font-mono border-2 border-gray-500 px-4 rounded">Contact</span> </span></Link></li>
 
     </>
   );
@@ -61,9 +36,9 @@ const Navbar = () => {
   return (
 
     // <div className="navbar px-5 py-0 lg:px-40 bg-cyan-800 sticky top-0 z-30">
-    <div className="navbar px-5 py-0 lg:px-40 bg-gray-100 sticky top-0 z-30 shadow-sm bg-opacity-80 backdrop-blur border-b border-gray-700">
+    <div className="navbar px-5 py-0 lg:px-40 bg-white sticky top-0 z-30 shadow-xl bg-opacity-80 backdrop-blur border-b border-gray-300">
       <div className="navbar-start">
-        <div className="dropdown text-gray-700">
+        <div className="dropdown">
           <label tabIndex="0" className="btn btn-ghost lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -75,13 +50,14 @@ const Navbar = () => {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
             </svg>
           </label>
-          <ul tabIndex="0" className="menu menu-compact text-gray-700 dropdown-content mt-3 p-2 shadow bg-gray-200 rounded-sm w-52">
+          <ul tabIndex="0" className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-sm w-52">
             {menuItems}
           </ul>
         </div>
 
-        {/* <a href="/" className="flex px-4 py-1 bg-cyan-500 rounded-sm"><TbDental size="2rem" className="text-gray-700 flex justify-center items-center" /> <span className="text-gray-700 pl-1 flex justify-center items-center text-2xl font-semibold">Solution</span> </a> */}
-        <a href="/" className="flex rounded-sm"><img className="w-1/2" src={cropin_logo} alt="" /> </a>
+        <a href="/">
+          <img src="https://i.postimg.cc/J4tP5mMg/images-2-removebg-preview.png" className="w-20 lg:w-28" alt="" />
+        </a>
 
       </div>
       <div className="navbar-end hidden lg:flex">
@@ -91,7 +67,7 @@ const Navbar = () => {
       </div>
 
       <div className="navbar-end">
-        <label tabIndex="1" for="dashboard-sidebar" className="btn text-gray-700 btn-ghost lg:hidden">
+        <label tabIndex="1" for="dashboard-sidebar" className="btn btn-ghost lg:hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-5 w-5"
@@ -103,7 +79,7 @@ const Navbar = () => {
           </svg>
         </label>
 
-        {user ? <button className="btn btn-ghost font-bold" onClick={logout} > <AiOutlineLogout className="text-red-500" size="2rem" /> <span className="pl-3 text-gray-700">Sign Out</span> </button> : <Link to="/login" className="btn btn-ghost font-bold"> <AiOutlineLogin className="text-green-500" size="2rem" /> <span className="pl-3 text-gray-700">Login</span> </Link>}
+        {user ? <a href="" className="font-bold" onClick={logout} > <span className="flex items-center"><AiOutlineLogout className="text-red-500 mr-0 lg:mr-3 invisible lg:visible" size="2rem" /> <span className="text-white bg-red-500 px-2 lg:px-5 py-2 lg:py-3">Sign Out</span></span> </a> : <Link to="/login" className="font-bold"> <span className="flex items-center"> <AiOutlineLogin className="text-green-500 mr-0 lg:mr-3 invisible lg:visible" size="2rem" /> <span className="text-white bg-green-500 px-5 lg:px-8 py-2 lg:py-3">Login</span> </span> </Link>}
 
       </div>
 

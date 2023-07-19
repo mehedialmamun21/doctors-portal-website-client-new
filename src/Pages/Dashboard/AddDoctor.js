@@ -87,7 +87,7 @@ const AddDoctor = () => {
                         <div className="form-control w-full max-w-xs">
 
                             <input type="text"
-                                placeholder="Consultant's Name"
+                                placeholder="Doctor's Name"
                                 className="input input-bordered w-full max-w-xs rounded-sm shadow-lg font-mono"
                                 {...register("name", {
                                     required: {
@@ -119,7 +119,7 @@ const AddDoctor = () => {
                         <div className="form-control w-full max-w-xs">
 
                             <input type="text"
-                                placeholder="Designation"
+                                placeholder="Doctor's Degree"
                                 className="input input-bordered w-full max-w-xs rounded-sm shadow-lg font-mono"
                                 {...register("degree", {
                                     required: {
@@ -154,19 +154,10 @@ const AddDoctor = () => {
                         </div>
 
 
-                    </div>
-
-
-
-
-
-
-                    <div>
-
                         <div className="form-control w-full max-w-xs">
 
                             <input type="email"
-                                placeholder="Email"
+                                placeholder="Doctor's Email"
                                 className="input input-bordered w-full max-w-xs rounded-sm shadow-lg font-mono"
                                 {...register("email", {
                                     required: {
@@ -205,10 +196,19 @@ const AddDoctor = () => {
 
                         </div>
 
-                        {/* <div className="form-control w-full max-w-xs">
+                    </div>
+
+
+
+
+
+
+                    <div>
+
+                        <div className="form-control w-full max-w-xs">
 
                             <input type="text"
-                                placeholder="Time of consultancy"
+                                placeholder="Time to see patients"
                                 className="input input-bordered w-full max-w-xs rounded-sm shadow-lg font-mono"
                                 {...register("time", {
                                     required: {
@@ -221,9 +221,9 @@ const AddDoctor = () => {
                             <label className="label">
                                 {errors.time?.type === 'required' && <span className="label-text-alt text-red-500 font-mono">{errors.time.message}</span>}
                             </label>
-                        </div> */}
+                        </div>
 
-                        {/* <div className="form-control w-full max-w-xs">
+                        <div className="form-control w-full max-w-xs">
 
                             <input type="input" name='room'
                                 placeholder="Room Number"
@@ -239,12 +239,12 @@ const AddDoctor = () => {
                             <label className="label">
                                 {errors.room?.type === 'required' && <span className="label-text-alt text-red-500 font-mono">{errors.room.message}</span>}
                             </label>
-                        </div> */}
+                        </div>
 
-                        {/* <div className="form-control w-full max-w-xs">
+                        <div className="form-control w-full max-w-xs">
 
                             <textarea type="text"
-                                placeholder="More details.."
+                                placeholder="More about Doctor.."
                                 className='input input-bordered w-full max-w-xs h-44 rounded-sm shadow-lg font-mono'
                                 {...register("description", {
                                     required: {
@@ -257,9 +257,9 @@ const AddDoctor = () => {
                             <label className="label">
                                 {errors.description?.type === 'required' && <span className="label-text-alt text-red-500 font-mono">{errors.description.message}</span>}
                             </label>
-                        </div> */}
+                        </div>
 
-                        <input className="btn w-2/3 font-bold bg-gradient-to-r from-secondary to-primary  shadow-lg text-white rounded-sm border border-white hover:border-white hover:scale-105 duration-300" type="submit" value="Add Consultant" />
+                        <input className="btn w-full font-bold bg-gradient-to-r from-secondary to-primary  shadow-lg text-white rounded-sm border border-white hover:border-white hover:scale-105 duration-300" type="submit" value="Add Doctor" />
 
                     </div>
 

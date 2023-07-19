@@ -14,7 +14,7 @@ const Dashboard = () => {
     return (
         <section>
 
-            <div className='px-5 lg:px-40'>
+            <div className='px-40'>
                 <div class="drawer drawer-mobile">
                     <input id="dashboard-sidebar" type="checkbox" class="drawer-toggle" />
                     <div class="drawer-content">
@@ -26,17 +26,15 @@ const Dashboard = () => {
                         <ul class="menu pt-9 overflow-y-auto w-60 lg:w-full">
 
                             {!admin && <>
-                                <li><Link to="/dashboard"><span className='px-7 py-3 font-bold rounded-sm shadow-lg bg-cyan-700 font-mono text-white relative'>My Appointments</span></Link></li>
-                                <li><Link to="/dashboard/review"><span className='px-12 py-3 font-bold rounded-sm shadow-lg bg-cyan-700 font-mono text-white'>My Reviews</span></Link></li>
-                                <li><Link to="/dashboard/diseaseIdentify"><span className='px-6 lg:px-10 py-3 font-bold rounded-sm shadow-lg bg-cyan-700 font-mono text-white'>Identify <br /> Leaf Disease</span></Link></li>
+                                <li><Link to="/dashboard"><span className='px-4 py-3 font-bold rounded-sm shadow-lg bg-cyan-700 font-mono text-white relative'>My Appointments</span></Link></li>
+                                <li><Link to="/dashboard/review"><span className='px-9 py-3 font-bold rounded-sm shadow-lg bg-cyan-700 font-mono text-white'>My Reviews</span></Link></li>
                             </>}
 
-
                             {admin && <>
-                                <li><Link to="/dashboard/users"> <span className='px-9 lg:px-12 py-3 font-bold rounded-sm shadow-lg bg-cyan-700 font-mono text-white'>Make Admin</span></Link></li>
-                                <li><Link to="/dashboard/addDoctor"> <span className='px-9 lg:px-8 py-3 font-bold rounded-sm shadow-lg bg-cyan-700 font-mono text-white'>Add Consultant</span> </Link></li>
-                                <li><Link to="/dashboard/manageDoctor"><span className='px-6 lg:px-5 py-3 font-bold rounded-sm shadow-lg bg-cyan-700 font-mono text-white'>Manage Consultant</span></Link></li>
-                                <li><Link to="/dashboard/diseaseIdentify"><span className='px-6 lg:px-10 py-3 font-bold rounded-sm shadow-lg bg-cyan-700 font-mono text-white'>Identify <br /> Leaf Disease</span></Link></li>
+                                <li><Link to="/dashboard/users"> <span className='px-9 lg:px-16 py-3 font-bold rounded-sm shadow-lg bg-cyan-700 font-mono text-white'> Make Admin</span></Link></li>
+                                <li><Link to="/dashboard/addDoctor"> <span className='px-9 lg:px-14 py-3 font-bold rounded-sm shadow-lg bg-cyan-700 font-mono text-white'>Add a Doctor</span> </Link></li>
+                                <li><Link to="/dashboard/manageDoctor"><span className='px-6 lg:px-12 py-3 font-bold rounded-sm shadow-lg bg-cyan-700 font-mono text-white'>Manage Doctors</span></Link></li>
+                                <li><Link to="/dashboard/doctors"><span className='px-6 lg:px-10 py-3 font-bold rounded-sm shadow-lg bg-cyan-700 font-mono text-white'>Doctor's Profile</span></Link></li>
                             </>}
 
                         </ul>
