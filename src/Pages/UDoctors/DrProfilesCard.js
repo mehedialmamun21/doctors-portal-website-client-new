@@ -13,7 +13,7 @@ const DrProfilesCard = ({ doctor }) => {
     }
 
     return (
-        <div className='card lg:max-w-lg bg-cyan-600 shadow-2xl rounded-sm border'>
+        <div className='card lg:max-w-lg shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] rounded-sm border'>
 
             {/* <div className=''>
                 <figure>
@@ -25,20 +25,20 @@ const DrProfilesCard = ({ doctor }) => {
 
                 <div>
                     <div>
-                        <p className='text-white font-semibold font-mono text-lg border-b border-zinc-300 pb-1'>{doctor.name}</p>
+                        <p className='text-zinc-700 font-semibold font-mono text-lg border-b border-zinc-500 pb-1'>{doctor.name}</p>
                     </div>
                     <div>
-                        <p className='text-slate-100 font-mono text-lg pt-5'>{degree}</p>
+                        <p className='text-zinc-700 font-mono text-lg pt-5'>{degree}</p>
                     </div>
                     <div>
-                        <p className='text-slate-100 font-mono text-lg'>{speciality}</p>
+                        <p className='text-zinc-700 font-mono text-lg'>{speciality}</p>
                     </div>
                 </div>
 
                 <div className='pt-3 flex pl-36 lg:pl-52'>
-                    <p className='text-white text-lg'><BsChevronCompactRight /></p>
-                    <p className='text-white text-lg'><BsChevronCompactRight /></p>
-                    <button className='rounded-sm text-white text-md font-mono cursor-pointer' onClick={() => navigateToDetailsPage(_id)}> <span className='text-white hover:text-slate-200'>more</span> </button>
+                    <p className='text-zinc-700 text-lg'><BsChevronCompactRight /></p>
+                    <p className='text-zinc-700 text-lg'><BsChevronCompactRight /></p>
+                    <button className='rounded-sm text-zinc-700 text-md font-mono cursor-pointer' onClick={() => navigateToDetailsPage(_id)}> <span className='text-zinc-700 hover:font-semibold'>more</span> </button>
                 </div>
 
             </div>

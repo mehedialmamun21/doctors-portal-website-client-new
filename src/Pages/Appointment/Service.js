@@ -3,10 +3,11 @@ import React from 'react';
 const Service = ({ service, setTreatment }) => {
     const { name, slots, price } = service;
     return (
-        <div className="card lg:max-w-lg bg-cyan-700 border shadow-xl rounded-sm hover:scale-x-110 hover:scale-y-125 duration-700">
+        // <div className="card lg:max-w-lg border shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] rounded-sm hover:scale-x-110 hover:scale-y-125 duration-700">
+        <div className="card lg:max-w-lg border shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-sm hover:shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] duration-500">
             <div className="card-body text-center rounded-sm border">
-                <h2 className="card-title justify-center text-white text-lg lg:text-xl font-mono">{name}</h2>
-                <p className='text-sm py-0.5 font-mono text-slate-300'>
+                <h2 className="card-title justify-center text-zinc-700 text-lg lg:text-xl font-mono">{name}</h2>
+                <p className='text-sm py-0.5 font-mono text-zinc-600'>
                     {
                         slots.length > 0 ?
                             <span>{slots[0]}</span>
@@ -14,8 +15,8 @@ const Service = ({ service, setTreatment }) => {
                             <span className='text-red-500 font-semibold'>Try another date</span>
                     }
                 </p>
-                <p className='text-md py-0.5 font-mono text-slate-300'>{slots.length} {slots.length > 1 ? 'spaces' : 'space'} available</p>
-                <p className='font-mono text-slate-300'> <span className='text-slate-300'>Price:</span> <span className='text-white'> {price} Tk</span> </p>
+                <p className='text-md py-0.5 font-mono text-zinc-600'>{slots.length} {slots.length > 1 ? 'spaces' : 'space'} available</p>
+                <p className='font-mono text-zinc-600'> <span className='text-zinc-600'>Price:</span> <span className='text-zinc-600'> {price} Tk</span> </p>
                 <div className="card-actions justify-center">
                     <label htmlFor="booking-modal"
                         disabled={slots.length === 0}

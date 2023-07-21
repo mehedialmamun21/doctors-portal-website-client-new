@@ -25,6 +25,8 @@ import DoctorDetails from "./Pages/Doctors/DoctorDetails";
 import UDoctors from "./Pages/UDoctors/UDoctors";
 import DrDetails from "./Pages/UDoctors/DrDetails";
 
+import GoToTop from '../src/component/PrimaryButton/GoToTop';
+
 function App() {
 
   return (
@@ -69,6 +71,8 @@ function App() {
       </Routes>
 
       <ToastContainer />
+
+      <GoToTop />
 
     </div>
 
