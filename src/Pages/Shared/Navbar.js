@@ -35,8 +35,8 @@ const Navbar = () => {
   return (
 
     // <div className="navbar px-5 py-0 lg:px-40 bg-cyan-800 sticky top-0 z-30">
-    // <div className="navbar px-5 py-0 lg:px-40 bg-white sticky top-0 z-30 shadow-xl bg-opacity-80 backdrop-blur border-b border-gray-300">
-    <div className="navbar px-5 py-0 lg:px-40 bg-white shadow-lg backdrop-blur border-b border-gray-300">
+    <div className="navbar px-5 py-0 lg:px-40 bg-white sticky lg:static top-0 z-30 shadow-xl bg-opacity-80 backdrop-blur border-b border-gray-300">
+      {/* <div className="navbar px-5 py-0 lg:px-40 bg-white shadow-lg backdrop-blur border-b border-gray-300"> */}
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex="0" className="btn btn-ghost lg:hidden">
