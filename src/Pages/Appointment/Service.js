@@ -5,7 +5,7 @@ const Service = ({ service, setTreatment }) => {
     return (
         // <div className="card lg:max-w-lg border shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] rounded-sm hover:scale-x-110 hover:scale-y-125 duration-700">
         <div className="card lg:max-w-lg border shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-sm hover:shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] duration-500">
-            <div className="card-body text-center rounded-sm border">
+            <div className="card-body text-center bg-slate-100">
                 <h2 className="card-title justify-center text-zinc-700 text-lg lg:text-xl font-mono">{name}</h2>
                 <p className='text-sm py-0.5 font-mono text-zinc-600'>
                     {

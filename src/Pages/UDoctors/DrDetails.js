@@ -33,8 +33,8 @@ const DrDetails = () => {
                                 </div>
                             </div>
                             <div className='pl-40'>
-                                <div className='pt-5 pb-5 bg-base-200 rounded-sm px-14 py-5'>
-                                    <p className='font-mono font-semibold text-lg text-cyan-600 pb-2'>{doctor.speciality}</p>
+                                <div className='pt-5 pb-5 shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] rounded-2xl px-14 py-5'>
+                                    <p className='font-mono font-semibold text-lg text-cyan-500 pb-2'>{doctor.speciality}</p>
                                     <center><BiDownArrow className='text-orange-500 font-bold text-xl' /></center>
                                     <div className='pt-2'>
                                         <p className='font-mono text-md text-slate-600'> Time: {doctor.time}</p>
@@ -47,12 +47,12 @@ const DrDetails = () => {
                 </div>
 
                 <div>
-                    <div className='bg-base-200 px-5 py-1 rounded-sm'>
-                        <p className='font-sarif border-white text-slate-700 px-5 py-5 rounded-md'>{doctor.description}</p>
+                    <div className='shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] bg-base-100 py-1 rounded'>
+                        <p className='font-sarif border-white text-zinc-500 font-semibold px-8 py-8'>{doctor.description}</p>
                     </div>
-                    <div className='flex justify-end items-end pt-7'>
+                    {/* <div className='flex justify-end items-end pt-7'>
                         <button className="btn btn-ghost bg-gradient-to-r from-secondary to-primary text-white px-2 lg:px-16 hover:scale-105 duration-300 rounded-sm font-mono text-lg">Previous..</button>
-                    </div>
+                    </div> */}
                 </div>
             </div>
 
