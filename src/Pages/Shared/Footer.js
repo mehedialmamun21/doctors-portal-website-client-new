@@ -18,7 +18,7 @@ const Footer = () => {
         }} className="border-t border-gray-300 bg-zinc-700">
 
             <div className='lg:flex items-center justify-center py-10 lg:py-14 border-b border-white mx-16 lg:mx-40 mb-0 lg:mb-10'>
-                <Link to="/appointment"><button className='text-white px-5 lg:px-14 py-2 lg:py-3 font-serif bg-cyan-600 hover:bg-cyan-700'>BOOK ONLINE</button></Link>
+                <Link to="/appointment"><button className='text-white px-12 py-3 rounded-sm hover:scale-105 duration-300 font-serif bg-gradient-to-r from-[var(--primary-purple)] to-[var(--primary-blue)]'>BOOK ONLINE</button></Link>
                 <p className='text-white pt-5 lg:pt-0 text-lg lg:text-2xl lg:pl-16 font-semibold'>Find available appointments</p>
             </div>
 

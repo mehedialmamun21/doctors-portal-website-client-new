@@ -1,5 +1,5 @@
 import React from 'react';
-import { BsChevronCompactRight } from 'react-icons/bs';
+import { BsArrowRight } from 'react-icons/bs';
 import { useNavigate } from 'react-router-dom';
 
 const DrProfilesCard = ({ doctor }) => {
@@ -13,7 +13,7 @@ const DrProfilesCard = ({ doctor }) => {
     }
 
     return (
-        <div className='card lg:max-w-lg shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] rounded-sm border'>
+        <div className='card lg:max-w-lg shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] rounded-sm border'>
 
             {/* <div className=''>
                 <figure>
@@ -35,9 +35,8 @@ const DrProfilesCard = ({ doctor }) => {
                     </div>
                 </div>
 
-                <div className='pt-3 flex pl-36 lg:pl-52'>
-                    <p className='text-zinc-700 text-lg'><BsChevronCompactRight /></p>
-                    <p className='text-zinc-700 text-lg'><BsChevronCompactRight /></p>
+                <div className='pt-3 flex pl-32 lg:pl-44 items-center'>
+                    <p className='text-green-600 text-lg font-bold flex items-center'><BsArrowRight /></p>
                     <button className='rounded-sm text-zinc-700 text-md font-mono cursor-pointer' onClick={() => navigateToDetailsPage(_id)}> <span className='text-zinc-700 hover:font-semibold'>more</span> </button>
                 </div>
 

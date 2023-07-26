@@ -26,15 +26,15 @@ const Dashboard = () => {
                         <ul class="menu pt-9 overflow-y-auto w-60 lg:w-full">
 
                             {!admin && <>
-                                <li><Link to="/dashboard"><span className='px-4 py-3 font-bold rounded-sm shadow-lg bg-cyan-700 font-mono text-white relative'>My Appointments</span></Link></li>
-                                <li><Link to="/dashboard/review"><span className='px-9 py-3 font-bold rounded-sm shadow-lg bg-cyan-700 font-mono text-white'>My Reviews</span></Link></li>
+                                <li><Link to="/dashboard"><span className='px-4 py-3 font-bold rounded-sm shadow-lg bg-cyan-600 font-mono text-white relative'>My Appointments</span></Link></li>
+                                <li><Link to="/dashboard/review"><span className='px-9 py-3 font-bold rounded-sm shadow-lg bg-cyan-600 font-mono text-white'>My Reviews</span></Link></li>
                             </>}
 
                             {admin && <>
-                                <li><Link to="/dashboard/users"> <span className='px-9 lg:px-16 py-3 font-bold rounded-sm shadow-lg bg-cyan-700 font-mono text-white'> Make Admin</span></Link></li>
-                                <li><Link to="/dashboard/addDoctor"> <span className='px-9 lg:px-14 py-3 font-bold rounded-sm shadow-lg bg-cyan-700 font-mono text-white'>Add a Doctor</span> </Link></li>
-                                <li><Link to="/dashboard/manageDoctor"><span className='px-6 lg:px-12 py-3 font-bold rounded-sm shadow-lg bg-cyan-700 font-mono text-white'>Manage Doctors</span></Link></li>
-                                <li><Link to="/dashboard/doctors"><span className='px-6 lg:px-10 py-3 font-bold rounded-sm shadow-lg bg-cyan-700 font-mono text-white'>Doctor's Profile</span></Link></li>
+                                <li><Link to="/dashboard/users"> <span className='px-9 lg:px-16 py-3 font-bold rounded-sm shadow-lg bg-cyan-600 font-mono text-white'> Make Admin</span></Link></li>
+                                <li><Link to="/dashboard/addDoctor"> <span className='px-9 lg:px-14 py-3 font-bold rounded-sm shadow-lg bg-cyan-600 font-mono text-white'>Add a Doctor</span> </Link></li>
+                                <li><Link to="/dashboard/manageDoctor"><span className='px-6 lg:px-12 py-3 font-bold rounded-sm shadow-lg bg-cyan-600 font-mono text-white'>Manage Doctors</span></Link></li>
+                                <li><Link to="/dashboard/doctors"><span className='px-6 lg:px-10 py-3 font-bold rounded-sm shadow-lg bg-cyan-600 font-mono text-white'>Doctor's Profile</span></Link></li>
                             </>}
 
                         </ul>

@@ -77,7 +77,7 @@ const AddDoctor = () => {
 
 
     return (
-        <div className='flex justify-center py-5 lg:py-14 my-5 lg:mt-12 px-5 bg-slate-200'>
+        <div className='flex justify-center my-5 lg:mt-12'>
 
             <form onSubmit={handleSubmit(onSubmit)}>
 

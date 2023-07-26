@@ -31,7 +31,7 @@ const Contact = () => {
 
                 <div className='w-full lg:w-6/12 space-y-5'>
 
-                    <div className='flex gap-4 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] bg-slate-100 px-5 py-6 border-2'>
+                    <div className='flex gap-4 shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] px-5 py-6 border-2'>
                         <span>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-8 text-cyan-500"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
                         </span>
@@ -43,7 +43,7 @@ const Contact = () => {
                     </div>
 
                     <div>
-                        <div className='flex gap-4 bg-slate-100 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] my-4 lg:my-8 px-5 py-6 border-2'>
+                        <div className='flex gap-4 shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] my-4 lg:my-8 px-5 py-6 border-2'>
                             <span>
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-8 text-cyan-500"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
                             </span>
@@ -71,9 +71,9 @@ const Contact = () => {
                 </div>
 
 
-                <div className='w-full lg:w-10/12 mt-8 lg:mt-0 text-black px-5 lg:px-24 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] bg-slate-100 pb-0 lg:pb-8'>
-                    <div className='px-2 lg:px-24 py-5 lg:py-6'>
-                        <h2 className='text-2xl font-semibold pb-6 text-cyan-600 font-mono'>Get In Touch</h2>
+                <div className='w-full lg:w-10/12 mt-8 lg:mt-0 text-black px-5 lg:px-14 shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)] bg-slate-200 pb-0 lg:pb-0'>
+                    <div className='px-2 lg:px-24 py-5 lg:py-5'>
+                        {/* <h2 className='text-2xl font-semibold pb-6 text-cyan-600 font-mono'>Get In Touch</h2> */}
                         <form className='row' ref={form} onSubmit={sendEmail}>
                             <div className='flex flex-col gap-4 w-full'>
                                 <div className='flex gap-4 w-full'>

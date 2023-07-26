@@ -31,7 +31,7 @@ const Modal = ({ setModalOn, setChoice }) => {
 
             <div className="flex h-screen justify-center items-center">
 
-                <div className="flex-col justify-center bg-white py-12 px-6 mx-10 rounded-sm ">
+                <div className="flex-col justify-center bg-white py-12 px-20 rounded-sm ">
 
                     <div className="flex justify-center text-2xl text-zinc-900 font-bold font-mono" >Want to Enter in Your Profile?</div>
 
@@ -40,11 +40,11 @@ const Modal = ({ setModalOn, setChoice }) => {
                         {
                             doctors.map((doctor) =>
                                 <div className="flex mr-7">
-                                    <div className="flex items-center justify-center bg-cyan-700 px-2 py-8">
+                                    <div className="flex items-center justify-center bg-cyan-600 px-5 py-8">
                                         <p className="font-semibold text-white font-serif"> {doctor.name} </p> <br />
                                     </div>
 
-                                    <div className="flex items-center justify-center border-2 border-cyan-700 px-2 py-5">
+                                    <div className="flex items-center justify-center border-2 border-cyan-600 px-3 py-5">
                                         <button onClick={() => navigateToDoctorDetail(doctor._id)} className="rounded-sm px-4 py-1 text-white bg-green-600 hover:bg-green-700">Yes</button>
                                         <button onClick={handleCancelClick} className="rounded-sm px-4 py-1 ml-2 text-white bg-red-600 hover:bg-red-700 ">No</button>
                                     </div>
