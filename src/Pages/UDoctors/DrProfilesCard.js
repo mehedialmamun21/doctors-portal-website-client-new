@@ -25,7 +25,7 @@ const DrProfilesCard = ({ doctor }) => {
 
                 <div>
                     <div>
-                        <p className='text-zinc-700 font-semibold font-mono text-lg border-b border-zinc-500 pb-1'>{doctor.name}</p>
+                        <p className='text-cyan-600 font-semibold font-mono text-lg border-b border-zinc-500 pb-1'>{doctor.name}</p>
                     </div>
                     <div>
                         <p className='text-zinc-700 font-mono text-lg pt-5'>{degree}</p>
@@ -36,7 +36,7 @@ const DrProfilesCard = ({ doctor }) => {
                 </div>
 
                 <div className='pt-3 flex pl-32 lg:pl-44 items-center'>
-                    <p className='text-green-600 text-lg font-bold flex items-center'><BsArrowRight /></p>
+                    <p className='text-cyan-600 text-lg font-bold flex items-center'><BsArrowRight /></p>
                     <button className='rounded-sm text-zinc-700 text-md font-mono cursor-pointer' onClick={() => navigateToDetailsPage(_id)}> <span className='text-zinc-700 hover:font-semibold'>more</span> </button>
                 </div>
 
