@@ -7,10 +7,10 @@ import DrProfiles from './DrProfiles';
 const UDoctors = () => {
 
     return (
-        <div className='h-screen'>
+        <div className='h:screen'>
 
             <div className='pb-28 mx-5 lg:mx-40'>
-                <div className='mt-10 lg:mt-14'>
+                <div className=''>
                     <p className='text-black text-2xl font-semibold mb-5'>Professionals</p>
                     <p className='text-3xl font-mono text-slate-600'>Our Doctors</p>
                 </div>

@@ -15,12 +15,9 @@ const Home = () => {
   return (
     <div className="">
       <div className="pb-14">
-        {/* <Banner></Banner> */}
-        {/* <Bann></Bann> */}
+        <Banner></Banner>
         <Info></Info>
-        {/* <AgriInfo></AgriInfo> */}
         <Services></Services>
-        {/* <Servicess></Servicess> */}
         {/* <ExCare></ExCare> */}
         <MakeAppointment></MakeAppointment>
         <Testimonial></Testimonial>

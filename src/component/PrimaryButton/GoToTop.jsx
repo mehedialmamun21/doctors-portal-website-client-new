@@ -31,7 +31,7 @@ const GoToTop = () => {
         <Wrapper>
             {isVisible && (
                 <div className='top-btn' onClick={goToBtn} >
-                    <BsArrowUp className='' size="2rem" />
+                    <BsArrowUp className='' size="1.5rem" />
                 </div>
             )}
 
@@ -46,14 +46,15 @@ const Wrapper = styled.section`
 
     .top-btn {
         font-size: 2.4 rem;
-        width: 6 rem;
-        height: 6 rem;
-        color: rgb(120,150,250);
+        width: 2.3rem;
+        height: 2.1rem;
+        color: black;
         
-        border-radius: 50%;
+        background-color: white;
+        border-radius: 10%;
         position: fixed;
         bottom: 8rem;
-        right: 2.8rem;
+        right: 2.7rem;
         z-index: 999;
         display: flex;
         justify-content: center;
