@@ -25,7 +25,7 @@ const Contact = () => {
     };
 
     return (
-        <section className='h:screen'>
+        <section className='h-screen'>
 
             <div className='flex flex-col lg:gap-20 md:flex-row lg:flex-row pt-10 lg:pt-14 lg:pb-28 px-5 lg:px-40 mb-10 lg:mb-10'>
 
@@ -38,7 +38,7 @@ const Contact = () => {
                         <div>
                             <h2 className='text-2xl font-semibold font-mono text-zinc-700'>Have a question?</h2>
                             <p class="font-mono text-zinc-600">We are here to help</p>
-                            <p class="text-zinc-500 font-mono">Email us at "dentalsolutions@gmail.com"</p>
+                            <p class="text-zinc-500 font-mono">Email: skylinedental@gmail.com</p>
                         </div>
                     </div>
 
@@ -49,8 +49,8 @@ const Contact = () => {
                             </span>
                             <div>
                                 <h2 className='text-2xl font-semibold font-mono text-zinc-700'>Contact With Us</h2>
-                                <p class="font-mono text-zinc-600">Email: dentalsolution@gmail.com</p>
-                                <p class="text-zinc-500 font-mono">Phone : +8801521-413730</p>
+                                <p class="font-mono text-zinc-600">Email: skylinedental@gmail.com</p>
+                                <p class="text-zinc-500 font-mono">Phone: +8801521-413730</p>
                             </div>
                         </div>
                     </div>

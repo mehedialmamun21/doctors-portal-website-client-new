@@ -6,7 +6,7 @@ import AvailableAppointments from './AvailableAppointments';
 const Appointment = () => {
     const [date, setDate] = useState(new Date());
     return (
-        <div>
+        <div className=''>
             <div className='pb-28'>
                 <AppointmentBanner date={date} setDate={setDate}></AppointmentBanner>
                 <AvailableAppointments date={date}></AvailableAppointments>
