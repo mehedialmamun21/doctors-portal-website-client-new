@@ -9,6 +9,7 @@ import googleIcon from '../../assets/images/google.png';
 import { FaSignOutAlt } from 'react-icons/fa';
 
 import { FcGoogle } from 'react-icons/fc';
+import Footer from '../Shared/Footer';
 
 const SignUp = () => {
 
@@ -35,7 +36,7 @@ const SignUp = () => {
     }
 
     if (error || gError || updateError || verError) {
-        signInError = <p className="text-red-500 font-semibold font-mono"> <small>{error?.message || gError?.message || updateError?.message || verError?.message}</small> </p>
+        signInError = <p className="text-orange-600 font-semibold font-mono"> <small>{error?.message || gError?.message || updateError?.message || verError?.message}</small> </p>
     }
 
     if (token) {
@@ -54,119 +55,123 @@ const SignUp = () => {
     }
 
     return (
-        <section className="h-screen flex justify-center items-center">
+        <div className='bg-sky-100'>
 
-            <div className="w-full lg:w-1/2 flex justify-center items-center py-0">
+            <div className="h-screen flex justify-center items-center pt-36 mb-16">
 
-                <div className="card w-96 bg-base-50 rounded-sm">
+                <div className="w-full lg:w-1/2 flex justify-center items-center py-0">
 
-                    {/* <div className="flex justify-center items-center text-xl font-bold">
-                        <span className="flex justify-center items-center"><FaSignOutAlt /></span>
-                        <span className="pl-4">Register</span>
-                    </div> */}
+                    <div className="card w-96 rounded-md bg-white">
 
-                    <div className="card-body">
+                        <div className="bg-gray-500 text-white px-8 py-3 font-semibold flex items-center justify-between">
+                            <h2 className='text-lg'>Create an Account</h2>
+                            <Link className="ml-3 lg:ml-5 text-white text-sm" to="/login" >LOG IN?</Link>
+                        </div>
 
-                        <form onSubmit={handleSubmit(onSubmit)}>
+                        <div className="card-body">
 
-                            <div className="form-control w-full max-w-xs">
-                                <label className="label">
-                                    <span className="label-text font-mono text-slate-600">Name</span>
-                                </label>
-                                <input type="text"
-                                    placeholder="Your Name"
-                                    className="input w-full max-w-xs rounded-sm shadow-lg font-mono bg-slate-200"
-                                    {...register("name", {
-                                        required: {
-                                            value: true,
-                                            message: 'Name is required'
-                                        },
+                            <form onSubmit={handleSubmit(onSubmit)}>
 
-                                    })}
-                                />
-                                <label className="label font-semibold ">
-                                    {errors.name?.type === 'required' && <span className="label-text-alt text-red-500 font-mono">{errors.name.message}</span>}
+                                <div className="form-control w-full max-w-xs">
+                                    <label className="label">
+                                        <span className="label-text font-mono text-slate-600">Name</span>
+                                    </label>
+                                    <input type="text"
+                                        placeholder="Your Name"
+                                        className="input w-full max-w-xs rounded-sm font-mono shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px]"
+                                        {...register("name", {
+                                            required: {
+                                                value: true,
+                                                message: 'Name is required'
+                                            },
 
-                                </label>
-                            </div>
+                                        })}
+                                    />
+                                    <label className="label font-semibold ">
+                                        {errors.name?.type === 'required' && <span className="label-text-alt text-orange-600 font-mono">{errors.name.message}</span>}
 
-
-                            <div className="form-control w-full max-w-xs">
-                                <label className="label">
-                                    <span className="label-text font-mono text-slate-600">Email</span>
-                                </label>
-                                <input type="email"
-                                    placeholder="Your Email"
-                                    className="input w-full max-w-xs rounded-sm shadow-lg bg-slate-200 font-mono"
-                                    {...register("email", {
-                                        required: {
-                                            value: true,
-                                            message: 'Email is required'
-                                        },
-                                        pattern: {
-                                            value: /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/,
-                                            message: 'Provide a valid Email'
-                                        }
-                                    })}
-                                />
-                                <label className="label font-semibold">
-                                    {errors.email?.type === 'required' && <span className="label-text-alt text-red-500 font-mono">{errors.email.message}</span>}
-                                    {errors.email?.type === 'pattern' && <span className="label-text-alt text-red-500 font-mono">{errors.email.message}</span>}
-
-                                </label>
-                            </div>
+                                    </label>
+                                </div>
 
 
-                            <div className="form-control w-full max-w-xs">
-                                <label className="label">
-                                    <span className="label-text font-mono text-slate-600">Password</span>
-                                </label>
-                                <input type="password"
-                                    placeholder="Password"
-                                    className="input w-full max-w-xs rounded-sm shadow-lg bg-slate-200 font-mono"
-                                    {...register("password", {
-                                        required: {
-                                            value: true,
-                                            message: 'Password is required'
-                                        },
-                                        minLength: {
-                                            value: 6,
-                                            message: 'Must be 6 characters or longer'
-                                        }
-                                    })}
-                                />
-                                <label className="label font-semibold">
-                                    {errors.password?.type === 'required' && <span className="label-text-alt text-red-500 font-mono">{errors.password.message}</span>}
-                                    {errors.password?.type === 'minLength' && <span className="label-text-alt text-red-500 font-mono">{errors.password.message}</span>}
-                                </label>
-                            </div>
+                                <div className="form-control w-full max-w-xs">
+                                    <label className="label">
+                                        <span className="label-text font-mono text-slate-600">Email</span>
+                                    </label>
+                                    <input type="email"
+                                        placeholder="Your Email"
+                                        className="input w-full max-w-xs rounded-sm shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] font-mono"
+                                        {...register("email", {
+                                            required: {
+                                                value: true,
+                                                message: 'Email is required'
+                                            },
+                                            pattern: {
+                                                value: /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/,
+                                                message: 'Provide a valid Email'
+                                            }
+                                        })}
+                                    />
+                                    <label className="label font-semibold">
+                                        {errors.email?.type === 'required' && <span className="label-text-alt text-orange-600 font-mono">{errors.email.message}</span>}
+                                        {errors.email?.type === 'pattern' && <span className="label-text-alt text-orange-600 font-mono">{errors.email.message}</span>}
 
-                            <button type="submit" className="py-3 rounded-sm w-full max-w-xs font-semibold bg-gradient-to-r from-secondary to-primary shadow-lg text-slate-600 mt-2 hover:scale-105 duration-300">
-                                <p className='flex justify-center items-center text-white'>
-                                    <FaSignOutAlt size="1rem" />
-                                    <span className='pl-3 flex items-center text-md'>REGISTER</span>
+                                    </label>
+                                </div>
+
+
+                                <div className="form-control w-full max-w-xs">
+                                    <label className="label">
+                                        <span className="label-text font-mono text-slate-600">Password</span>
+                                    </label>
+                                    <input type="password"
+                                        placeholder="Password"
+                                        className="input w-full max-w-xs rounded-sm shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] font-mono"
+                                        {...register("password", {
+                                            required: {
+                                                value: true,
+                                                message: 'Password is required'
+                                            },
+                                            minLength: {
+                                                value: 6,
+                                                message: 'Must be 6 characters or longer'
+                                            }
+                                        })}
+                                    />
+                                    <label className="label font-semibold">
+                                        {errors.password?.type === 'required' && <span className="label-text-alt text-orange-600 font-mono">{errors.password.message}</span>}
+                                        {errors.password?.type === 'minLength' && <span className="label-text-alt text-orange-600 font-mono">{errors.password.message}</span>}
+                                    </label>
+                                </div>
+
+                                <button type="submit" className="py-3 rounded-sm w-full max-w-xs font-semibold bg-orange-600 shadow-lg text-slate-600 mt-2 hover:scale-105 duration-300">
+                                    <p className='flex justify-center items-center text-white'>
+                                        <FaSignOutAlt size="1rem" className='' />
+                                        <span className='pl-3 flex items-center text-md'>REGISTER</span>
+                                    </p>
+                                </button>
+
+                            </form>
+
+                            {/* <small><p className='text-sm font-semibold text-slate-600'>Have an Account ? <Link className="font-bold ml-3 lg:ml-5 text-cyan-500" to="/login" >Login</Link> </p></small> */}
+
+                            <div className="divider font-mono text-slate-600">Or continue with</div>
+
+                            {signInError}
+
+                            <button onClick={() => signInWithGoogle()} className="btn rounded-sm  border border-slate-400 hover:border-slate-400 text-slate-600 bg-slate-800 hover:bg-slate-800 shadow-lg hover:scale-105 duration-300">
+                                <p className='flex justify-center'>
+                                    <FcGoogle size="2rem" />
+                                    <span className="pl-3 flex items-center text-white text-md">Google</span>
                                 </p>
                             </button>
 
-                        </form>
-
-                        <small><p className='text-sm font-semibold text-slate-600'>Have an Account ? <Link className="font-bold ml-3 lg:ml-5 text-cyan-500" to="/login" >Login</Link> </p></small>
-
-                        <div className="divider font-mono text-slate-600">Or continue with</div>
-
-                        {signInError}
-
-                        <button onClick={() => signInWithGoogle()} className="btn rounded-sm  border border-slate-400 hover:border-slate-400 text-slate-600 bg-slate-800 hover:bg-slate-800 shadow-lg hover:scale-105 duration-300">
-                            <p className='flex justify-center'>
-                                <FcGoogle size="2rem" />
-                                <span className="pl-3 flex items-center text-white text-md">Google</span>
-                            </p>
-                        </button>
-
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section >
+            </div >
+            <Footer></Footer>
+        </div>
 
     );
 };

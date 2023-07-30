@@ -31,7 +31,7 @@ function App() {
 
   return (
 
-    <div className="mx-auto">
+    <div className="mx-auto bg-sky-100">
 
       <Navbar></Navbar>
 

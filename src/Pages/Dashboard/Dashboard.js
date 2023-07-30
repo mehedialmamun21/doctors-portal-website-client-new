@@ -14,7 +14,7 @@ const Dashboard = () => {
     return (
         <section>
 
-            <div className='px-40'>
+            <div className='px-40 pt-20'>
                 <div class="drawer drawer-mobile">
                     <input id="dashboard-sidebar" type="checkbox" class="drawer-toggle" />
                     <div class="drawer-content">

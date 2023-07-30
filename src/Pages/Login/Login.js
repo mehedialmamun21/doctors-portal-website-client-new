@@ -9,6 +9,7 @@ import useToken from "../../hooks/useToken";
 import { FaSignInAlt } from 'react-icons/fa';
 
 import { FcGoogle } from 'react-icons/fc';
+import Footer from "../Shared/Footer";
 
 
 const Login = () => {
@@ -46,7 +47,7 @@ const Login = () => {
   }
 
   if (error || gError || resError) {
-    signInError = <p className="text-red-500 font-semibold font-mono"> <small>{error?.message || gError?.message || resError}</small> </p>
+    signInError = <p className="text-orange-600 font-semibold font-mono"> <small>{error?.message || gError?.message || resError}</small> </p>
   }
 
   const onSubmit = data => {
@@ -55,106 +56,118 @@ const Login = () => {
   }
 
   return (
-    <section className="h-screen flex justify-center items-center">
 
-      <div className="w-full lg:w-1/2 flex justify-center items-center py-0">
+    <div className="bg-sky-100">
 
-        <div className="card w-96 bg-base-50 rounded-sm ">
+      <div className="h-screen flex justify-center items-center pt-20">
 
-          <div className="card-body ">
+        <div className="w-full lg:w-1/2 flex justify-center items-center py-0 ">
 
-            <form onSubmit={handleSubmit(onSubmit)}>
+          <div className="card w-96 rounded-md bg-white">
 
-              <div className="form-control w-full max-w-xs">
-                <label className="label">
-                  <span className="label-text font-mono text-slate-600">Email</span>
-                </label>
-                <input type="email"
-                  placeholder="Your Email"
-                  className="input w-full max-w-xs rounded-sm shadow-lg bg-slate-200 font-mono"
-                  {...register("email", {
-                    required: {
-                      value: true,
-                      message: 'Email is required'
-                    },
-                    pattern: {
-                      value: /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/,
-                      message: 'Provide a valid Email'
-                    }
-                  })}
-                />
-                <label className="label font-semibold">
-                  {errors.email?.type === 'required' && <span className="label-text-alt text-red-500 font-mono">{errors.email.message}</span>}
-                  {errors.email?.type === 'pattern' && <span className="label-text-alt text-red-500 font-mono">{errors.email.message}</span>}
+            <div className="bg-gray-500 text-white px-8 py-3 font-semibold flex items-center justify-between">
+              <h2 className="text-lg">Log In to Your Account</h2>
+              <Link className="ml-3 lg:ml-5  text-sm text-white" to="/signup" >SIGN UP?</Link>
+            </div>
 
-                </label>
-              </div>
+            <div className="card-body ">
 
+              <form onSubmit={handleSubmit(onSubmit)}>
 
-              <div className="form-control w-full max-w-xs">
+                <div className="form-control w-full max-w-xs">
+                  <label className="label">
+                    <span className="label-text font-mono text-slate-600">Email</span>
+                  </label>
+                  <input type="email"
+                    placeholder="Your Email"
+                    className="input w-full max-w-xs rounded-sm shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] font-mono"
+                    {...register("email", {
+                      required: {
+                        value: true,
+                        message: 'Email is required'
+                      },
+                      pattern: {
+                        value: /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/,
+                        message: 'Provide a valid Email'
+                      }
+                    })}
+                  />
+                  <label className="label font-semibold">
+                    {errors.email?.type === 'required' && <span className="label-text-alt text-orange-600 font-mono">{errors.email.message}</span>}
+                    {errors.email?.type === 'pattern' && <span className="label-text-alt text-orange-600 font-mono">{errors.email.message}</span>}
 
-                <label className="label">
-                  <span className="label-text font-mono text-slate-600">Password</span>
-                </label>
-
-                <input type="password"
-                  placeholder="Password"
-                  className="input w-full max-w-xs rounded-sm shadow-lg bg-slate-200 font-mono"
-                  {...register("password", {
-                    required: {
-                      value: true,
-                      message: 'Password is required'
-                    },
-                    minLength: {
-                      value: 6,
-                      message: 'Must be 6 characters or longer'
-                    }
-                  })}
-                />
-
-                <label className="label font-semibold">
-                  {errors.password?.type === 'required' && <span className="label-text-alt text-red-500 font-mono">{errors.password.message}</span>}
-                  {errors.password?.type === 'minLength' && <span className="label-text-alt text-red-500 font-mono">{errors.password.message}</span>}
-                </label>
-
-              </div>
+                  </label>
+                </div>
 
 
-              <button
-                onClick={async () => {
-                  await sendPasswordResetEmail(email);
-                  alert('Password Reset email sent..');
-                }}
-              >
-                <h5 className="pb-2 font-semibold font-mono text-slate-600">Forgot Password ?</h5>
-              </button>
+                <div className="form-control w-full max-w-xs">
 
-              <button type="submit" className="py-3 rounded-sm w-full max-w-xs font-semibold bg-gradient-to-r from-secondary to-primary shadow-lg text-slate-600 mt-2 hover:scale-105 duration-300">
-                <p className='flex justify-center items-center text-white'>
-                  <FaSignInAlt size="1rem" />
-                  <span className='pl-3 flex items-center text-md'>LOGIN</span>
+                  <label className="label">
+                    <span className="label-text font-mono text-slate-600">Password</span>
+                  </label>
+
+                  <input type="password"
+                    placeholder="Password"
+                    className="input w-full max-w-xs rounded-sm shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] font-mono"
+                    {...register("password", {
+                      required: {
+                        value: true,
+                        message: 'Password is required'
+                      },
+                      minLength: {
+                        value: 6,
+                        message: 'Must be 6 characters or longer'
+                      }
+                    })}
+                  />
+
+                  <label className="label font-semibold">
+                    {errors.password?.type === 'required' && <span className="label-text-alt text-orange-600 font-mono">{errors.password.message}</span>}
+                    {errors.password?.type === 'minLength' && <span className="label-text-alt text-orange-600 font-mono">{errors.password.message}</span>}
+                  </label>
+
+                </div>
+
+
+                <button
+                  onClick={async () => {
+                    await sendPasswordResetEmail(email);
+                    alert('Password Reset email sent..');
+                  }}
+                >
+                  <h5 className="pb-2 font-semibold font-mono text-slate-600">Forgot Password ?</h5>
+                </button>
+
+                <button type="submit" className="py-3 rounded-sm w-full max-w-xs font-semibold bg-orange-600 shadow-lg text-slate-600 mt-2 hover:scale-105 duration-300">
+                  <p className='flex justify-center items-center text-white'>
+                    <FaSignInAlt size="1rem" />
+                    <span className='pl-3 flex items-center text-md'>LOGIN</span>
+                  </p>
+                </button>
+              </form>
+
+              {/* <small><p className="text-sm font-semibold text-slate-600">Don't have an account? <Link className="font-bold ml-3 lg:ml-5 text-cyan-500" to="/signup" >Sign up</Link> </p></small> */}
+
+              <div className="divider font-mono text-slate-600">Or continue with</div>
+
+              {signInError}
+
+              <button onClick={() => signInWithGoogle()} className="btn rounded-sm border border-slate-400 hover:border-slate-400 text-slate-600 bg-slate-800 hover:bg-slate-800 shadow-lg hover:scale-105 duration-300">
+                <p className='flex justify-center'>
+                  <FcGoogle size="2rem" />
+                  <span className="pl-3 flex items-center text-md text-white">Google</span>
                 </p>
               </button>
-            </form>
 
-            <small><p className="text-sm font-semibold text-slate-600">Don't have an account? <Link className="font-bold ml-3 lg:ml-5 text-cyan-500" to="/signup" >Sign up</Link> </p></small>
-
-            <div className="divider font-mono text-slate-600">Or continue with</div>
-
-            {signInError}
-
-            <button onClick={() => signInWithGoogle()} className="btn rounded-sm border border-slate-400 hover:border-slate-400 text-slate-600 bg-slate-800 hover:bg-slate-800 shadow-lg hover:scale-105 duration-300">
-              <p className='flex justify-center'>
-                <FcGoogle size="2rem" />
-                <span className="pl-3 flex items-center text-md text-white">Google</span>
-              </p>
-            </button>
-
+            </div>
           </div>
         </div>
+
       </div>
 
-    </section>
+      <Footer></Footer>
+
+    </div>
   );
 };
 

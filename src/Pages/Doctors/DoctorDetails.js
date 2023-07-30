@@ -21,7 +21,7 @@ const DoctorDetails = () => {
     return (
         <div>
 
-            <div className='h-screen mt-12 px-40'>
+            <div className='h-screen px-40 pt-32 mb-60'>
 
                 <div className='flex justify-center py-5 border-l border-gray-400 border-t border-r bg-cyan-500'>
                     <div className='pr-40'>
@@ -87,7 +87,7 @@ const DoctorDetails = () => {
                     </div>
                 </div>
 
-                <div className='flex justify-end items-end pt-4'>
+                <div className='flex justify-end items-end pt-8'>
                     <button className="btn btn-ghost bg-gradient-to-r from-secondary to-primary text-white px-2 lg:px-16 hover:scale-105 duration-300 rounded-sm font-mono text-lg">Print</button>
                 </div>
 

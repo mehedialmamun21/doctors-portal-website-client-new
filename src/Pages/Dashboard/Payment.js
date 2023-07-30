@@ -31,11 +31,11 @@ const Payment = () => {
 
             <div className='w-50 max-w-xl'>
 
-                <div class="card bg-slate-100 mb-5 rounded-sm">
+                <div class="card bg-white mb-5 rounded-sm">
                     <div class="card-body">
                         <p className='font-mono'>Hello, <span className="text-black">{appointment.patientName}</span></p>
                         {/* <p class="card-title"> <span className='text-lg'>Pay for :</span> <span className='text-secondary'>{appointment.treatment}</span> </p> */}
-                        <p> <span className='font-mono'>Pay for:</span> <span className='text-cyan-600 text-lg font-semibold'>{appointment.treatment}</span> </p>
+                        <p> <span className='font-mono'>Pay for:</span> <span className='text-cyan-600 font-semibold'>{appointment.treatment}</span> </p>
                         <p> <span className='font-mono'>Appointment:</span> <span className='text-black'>{appointment.date}</span> <br /> <span className='text-black pl-28'>{appointment.slot}</span> </p>
                         <br />
                         <p> <span className='font-mono'>Please pay:</span> <span className='font-semibold border rounded-sm border-slate-600 px-3 py-1'> <span className='text-black'>{appointment.price} Tk</span> </span></p>
@@ -44,7 +44,7 @@ const Payment = () => {
 
                 <center><BsArrow90DegDown size="1.7rem" className='text-slate-500 text-2xl' /></center>
 
-                <div class="card flex-shrink-0 bg-slate-200 mt-4 rounded-sm">
+                <div class="card flex-shrink-0 bg-white mt-4 rounded-sm">
                     <div class="card-body py-8">
                         <Elements stripe={stripePromise}>
                             <CheckoutForm appointment={appointment} />

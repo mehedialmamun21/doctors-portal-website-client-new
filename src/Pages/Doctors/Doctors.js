@@ -32,7 +32,7 @@ const Doctors = () => {
     return (
         <section className='h-screen'>
 
-            <div className='px-40'>
+            <div className='px-40 pt-20'>
                 <div class="overflow-x-auto pt-12">
 
                     <table class="table w-full border-4">

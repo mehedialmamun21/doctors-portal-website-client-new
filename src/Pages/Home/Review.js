@@ -5,7 +5,7 @@ const Review = ({ review }) => {
     const { description, rating, name } = review;
     return (
         <div class="card lg:card-side rounded-sm">
-            <div class="card-body bg-slate-100 px-5 py-6 lg:py-5">
+            <div class="card-body bg-white px-5 py-6 lg:py-5">
                 <div className='flex border-b border-b-zinc-400 pb-5'>
                     <div className='text-sm flex justify-center items-center'>
                         <span className='px-5 py-2 rounded-sm font-mono text-black bg-white font-semibold shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]'> {name} </span>
