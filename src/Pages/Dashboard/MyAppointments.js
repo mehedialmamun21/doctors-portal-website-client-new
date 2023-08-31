@@ -36,8 +36,9 @@ const MyAppointments = () => {
     }, [user])
 
     return (
-        <div className=''>
-            <h2 className='text-xl text-center text-white bg-cyan-600 py-2 mt-12 mb-5'><span className='py-1 px-7 font-mono'>Total Appointments - {appointments.length}</span></h2>
+        <div className='mt-20'>
+
+            <h2 className='text-xl text-center text-white bg-violet-500 py-2 mt-12 mb-5'><span className='py-1 px-7 font-mono'>Total Appointments - {appointments.length}</span></h2>
 
             <div class="overflow-x-auto">
                 <table class="table w-full border-4">
@@ -62,7 +63,7 @@ const MyAppointments = () => {
                                 <td className='font-semibold font-mono'>{a.treatment}</td>
                                 <td className='font-semibold font-mono'>{a.phone}</td>
                                 <td>
-                                    {(a.price && !a.paid) && <Link to={`/dashboard/payment/${a._id}`}> <button className='btn btn-sm bg-green-500 hover:bg-green-600 border-none text-white px-5 font-semibold rounded-sm'>Pay</button> </Link>}
+                                    {(a.price && !a.paid) && <Link to={`/dashboard/payment/${a._id}`}> <button className='btn btn-sm bg-green-500 hover:bg-green-600 border-none text-white px-10 font-semibold rounded-sm'>Pay</button> </Link>}
                                     {(a.price && a.paid) && <div>
                                         <p><span className='text-green-600 font-semibold text-lg font-mono'>Paid</span></p>
                                         <p ><span className='font-bold text-sm text-zinc-600 font-mono'>Trans. ID : </span><span className='text-zinc-600 text-sm font-mono'>{a.transactionId}</span> </p>

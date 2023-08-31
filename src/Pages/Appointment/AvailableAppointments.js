@@ -21,7 +21,7 @@ const AvailableAppointments = ({ date }) => {
 
     return (
         <section className=''>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 lg:gap-12 px-5 lg:px-40 pt-2'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 lg:gap-7 px-5 lg:px-40 pt-2'>
                 {
                     services?.map(service => <Service
                         key={service._id}

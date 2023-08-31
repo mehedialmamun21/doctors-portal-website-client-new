@@ -26,12 +26,14 @@ import UDoctors from "./Pages/UDoctors/UDoctors";
 import DrDetails from "./Pages/UDoctors/DrDetails";
 
 import GoToTop from '../src/component/PrimaryButton/GoToTop';
+import Order from "./Pages/Order/Order/Order";
+import MyCart from "./Pages/Dashboard/MyCart";
 
 function App() {
 
   return (
 
-    <div className="mx-auto bg-sky-100">
+    <div className="mx-auto bg-gray-100">
 
       <Navbar></Navbar>
 
@@ -44,16 +46,21 @@ function App() {
           </RequireAuth>
         } />
 
+
         <Route path="/dashboard" element={<RequireAuth><Dashboard></Dashboard></RequireAuth>}>
           <Route index element={<MyAppointments></MyAppointments>}></Route>
           <Route path="review" element={<MyReview></MyReview>}></Route>
+          <Route path="cart" element={<MyCart></MyCart>}></Route>
           <Route path="payment/:id" element={<Payment></Payment>}></Route>
           <Route path="users" element={<RequireAdmin><Users></Users></RequireAdmin>}></Route>
           <Route path="addDoctor" element={<RequireAdmin><AddDoctor></AddDoctor></RequireAdmin>}></Route>
           <Route path="manageDoctor" element={<RequireAdmin><ManageDoctors></ManageDoctors></RequireAdmin>}></Route>
         </Route>
 
+        <Route path="/order" element={<Order></Order>} />
+
         <Route path="/blog" element={<Blog></Blog>} />
+
         <Route path="/contact" element={<Contact></Contact>} />
 
         <Route path="/dashboard/doctors" element={<Doctors></Doctors>} />
@@ -61,11 +68,13 @@ function App() {
         <Route path="/udoctors" element={<UDoctors></UDoctors>} />
 
         <Route path="/doctor" element={<DoctorDetails></DoctorDetails>} />
+
         <Route path="/doctor/:doctorId" element={<DoctorDetails />}></Route>
 
         <Route path='/drDetails/:doctorId' element={<DrDetails></DrDetails>}></Route>
 
         <Route path="/login" element={<Login></Login>} />
+
         <Route path="/signup" element={<SignUp></SignUp>} />
 
       </Routes>

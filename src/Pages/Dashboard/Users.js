@@ -17,8 +17,8 @@ const Users = () => {
     }
 
     return (
-        <div>
-            <h2 className='text-xl text-center mt-12 mb-5 text-white bg-cyan-600 py-2 font-mono'><span>Total User - {users.length} </span> </h2>
+        <div className='mt-20'>
+            <h2 className='text-xl text-center mt-12 mb-5 text-white bg-violet-500 py-2 font-mono'><span>Total User - {users.length} </span> </h2>
             <div class="overflow-x-auto">
                 <table class="table w-full border-4">
                     <thead>

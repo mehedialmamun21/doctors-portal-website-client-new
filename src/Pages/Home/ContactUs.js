@@ -21,77 +21,39 @@ const ContactUs = () => {
     };
 
     return (
-        <section className='mt-20'>
+        <section className='flex flex-col items-center justify-center mb-20'>
 
-            <h4 className='text-3xl text-secondary pb-5 pl-5 lg:pl-40 lg:pb-5'>Contact With Us</h4>
+            {/* <p className='text-2xl lg:text-3xl font-mono text-slate-600 mb-7'>Stay Connected With Us</p> */}
 
-            <div className='flex flex-col md:flex-row lg:flex-row lg:px-40 px-5 pb-5 lg:pb-16'>
+            <div className='w-full lg:w-6/12 mt-8 lg:mt-0 rounded-sm text-black px-5 lg:px-5 pb-0 lg:pb-0 shadow-[0_3px_10px_rgb(0,0,0,0.2)]'>
 
-                {/* <div className='w-full md:w-5/12 space-y-5 bg-home-contact-backImg rounded-md mr-12 px-7 py-5'> */}
-                <div className='w-full md:w-5/12 space-y-5 rounded-md mr-12 lg:px-7 lg:py-5'>
-                    <div className='flex gap-4'>
-                        <span className='text-slate-700'>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-8 text-green-600"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
-                        </span>
-                        <div>
-                            <h2 className='text-2xl text-slate-700 font-semibold font-mono'>Have a Question?</h2>
-                            <p class="text-slate-700 font-mono">We are here to help</p>
-                            <p class="text-slate-700 font-mono">Email us at "ajkerkrishibd@gmail.com"</p>
-                        </div>
-                    </div>
-                    < hr />
-                    <div>
-                        <div className='flex gap-4'>
-                            <span className='text-slate-700'>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-8 text-green-600"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
-                            </span>
-                            <div>
-                                <h2 className='text-2xl text-slate-700 font-semibold font-mono'>Current Location</h2>
-                                <p class="text-slate-700 font-mono">Dinajpur,Bangladesh.</p>
+                <h4 className='text-2xl lg:text-3xl text-black font-semibold pt-7 flex items-center justify-center'> Get In Touch</h4>
 
-                            </div>
-                        </div>
-                    </div>
-                    <hr />
-                    <div>
-                        <div className='flex gap-4'>
-                            <span className='text-slate-700'>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-8 text-green-600"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
-                            </span>
-                            <div>
-                                <h2 className='text-2xl text-slate-700 font-semibold font-mono'>Contact With Us</h2>
-                                <p class="text-slate-700 font-mono">Email: ajkerkrishibd@gmail.com</p>
-                                <p class="text-slate-700 font-mono">Phone : +8801521-413730</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div className='w-full mt-8 md:mt-0 md:w-7/12 text-black'>
+                <div className='px-2 lg:px-24 py-5 lg:py-10'>
+                    {/* <h2 className='text-2xl font-semibold pb-6 text-cyan-600 font-mono'>Get In Touch</h2> */}
                     <form className='row' ref={form} onSubmit={sendEmail}>
-
-                        <div className='flex flex-col gap-4 w-full'>
-
+                        <div className='flex flex-col gap-5 w-full'>
                             <div className='flex gap-4 w-full'>
-                                <input type="text" name="user_name" placeholder='Your Name' className='form-control bg-slate-200 w-full py-4 px-3 outline-none rounded-sm font-mono' required />
+                                <input type="text" name="user_name" placeholder='Your Name' className='form-control bg-white w-full py-4 px-3 border border-zinc-400 rounded-sm shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]' required />
 
-                                <input type="email" name="user_email" placeholder='Your Email' className='form-control bg-slate-200 w-full py-4 px-3 outline-none rounded-sm font-mono' required />
+                                <input type="email" name="user_email" placeholder='Your Email' className='form-control bg-white w-full py-4 px-3 border border-zinc-400 rounded-sm shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]' required />
                             </div>
 
-                            <input name="user_subject" type="text" placeholder="Your Subject" className="form-control bg-slate-200 py-4 px-3 h-14 w-full mt-2 focus:outline-none rounded-sm font-mono"></input>
+                            <input name="user_subject" type="text" placeholder="Subject" className="form-control bg-white py-4 px-3 h-14 w-full mt-2 border border-zinc-400 rounded-sm shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]"></input>
 
                             <div>
-                                <textarea name='message' rows="4" placeholder='Type Your Message' className='form-control bg-slate-200 w-full mt-2 py-4 px-3 outline-none rounded-sm font-mono' required />
+                                <textarea name='message' rows="4" placeholder='Type Your Message' className='form-control bg-white w-full mt-2 py-4 px-3 border border-zinc-400 rounded-sm shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]' required />
                             </div>
 
-                            <input type="submit" value="Send Message" className='form-control border-none hover:scale-105 duration-300 btn bg-gradient-to-r from-secondary to-primary text-slate-700 w-2/4 lg:w-1/3 py-3 lg:px-8 mt-2 rounded-sm font-semibold' />
+                            <input type="submit" value="Send Message" className='form-control hover:scale-105 duration-300 btn text-white w-2/4 lg:w-5/12 py-3 lg:px-8 mt-2 rounded-sm font-semibold border-none' />
+
                         </div>
 
                     </form>
                 </div>
             </div>
 
-        </section>
+        </section >
     );
 };
 

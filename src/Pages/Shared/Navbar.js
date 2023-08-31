@@ -3,13 +3,15 @@ import React from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { Link } from "react-router-dom";
 import auth from "../../firebase.init";
+import { FaShoppingCart } from 'react-icons/fa';
 
-import { AiOutlineLogin, AiOutlineLogout } from 'react-icons/ai';
-
-import NavbarLogo from "../../assets/images/skyline-logo.png"
+import NavbarLogo from "../../assets/images/logo-white.png"
+import useCart from "../../hooks/useCart";
 
 const Navbar = () => {
   const [user, loading, error] = useAuthState(auth);
+
+  const [cart] = useCart();
 
   const logout = () => {
     signOut(auth);
@@ -19,25 +21,36 @@ const Navbar = () => {
   const menuItems = (
     <>
 
-      <li><Link to="/"> <span className="font-semibold text-xl flex"> <span className="font-mono">Home</span> </span> </Link></li>
+      <li><Link to="/"> <span className="font-semibold text-lg flex"> <span className="">Home</span> </span> </Link></li>
 
-      <li><Link to="/appointment"><span className="font-semibold text-xl flex"> <span className="font-mono">Appointment</span> </span></Link></li>
+      <li><Link to="/appointment"><span className="font-semibold text-lg flex"> <span className="">Appointment</span> </span></Link></li>
 
-      <li><Link to="/udoctors"><span className="font-semibold text-xl flex"> <span className="font-mono">Doctors</span> </span></Link></li>
+      <li><Link to="/udoctors"><span className="font-semibold text-lg flex"> <span className="">Doctors</span> </span></Link></li>
 
-      <li><Link to="/contact"><span className="font-semibold text-xl flex"> <span className="font-mono">Contact</span> </span></Link></li>
+      <li><Link to="/order"><span className="font-semibold text-lg flex"> <span className="">Medicine</span> </span></Link></li>
+
+      {/* <li><Link to="/contact"><span className="font-semibold text-lg flex"> <span className="">Contact</span> </span></Link></li> */}
 
       {
-        user && <li><Link to="/dashboard"><span className="font-semibold text-xl flex"> <span className="font-mono">Dashboard</span> </span></Link></li>
+        user && <li><Link to="/dashboard"><span className="font-semibold text-lg flex"> <span className="">Dashboard</span> </span></Link></li>
       }
+
+      <Link to="/dashboard/cart">
+        <button className="btn ml-5 bg-none border-none rounded-sm">
+          <div className="flex items-center">
+            <FaShoppingCart size="1.2rem" className="mr-2 text-white" />
+            <div className="badge text-white bg-pink-600 px-3 py-2.5">+{cart?.length || 0}</div>
+          </div>
+        </button>
+      </Link>
 
     </>
   );
 
   return (
 
-    // <div className="navbar px-5 py-0 lg:px-10 bg-white sticky lg:static top-0 z-30 shadow-xl bg-opacity-80 backdrop-blur border-b border-gray-300">
-    <div className="navbar px-5 py-2 lg:px-40 bg-black text-white fixed z-30 bg-opacity-60 backdrop-blur border-b border-gray-300">
+    // <div className="navbar px-5 py-2 lg:px-40 text-white bg-gradient-to-b from-primary to-secondary bg-opacity-90 z-50 fixed">
+    <div className="navbar px-5 py-2 lg:px-40 text-white bg-black bg-opacity-80 z-50 fixed">
 
       <div className="navbar-start">
         <div className="dropdown">
@@ -58,8 +71,7 @@ const Navbar = () => {
         </div>
 
         <a href="/">
-          {/* <img src="https://i.postimg.cc/J4tP5mMg/images-2-removebg-preview.png" className="w-20 lg:w-28" alt="" /> */}
-          <img src={NavbarLogo} className="w-20 lg:w-32" alt="" />
+          <img src={NavbarLogo} className="w-20 lg:w-48" alt="" />
         </a>
 
       </div>
@@ -82,8 +94,7 @@ const Navbar = () => {
           </svg>
         </label>
 
-        {/* {user ? <a href="" className="font-bold" onClick={logout} > <span className="flex items-center"><AiOutlineLogout className="text-red-600 mr-0 lg:mr-3 invisible lg:visible" size="2rem" /> <span className="text-white bg-red-600 px-2 lg:px-5 py-2 lg:py-3">Sign Out</span></span> </a> : <Link to="/login" className="font-bold"> <span className="flex items-center"> <AiOutlineLogin className="text-green-600 mr-0 lg:mr-3 invisible lg:visible" size="2rem" /> <span className="text-white bg-green-600 px-5 lg:px-8 py-2 lg:py-3">Login</span> </span> </Link>} */}
-        {user ? <a href="" className="font-bold" onClick={logout} > <span className="flex items-center"> <span className="text-white rounded-sm bg-red-500 px-2 lg:px-5 py-2 lg:py-3">Sign Out</span></span> </a> : <Link to="/login" className="font-bold"> <span className="flex items-center"> <span className="text-white rounded-sm bg-green-500 px-5 lg:px-8 py-2 lg:py-3">Login</span> </span> </Link>}
+        {user ? <a href="" className="font-bold" onClick={logout} > <span className="flex items-center"> <span className="text-white rounded-sm border border-white px-2 lg:px-5 py-2 lg:py-2">Sign Out</span></span> </a> : <Link to="/login" className="font-bold"> <span className="flex items-center"> <span className="text-white rounded-sm border border-white px-5 lg:px-6 py-2 lg:py-1">Login</span> </span> </Link>}
 
       </div>
 

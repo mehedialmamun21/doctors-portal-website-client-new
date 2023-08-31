@@ -10,16 +10,16 @@ const MakeAppointment = () => {
             // background: `url(${appointmentPic})`
         }}
             className='flex justify-center items-center py-7 px-5 lg:px-40 bg-contact-section-backImg'>
-            <div className='flex-1 hidden lg:block'>
+            <div className='flex-1 hidden lg:block bg-fixed'>
                 {/* <img className='mt-[-354px]' src={doctor} alt="" /> */}
                 <img className='h-90 flex justify-center items-center' src={doctor} alt="" />
             </div>
             <div className='flex-1 lg:px-10 py-7'>
                 <div className='pb-14'>
-                    {/* <h3 className='text-2xl text-cyan-500 pb-2 font-mono'>Appointment</h3> */}
-                    <h2 className='text-4xl text-slate-200 font-mono text-center'>Make an appointment Today</h2>
+                    {/* <h3 className='text-2xl text-cyan-500 pb-2 font-serif'>Appointment</h3> */}
+                    <h2 className='text-4xl text-slate-200 font-serif text-center'>Make an appointment Today</h2>
                 </div>
-                {/* <p className='text-slate-300 pt-6 pb-7 font-mono'>The first step towards a beautiful,
+                {/* <p className='text-slate-300 pt-6 pb-7 font-serif'>The first step towards a beautiful,
                     healthy smile is to schedule for an appointment.
                     Please contact our office by phone or complete the associate appointment request form.
                     Our practice is conveniently located Spearwood.

@@ -13,7 +13,7 @@ const DrProfilesCard = ({ doctor }) => {
     }
 
     return (
-        <div className='card lg:max-w-lg shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] rounded-sm border bg-white'>
+        <div className='card lg:max-w-lg border border-zinc-400 shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] rounded-sm bg-white'>
 
             {/* <div className=''>
                 <figure>
@@ -25,7 +25,7 @@ const DrProfilesCard = ({ doctor }) => {
 
                 <div>
                     <div>
-                        <p className='text-cyan-600 font-semibold font-mono text-lg border-b border-zinc-500 pb-1'>{doctor.name}</p>
+                        <p className='text-emerald-600 font-semibold font-mono text-lg border-b border-zinc-500 pb-1'>{doctor.name}</p>
                     </div>
                     <div>
                         <p className='text-zinc-700 font-mono text-lg pt-5'>{degree}</p>
@@ -36,7 +36,7 @@ const DrProfilesCard = ({ doctor }) => {
                 </div>
 
                 <div className='pt-3 flex pl-32 lg:pl-44 items-center'>
-                    <p className='text-cyan-600 text-lg font-bold flex items-center'><BsArrowRight /></p>
+                    <p className='text-emerald-600 text-lg font-bold flex items-center'><BsArrowRight size="1.5rem" /></p>
                     <button className='rounded-sm text-zinc-700 text-md font-mono cursor-pointer' onClick={() => navigateToDetailsPage(_id)}> <span className='text-zinc-700 hover:font-semibold'>more</span> </button>
                 </div>
 

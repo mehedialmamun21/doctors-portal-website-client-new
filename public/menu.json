@@ -1,0 +1,500 @@
+[
+    {
+        "_id": "642c155b2c4774f05c36eeaa",
+        "name": "KN95 Face Mask 5 Layers",
+        "offpercentage": "12% Off",
+        "image": "https://i.postimg.cc/jjxRjdNh/kn95.png",
+        "category": "covid",
+        "price": 22
+    },
+    {
+        "_id": "642c155b2c4774f05c36eea6",
+        "name": "Alcohol Pad",
+        "offpercentage": "20% Off",
+        "image": "https://i.postimg.cc/7YHRc5gw/alcohol-pad.png",
+        "category": "covid",
+        "price": 72
+    },
+    {
+        "_id": "642c155b2c4774f05c36eea8",
+        "name": "Washable Cotton Face Mask",
+        "offpercentage": "30% off",
+        "image": "https://i.postimg.cc/HW2sdqRH/mask.png",
+        "category": "covid",
+        "price": 70
+    },
+    {
+        "_id": "642c155b2c4774f05c36eea4",
+        "name": "Baby Face Mask",
+        "offpercentage": "12% off",
+        "image": "https://i.postimg.cc/MTQy4yYP/baby-face-mask.png",
+        "category": "covid",
+        "price": 13.2
+    },
+    {
+        "_id": "642c155b2c4774f05c36eea5",
+        "name": "Sepnil Face Mask",
+        "offpercentage": "20% off",
+        "image": "https://i.postimg.cc/zXQL1mHv/sepnil.png",
+        "category": "covid",
+        "price": 280
+    },
+    {
+        "_id": "642c155b2c4774f05c36eea7",
+        "name": "Thermometer Digital Tip(RBC)",
+        "offpercentage": "20% off",
+        "image": "https://i.postimg.cc/ryBbZjq4/thermometer.png",
+        "category": "covid",
+        "price": 200
+    },
+    {
+        "_id": "642c155b2c4774f05c36eea9",
+        "name": "Venus V90 Safety Face Mask",
+        "offpercentage": "43% off",
+        "image": "https://i.postimg.cc/Y9W9kRZF/venus.png",
+        "category": "covid",
+        "price": 199
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeac",
+        "name": "Nebulizer Mask(Child)",
+        "offpercentage": "15% off",
+        "image": "https://i.postimg.cc/XvbSp02Q/nebulizer-child.webp",
+        "category": "covid",
+        "price": 85
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeab",
+        "name": "Savlon Liquid Antiseptic",
+        "offpercentage": "5% off",
+        "image": "https://i.postimg.cc/mDy6Jfj6/savlon.webp",
+        "category": "covid",
+        "price": 242.25
+    },
+    {
+        "_id": "642c155b2c4774f05c36eetr",
+        "name": "Paxovir",
+        "offpercentage": "5% off",
+        "image": "https://i.postimg.cc/hGK13Cy2/paxovir.webp",
+        "category": "covid",
+        "price": 3040
+    },
+    {
+        "_id": "642c155b2c4774f05c36edeeeg",
+        "name": "Sepnil Hand Sanitizer Pump",
+        "offpercentage": "10% off",
+        "image": "https://i.postimg.cc/4dWGhFMq/sepnil-instant.webp",
+        "category": "covid",
+        "price": 202.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee96",
+        "name": "Pink Sanitary Napkin",
+        "offpercentage": "10% off",
+        "image": "https://i.postimg.cc/7PFfm5b6/Pink.webp",
+        "category": "wcare",
+        "price": 22.5
+    },
+    
+    {
+        "_id": "642c155b2c4774f05c36ee9e",
+        "name": "Senora Biodegradable Napkin",
+        "offpercentage": "10% off",
+        "image": "https://i.postimg.cc/zf8z4W1z/Senora.webp",
+        "category": "wcare",
+        "price": 144
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee97",
+        "name": "Senora Sanitary Napkin(Belt)",
+        "offpercentage": "10% off",
+        "image": "https://i.postimg.cc/7LFVxxmZ/Senora-Sanitary.webp",
+        "category": "wcare",
+        "price": 117
+    },
+    {
+        "_id": "642c155b2c4774f05c36eea0",
+        "name": "Novelon Lite",
+        "offpercentage": "10% off",
+        "image": "https://i.postimg.cc/qvpWTGg5/Novelon.webp",
+        "category": "wcare",
+        "price": 382.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee93",
+        "name": "Freedom Sanitary Napkin",
+        "offpercentage": "5% off",
+        "image": "https://i.postimg.cc/MZ4LnSHV/Freedom.webp",
+        "category": "wcare",
+        "price": 190
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee95",
+        "name": "Whisper Sanitary Napkin (15pcs)",
+        "offpercentage": "5% off",
+        "image": "https://i.postimg.cc/fyLhDjHs/Whisper.webp",
+        "category": "wcare",
+        "price": 327.75
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee9b",
+        "name": "Joya Regular Wings",
+        "offpercentage": "10% off",
+        "image": "https://i.postimg.cc/Xq7nX0YT/Joya.webp",
+        "category": "wcare",
+        "price": 63
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee9c",
+        "name": "Noret 28",
+        "offpercentage": "10% off",
+        "image": "https://i.postimg.cc/9XpM2LQ6/Noret.webp",
+        "category": "wcare",
+        "price": 21.17
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee9d",
+        "name": "Senora Confidence Regular Flow",
+        "offpercentage": "13% off",
+        "image": "https://i.postimg.cc/Nf3xcGMC/Senora-Confidence-Regular.webp",
+        "category": "wcare",
+        "price": 130
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee98",
+        "name": "Senora Sanitary Napkin(Panty)",
+        "offpercentage": "10% off",
+        "image": "https://i.postimg.cc/7Lg0DScf/Senora-Sanitary-Napkin-Panty.webp",
+        "category": "wcare",
+        "price": 52.8
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee9a",
+        "name": "VWash Plus Expert Hygiene",
+        "offpercentage": "12% off",
+        "image": "https://i.postimg.cc/Kj163ct3/VWash-Plus.webp",
+        "category": "wcare",
+        "price": 352
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeaf",
+        "name": "Thermometer Digital LCD",
+        "offpercentage": "20% off",
+        "image": "https://i.postimg.cc/Cx7qdw74/Thermometer-Digital-LCD.webp",
+        "category": "device",
+        "price": 96
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb0",
+        "name": "Accu Chek Blood Glucometer",
+        "offpercentage": "10% off",
+        "image": "https://i.postimg.cc/tR8tHRvZ/Accu-Chek-Active.webp",
+        "category": "device",
+        "price": 2880
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb3",
+        "name": "Accu Chek Active Strip",
+        "offpercentage": "10% off",
+        "image": "https://i.postimg.cc/HL3VW3pv/Accu-Chek-Active-Strip.webp",
+        "category": "device",
+        "price": 1260
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb5",
+        "name": "Blood Pressure Machine ALPK2",
+        "offpercentage": "15% off",
+        "image": "https://i.postimg.cc/MHgc2TWW/Blood-Pressure-Machine.webp",
+        "category": "device",
+        "price": 1275
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb6",
+        "name": "Omron Blood Pressure Monitor",
+        "offpercentage": "20% off",
+        "image": "https://i.postimg.cc/VL3t276j/Omron-Blood-Pressure.webp",
+        "category": "device",
+        "price": 3108
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb8",
+        "name": "Jumper JPD-500D Oximeter",
+        "offpercentage": "20% off",
+        "image": "https://i.postimg.cc/T2NgJ2vN/Jumper-JPD-500-D.webp",
+        "category": "device",
+        "price": 1120
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb7",
+        "name": "Blood Lancet Needles For Diabetes",
+        "offpercentage": "20% off",
+        "image": "https://i.postimg.cc/GpPvFkbv/Blood-Lancet-For-Diabetes.webp",
+        "category": "device",
+        "price": 64
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb4",
+        "name": "Microlife Revolizer",
+        "offpercentage": "4% off",
+        "image": "https://i.postimg.cc/BvVfCw4K/revolizer.webp",
+        "category": "device",
+        "price": 299
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb1",
+        "name": "Novopen Insulin Pen",
+        "offpercentage": "3% off",
+        "image": "https://i.postimg.cc/XNLQS0S9/Novopen-4.webp",
+        "category": "device",
+        "price": 679
+    },
+    {
+        "_id": "642c155b2c4774f05c36eead",
+        "name": "Uptech Go(AERO SPACER)Adult",
+        "offpercentage": "5% off",
+        "image": "https://i.postimg.cc/G3xSLyY8/Uptech.webp",
+        "category": "device",
+        "price": 370
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeae",
+        "name": "Insulin Pen Needle",
+        "offpercentage": "5% off",
+        "image": "https://i.postimg.cc/PrKc4w5s/Insulin-Pen.webp",
+        "category": "device",
+        "price": 11.54
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeag",
+        "name": "Jumper JPD-500E",
+        "offpercentage": "17% off",
+        "image": "https://i.postimg.cc/MKx2tw0R/Jumper-JPD-500-E.webp",
+        "category": "device",
+        "price": 1499
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee89",
+        "name": "Ginton",
+        "offpercentage": "10% off",
+        "image": "https://i.postimg.cc/ZnZFkWnr/Ginton.webp",
+        "category": "herbalandhomeopathy",
+        "price": 64.8
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee88",
+        "name": "Adovas",
+        "offpercentage": "10% off",
+        "image": "https://i.postimg.cc/ZnZFkWnr/Ginton.webp",
+        "category": "herbalandhomeopathy",
+        "price": 63
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee8c",
+        "name": "Probio Capsule",
+        "offpercentage": "10% off",
+        "image": "https://i.postimg.cc/P5RWft28/Adovas.webp",
+        "category": "herbalandhomeopathy",
+        "price": 135
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee8a",
+        "name": "Cinkara",
+        "offpercentage": "10% off",
+        "image": "https://i.postimg.cc/VLzBDZJ5/Cinkara.webp",
+        "category": "herbalandhomeopathy",
+        "price": 225
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee84",
+        "name": "Floriz 1000",
+        "offpercentage": "8% off",
+        "image": "https://i.postimg.cc/bJbHFK0S/Floriz.webp",
+        "category": "herbalandhomeopathy",
+        "price": 184
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee87",
+        "name": "Sperm Care",
+        "offpercentage": "5% off",
+        "image": "https://i.postimg.cc/KjPf4dRh/Sperm.webp",
+        "category": "herbalandhomeopathy",
+        "price": 1463
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee90",
+        "name": "D-Sefa 500",
+        "offpercentage": "8% off",
+        "image": "https://i.postimg.cc/prbkW2VB/D-Sefa.webp",
+        "category": "herbalandhomeopathy",
+        "price": 64.4
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee8d",
+        "name": "Acteria Capsule",
+        "offpercentage": "7% off",
+        "image": "https://i.postimg.cc/GhPgpsyT/Acteria.webp",
+        "category": "herbalandhomeopathy",
+        "price": 372
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee8e",
+        "name": "Ginoba",
+        "offpercentage": "7% off",
+        "image": "https://i.postimg.cc/7LZWdYbG/Ginoba.webp",
+        "category": "herbalandhomeopathy",
+        "price": 558
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee8b",
+        "name": "Basok(Acme)",
+        "offpercentage": "10% off",
+        "image": "https://i.postimg.cc/vTVjhqT0/Basok.webp",
+        "category": "herbalandhomeopathy",
+        "price": 58.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb9",
+        "name": "Baby Moist Tissue-170 Jar",
+        "offpercentage": "16% off",
+        "image": "https://i.postimg.cc/kGx8fqyB/Thai-Wet-Wipes-For-Baby-Moist-Tissue-170-Jar.png",
+        "category": "babyandmomcare",
+        "price": 190
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeba",
+        "name": "Neocare Baby Diaper XL",
+        "offpercentage": "10% off.",
+        "image": "https://i.postimg.cc/tgX6kK1g/Neocare-Belt-System-Baby-Diaper-XL.png",
+        "category": "babyandmomcare",
+        "price": 1107
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb6",
+        "name": "Nestle Lactogen Milk Powder",
+        "offpercentage": "2% off",
+        "image": "https://i.postimg.cc/7hWvtrYr/Nestl-Lactogen-1-Infant-Formula-Milk-Powder-BIB-0-6-Months.png",
+        "category": "babyandmomcare",
+        "price": 650
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb4",
+        "name": "Nestle Cerelac Baby Food",
+        "offpercentage": "3% off",
+        "image": "https://i.postimg.cc/MHc3TMxg/Nestl-Cerelac.png",
+        "category": "babyandmomcare",
+        "price": 410
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee81",
+        "name": "Acne Aid Soap Bar",
+        "offpercentage": "15% off",
+        "image": "https://i.postimg.cc/Pr4bcgc0/acne-aid.webp",
+        "category": "personalcare",
+        "price": 263.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee83",
+        "name": "One Time Bandage Box",
+        "offpercentage": "10% off",
+        "image": "https://i.postimg.cc/jjrw5G6X/One-Time-Bandage-Box.png",
+        "category": "personalcare",
+        "price": 90
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee80",
+        "name": "Sunmask Cream",
+        "offpercentage": "10% off",
+        "image": "https://i.postimg.cc/QthT6RHt/Sunmask-Cream.png",
+        "category": "personalcare",
+        "price": 225
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee82",
+        "name": "Moov Cream",
+        "offpercentage": "2% off",
+        "image": "https://i.postimg.cc/254S9D9Z/moov-cream.webp",
+        "category": "personalcare",
+        "price": 245
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee7c",
+        "name": "Rex",
+        "offpercentage": "10% off",
+        "image": "https://i.postimg.cc/9fPZVW9V/Rex.png",
+        "category": "supplementandvitamin",
+        "price": 81.19
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee7a",
+        "name": "Pregniforte",
+        "offpercentage": "8% off",
+        "image": "https://i.postimg.cc/bNXy01MC/ey-Jid-WNr-ZXQi-Oi-Jhcm9n-Z2-Ei-LCJr-ZXki-Oi-Jt-ZWRp-Y2lu-ZVwv-Mz-Bc-Lz-Mw-OTcz-LVBy-ZWdua-WZvcn-Rl-LW1ub-XMuc-G5n-Iiwi-ZWRpd-HMi.png",
+        "category": "supplementandvitamin",
+        "price": 1470
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee7f",
+        "name": "Nevralip 600 Retard",
+        "offpercentage": "10% off",
+        "image": "https://i.postimg.cc/JhSvw5jS/ey-Jid-WNr-ZXQi-Oi-Jhcm9n-Z2-Ei-LCJr-ZXki-Oi-Jt-ZWRp-Y2lu-ZVwv-Mjlc-Lz-I5-NTIz-LU5ldn-Jhb-Glw-LTYw-MC1-SVEQt-Nj-Awb-Wctejlyd-S5w.png",
+        "category": "supplementandvitamin",
+        "price": 810
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee7e",
+        "name": "ALA 500",
+        "offpercentage": "5% off",
+        "image": "https://i.postimg.cc/hGRTHJfp/ALA.png",
+        "category": "supplementandvitamin",
+        "price": 427.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee94",
+        "name": "Giloba 60",
+        "offpercentage": "10% off",
+        "image": "https://i.postimg.cc/T13McqmS/GOODGUT.webp",
+        "category": "dentcare",
+        "price": 36
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee8f",
+        "name": "Acteria Kids Sachet",
+        "offpercentage": "8% off",
+        "image": "https://i.postimg.cc/jjb1X4YX/Acteria-Kids-Sachet.webp",
+        "category": "dentcare",
+        "price": 38.64
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee91",
+        "name": "Safi",
+        "offpercentage": "10% off",
+        "image": "https://i.postimg.cc/PJRcQGdp/Safi.webp",
+        "category": "dentcare",
+        "price": 180
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee85",
+        "name": "Giloba 60",
+        "offpercentage": "10% off",
+        "image": "https://i.postimg.cc/fbnGPhmY/Giloba.webp",
+        "category": "dentcare",
+        "price": 54
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee86",
+        "name": "GOODGUT",
+        "offpercentage": "10% off",
+        "image": "https://i.postimg.cc/T13McqmS/GOODGUT.webp",
+        "category": "dentcare",
+        "price": 86.4
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee99",
+        "name": "GOODGUT",
+        "offpercentage": "12% off",
+        "image": "https://i.postimg.cc/fbnGPhmY/Giloba.webp",
+        "category": "dentcare",
+        "price": 264
+    }
+
+]

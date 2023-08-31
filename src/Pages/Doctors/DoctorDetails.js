@@ -21,27 +21,28 @@ const DoctorDetails = () => {
     return (
         <div>
 
-            <div className='h-screen px-40 pt-32 mb-60'>
+            <div className='h-screen px-40 pt-24 mb-40'>
 
-                <div className='flex justify-center py-5 border-l border-gray-400 border-t border-r bg-cyan-500'>
+                <div className='flex justify-center py-5 border-l border-gray-400 border-t border-r bg-primary'>
                     <div className='pr-40'>
                         <img src={prescription1} style={{ width: 140 }} alt="" />
                     </div>
 
                     <div className='text-center'>
-                        <div className='text-white text-xl font-bold font-serif'>{doctor.name}</div>
-                        <span className='flex justify-center items-center pb-2 text-lg text-white'>{doctor.degree}</span>
-                        <hr />
-                        <span className='text-white text-lg'>Dental Surgeon</span> <hr />
-                        <span className='flex justify-center items-center font-mono text-white pt-2'>BMDC Reg -<span className='text-white pl-3'> {doctor._id} </span></span>
+                        <div className='text-black text-xl font-bold font-serif'>{doctor.name}</div>
+                        <span className='flex justify-center items-center pb-2 text-lg text-black'>{doctor.degree}</span>
+                        {/* <hr />
+                        <span className='text-black text-lg'>Dental Surgeon</span>
+                        <hr /> */}
+                        <span className='flex justify-center items-center font-mono text-black'>BMDC Reg -<span className='text-black pl-3'> {doctor._id} </span></span>
                     </div>
 
                     <div className='pl-40'>
-                        <p className='font-mono'><span className='text-white'>Email: </span><span className='font-semibold text-white'>{doctor.email}</span></p>
-                        <p className='font-mono'><span className='text-white'>Time: </span><span className='font-semibold text-white'>{doctor.time}</span></p>
-                        <p className='font-mono'><span className='text-white'>Phone: </span><span className='font-semibold text-white'>{doctor.phone}</span></p>
-                        <p className='font-mono'><span className='text-white'>Room No: </span><span className='font-semibold text-white'>{doctor.room}</span></p>
-                        <p className='pb-2 font-mono'><span className='text-white'>Chamber: </span> <span className='text-white'>Dental Solutions, Dinajpur</span></p>
+                        <p className='font-mono'><span className='text-black'>Email: </span><span className='font-semibold text-black'>{doctor.email}</span></p>
+                        <p className='font-mono'><span className='text-black'>Time: </span><span className='font-semibold text-black'>{doctor.time}</span></p>
+                        <p className='font-mono'><span className='text-black'>Phone: </span><span className='font-semibold text-black'>{doctor.phone}</span></p>
+                        <p className='font-mono'><span className='text-black'>Room No: </span><span className='font-semibold text-black'>{doctor.room}</span></p>
+                        <p className='pb-2 font-mono'><span className='text-black'>Chamber: </span> <span className='font-semibold text-black'>Dental Solutions, Dinajpur</span></p>
                     </div>
                 </div>
 
@@ -87,8 +88,8 @@ const DoctorDetails = () => {
                     </div>
                 </div>
 
-                <div className='flex justify-end items-end pt-8'>
-                    <button className="btn btn-ghost bg-gradient-to-r from-secondary to-primary text-white px-2 lg:px-16 hover:scale-105 duration-300 rounded-sm font-mono text-lg">Print</button>
+                <div className='flex justify-end items-end pt-6'>
+                    <button className="btn btn-ghost bg-gradient-to-r from-sky-500 to-orange-500 text-white px-2 lg:px-16 hover:scale-105 duration-300 rounded-sm font-mono text-lg">Print</button>
                 </div>
 
             </div>
