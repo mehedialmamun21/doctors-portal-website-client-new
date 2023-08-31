@@ -48,7 +48,7 @@ const Footer = () => {
                         <p className="text-white text-center text-lg pt-5"> "The cool Brooklyn dentist who wants teeth to look as </p>
                         <p className='text-white text-center text-lg'>nice as her instagram feed"</p>
                         <p className='text-white text-lg'> - New York Magazine </p>
-                        <a href="https://www.instagram.com/" target="_blank" > <BsInstagram size="1.5rem" className='text-white mt-5' /> </a>
+                        <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" > <BsInstagram size="1.5rem" className='text-white mt-5' /> </a>
                     </center>
                 </div>
 
