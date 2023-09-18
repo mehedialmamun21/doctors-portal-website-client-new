@@ -8,11 +8,14 @@ import { MdOutlineAdminPanelSettings } from 'react-icons/md';
 import { AiOutlineUserAdd } from 'react-icons/ai';
 import { MdOutlineManageAccounts } from 'react-icons/md';
 import Footer from "../Shared/Footer";
+import useCart from '../../hooks/useCart';
 
 const Dashboard = () => {
 
     const [user] = useAuthState(auth);
     const [admin] = useAdmin(user);
+
+    const [cart] = useCart();
 
     return (
         <section className=''>
@@ -30,7 +33,14 @@ const Dashboard = () => {
 
                             {!admin && <>
                                 <li><Link to="/dashboard"><span className='px-2 py-2 font-semi rounded-sm font-mono text-white relative flex items-center text-xl'> <FaBusinessTime className='mr-2' /> Appointments </span></Link></li>
-                                <li><Link to="/dashboard/cart"><span className='px-2 py-2 font-bold rounded-sm font-mono text-white flex items-center text-xl'> <FaShoppingCart className='mr-3' /> My Cart </span></Link></li>
+
+                                <li>
+                                    <Link to="/dashboard/cart"><span className='px-2 py-2 font-bold rounded-sm font-mono text-white flex items-center text-xl'> <FaShoppingCart className='mr-3' /> My Cart </span>
+                                        <span className="badge text-white bg-pink-600 px-3 py-2.5">+{cart?.length || 0}</span>
+                                    </Link>
+
+                                </li>
+
                                 <li><Link to="/dashboard/review"><span className='px-2 py-2 font-bold rounded-sm font-mono text-white flex items-center text-xl'> <FaRegCommentDots className='mr-3' /> My Reviews </span></Link></li>
                             </>}
 
