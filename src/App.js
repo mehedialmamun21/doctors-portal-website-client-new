@@ -29,6 +29,7 @@ import GoToTop from '../src/component/PrimaryButton/GoToTop';
 import Order from "./Pages/Order/Order/Order";
 import MyCart from "./Pages/Dashboard/MyCart";
 import AddItem from "./Pages/Dashboard/AddItem";
+import ManageItems from "./Pages/Dashboard/ManageItems";
 
 function App() {
 
@@ -57,6 +58,7 @@ function App() {
           <Route path="addDoctor" element={<RequireAdmin><AddDoctor></AddDoctor></RequireAdmin>}></Route>
           <Route path="addItem" element={<RequireAdmin><AddItem></AddItem></RequireAdmin>}></Route>
           <Route path="manageDoctor" element={<RequireAdmin><ManageDoctors></ManageDoctors></RequireAdmin>}></Route>
+          <Route path="manageItem" element={<RequireAdmin> <ManageItems></ManageItems> </RequireAdmin>}></Route>
         </Route>
 
         <Route path="/order" element={<Order></Order>} />

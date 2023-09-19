@@ -26,7 +26,7 @@ const ManageDoctors = () => {
 
                     <thead>
                         <tr>
-                            <th>Index</th>
+                            <th>#</th>
                             {/* <th>Doctor Image</th> */}
                             <th>Name</th>
                             <th>Speciality</th>

@@ -44,7 +44,7 @@ const MyAppointments = () => {
                 <table class="table w-full border-4">
                     <thead>
                         <tr>
-                            <th>Index</th>
+                            <th>#</th>
                             <th>Name</th>
                             <th>Date</th>
                             <th>Time</th>

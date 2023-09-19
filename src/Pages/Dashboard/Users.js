@@ -23,7 +23,7 @@ const Users = () => {
                 <table class="table w-full border-4">
                     <thead>
                         <tr>
-                            <th>Index</th>
+                            <th>#</th>
                             <th>User Id</th>
                             <th>User Email</th>
                             <th>Make Admin</th>
