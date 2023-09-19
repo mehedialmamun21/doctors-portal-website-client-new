@@ -46,31 +46,14 @@ const MyCart = () => {
     return (
         <div className='mt-20'>
             <h2 className='text-xl text-center text-white bg-violet-500 py-2 mb-5'><span className='py-1 px-7 font-mono'>Your Cart </span></h2>
-            {/* <div className='flex justify-between bg-orange-300 py-10 px-20'>
-                <div>
-                    <div className='border border-zinc-500 bg-amber-50 px-7 py-4 ml-5 rounded-sm text-md font-mono'>
-                        <h2 className='text-zinc-800 mb-1'> <span className=''>Name:</span> <span className='font-semibold'>{user?.displayName || ''}</span> </h2>
-                        <h2 className='text-zinc-800'>Email: <span className='font-semibold'>{user?.email || ''}</span> </h2>
-                    </div>
-                    <div className='mt-10'>
-
-                    </div>
-                </div>
-
-                <div className='bg-amber-50 px-16 py-5 border border-zinc-500 font-semibold'>
-                    <h2 className='text-xl text-zinc-800 mb-6 font-mono'><span className=''>Quantity - <span className='border border-zinc-400 px-6 py-1'>{cart?.length || 0}</span> </span></h2>
-                    <h2 className='text-xl text-zinc-800 mb-3 font-mono border border-b-black border-t-gray-100 border-l-gray-100 border-r-gray-100 pb-4 rounded-sm'><span className=''>Total Price = {total} ৳ </span></h2>
-                    <button className="btn btn-success px-5 rounded-md ml-40 text-white btn-sm text-md uppercase">pay</button>
-                </div>
-            </div> */}
 
             <div className='flex gap-5 mb-20'>
 
                 <div className='px-14 py-2'>
 
-                    <div className='bg-gray-200 px-14 py-7 border border-zinc-500'>
+                    <div className='bg-gray-200 px-14 py-7 border border-zinc-400'>
                         <h2 className='text-zinc-800 pb-7'>Hello, <span className=''>{user?.email || ''}</span> </h2>
-                        <h2 className='text-xl text-zinc-800 mb-6 font-mono font-semibold uppercase'><span className=''>Total Items - <span className=''>{cart?.length || 0}</span> </span></h2>
+                        <h2 className='text-xl text-zinc-800 mb-6 font-mono font-semibold uppercase'><span className=''>Total Items = <span className=''>{cart?.length || 0}</span> </span></h2>
                         <h2 className='text-xl font-semibold text-zinc-800 font-mono border-t-gray-100 border-l-gray-100 border-r-gray-100 rounded-sm uppercase'><span className=''>Total Price = <span className=' bg-white px-3 py-2 border border-zinc-400'> {total} ৳ </span></span></h2>
                     </div>
 
@@ -80,7 +63,7 @@ const MyCart = () => {
 
                     <center>
                         <div className='mt-5'>
-                            <h2 className='uppercase font-semibold text-lg border border-b-black pb-2 mx-16'>Make Payment</h2>
+                            <h2 className='uppercase font-semibold text-lg border border-b-zinc-500 pb-2 mx-16'>Make Payment Here</h2>
                             <button className="btn btn-success flex justify-end px-7 rounded-sm mt-5 text-white btn-sm text-md uppercase">Pay</button>
                         </div>
                     </center>
@@ -96,7 +79,7 @@ const MyCart = () => {
                             {/* head */}
                             <thead>
                                 <tr>
-                                    <th>#</th>
+                                    <th>Index</th>
                                     <th>Medicine</th>
                                     <th>Name</th>
                                     <th>Price</th>

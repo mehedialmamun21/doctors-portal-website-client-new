@@ -7,6 +7,7 @@ import { FaShoppingCart, FaBusinessTime, FaRegCommentDots } from 'react-icons/fa
 import { MdOutlineAdminPanelSettings } from 'react-icons/md';
 import { AiOutlineUserAdd } from 'react-icons/ai';
 import { MdOutlineManageAccounts } from 'react-icons/md';
+import { CgAddR } from 'react-icons/cg';
 import Footer from "../Shared/Footer";
 import useCart from '../../hooks/useCart';
 
@@ -46,8 +47,9 @@ const Dashboard = () => {
 
                             {admin && <>
                                 <li><Link to="/dashboard/users"> <span className='px-2 py-3 font-bold rounded-sm font-mono text-white text-xl flex items-center'> <MdOutlineAdminPanelSettings className='mr-3' /> Make Admin </span></Link></li>
-                                <li><Link to="/dashboard/addDoctor"> <span className='px-2 py-3 font-bold rounded-sm font-mono text-white text-xl flex items-center'> <AiOutlineUserAdd className='mr-3' /> Add a Doctor </span> </Link></li>
-                                <li><Link to="/dashboard/manageDoctor"><span className='px-2 py-3 font-bold rounded-sm font-mono text-white text-xl flex items-center'> <MdOutlineManageAccounts className='mr-3' /> Manage Doctors </span></Link></li>
+                                <li><Link to="/dashboard/addDoctor"> <span className='px-2 py-3 font-bold rounded-sm font-mono text-white text-xl flex items-center'> <AiOutlineUserAdd className='mr-3' /> Add Doctor </span> </Link></li>
+                                <li><Link to="/dashboard/manageDoctor"><span className='px-2 py-3 font-bold rounded-sm font-mono text-white text-xl flex items-center'> <MdOutlineManageAccounts className='mr-3' /> Manage Doctor </span></Link></li>
+                                <li><Link to="/dashboard/addItem"><span className='px-2 py-3 font-bold rounded-sm font-mono text-white text-xl flex items-center'> <CgAddR className='mr-3' /> Add Item </span></Link></li>
                                 {/* <li><Link to="/dashboard/doctors"><span className='px-2 py-3 font-bold rounded-sm font-mono text-white text-xl'>Doctor's Profile</span></Link></li> */}
                             </>}
 

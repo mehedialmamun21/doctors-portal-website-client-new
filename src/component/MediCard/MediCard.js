@@ -65,7 +65,7 @@ const MediCard = ({ item }) => {
                 <p className='bg-slate-900 text-white px-7 py-1 mr-5 mt-4 absolute right-0'> <span className='text-2xl'>৳</span> {price}</p>
                 <div className="card-body">
                     <h2 className="card-title mx-auto mt-7 text-lg">{name}</h2>
-                    <center><p className='text-orange-600 font-semibold'>{offpercentage}</p></center>
+                    <center><p className='text-orange-600 font-semibold'>{offpercentage}% off</p></center>
                     <div className="card-actions justify-end">
                         <button onClick={() => handleAddToCart(item)} className="btn btn-black text-white bg-orange-500 hover:bg-orange-400 border-none rounded-sm px-10 mx-auto text-md"><FaShoppingCart size="1.2rem" className="mr-2 text-white" />Add to Cart</button>
                     </div>
