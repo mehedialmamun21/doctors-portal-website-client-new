@@ -58,7 +58,7 @@ const Login = () => {
 
   const handleAddToCart = () => {
     Swal.fire(
-      'User Login Successful',
+      'Login Successful',
     )
   }
 
