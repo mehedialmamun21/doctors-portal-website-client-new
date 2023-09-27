@@ -51,8 +51,8 @@ const MyCart = () => {
 
                 <div className='px-14 py-2'>
 
-                    <div className='bg-gray-200 px-14 py-7 border border-zinc-400'>
-                        <h2 className='text-zinc-800 pb-7'>Hello, <span className=''>{user?.email || ''}</span> </h2>
+                    <div className='bg-gray-100 px-3 py-5 border border-zinc-400'>
+                        <h2 className='text-zinc-800 pb-7'>Hello, <span className='text-violet-700'>{user?.email || ''}</span> </h2>
                         <h2 className='text-xl text-zinc-800 mb-6 font-mono font-semibold uppercase'><span className=''>Total Items = <span className=''>{cart?.length || 0}</span> </span></h2>
                         <h2 className='text-xl font-semibold text-zinc-800 font-mono border-t-gray-100 border-l-gray-100 border-r-gray-100 rounded-sm uppercase'><span className=''>Total Price = <span className=' bg-white px-3 py-2 border border-zinc-400'> {total} ৳ </span></span></h2>
                     </div>
