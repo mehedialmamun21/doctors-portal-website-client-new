@@ -202,9 +202,6 @@ const AddDoctor = () => {
                         </div>
 
 
-
-
-
                         <div>
 
                             <div className="form-control w-full max-w-xs">
