@@ -78,7 +78,11 @@ const AddDoctor = () => {
     return (
         <section className='mt-20'>
 
-            <h2 className='text-xl text-center mt-12 mb-5 text-white bg-violet-500 py-2 font-mono'><span> Add Doctor </span> </h2>
+            {/* <h2 className='text-xl text-center mt-12 mb-5 text-white bg-violet-500 py-2 font-mono'><span> Add Doctor </span> </h2> */}
+
+            <div>
+                <h2 className='mt-24 mb-8 font-semibold border-2 border-y-zinc-400 border-x-gray-100 py-3 mx-80 text-center uppercase text-2xl'>Add Doctor</h2>
+            </div>
 
             <div className='flex justify-center'>
 

@@ -20,7 +20,12 @@ const ManageDoctors = () => {
 
     return (
         <section className='mt-20'>
-            <h2 className="text-xl text-center mt-12 mb-5 text-white bg-violet-500 py-2 font-mono"><span>Total Doctor - {doctors.length}</span></h2>
+            {/* <h2 className="text-xl text-center mt-12 mb-5 text-white bg-violet-500 py-2 font-mono"><span>Total Doctor - {doctors.length}</span></h2> */}
+
+            <div>
+                <h2 className='mt-24 mb-8 font-semibold border-2 border-y-zinc-400 border-x-gray-100 py-3 mx-80 text-center uppercase text-2xl'>Total Doctor - {doctors.length}</h2>
+            </div>
+
             <div class="overflow-x-auto">
                 <table class="table w-full border-4">
 

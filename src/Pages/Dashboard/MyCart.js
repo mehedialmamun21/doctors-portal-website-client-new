@@ -33,7 +33,7 @@ const MyCart = () => {
                             refetch();
                             Swal.fire(
                                 'Deleted!',
-                                'Your file has been deleted.',
+                                'The Item has been Deleted.',
                                 'success'
                             )
                         }
@@ -45,34 +45,37 @@ const MyCart = () => {
 
     return (
         <div className='mt-20'>
-            <h2 className='text-xl text-center text-white bg-violet-500 py-2 mb-5'><span className='py-1 px-7 font-mono'>Your Cart </span></h2>
 
-            <div className='flex gap-5 mb-20'>
+            <div>
+                <h2 className='mt-24 mb-8 font-semibold border-2 border-y-zinc-400 border-x-gray-100 py-3 mx-80 text-center uppercase text-2xl'>Your Cart </h2>
+            </div>
 
-                <div className='px-14 py-2'>
+            <div className='grid grid-cols-2 mb-20'>
 
-                    <div className='bg-gray-100 px-3 py-5 border border-zinc-400'>
-                        <h2 className='text-zinc-800 pb-7'>Hello, <span className='text-violet-700'>{user?.email || ''}</span> </h2>
+                <div className='pl-20 py-2'>
+
+                    <div className=''>
+                        <h2 className='text-zinc-800 pb-7'>Hello, <span className='text-green-500 font-semibold'>{user?.email || ''}</span> </h2>
                         <h2 className='text-xl text-zinc-800 mb-6 font-mono font-semibold uppercase'><span className=''>Total Items = <span className=''>{cart?.length || 0}</span> </span></h2>
                         <h2 className='text-xl font-semibold text-zinc-800 font-mono border-t-gray-100 border-l-gray-100 border-r-gray-100 rounded-sm uppercase'><span className=''>Total Price = <span className=' bg-white px-3 py-2 border border-zinc-400'> {total} ৳ </span></span></h2>
                     </div>
 
-                    <center>
+                    {/* <center>
                         <HiArrowNarrowDown size="1.5rem" className='mt-5' />
-                    </center>
+                    </center> */}
 
-                    <center>
-                        <div className='mt-5'>
-                            <h2 className='uppercase font-semibold text-lg border border-b-zinc-500 pb-2 mx-16'>Make Payment Here</h2>
-                            <button className="btn btn-success border border-zinc-600 hover:border-zinc-700 flex justify-end px-7 rounded-sm mt-5 text-white btn-sm text-md uppercase">Pay</button>
-                        </div>
-                    </center>
+
+                    <div className='mt-5'>
+                        <h2 className='uppercase font-semibold text-lg border border-b-zinc-500 border-t-gray-100 border-x-gray-100 pb-3 mr-28'></h2>
+                        <button className="btn btn-success flex justify-end px-10 rounded-sm mt-6 text-white btn-sm text-md uppercase">Pay</button>
+                    </div>
+
 
                 </div>
 
 
 
-                <div>
+                <div className='mt-4'>
 
                     <div className="overflow-x-auto">
                         <table className="table w-full border-4">
@@ -117,6 +120,9 @@ const MyCart = () => {
                         </table>
                     </div>
                 </div>
+
+
+
             </div>
 
         </div>

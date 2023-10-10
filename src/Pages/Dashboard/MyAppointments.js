@@ -38,14 +38,20 @@ const MyAppointments = () => {
     return (
         <div className='mt-20'>
 
-            <h2 className='text-xl text-center text-white bg-violet-500 py-2 mt-12 mb-5'><span className='py-1 px-7 font-mono'>Total Appointments - {appointments.length}</span></h2>
+            <div>
+                <h2 className='mt-24 mb-8 font-semibold border-2 border-y-zinc-400 border-x-gray-100 py-3 mx-80 text-center uppercase text-2xl'>Total Appointments - {appointments.length}</h2>
+            </div>
 
-            <div class="overflow-x-auto">
+            <div className='flex justify-center'>
+                <p className='bg-gray-200 px-10 py-2 rounded-full'>Hi, <span className='text-green-500 font-semibold'>{user?.email}</span> </p>
+            </div>
+
+            <div class="overflow-x-auto mt-8">
                 <table class="table w-full border-4">
                     <thead>
                         <tr>
                             <th>#</th>
-                            <th>Name</th>
+                            {/* <th>Name</th> */}
                             <th>Date</th>
                             <th>Time</th>
                             <th>Treatment</th>
@@ -57,7 +63,7 @@ const MyAppointments = () => {
                         {
                             appointments.map((a, index) => <tr key={a._id}>
                                 <th>{index + 1}</th>
-                                <td className='font-semibold font-mono'>{a.patientName}</td>
+                                {/* <td className='font-semibold font-mono'>{a.patientName}</td> */}
                                 <td className='font-semibold font-mono'>{a.date}</td>
                                 <td className='font-semibold font-mono'>{a.slot}</td>
                                 <td className='font-semibold font-mono'>{a.treatment}</td>

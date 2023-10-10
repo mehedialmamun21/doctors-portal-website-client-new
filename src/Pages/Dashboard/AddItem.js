@@ -62,10 +62,10 @@ const AddItem = () => {
         <section className='mb-10'>
 
             <div>
-                <h2 className='mt-32 font-semibold border-2 border-y-zinc-400 border-x-gray-100 py-3 mx-80 text-center uppercase text-2xl'>Add an Item</h2>
+                <h2 className='mt-24 mb-8 font-semibold border-2 border-y-zinc-400 border-x-gray-100 py-3 mx-80 text-center uppercase text-2xl'>Add an Item</h2>
             </div>
 
-            <form className='mt-14 w-full px-40' onSubmit={handleSubmit(onSubmit)}>
+            <form className='w-full px-40' onSubmit={handleSubmit(onSubmit)}>
 
                 <div className="form-control w-full">
                     <label className="label">

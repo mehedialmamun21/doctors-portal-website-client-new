@@ -18,8 +18,12 @@ const Users = () => {
 
     return (
         <div className='mt-20'>
-            <h2 className='text-xl text-center mt-12 mb-5 text-white bg-violet-500 py-2 font-mono'><span>Total User - {users.length} </span> </h2>
-            <div class="overflow-x-auto">
+
+            <div>
+                <h2 className='mt-24 mb-8 font-semibold border-2 border-y-zinc-400 border-x-gray-100 py-3 mx-80 text-center uppercase text-2xl'>Total User - {users.length}</h2>
+            </div>
+
+            <div class="overflow-x-auto mb-5">
                 <table class="table w-full border-4">
                     <thead>
                         <tr>

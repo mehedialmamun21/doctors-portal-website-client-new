@@ -56,11 +56,11 @@ const Login = () => {
     signInWithEmailAndPassword(data.email, data.password);
   }
 
-  const handleAddToCart = () => {
-    Swal.fire(
-      'Login Successful',
-    )
-  }
+  // const handleAddToCart = () => {
+  //   Swal.fire(
+  //     'Login Successful',
+  //   )
+  // }
 
   return (
 
@@ -146,7 +146,8 @@ const Login = () => {
                   <h5 className="pb-2 font-semibold font-mono text-slate-600">Forgot Password ?</h5>
                 </button>
 
-                <button type="submit" onClick={() => handleAddToCart()} className="py-3 rounded-sm w-full max-w-xs font-semibold bg-orange-500 shadow-lg text-slate-600 mt-2 hover:scale-105 duration-300">
+                {/* <button type="submit" onClick={() => handleAddToCart()} className="py-3 rounded-sm w-full max-w-xs font-semibold bg-orange-500 shadow-lg text-slate-600 mt-2 hover:scale-105 duration-300"> */}
+                <button type="submit" className="py-3 rounded-sm w-full max-w-xs font-semibold bg-orange-500 shadow-lg text-slate-600 mt-2 hover:scale-105 duration-300">
                   <p className='flex justify-center items-center text-white'>
                     <FaSignInAlt size="1rem" />
                     <span className='pl-3 flex items-center text-md'>LOGIN</span>
