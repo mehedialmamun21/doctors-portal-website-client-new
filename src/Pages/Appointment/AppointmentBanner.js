@@ -3,7 +3,6 @@ import { DayPicker } from 'react-day-picker';
 import 'react-day-picker/dist/style.css';
 import { BiDownArrow } from 'react-icons/bi';
 import { IoArrowRedoOutline } from 'react-icons/io5';
-// import { BiLeftArrow, BiRightArrow } from 'react-icons/bi';
 
 const AppointmentBanner = ({ date, setDate }) => {
     return (
@@ -39,8 +38,7 @@ const AppointmentBanner = ({ date, setDate }) => {
 
             </div >
 
-            {/* <p className='text-2xl my-5 font-semibold text-black font-mono flex items-center justify-center'> <BiLeftArrow /> <span className='px-5'>Select a Service from here</span> <BiRightArrow /> </p> */}
-            <p className='text-2xl my-5 font-semibold text-black font-mono flex items-center justify-center'>  <span className=''>Select A Service From Here</span>  </p>
+            <p className='text-2xl my-5 font-semibold text-black font-mono flex items-center justify-center'>  <span className=''>Select A Service From Here,</span>  </p>
 
         </section>
     );

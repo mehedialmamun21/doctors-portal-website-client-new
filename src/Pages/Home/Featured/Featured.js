@@ -23,7 +23,7 @@ const Featured = () => {
                             In addition to high-end dental equipment, all services are provided in a comfortable,
                             luxury environment.</p>
 
-                        <Link to="/appointment"><button className='text-white px-12 py-3 rounded-sm hover:scale-105 duration-300 font-serif bg-gradient-to-r from-orange-500 to-sky-500 uppercase'>Get Started</button></Link>
+                        <Link to="/appointment"><button className='text-white px-12 py-3 rounded-sm hover:scale-105 duration-300 font-serif bg-gradient-to-r from-sky-500 to-orange-500 uppercase'>Get Started</button></Link>
 
                     </div>
                 </div>

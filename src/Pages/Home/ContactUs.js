@@ -25,12 +25,14 @@ const ContactUs = () => {
 
             {/* <p className='text-2xl lg:text-3xl font-mono text-slate-600 mb-7'>Stay Connected With Us</p> */}
 
-            <div className='w-full lg:w-6/12 mt-8 lg:mt-0 rounded-sm text-black px-5 lg:px-5 pb-0 lg:pb-0 shadow-[0_3px_10px_rgb(0,0,0,0.2)]'>
+            <div className='w-full lg:w-6/12 mt-8 lg:mt-0 rounded-sm text-black px-5 lg:px-5 pb-0 lg:pb-0'>
 
-                <h4 className='text-2xl lg:text-3xl text-black font-semibold pt-7 flex items-center justify-center'> Get In Touch</h4>
+                <h4 className='text-2xl lg:text-3xl text-black font-semibold pb-7 flex items-center justify-center'> Get In Touch</h4>
 
-                <div className='px-2 lg:px-24 py-5 lg:py-10'>
+                <div className='px-2 lg:px-24 py-5 lg:py-10 shadow-[0_3px_10px_rgb(0,0,0,0.2)]'>
+
                     {/* <h2 className='text-2xl font-semibold pb-6 text-cyan-600 font-mono'>Get In Touch</h2> */}
+
                     <form className='row' ref={form} onSubmit={sendEmail}>
                         <div className='flex flex-col gap-5 w-full'>
                             <div className='flex gap-4 w-full'>
@@ -45,7 +47,10 @@ const ContactUs = () => {
                                 <textarea name='message' rows="4" placeholder='Type Your Message' className='form-control bg-white w-full mt-2 py-4 px-3 border border-zinc-400 rounded-sm shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]' required />
                             </div>
 
-                            <input type="submit" value="Send Message" className='form-control hover:scale-105 duration-300 btn text-white w-2/4 lg:w-5/12 py-3 lg:px-8 mt-2 rounded-sm font-semibold border-none' />
+                            <div className='flex justify-end'>
+                                {/* <input type="submit" value="Send Message" className='form-control hover:scale-105 duration-300 btn text-white w-2/4 lg:w-5/12 lg:px-8 mt-2 rounded-sm font-semibold border-none' /> */}
+                                <input type="submit" value="Send Message" className='form-control hover:scale-105 duration-300 btn text-white bg-gradient-to-r from-sky-500 to-orange-500 w-2/4 lg:w-5/12 lg:px-8 mt-2 rounded-sm font-semibold border-none' />
+                            </div>
 
                         </div>
 

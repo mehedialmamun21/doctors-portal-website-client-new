@@ -56,7 +56,7 @@ const MyCart = () => {
                 <div className='pl-20 py-2'>
 
                     <div className=''>
-                        <h2 className='text-zinc-800 pb-7'>Hello, <span className='text-green-500 font-semibold'>{user?.email || ''}</span> </h2>
+                        <h2 className='pb-7 font-mono'>Hi, <span className='text-purple-700'>{user?.email || ''}</span> </h2>
                         <h2 className='text-xl text-zinc-800 mb-6 font-mono font-semibold uppercase'><span className=''>Total Items = <span className=''>{cart?.length || 0}</span> </span></h2>
                         <h2 className='text-xl font-semibold text-zinc-800 font-mono border-t-gray-100 border-l-gray-100 border-r-gray-100 rounded-sm uppercase'><span className=''>Total Price = <span className=' bg-white px-3 py-2 border border-zinc-400'> {total} ৳ </span></span></h2>
                     </div>
@@ -71,7 +71,9 @@ const MyCart = () => {
                         <h2 className='uppercase font-semibold text-lg border border-b-zinc-500 border-t-gray-100 border-x-gray-100 pb-3 mr-28'></h2>
 
                         <Link to="/dashboard/pay">
-                            <button className="btn btn-success flex justify-end px-10 rounded-sm mt-6 text-white btn-sm text-md uppercase">Pay</button>
+
+                            <button className='btn btn-sm bg-green-500 hover:bg-green-600 border-none mt-6 text-white px-10 font-semibold rounded-sm'>Pay</button>
+
                         </Link>
 
                     </div>

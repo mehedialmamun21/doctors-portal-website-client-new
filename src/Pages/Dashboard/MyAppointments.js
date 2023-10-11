@@ -39,14 +39,14 @@ const MyAppointments = () => {
         <div className='mt-20'>
 
             <div>
-                <h2 className='mt-24 mb-8 font-semibold border-2 border-y-zinc-400 border-x-gray-100 py-3 mx-80 text-center uppercase text-2xl'>Total Appointments - {appointments.length}</h2>
+                <h2 className='mt-24 mb-5 font-semibold border-2 border-y-zinc-400 border-x-gray-100 py-3 mx-80 text-center uppercase text-2xl'>Total Appointments - {appointments.length}</h2>
             </div>
 
             <div className='flex justify-center'>
-                <p className='bg-gray-200 px-10 py-2 rounded-full'>Hi, <span className='text-green-500 font-semibold'>{user?.email}</span> </p>
+                <p className='py-1 font-mono'>Hi, <span className='text-purple-700'>{user?.email}</span> </p>
             </div>
 
-            <div class="overflow-x-auto mt-8">
+            <div class="overflow-x-auto my-5">
                 <table class="table w-full border-4">
                     <thead>
                         <tr>

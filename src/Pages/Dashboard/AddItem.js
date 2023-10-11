@@ -171,7 +171,7 @@ const AddItem = () => {
                 </div>
 
                 <div className='flex justify-end'>
-                    <input className='btn btn-md mt-2 px-10 rounded-sm text-white' type="submit" value="Add Item" />
+                    <input className='btn btn-md mt-2 px-16 rounded-sm border-none bg-gradient-to-r from-sky-500 to-orange-500 text-white' type="submit" value="Add Item" />
                 </div>
 
             </form>

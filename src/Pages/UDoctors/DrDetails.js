@@ -47,7 +47,7 @@ const DrDetails = () => {
                     <div className='pb-5 mt-10 px-10 border border-zinc-400 shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] bg-white'>
                         <div className='pt-5 pb-5'>
                             <p className='font-mono text-lg text-slate-700'>{doctor.degree}</p>
-                            <p className='text-green-500 text-xl font-bold font-mono'> {doctor.name} </p>
+                            <p className='text-purple-700 text-lg font-bold font-mono'> {doctor.name} </p>
                         </div>
 
                         <div className=''>
