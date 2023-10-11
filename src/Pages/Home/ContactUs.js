@@ -36,19 +36,18 @@ const ContactUs = () => {
                     <form className='row' ref={form} onSubmit={sendEmail}>
                         <div className='flex flex-col gap-5 w-full'>
                             <div className='flex gap-4 w-full'>
-                                <input type="text" name="user_name" placeholder='Your Name' className='form-control bg-white w-full py-4 px-3 border border-zinc-400 rounded-sm shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]' required />
+                                <input type="text" name="user_name" placeholder='Your Name' className='form-control bg-white w-full py-4 px-3 border border-zinc-500 rounded-sm shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]' required />
 
-                                <input type="email" name="user_email" placeholder='Your Email' className='form-control bg-white w-full py-4 px-3 border border-zinc-400 rounded-sm shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]' required />
+                                <input type="email" name="user_email" placeholder='Your Email' className='form-control bg-white w-full py-4 px-3 border border-zinc-500 rounded-sm shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]' required />
                             </div>
 
-                            <input name="user_subject" type="text" placeholder="Subject" className="form-control bg-white py-4 px-3 h-14 w-full mt-2 border border-zinc-400 rounded-sm shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]"></input>
+                            <input name="user_subject" type="text" placeholder="Subject" className="form-control bg-white py-4 px-3 h-14 w-full mt-2 border border-zinc-500 rounded-sm shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]"></input>
 
                             <div>
-                                <textarea name='message' rows="4" placeholder='Type Your Message' className='form-control bg-white w-full mt-2 py-4 px-3 border border-zinc-400 rounded-sm shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]' required />
+                                <textarea name='message' rows="4" placeholder='Type Your Message' className='form-control bg-white w-full mt-2 py-4 px-3 border border-zinc-500 rounded-sm shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]' required />
                             </div>
 
                             <div className='flex justify-end'>
-                                {/* <input type="submit" value="Send Message" className='form-control hover:scale-105 duration-300 btn text-white w-2/4 lg:w-5/12 lg:px-8 mt-2 rounded-sm font-semibold border-none' /> */}
                                 <input type="submit" value="Send Message" className='form-control hover:scale-105 duration-300 btn text-white bg-gradient-to-r from-sky-500 to-orange-500 w-2/4 lg:w-5/12 lg:px-8 mt-2 rounded-sm font-semibold border-none' />
                             </div>
 

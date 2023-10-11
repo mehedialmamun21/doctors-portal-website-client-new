@@ -38,17 +38,17 @@ const Testimonials = () => {
                         key={review._id}
                     >
 
-                        <div className='px-24 py-16 flex flex-col items-center border border-y-orange-500 bg-white rounded-sm'>
+                        <div className='px-20 py-10 flex flex-col items-center border-2 border-y-orange-400 border-x-white bg-white rounded-sm'>
                             <Rating
                                 style={{ maxWidth: 180 }}
                                 value={review.rating}
                                 readOnly
                             />
                             <FaQuoteLeft size="2.2rem" className='mt-8 text-blue-500' />
-                            <p className='py-8'>{review.description}</p>
+                            <p className='py-8 font-serif'>{review.description}</p>
                             <div className='flex items-center justify-center'>
                                 <IoArrowRedoOutline size="1.5rem" />
-                                <h3 className='font-semibold text-lg pl-4'>{review.name}</h3>
+                                <h3 className='font-semibold text-lg pl-4 font-mono'>{review.name}</h3>
                             </div>
                         </div>
 
