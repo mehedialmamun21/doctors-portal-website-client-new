@@ -6,6 +6,7 @@ import auth from '../../firebase.init';
 import { FaTrashAlt } from 'react-icons/fa';
 import { HiArrowNarrowDown } from 'react-icons/hi';
 import Swal from 'sweetalert2';
+import { Link } from 'react-router-dom';
 
 const MyCart = () => {
     const [cart, refetch] = useCart();
@@ -66,8 +67,13 @@ const MyCart = () => {
 
 
                     <div className='mt-5'>
+
                         <h2 className='uppercase font-semibold text-lg border border-b-zinc-500 border-t-gray-100 border-x-gray-100 pb-3 mr-28'></h2>
-                        <button className="btn btn-success flex justify-end px-10 rounded-sm mt-6 text-white btn-sm text-md uppercase">Pay</button>
+
+                        <Link to="/dashboard/pay">
+                            <button className="btn btn-success flex justify-end px-10 rounded-sm mt-6 text-white btn-sm text-md uppercase">Pay</button>
+                        </Link>
+
                     </div>
 
 

@@ -27,33 +27,42 @@ const Payment = () => {
     }
 
     return (
-        <div className='px-5 mt-24 lg:pb-10 lg:pl-28 lg:pr-24'>
+        <div className=''>
 
-            <p className='text-2xl font-semibold'>PAYMENT</p>
+            {/* <p className='text-2xl font-semibold'>PAYMENT</p> */}
 
-            <div className='w-50 max-w-xl pt-10'>
+            <div>
+                <h2 className='mt-24 font-semibold border-2 border-y-zinc-400 border-x-gray-100 py-3 mx-80 text-center uppercase text-2xl'>Make Payment</h2>
+            </div>
 
-                <div class="card bg-white shadow-[0_3px_10px_rgb(0,0,0,0.2)] mb-5 rounded-sm">
-                    <div class="card-body">
-                        <p className='font-mono'>Hello, <span className="text-black">{appointment.patientName}</span></p>
-                        {/* <p class="card-title"> <span className='text-lg'>Pay for :</span> <span className='text-secondary'>{appointment.treatment}</span> </p> */}
-                        <p> <span className='font-mono'>Pay for:</span> <span className='text-black text-lg font-semibold'>{appointment.treatment}</span> </p>
-                        <p> <span className='font-mono'>Appointment:</span> <span className='text-black'>{appointment.date}</span> <br /> <span className='text-black pl-28'>{appointment.slot}</span> </p>
-                        <br />
-                        <p> <span className='font-mono'>Please pay:</span> <span className='font-semibold border rounded-sm border-slate-600 px-3 py-1'> <span className='text-black'>{appointment.price} Tk</span> </span></p>
+
+            <div>
+                {/* <div className='w-50 max-w-xl pt-10 px-5 lg:pb-10 lg:pl-28 lg:pr-24'> */}
+                <div className='w-50 max-w-xl pt-10 px-5 lg:ml-48'>
+
+                    <div class="card bg-white shadow-[0_3px_10px_rgb(0,0,0,0.2)] mb-5 rounded-sm">
+                        <div class="card-body">
+                            <p className='font-mono'>Hello, <span className="text-black">{appointment.patientName}</span></p>
+                            {/* <p class="card-title"> <span className='text-lg'>Pay for :</span> <span className='text-secondary'>{appointment.treatment}</span> </p> */}
+                            <p> <span className='font-mono'>Pay for:</span> <span className='text-black text-lg font-semibold'>{appointment.treatment}</span> </p>
+                            <p> <span className='font-mono'>Appointment:</span> <span className='text-black'>{appointment.date}</span> <br /> <span className='text-black pl-28'>{appointment.slot}</span> </p>
+                            <br />
+                            <p> <span className='font-mono'>Please pay:</span> <span className='font-semibold border rounded-sm border-slate-600 px-3 py-1'> <span className='text-black'>{appointment.price} Tk</span> </span></p>
+                        </div>
                     </div>
-                </div>
 
-                <center><BsArrow90DegDown size="1.5rem" className='text-gray-700 text-2xl' /></center>
+                    {/* <center><BsArrow90DegDown size="1.5rem" className='text-gray-700 text-2xl' /></center> */}
 
-                <div class="card flex-shrink-0 bg-white shadow-[0_3px_10px_rgb(0,0,0,0.2)] mt-4 rounded-sm">
-                    <div class="card-body py-8">
-                        <Elements stripe={stripePromise}>
-                            <CheckoutForm appointment={appointment} />
-                        </Elements>
+                    <div class="card flex-shrink-0 bg-white shadow-[0_3px_10px_rgb(0,0,0,0.2)] mt-4 rounded-sm">
+                        <div class="card-body py-5">
+                            <Elements stripe={stripePromise}>
+                                <CheckoutForm appointment={appointment} />
+                            </Elements>
+                        </div>
                     </div>
                 </div>
             </div>
+
 
         </div>
     );

@@ -30,6 +30,7 @@ import Order from "./Pages/Order/Order/Order";
 import MyCart from "./Pages/Dashboard/MyCart";
 import AddItem from "./Pages/Dashboard/AddItem";
 import ManageItems from "./Pages/Dashboard/ManageItems";
+import Pay from "./Pages/Dashboard/Pay/Pay";
 
 function App() {
 
@@ -54,6 +55,9 @@ function App() {
           <Route path="review" element={<MyReview></MyReview>}></Route>
           <Route path="cart" element={<MyCart></MyCart>}></Route>
           <Route path="payment/:id" element={<Payment></Payment>}></Route>
+
+          <Route path="pay" element={<Pay></Pay>}></Route>
+
           <Route path="users" element={<RequireAdmin><Users></Users></RequireAdmin>}></Route>
           <Route path="addDoctor" element={<RequireAdmin><AddDoctor></AddDoctor></RequireAdmin>}></Route>
           <Route path="addItem" element={<RequireAdmin><AddItem></AddItem></RequireAdmin>}></Route>
