@@ -55,7 +55,7 @@ const BookingModal = ({ date, treatment, setTreatment, refetch }) => {
             <div className="modal modal-bottom sm:modal-middle">
                 <div className="modal-box border border-purple-600">
                     <label htmlFor="booking-modal" className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
-                    <h3 className="text-lg text-center"> <span className='font-mono'>Booking for -</span> <span className='text-purple-700 font-semibold font-mono'>{name}</span></h3>
+                    <h3 className="text-lg text-center"> <span className='font-mono'>Booking for -</span> <span className='text-orange-600 font-semibold font-mono'>{name}</span></h3>
                     <form onSubmit={handleBookingSubmit} className='grid grid-cols-1 gap-4 justify-items-center mt-4'>
                         <input type="text" disabled value={format(date, 'PP')} className="input input-bordered w-full max-w-xs font-mono" />
                         <select name='slot' className="select select-bordered border border-zinc-400 w-full max-w-xs font-mono">

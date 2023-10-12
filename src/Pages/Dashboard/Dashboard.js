@@ -37,7 +37,7 @@ const Dashboard = () => {
 
                                 <li>
                                     <Link to="/dashboard/cart"><span className='px-2 py-2 font-bold rounded-sm font-mono text-white flex items-center text-xl'> <FaShoppingCart className='mr-3' /> My Cart </span>
-                                        <span className="badge text-white bg-pink-600 px-3 py-2.5">+{cart?.length || 0}</span>
+                                        <span className="badge text-white bg-pink-600 border-none px-3 py-2.5">+{cart?.length || 0}</span>
                                     </Link>
 
                                 </li>

@@ -47,13 +47,13 @@ const MyCart = () => {
     return (
         <div className='mt-20'>
 
-            <div>
+            <div className=''>
                 <h2 className='mt-24 mb-8 font-semibold border-2 border-y-zinc-400 border-x-gray-100 py-3 mx-80 text-center uppercase text-2xl'>Your Cart </h2>
             </div>
 
-            <div className='grid grid-cols-2 mb-20'>
+            <div className='flex gap-24 mb-20'>
 
-                <div className='pl-20 py-2'>
+                <div className='pl-16 py-2'>
 
                     <div className=''>
                         <h2 className='pb-7 font-mono'>Hi, <span className='text-purple-700'>{user?.email || ''}</span> </h2>
@@ -68,7 +68,7 @@ const MyCart = () => {
 
                     <div className='mt-5'>
 
-                        <h2 className='uppercase font-semibold text-lg border border-b-zinc-500 border-t-gray-100 border-x-gray-100 pb-3 mr-28'></h2>
+                        <h2 className='uppercase font-semibold text-lg border border-b-zinc-500 border-t-gray-100 border-x-gray-100 pb-3 mr-0'></h2>
 
                         <Link to="/dashboard/pay">
 
@@ -83,7 +83,7 @@ const MyCart = () => {
 
 
 
-                <div className='mt-4'>
+                <div className='mt-3'>
 
                     <div className="overflow-x-auto">
                         <table className="table w-full border-4">

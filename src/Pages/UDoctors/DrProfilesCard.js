@@ -25,7 +25,7 @@ const DrProfilesCard = ({ doctor }) => {
 
                 <div>
                     <div>
-                        <p className='text-purple-700 font-semibold font-mono text-lg border-b border-zinc-500 pb-1'>{doctor.name}</p>
+                        <p className='text-orange-600 font-semibold font-mono text-lg border-b border-zinc-500 pb-1'>{doctor.name}</p>
                     </div>
                     <div>
                         <p className='text-zinc-700 font-mono text-lg pt-5'>{degree}</p>
