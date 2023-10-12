@@ -4,7 +4,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 
 import { FaTrashAlt } from 'react-icons/fa';
-import { HiArrowNarrowDown } from 'react-icons/hi';
+import { HiArrowNarrowRight } from 'react-icons/hi';
 import Swal from 'sweetalert2';
 import { Link } from 'react-router-dom';
 
@@ -51,39 +51,31 @@ const MyCart = () => {
                 <h2 className='mt-24 mb-8 font-semibold border-2 border-y-zinc-400 border-x-gray-100 py-3 mx-80 text-center uppercase text-2xl'>Your Cart </h2>
             </div>
 
-            <div className='flex gap-24 mb-20'>
+            <div className='mb-20'>
 
-                <div className='pl-16 py-2'>
+                <div className='px-5 py-2'>
 
-                    <div className=''>
-                        <h2 className='pb-7 font-mono'>Hi, <span className='text-purple-700'>{user?.email || ''}</span> </h2>
-                        <h2 className='text-xl text-zinc-800 mb-6 font-mono font-semibold uppercase'><span className=''>Total Items = <span className=''>{cart?.length || 0}</span> </span></h2>
-                        <h2 className='text-xl font-semibold text-zinc-800 font-mono border-t-gray-100 border-l-gray-100 border-r-gray-100 rounded-sm uppercase'><span className=''>Total Price = <span className=' bg-white px-3 py-2 border border-zinc-400'> {total} ৳ </span></span></h2>
-                    </div>
+                    <div className='flex gap-7 justify-center bg-white border border-gray-300 rounded-xl'>
+                        <div className='my-6'>
+                            <h2 className='pb-7 font-mono'>Hi, <span className='text-purple-700'>{user?.email || ''}</span> </h2>
+                            <h2 className='text-lg text-zinc-800 mb-6 font-mono uppercase'><span className=''>Total Items = <span className=''>{cart?.length || 0}</span> </span></h2>
+                            <h2 className='text-lg  text-zinc-800 font-mono border-t-gray-100 border-l-gray-100 border-r-gray-100 rounded-sm uppercase'><span className=''>Total Price = <span className=' bg-white px-3 py-2 border border-zinc-400'> {total} ৳ </span></span></h2>
+                        </div>
 
-                    {/* <center>
-                        <HiArrowNarrowDown size="1.5rem" className='mt-5' />
-                    </center> */}
-
-
-                    <div className='mt-5'>
-
-                        <h2 className='uppercase font-semibold text-lg border border-b-zinc-500 border-t-gray-100 border-x-gray-100 pb-3 mr-0'></h2>
-
-                        <Link to="/dashboard/pay">
-
-                            <button className='btn btn-sm bg-green-500 hover:bg-green-600 border-none mt-6 text-white px-10 font-semibold rounded-sm'>Pay</button>
-
-                        </Link>
-
+                        <div>
+                            <Link to="/dashboard/pay">
+                                <span className='flex gap-7'>
+                                    <span className='mt-28'><HiArrowNarrowRight size="1.2rem" className='mt-5' /></span> <button className='btn btn-sm bg-green-500 hover:bg-green-600 border-none mt-32 text-white px-10 font-semibold rounded-sm'>Pay</button>
+                                </span>
+                            </Link>
+                        </div>
                     </div>
 
 
                 </div>
 
 
-
-                <div className='mt-3'>
+                <div className='mt-5 px-5'>
 
                     <div className="overflow-x-auto">
                         <table className="table w-full border-4">
@@ -117,7 +109,7 @@ const MyCart = () => {
                                         <td>
                                             {item.name}
                                         </td>
-                                        <td className='text-right'>{item.price} <span className='text-2xl'>৳</span></td>
+                                        <td className='text-left'>{item.price} <span className='text-2xl'>৳</span></td>
                                         <td>
                                             <button onClick={() => handleDelete(item)} className="btn btn-ghost bg-white text-red-500 btn-lg rounded-sm"> <FaTrashAlt /> </button>
                                         </td>

@@ -9,14 +9,17 @@ import useMenu from '../../../hooks/useMenu';
 const Order = () => {
     const [tabIndex, setTabIndex] = useState(0);
     const [menu] = useMenu();
-    const covid = menu.filter(item => item.category === 'covid');
-    const wcare = menu.filter(item => item.category === 'wcare');
-    const device = menu.filter(item => item.category === 'device');
-    const herbalandhomeopathy = menu.filter(item => item.category === 'herbalandhomeopathy');
-    const babyandmomcare = menu.filter(item => item.category === 'babyandmomcare');
-    const personalcare = menu.filter(item => item.category === 'personalcare');
-    const supplementandvitamin = menu.filter(item => item.category === 'supplementandvitamin');
-    const dentcare = menu.filter(item => item.category === 'dentcare');
+
+    const Pediatric_Dentistry = menu.filter(item => item.category === 'Pediatric_Dentistry');
+    const Periodontics = menu.filter(item => item.category === 'Periodontics');
+    const Prosthodontics = menu.filter(item => item.category === 'Prosthodontics');
+    const Restoratives = menu.filter(item => item.category === 'Restoratives');
+    const Equipments = menu.filter(item => item.category === 'Equipments');
+    const Endodontics = menu.filter(item => item.category === 'Endodontics');
+    const General_Dentistry = menu.filter(item => item.category === 'General_Dentistry');
+    const Dental_Implants = menu.filter(item => item.category === 'Dental_Implants');
+    const Dental_Brackets = menu.filter(item => item.category === 'Dental_Brackets');
+
     return (
         <section className=''>
 
@@ -24,20 +27,21 @@ const Order = () => {
 
                 <Tabs defaultIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
                     <TabList>
-                        <Tab>Dental care</Tab>
-                        <Tab>Covid-19 Special</Tab>
-                        <Tab>Devices</Tab>
-                        <Tab>Herbal & Homeopathy</Tab>
-                        <Tab>Baby & Mom care</Tab>
-                        <Tab>Personal care</Tab>
-                        <Tab>Supplements & Vitamins</Tab>
-                        <Tab>Women care</Tab>
+                        <Tab>Pediatric_Dentistry</Tab>
+                        <Tab>Periodontics</Tab>
+                        <Tab>Prosthodontics</Tab>
+                        <Tab>Restoratives</Tab>
+                        <Tab>Equipments</Tab>
+                        <Tab>Endodontics</Tab>
+                        <Tab>General_Dentistry</Tab>
+                        <Tab>Dental_Implants</Tab>
+                        <Tab>Dental_Brackets</Tab>
                     </TabList>
 
                     <TabPanel>
                         <div className='grid grid-cols-3 gap-x-5 gap-y-10 mt-10'>
                             {
-                                dentcare.map(item => <MediCard
+                                Pediatric_Dentistry.map(item => <MediCard
                                     key={item._id}
                                     item={item}
                                 ></MediCard>)
@@ -47,7 +51,7 @@ const Order = () => {
                     <TabPanel>
                         <div className='grid grid-cols-3 gap-x-5 gap-y-10 mt-10'>
                             {
-                                covid.map(item => <MediCard
+                                Periodontics.map(item => <MediCard
                                     key={item._id}
                                     item={item}
                                 ></MediCard>)
@@ -57,7 +61,7 @@ const Order = () => {
                     <TabPanel>
                         <div className='grid grid-cols-3 gap-x-5 gap-y-10 mt-10'>
                             {
-                                device.map(item => <MediCard
+                                Prosthodontics.map(item => <MediCard
                                     key={item._id}
                                     item={item}
                                 ></MediCard>)
@@ -67,7 +71,7 @@ const Order = () => {
                     <TabPanel>
                         <div className='grid grid-cols-3 gap-x-5 gap-y-10 mt-10'>
                             {
-                                herbalandhomeopathy.map(item => <MediCard
+                                Restoratives.map(item => <MediCard
                                     key={item._id}
                                     item={item}
                                 ></MediCard>)
@@ -77,7 +81,7 @@ const Order = () => {
                     <TabPanel>
                         <div className='grid grid-cols-3 gap-x-5 gap-y-10 mt-10'>
                             {
-                                babyandmomcare.map(item => <MediCard
+                                Equipments.map(item => <MediCard
                                     key={item._id}
                                     item={item}
                                 ></MediCard>)
@@ -87,7 +91,7 @@ const Order = () => {
                     <TabPanel>
                         <div className='grid grid-cols-3 gap-x-5 gap-y-10 mt-10'>
                             {
-                                personalcare.map(item => <MediCard
+                                Endodontics.map(item => <MediCard
                                     key={item._id}
                                     item={item}
                                 ></MediCard>)
@@ -97,18 +101,27 @@ const Order = () => {
                     <TabPanel>
                         <div className='grid grid-cols-3 gap-x-5 gap-y-10 mt-10'>
                             {
-                                supplementandvitamin.map(item => <MediCard
+                                General_Dentistry.map(item => <MediCard
                                     key={item._id}
                                     item={item}
                                 ></MediCard>)
                             }
                         </div>
                     </TabPanel>
-
                     <TabPanel>
                         <div className='grid grid-cols-3 gap-x-5 gap-y-10 mt-10'>
                             {
-                                wcare.map(item => <MediCard
+                                Dental_Implants.map(item => <MediCard
+                                    key={item._id}
+                                    item={item}
+                                ></MediCard>)
+                            }
+                        </div>
+                    </TabPanel>
+                    <TabPanel>
+                        <div className='grid grid-cols-3 gap-x-5 gap-y-10 mt-10'>
+                            {
+                                Dental_Brackets.map(item => <MediCard
                                     key={item._id}
                                     item={item}
                                 ></MediCard>)

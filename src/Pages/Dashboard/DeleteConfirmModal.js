@@ -30,7 +30,7 @@ const DeleteConfirmModal = ({ deletingDoctor, refetch, setDeletingDoctor }) => {
             <input type="checkbox" id="delete-confirm-modal" class="modal-toggle" />
             <div class="modal modal-bottom lg:modal-middle">
                 <div class="modal-box">
-                    <h3 class="text-lg text-red-500 font-semibold">Are you sure to delete <span className='text-purple-700 font-semibold pl-2'> {name} ?</span></h3>
+                    <h3 class="text-lg text-red-500">Are you sure to delete <span className='text-purple-700 pl-2'> {name} ?</span></h3>
                     <div class="modal-action">
                         <button onClick={() => handleDelete()} class="btn btn-xs bg-red-500 hover:bg-red-600 border-none text-white px-3 py-1 rounded-sm">Delete</button>
                         <label for="delete-confirm-modal" class="btn btn-xs bg-slate-700 hover:bg-slate-800 text-white px-3 py-1 rounded-sm">Cancel</label>

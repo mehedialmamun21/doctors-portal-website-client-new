@@ -94,14 +94,15 @@ const AddItem = () => {
                         </label>
                         <select {...register("category", { required: true })} className="select select-none rounded-sm border border-zinc-500">
                             <option disabled selected>Pick one</option>
-                            <option>dentcare</option>
-                            <option>covid</option>
-                            <option>device</option>
-                            <option>herbalandhomeopathy</option>
-                            <option>babyandmomcare</option>
-                            <option>personalcare</option>
-                            <option>supplementandvitamin</option>
-                            <option>wcare</option>
+                            <option>Pediatric_Dentistry</option>
+                            <option>Periodontics</option>
+                            <option>Prosthodontics</option>
+                            <option>Restoratives</option>
+                            <option>Equipments</option>
+                            <option>Endodontics</option>
+                            <option>General_Dentistry</option>
+                            <option>Dental_Implants</option>
+                            <option>Dental_Brackets</option>
                         </select>
                     </div>
 

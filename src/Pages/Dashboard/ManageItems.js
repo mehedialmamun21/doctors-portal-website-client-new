@@ -82,7 +82,7 @@ const ManageItems = () => {
                                                 </div>
                                             </div>
                                             <div>
-                                                <div className="font-bold"> {item.name} </div>
+                                                <div className="font-semibold"> {item.name} </div>
                                             </div>
                                         </div>
                                     </td>
