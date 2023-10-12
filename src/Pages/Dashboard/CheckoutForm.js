@@ -14,7 +14,7 @@ const CheckoutForm = ({ appointment }) => {
     const [transactionTime, setTransactionTime] = useState('');
     const [pdfGenerated, setPdfGenerated] = useState(false);
 
-    const { _id, price, patient, patientName } = appointment;
+    const { _id, price, patient, patientName, treatment } = appointment;
 
     useEffect(() => {
         fetch('http://localhost:5000/create-payment-intent', {
@@ -104,7 +104,6 @@ const CheckoutForm = ({ appointment }) => {
     const handleDownloadPDF = () => {
         if (transactionId) {
             if (pdfGenerated) {
-                // Showing the "PDF Downloaded (check it out!)" message here
                 alert('PDF Downloaded (check it out!)');
             } else {
                 const pdf = new jsPDF();
@@ -113,18 +112,25 @@ const CheckoutForm = ({ appointment }) => {
                 pdf.setFontSize(16);
                 pdf.text(20, 20, 'Payment History');
 
-                pdf.setLineWidth(1);
+                pdf.setLineWidth(0.3);
                 pdf.line(20, 25, 190, 25);
 
                 pdf.setFontSize(12);
-                pdf.setTextColor(0, 0, 0);
 
                 pdf.setTextColor(0, 180, 0);
                 pdf.text(20, 35, `Payment Successful`);
+
                 pdf.setTextColor(0, 0, 0);
                 pdf.text(20, 45, `Date: ${transactionTime}`);
+
                 pdf.setTextColor(0, 0, 0);
-                pdf.text(20, 55, `Transaction ID: ${transactionId}`);
+                pdf.text(20, 55, `Service Name: ${treatment}`);
+
+                pdf.setTextColor(0, 0, 0);
+                pdf.text(20, 65, `Price: ${price} Tk (Deducted)`);
+
+                pdf.setTextColor(0, 0, 0);
+                pdf.text(20, 75, `Transaction ID: ${transactionId}`);
 
                 pdf.save('transaction_details.pdf');
                 setPdfGenerated(true);
@@ -174,6 +180,7 @@ const CheckoutForm = ({ appointment }) => {
                 <>
                     <p className='text-green-500 font-mono'>Payment successful</p>
                     <p className='font-mono'>Date: {transactionTime}</p>
+                    {/* <p className='font-mono'>Price: {price} Tk</p> */}
                     <p className='font-mono'>Transaction ID: {transactionId}</p>
                     <button className='btn w-2/5 bg-violet-500 hover-bg-blue-600 border-none rounded-sm btn-sm mt-2 text-white' onClick={handleDownloadPDF}>
                         Download as PDF

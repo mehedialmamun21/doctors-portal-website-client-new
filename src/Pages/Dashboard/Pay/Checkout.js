@@ -53,7 +53,7 @@ const Checkout = ({ price }) => {
                 pdf.setFontSize(16);
                 pdf.text(20, 20, 'Payment History');
 
-                pdf.setLineWidth(1);
+                pdf.setLineWidth(0.3);
                 pdf.line(20, 25, 190, 25);
 
                 pdf.setFontSize(12);
@@ -61,10 +61,15 @@ const Checkout = ({ price }) => {
 
                 pdf.setTextColor(0, 180, 0);
                 pdf.text(20, 35, `Payment Successful`);
+
                 pdf.setTextColor(0, 0, 0);
                 pdf.text(20, 45, `Date: ${transactionTime}`);
+
                 pdf.setTextColor(0, 0, 0);
-                pdf.text(20, 55, `Transaction ID: ${transactionId}`);
+                pdf.text(20, 55, `Total Price: ${price} Tk (Deducted)`);
+
+                pdf.setTextColor(0, 0, 0);
+                pdf.text(20, 65, `Transaction ID: ${transactionId}`);
 
                 pdf.save('transaction_details.pdf');
                 setPdfGenerated(true);
