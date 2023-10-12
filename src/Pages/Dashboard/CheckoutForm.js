@@ -11,10 +11,16 @@ const CheckoutForm = ({ appointment }) => {
     const [transactionId, setTransactionId] = useState('');
     const [clientSecret, setClientSecret] = useState('');
 
-    const [transactionTime, setTransactionTime] = useState('');
-    const [pdfGenerated, setPdfGenerated] = useState(false);
-
     const { _id, price, patient, patientName, treatment } = appointment;
+
+    const getCurrentDate = () => {
+        const currentTime = new Date();
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        return currentTime.toLocaleDateString('en-US', options);
+    };
+
+    const [transactionTime, setTransactionTime] = useState(getCurrentDate());
+    const [pdfGenerated, setPdfGenerated] = useState(false);
 
     useEffect(() => {
         fetch('http://localhost:5000/create-payment-intent', {
@@ -31,8 +37,16 @@ const CheckoutForm = ({ appointment }) => {
                     setClientSecret(data.clientSecret);
                 }
             });
+    }, [price]);
 
-    }, [price])
+    const updateTransactionTime = () => {
+        setTransactionTime(getCurrentDate());
+    };
+
+    useEffect(() => {
+        const dateUpdateInterval = setInterval(updateTransactionTime, 24 * 60 * 60 * 1000); // Update date every 24 hours
+        return () => clearInterval(dateUpdateInterval);
+    }, []);
 
     const handleSubmit = async (event) => {
         event.preventDefault();
@@ -73,16 +87,15 @@ const CheckoutForm = ({ appointment }) => {
         if (intentError) {
             setCardError(intentError?.message);
             setProcessing(false);
-        }
-        else {
+        } else {
             setCardError('');
             setTransactionId(paymentIntent.id);
-            setSuccess('Congrats! your payment is completed.');
+            setSuccess('Congrats! your payment is completed');
 
             const payment = {
                 appointment: _id,
                 transactionId: paymentIntent.id
-            }
+            };
             fetch(`http://localhost:5000/booking/${_id}`, {
                 method: 'PATCH',
                 headers: {
@@ -93,11 +106,8 @@ const CheckoutForm = ({ appointment }) => {
             }).then(res => res.json())
                 .then(data => {
                     setProcessing(false);
-                })
-
-            const currentTime = new Date();
-            const dateAndYear = currentTime.toUTCString().split(' ').slice(1, 4).join(' ');
-            setTransactionTime(dateAndYear);
+                    updateTransactionTime(); // Update the date after successful payment
+                });
         }
     }
 
@@ -180,7 +190,6 @@ const CheckoutForm = ({ appointment }) => {
                 <>
                     <p className='text-green-500 font-mono'>Payment successful</p>
                     <p className='font-mono'>Date: {transactionTime}</p>
-                    {/* <p className='font-mono'>Price: {price} Tk</p> */}
                     <p className='font-mono'>Transaction ID: {transactionId}</p>
                     <button className='btn w-2/5 bg-violet-500 hover-bg-blue-600 border-none rounded-sm btn-sm mt-2 text-white' onClick={handleDownloadPDF}>
                         Download as PDF

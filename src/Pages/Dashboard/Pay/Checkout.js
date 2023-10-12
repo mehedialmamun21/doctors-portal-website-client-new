@@ -7,7 +7,7 @@ const Checkout = ({ price }) => {
     const elements = useElements();
     const [cardError, setCardError] = useState('');
     const [transactionId, setTransactionId] = useState('');
-    const [transactionTime, setTransactionTime] = useState('');
+
     const [pdfGenerated, setPdfGenerated] = useState(false);
 
     const handleSubmit = async (event) => {
@@ -34,10 +34,6 @@ const Checkout = ({ price }) => {
         } else {
             setCardError('');
             setTransactionId(paymentMethod.id);
-
-            const currentTime = new Date();
-            const dateAndYear = currentTime.toUTCString().split(' ').slice(1, 4).join(' ');
-            setTransactionTime(dateAndYear);
         }
     }
 
@@ -57,19 +53,15 @@ const Checkout = ({ price }) => {
                 pdf.line(20, 25, 190, 25);
 
                 pdf.setFontSize(12);
-                pdf.setTextColor(0, 0, 0);
 
                 pdf.setTextColor(0, 180, 0);
                 pdf.text(20, 35, `Payment Successful`);
 
                 pdf.setTextColor(0, 0, 0);
-                pdf.text(20, 45, `Date: ${transactionTime}`);
+                pdf.text(20, 45, `Total Price: ${price} Tk (Deducted)`);
 
                 pdf.setTextColor(0, 0, 0);
-                pdf.text(20, 55, `Total Price: ${price} Tk (Deducted)`);
-
-                pdf.setTextColor(0, 0, 0);
-                pdf.text(20, 65, `Transaction ID: ${transactionId}`);
+                pdf.text(20, 55, `Transaction ID: ${transactionId}`);
 
                 pdf.save('transaction_details.pdf');
                 setPdfGenerated(true);
@@ -108,7 +100,6 @@ const Checkout = ({ price }) => {
                 {transactionId && !pdfGenerated &&
                     <>
                         <p className='text-green-500 font-mono'>Payment successful</p>
-                        <p className='font-mono'>Date: {transactionTime}</p>
                         <p className='font-mono'>Transaction ID: {transactionId}</p>
                         <button className='btn bg-violet-500 hover-bg-blue-600 border-none rounded-sm px-4 btn-sm mt-2 text-white' onClick={handleDownloadPDF}>
                             Download as PDF
