@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Footer from '../../Shared/Footer';
+// import Footer from '../../Shared/Footer';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import MediCard from '../../../component/MediCard/MediCard';
@@ -57,7 +57,7 @@ const Order = () => {
                                 ></MediCard>)
                             }
                         </div>
-                        <div className="pagination-container font-semibold mt-8 border border-t-blue-500 border-b-gray-100 border-l-gray-100 border-r-gray-100 border-b-gray-100 border-l-gray-100 border-r-gray-100">
+                        <div className="pagination-container font-semibold mt-8 border border-t-blue-500 border-b-gray-100 border-l-gray-100 border-r-gray-100">
                             <div className='pt-10'>
                                 <ReactPaginate
                                     previousLabel="Previous"
