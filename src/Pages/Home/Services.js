@@ -58,7 +58,7 @@ const Services = () => {
         <div className='px-5 lg:px-40 py-10 lg:py-28 bg-gray-100'>
 
             <div className='text-center pb-10 lg:pb-20'>
-                <h4 className='text-black text-xl lg:text-3xl font-semibold pb-2'>Our Services</h4>
+                <h4 className='text-black text-xl lg:text-3xl font-semibold font-mono pb-2'>Our Services</h4>
                 <h3 className='text-3xl lg:text-4xl pb-2 font-mono text-slate-600'>Services We Provide</h3>
             </div>
 

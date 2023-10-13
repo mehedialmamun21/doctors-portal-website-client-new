@@ -10,6 +10,7 @@ const UDoctors = () => {
         <div>
 
             <div className='pb-28 mx-5 lg:mx-40 pt-24 lg:pt-24 h-screen'>
+
                 <div className=''>
                     <p className='text-3xl font-mono text-slate-600'>Our Doctors</p>
                 </div>

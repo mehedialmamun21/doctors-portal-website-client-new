@@ -12,7 +12,7 @@ import 'swiper/css/navigation';
 import { Rating } from '@smastrom/react-rating';
 import '@smastrom/react-rating/style.css'
 
-import { BsArrowRight } from 'react-icons/bs';
+// import { BsArrowRight } from 'react-icons/bs';
 import { FaQuoteLeft } from 'react-icons/fa';
 
 import { IoArrowRedoOutline } from 'react-icons/io5';
@@ -29,8 +29,8 @@ const Testimonials = () => {
     return (
         <section className='px-72 py-28'>
             <div className='pb-10 flex flex-col items-center'>
-                <h4 className='text-2xl lg:text-3xl text-black font-semibold pb-3'>Testimonial</h4>
-                <h2 className='text-2xl lg:text-3xl font-mono text-slate-600'>What Our Clients Say</h2>
+                <h4 className='text-black text-xl lg:text-3xl font-mono font-semibold pb-2'>Testimonial</h4>
+                <h3 className='text-3xl lg:text-4xl pb-2 font-mono text-slate-600'>What Our Clients Say</h3>
             </div>
             <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
                 {
@@ -45,7 +45,7 @@ const Testimonials = () => {
                                 readOnly
                             />
                             <FaQuoteLeft size="2.2rem" className='mt-8 text-blue-500' />
-                            <p className='py-8 font-serif'>{review.description}</p>
+                            <p className='py-8 font-mono'>{review.description}</p>
                             <div className='flex items-center justify-center'>
                                 <IoArrowRedoOutline size="1.5rem" />
                                 <h3 className='font-semibold text-lg pl-4 font-mono'>{review.name}</h3>
@@ -60,3 +60,4 @@ const Testimonials = () => {
 };
 
 export default Testimonials;
+

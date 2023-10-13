@@ -31,7 +31,7 @@ const Order = () => {
 
 
     return (
-        <section className=''>
+        <section className='bg-white'>
 
             <div className='pt-24 px-40 pb-20'>
 
@@ -57,7 +57,7 @@ const Order = () => {
                                 ></MediCard>)
                             }
                         </div>
-                        <div className="pagination-container font-semibold mt-8 border border-t-blue-500">
+                        <div className="pagination-container font-semibold mt-8 border border-t-blue-500 border-b-gray-100 border-l-gray-100 border-r-gray-100 border-b-gray-100 border-l-gray-100 border-r-gray-100">
                             <div className='pt-10'>
                                 <ReactPaginate
                                     previousLabel="Previous"
@@ -87,7 +87,7 @@ const Order = () => {
                                 ></MediCard>)
                             }
                         </div>
-                        <div className="pagination-container font-semibold mt-8 border border-t-blue-500">
+                        <div className="pagination-container font-semibold mt-8 border border-t-blue-500 border-b-gray-100 border-l-gray-100 border-r-gray-100">
                             <div className='pt-10'>
                                 <ReactPaginate
                                     previousLabel="Previous"
@@ -117,7 +117,7 @@ const Order = () => {
                                 ></MediCard>)
                             }
                         </div>
-                        <div className="pagination-container font-semibold mt-8 border border-t-blue-500">
+                        <div className="pagination-container font-semibold mt-8 border border-t-blue-500 border-b-gray-100 border-l-gray-100 border-r-gray-100">
                             <div className='pt-10'>
                                 <ReactPaginate
                                     previousLabel="Previous"
@@ -147,7 +147,7 @@ const Order = () => {
                                 ></MediCard>)
                             }
                         </div>
-                        <div className="pagination-container font-semibold mt-8 border border-t-blue-500">
+                        <div className="pagination-container font-semibold mt-8 border border-t-blue-500 border-b-gray-100 border-l-gray-100 border-r-gray-100">
                             <div className='pt-10'>
                                 <ReactPaginate
                                     previousLabel="Previous"
@@ -177,7 +177,7 @@ const Order = () => {
                                 ></MediCard>)
                             }
                         </div>
-                        <div className="pagination-container font-semibold mt-8 border border-t-blue-500">
+                        <div className="pagination-container font-semibold mt-8 border border-t-blue-500 border-b-gray-100 border-l-gray-100 border-r-gray-100">
                             <div className='pt-10'>
                                 <ReactPaginate
                                     previousLabel="Previous"
@@ -207,7 +207,7 @@ const Order = () => {
                                 ></MediCard>)
                             }
                         </div>
-                        <div className="pagination-container font-semibold mt-8 border border-t-blue-500">
+                        <div className="pagination-container font-semibold mt-8 border border-t-blue-500 border-b-gray-100 border-l-gray-100 border-r-gray-100">
                             <div className='pt-10'>
                                 <ReactPaginate
                                     previousLabel="Previous"
@@ -237,7 +237,7 @@ const Order = () => {
                                 ></MediCard>)
                             }
                         </div>
-                        <div className="pagination-container font-semibold mt-8 border border-t-blue-500">
+                        <div className="pagination-container font-semibold mt-8 border border-t-blue-500 border-b-gray-100 border-l-gray-100 border-r-gray-100">
                             <div className='pt-10'>
                                 <ReactPaginate
                                     previousLabel="Previous"
@@ -267,7 +267,7 @@ const Order = () => {
                                 ></MediCard>)
                             }
                         </div>
-                        <div className="pagination-container font-semibold mt-8 border border-t-blue-500">
+                        <div className="pagination-container font-semibold mt-8 border border-t-blue-500 border-b-gray-100 border-l-gray-100 border-r-gray-100">
                             <div className='pt-10'>
                                 <ReactPaginate
                                     previousLabel="Previous"
@@ -297,7 +297,7 @@ const Order = () => {
                                 ></MediCard>)
                             }
                         </div>
-                        <div className="pagination-container font-semibold mt-8 border border-t-blue-500">
+                        <div className="pagination-container font-semibold mt-8 border border-t-blue-500 border-b-gray-100 border-l-gray-100 border-r-gray-100">
                             <div className='pt-10'>
                                 <ReactPaginate
                                     previousLabel="Previous"
@@ -322,7 +322,7 @@ const Order = () => {
                 </Tabs>
             </div>
 
-            <Footer></Footer>
+            {/* <Footer></Footer> */}
 
         </section>
     );

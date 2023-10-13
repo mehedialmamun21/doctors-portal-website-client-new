@@ -64,7 +64,7 @@ const MediCard = ({ item }) => {
 
                 <figure><img src={image} alt="img" className="hover:scale-x-125 hover:scale-y-125 duration-700 cursor-pointer" style={{ height: "170px" }} /></figure>
 
-                <p className='px-2 rounded-sm py-0 mr-14 mt-4 absolute right-0 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-400 text-white'> <span className='text-md'>{offpercentage}%</span> <span className='text-sm'>off</span></p>
+                <p className='px-2 rounded-sm py-0 mr-20 mt-4 absolute right-0 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-400 text-white'> <span className='text-md'>{offpercentage}%</span> <span className='text-sm'>off</span></p>
 
                 <center>
                     <div className="card-body" style={{ width: "270px" }}>

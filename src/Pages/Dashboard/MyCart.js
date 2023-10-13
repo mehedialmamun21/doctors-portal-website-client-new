@@ -59,7 +59,7 @@ const MyCart = () => {
                         <div className='my-6'>
                             <h2 className='pb-7 font-mono'>Hi, <span className='text-purple-700'>{user?.email || ''}</span> </h2>
                             <h2 className='text-lg text-zinc-800 mb-6 font-mono uppercase'><span className=''>Total Items = <span className=''>{cart?.length || 0}</span> </span></h2>
-                            <h2 className='text-lg  text-zinc-800 font-mono border-t-gray-100 border-l-gray-100 border-r-gray-100 rounded-sm uppercase'><span className=''>Total Price = <span className=' bg-white px-3 py-2 border border-zinc-400'> {total} ৳ </span></span></h2>
+                            <h2 className='text-lg  text-zinc-800 font-mono border-t-gray-100 border-l-gray-100 border-r-gray-100 rounded-sm uppercase'><span className=''>Total Price = <span className=' bg-white px-3 py-2 border border-zinc-400'> <span>{total}</span> <span className='text-sm'>Tk</span> </span></span></h2>
                         </div>
 
                         <div>

@@ -53,7 +53,7 @@ const BookingModal = ({ date, treatment, setTreatment, refetch }) => {
         <div className=''>
             <input type="checkbox" id="booking-modal" className="modal-toggle" />
             <div className="modal modal-bottom sm:modal-middle">
-                <div className="modal-box border border-purple-600">
+                <div className="modal-box border border-blue-500">
                     <label htmlFor="booking-modal" className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
                     <h3 className="text-lg text-center"> <span className='font-mono'>Booking for -</span> <span className='text-blue-600 font-semibold font-mono'>{name}</span></h3>
                     <form onSubmit={handleBookingSubmit} className='grid grid-cols-1 gap-4 justify-items-center mt-4'>
