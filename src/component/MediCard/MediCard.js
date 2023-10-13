@@ -60,18 +60,49 @@ const MediCard = ({ item }) => {
     return (
 
         <div className=''>
-            <div className="card w-96 bg-base-100  mx-auto rounded-sm">
-                <figure><img src={image} alt="Shoes" className="hover:scale-x-125 hover:scale-y-125 duration-700 cursor-pointer" style={{ height: "170px" }} /></figure>
-                <p className='bg-slate-900 text-white px-4 rounded-sm py-1 mr-5 mt-4 absolute right-0'> <span className='text-2xl'>৳</span> {price}</p>
-                <div className="card-body">
+            <div className="card w-96 mx-auto rounded-sm">
 
-                    <h2 className="card-title mx-auto text-sm">{name}</h2>
+                <figure><img src={image} alt="img" className="hover:scale-x-125 hover:scale-y-125 duration-700 cursor-pointer" style={{ height: "170px" }} /></figure>
 
-                    <center><p className='text-orange-600 font-semibold'>{offpercentage}% off</p></center>
-                    <div className="card-actions justify-end">
-                        <button onClick={() => handleAddToCart(item)} className="btn btn-black text-white bg-orange-500 hover:bg-orange-400 border-none rounded-sm px-7 mx-auto text-md"><FaShoppingCart size="1.1rem" className="mr-2 text-white" />Add to Cart</button>
+                <p className='font-semibold px-2 rounded-sm py-0 mr-10 mt-4 absolute right-0 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-400 text-white'> {offpercentage}% off</p>
+
+                <center>
+                    <div className="card-body" style={{ width: "270px" }}>
+
+                        <h2 className="card-title mx-auto text-sm">{name}</h2>
+
+                        <center><p className='text-red-500 font-semibold'><span className='text-2xl'>৳</span> {price}</p></center>
+
+                        <div className="card-actions mx-auto">
+
+                            <button
+                                onClick={() => handleAddToCart(item)}
+                                className="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-2 px-4 rounded-sm shadow-md flex items-center justify-center space-x-2"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="16"
+                                    height="16"
+                                    fill="currentColor"
+                                    className="bi bi-cart"
+                                    viewBox="0 0 16 16"
+                                >
+                                    {/* <path
+                                        fillRule="evenodd"
+                                        d="M3 1a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 0 1h-7.89l-.036.132-.558 2.242-1.689 6.04a1.5 1.5 0 0 1 1.464-1.864h9.764a1.5 1.5 0 0 1 1.463 1.864l-2.42 8.72a2 2 0 0 1-1.962 1.558H4a2 2 0 0 1-1.962-1.558l-2.42-8.72a1.5 1.5 0 0 1 1.463-1.864h1.723l.677-2.708a.5.5 0 0 1 .487-.392h8a.5.5 0 0 1 0 1h-7.89l-.036.132-.558 2.242-1.195 4.38-1.199-4.38L3.036 3.132 3 3H3a.5.5 0 0 1-.5-.5z"
+                                    /> */}
+
+                                    <FaShoppingCart size="1rem" className="text-white" />
+
+                                </svg>
+                                <span>Add to Cart</span>
+                            </button>
+
+                        </div>
+
                     </div>
-                </div>
+                </center>
+
             </div>
         </div>
 
