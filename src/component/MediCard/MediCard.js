@@ -64,14 +64,14 @@ const MediCard = ({ item }) => {
 
                 <figure><img src={image} alt="img" className="hover:scale-x-125 hover:scale-y-125 duration-700 cursor-pointer" style={{ height: "170px" }} /></figure>
 
-                <p className='font-semibold px-2 rounded-sm py-0 mr-10 mt-4 absolute right-0 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-400 text-white'> {offpercentage}% off</p>
+                <p className='px-2 rounded-sm py-0 mr-14 mt-4 absolute right-0 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-400 text-white'> <span className='text-md'>{offpercentage}%</span> <span className='text-sm'>off</span></p>
 
                 <center>
                     <div className="card-body" style={{ width: "270px" }}>
 
                         <h2 className="card-title mx-auto text-sm">{name}</h2>
 
-                        <center><p className='text-red-500 font-semibold'><span className='text-2xl'>৳</span> {price}</p></center>
+                        <center><p className='text-red-500 font-semibold'> <span className='text-lg'>{price}</span> <span className='text-sm'>Tk</span> </p></center>
 
                         <div className="card-actions mx-auto">
 
@@ -87,10 +87,6 @@ const MediCard = ({ item }) => {
                                     className="bi bi-cart"
                                     viewBox="0 0 16 16"
                                 >
-                                    {/* <path
-                                        fillRule="evenodd"
-                                        d="M3 1a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 0 1h-7.89l-.036.132-.558 2.242-1.689 6.04a1.5 1.5 0 0 1 1.464-1.864h9.764a1.5 1.5 0 0 1 1.463 1.864l-2.42 8.72a2 2 0 0 1-1.962 1.558H4a2 2 0 0 1-1.962-1.558l-2.42-8.72a1.5 1.5 0 0 1 1.463-1.864h1.723l.677-2.708a.5.5 0 0 1 .487-.392h8a.5.5 0 0 1 0 1h-7.89l-.036.132-.558 2.242-1.195 4.38-1.199-4.38L3.036 3.132 3 3H3a.5.5 0 0 1-.5-.5z"
-                                    /> */}
 
                                     <FaShoppingCart size="1rem" className="text-white" />
 

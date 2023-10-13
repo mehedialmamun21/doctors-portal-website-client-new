@@ -5,7 +5,7 @@ const Service = ({ service, setTreatment }) => {
     return (
         <div className="card lg:max-w-lg bg-white rounded-sm border border-t-zinc-300 shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)] hover:shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] duration-500">
             <div className="card-body text-center">
-                <h2 className="card-title justify-center text-orange-600 text-lg lg:text-lg font-mono">{name}</h2>
+                <h2 className="card-title justify-center text-blue-600 text-lg lg:text-lg font-mono">{name}</h2>
                 <p className='text-sm py-0.5 font-mono text-zinc-600'>
                     {
                         slots.length > 0 ?
