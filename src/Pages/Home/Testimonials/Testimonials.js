@@ -39,7 +39,7 @@ const Testimonials = () => {
                         key={review._id}
                     >
 
-                        <div className='px-20 py-10 flex flex-col items-center border border-y-orange-400 border-x-white bg-orange-100 rounded-sm'>
+                        <div className='px-20 py-10 flex flex-col items-center border border-y-orange-400 border-x-white bg-amber-50 rounded-sm'>
                             <Rating
                                 style={{ maxWidth: 130 }}
                                 value={review.rating}
