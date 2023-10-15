@@ -94,7 +94,7 @@ const Navbar = () => {
           </svg>
         </label>
 
-        {user ? <a href="" className="font-bold" onClick={logout} > <span className="flex items-center"> <span className="text-white rounded-sm border border-white px-2 lg:px-5 py-2 lg:py-2">Sign Out</span></span> </a> : <Link to="/login" className="font-bold"> <span className="flex items-center"> <span className="text-white rounded-sm border border-white px-5 lg:px-6 py-2 lg:py-1">Login</span> </span> </Link>}
+        {user ? <a href="" className="font-bold" onClick={logout} > <span className="flex items-center"> <span className="text-white rounded-sm bg-gray-600 px-2 lg:px-5 py-2 lg:py-2">Sign Out</span></span> </a> : <Link to="/login" className="font-bold"> <span className="flex items-center"> <span className="text-white rounded-sm bg-gray-600 px-5 lg:px-6 py-2 lg:py-2">Login</span> </span> </Link>}
 
       </div>
 

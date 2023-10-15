@@ -62,7 +62,7 @@ const ManageItems = () => {
                                 <th>Category</th>
                                 <th>Price</th>
                                 {/* <th>Update</th> */}
-                                <th>Delete</th>
+                                <th>Action</th>
                             </tr>
                         </thead>
 
@@ -100,7 +100,7 @@ const ManageItems = () => {
                                     </td> */}
 
                                     <td>
-                                        <button onClick={() => handleDelete(item)} className="btn btn-ghost bg-white text-red-500 btn-lg rounded-sm"> <FaTrashAlt /> </button>
+                                        <button onClick={() => handleDelete(item)} className="btn btn-ghost bg-white text-red-500 btn-lg rounded-sm"> <FaTrashAlt size="1rem" /> </button>
                                     </td>
                                 </tr>)
                             }

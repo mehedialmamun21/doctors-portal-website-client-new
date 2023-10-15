@@ -37,7 +37,7 @@ const ManageDoctors = () => {
                             <th>Speciality</th>
                             <th>Email</th>
                             <th>Phone</th>
-                            <th>Action ( delete )</th>
+                            <th>Action</th>
                         </tr>
                     </thead>
 

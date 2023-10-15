@@ -7,9 +7,8 @@ import { Link, useNavigate } from "react-router-dom";
 import useToken from '../../hooks/useToken';
 import googleIcon from '../../assets/images/google.png';
 import { FaSignOutAlt } from 'react-icons/fa';
-
 import { FcGoogle } from 'react-icons/fc';
-import Footer from '../Shared/Footer';
+// import Footer from '../Shared/Footer';
 
 const SignUp = () => {
 
@@ -36,7 +35,7 @@ const SignUp = () => {
     }
 
     if (error || gError || updateError || verError) {
-        signInError = <p className="text-orange-500 font-semibold font-mono"> <small>{error?.message || gError?.message || updateError?.message || verError?.message}</small> </p>
+        signInError = <p className="text-red-500 font-semibold"> <small>{error?.message || gError?.message || updateError?.message || verError?.message}</small> </p>
     }
 
     if (token) {
@@ -49,23 +48,22 @@ const SignUp = () => {
         await createUserWithEmailAndPassword(data.email, data.password);
         await updateProfile({ displayName: data.name });
         // console.log('update done');
-
-        await sendEmailVerification();
-        alert('Email verification sent');
+        // await sendEmailVerification();
+        // alert('Email verification sent');
     }
 
     return (
-        <div className="pt-8">
+        <div className="pt-10">
 
             <div className="h-screen flex justify-center items-center">
 
                 <div className="w-full lg:w-1/2 flex justify-center items-center py-0">
 
-                    <div className="card w-96 rounded-sm bg-white border border-sky-600">
+                    <div className="card w-96 rounded-sm bg-white border border-sky-500">
 
-                        <div className="bg-sky-600 text-white px-8 py-3 font-semibold flex items-center justify-between">
+                        <div className="bg-sky-500 text-white px-8 py-3 flex items-center justify-between">
                             <h2 className='text-lg'>Create an Account</h2>
-                            <Link className="ml-3 lg:ml-5 text-white text-sm" to="/login" >LOG IN?</Link>
+                            <Link className="ml-3 lg:ml-5 text-white text-sm font-semibold" to="/login" >LOG IN?</Link>
                         </div>
 
                         <div className="card-body">
@@ -88,7 +86,7 @@ const SignUp = () => {
                                         })}
                                     />
                                     <label className="label font-semibold ">
-                                        {errors.name?.type === 'required' && <span className="label-text-alt text-orange-500 font-mono">{errors.name.message}</span>}
+                                        {errors.name?.type === 'required' && <span className="label-text-alt text-red-500">{errors.name.message}</span>}
 
                                     </label>
                                 </div>
@@ -113,8 +111,8 @@ const SignUp = () => {
                                         })}
                                     />
                                     <label className="label font-semibold">
-                                        {errors.email?.type === 'required' && <span className="label-text-alt text-orange-500 font-mono">{errors.email.message}</span>}
-                                        {errors.email?.type === 'pattern' && <span className="label-text-alt text-orange-500 font-mono">{errors.email.message}</span>}
+                                        {errors.email?.type === 'required' && <span className="label-text-alt text-red-500">{errors.email.message}</span>}
+                                        {errors.email?.type === 'pattern' && <span className="label-text-alt text-red-500">{errors.email.message}</span>}
 
                                     </label>
                                 </div>
@@ -139,12 +137,12 @@ const SignUp = () => {
                                         })}
                                     />
                                     <label className="label font-semibold">
-                                        {errors.password?.type === 'required' && <span className="label-text-alt text-orange-500 font-mono">{errors.password.message}</span>}
-                                        {errors.password?.type === 'minLength' && <span className="label-text-alt text-orange-500 font-mono">{errors.password.message}</span>}
+                                        {errors.password?.type === 'required' && <span className="label-text-alt text-red-500">{errors.password.message}</span>}
+                                        {errors.password?.type === 'minLength' && <span className="label-text-alt text-red-500">{errors.password.message}</span>}
                                     </label>
                                 </div>
 
-                                <button type="submit" className="py-3 rounded-sm w-full max-w-xs font-semibold bg-orange-500 shadow-lg text-slate-600 mt-2 hover:scale-105 duration-300">
+                                <button type="submit" className="py-3 rounded-sm w-full max-w-xs font-semibold bg-orange-400 shadow-lg text-slate-600 mt-2 hover:scale-105 duration-300">
                                     <p className='flex justify-center items-center text-white'>
                                         <FaSignOutAlt size="1rem" className='' />
                                         <span className='pl-3 flex items-center text-md'>REGISTER</span>
@@ -153,7 +151,7 @@ const SignUp = () => {
 
                             </form>
 
-                            <div className="divider font-mono text-slate-600">Or continue with</div>
+                            <div className="divider font-mono text-slate-600">Or, continue with</div>
 
                             {signInError}
 
@@ -168,7 +166,7 @@ const SignUp = () => {
                     </div>
                 </div>
             </div >
-            <Footer></Footer>
+            {/* <Footer></Footer> */}
         </div>
 
     );

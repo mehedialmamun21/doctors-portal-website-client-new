@@ -5,18 +5,13 @@ import auth from '../../firebase.init'
 import Loading from "../Shared/Loading";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import useToken from "../../hooks/useToken";
-
 import { FaSignInAlt } from 'react-icons/fa';
-
 import { FcGoogle } from 'react-icons/fc';
-import Footer from "../Shared/Footer";
 import Swal from "sweetalert2";
-
 
 const Login = () => {
 
   const [email, setEmail] = useState('');
-
   const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
   const { register, formState: { errors }, handleSubmit } = useForm();
   const [
@@ -48,7 +43,7 @@ const Login = () => {
   }
 
   if (error || gError || resError) {
-    signInError = <p className="text-orange-500 font-semibold font-mono"> <small>{error?.message || gError?.message || resError}</small> </p>
+    signInError = <p className="text-red-500 font-semibold"> <small>{error?.message || gError?.message || resError}</small> </p>
   }
 
   const onSubmit = data => {
@@ -56,15 +51,26 @@ const Login = () => {
     signInWithEmailAndPassword(data.email, data.password);
   }
 
-  // const handleAddToCart = () => {
-  //   Swal.fire(
-  //     'Login Successful',
-  //   )
-  // }
+  const handleSendPasswordResetEmail = async (data) => {
+    try {
+      await sendPasswordResetEmail(data.email);
+      Swal.fire(
+        'Password Reset Email Sent',
+        'Check your email for instructions to reset your password.',
+        'success'
+      );
+    } catch (error) {
+      Swal.fire(
+        'Password Reset Failed',
+        error.message || 'An error occurred while sending the password reset email.',
+        'error'
+      );
+    }
+  }
 
   return (
 
-    <div className="pt-8">
+    <div className="pt-10">
 
       <div className="h-screen flex justify-center items-center">
 
@@ -72,15 +78,14 @@ const Login = () => {
 
           <div className="card w-96 rounded-sm bg-white border border-sky-600">
 
-            <div className="bg-sky-600 text-white px-8 py-3 font-semibold flex items-center justify-between">
-              <h2 className="text-lg">Log In to Your Account</h2>
-              <Link className="ml-3 lg:ml-5  text-sm text-white" to="/signup" >SIGN UP?</Link>
+            <div className="bg-sky-500 text-white px-8 py-3 flex items-center justify-between">
+              <h2 className="text-lg">Login to Your Account</h2>
+              <Link className="ml-3 lg:ml-5  text-sm text-white font-semibold" to="/signup" >SIGN UP?</Link>
             </div>
 
             <div className="card-body ">
 
               <form onSubmit={handleSubmit(onSubmit)}>
-                {/* <form onSubmit={handleLogin}> */}
 
                 <div className="form-control w-full max-w-xs">
                   <label className="label">
@@ -101,8 +106,8 @@ const Login = () => {
                     })}
                   />
                   <label className="label font-semibold">
-                    {errors.email?.type === 'required' && <span className="label-text-alt text-orange-500 font-mono">{errors.email.message}</span>}
-                    {errors.email?.type === 'pattern' && <span className="label-text-alt text-orange-500 font-mono">{errors.email.message}</span>}
+                    {errors.email?.type === 'required' && <span className="label-text-alt text-red-500">{errors.email.message}</span>}
+                    {errors.email?.type === 'pattern' && <span className="label-text-alt text-red-500">{errors.email.message}</span>}
 
                   </label>
                 </div>
@@ -130,24 +135,20 @@ const Login = () => {
                   />
 
                   <label className="label font-semibold">
-                    {errors.password?.type === 'required' && <span className="label-text-alt text-orange-500 font-mono">{errors.password.message}</span>}
-                    {errors.password?.type === 'minLength' && <span className="label-text-alt text-orange-500 font-mono">{errors.password.message}</span>}
+                    {errors.password?.type === 'required' && <span className="label-text-alt text-red-500">{errors.password.message}</span>}
+                    {errors.password?.type === 'minLength' && <span className="label-text-alt text-red-500">{errors.password.message}</span>}
                   </label>
 
                 </div>
 
 
                 <button
-                  onClick={async () => {
-                    await sendPasswordResetEmail(email);
-                    alert('Password Reset email sent..');
-                  }}
+                  onClick={handleSubmit(handleSendPasswordResetEmail)}
                 >
-                  <h5 className="pb-2 font-semibold font-mono text-slate-600">Forgot Password ?</h5>
+                  <h5 className="pb-2 font-mono text-sky-500">Forgot Password?</h5>
                 </button>
 
-                {/* <button type="submit" onClick={() => handleAddToCart()} className="py-3 rounded-sm w-full max-w-xs font-semibold bg-orange-500 shadow-lg text-slate-600 mt-2 hover:scale-105 duration-300"> */}
-                <button type="submit" className="py-3 rounded-sm w-full max-w-xs font-semibold bg-orange-500 shadow-lg text-slate-600 mt-2 hover:scale-105 duration-300">
+                <button type="submit" className="py-3 rounded-sm w-full max-w-xs font-semibold bg-orange-400 shadow-lg text-slate-600 mt-2 hover:scale-105 duration-300">
                   <p className='flex justify-center items-center text-white'>
                     <FaSignInAlt size="1rem" />
                     <span className='pl-3 flex items-center text-md'>LOGIN</span>
@@ -155,7 +156,7 @@ const Login = () => {
                 </button>
               </form>
 
-              <div className="divider font-mono text-slate-600">Or continue with</div>
+              <div className="divider font-mono text-slate-600">Or, continue with</div>
 
               {signInError}
 
@@ -172,10 +173,9 @@ const Login = () => {
 
       </div>
 
-      <Footer></Footer>
-
     </div>
   );
 };
 
 export default Login;
+
