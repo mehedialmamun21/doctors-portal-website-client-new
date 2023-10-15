@@ -17,7 +17,6 @@ const Home = () => {
         <Info></Info>
         <Services></Services>
         <Featured></Featured>
-        {/* <ShowMedicine></ShowMedicine> */}
         <div className="text-center mt-28">
           <h4 className='text-black text-xl lg:text-3xl font-semibold font-mono pb-2'>Dental Products</h4>
           <h3 className='text-3xl lg:text-4xl pb-2 font-mono text-slate-600'>Order Online at Discount</h3>

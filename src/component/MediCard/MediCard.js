@@ -69,7 +69,7 @@ const MediCard = ({ item }) => {
                 <center>
                     <div className="card-body" style={{ width: "270px" }}>
 
-                        <h2 className="card-title mx-auto text-sm">{name}</h2>
+                        <h2 className="card-title mx-auto text-sm text-sky-600">{name}</h2>
 
                         <center><p className='text-red-500 font-semibold'> <span className='text-lg'>{price}</span> <span className='text-sm'>Tk</span> </p></center>
 

@@ -14,8 +14,9 @@ import '@smastrom/react-rating/style.css'
 
 // import { BsArrowRight } from 'react-icons/bs';
 import { FaQuoteLeft } from 'react-icons/fa';
+import { BsArrowReturnRight } from 'react-icons/bs';
 
-import { IoArrowRedoOutline } from 'react-icons/io5';
+// import { IoArrowRedoOutline } from 'react-icons/io5';
 
 
 const Testimonials = () => {
@@ -38,17 +39,17 @@ const Testimonials = () => {
                         key={review._id}
                     >
 
-                        <div className='px-20 py-10 flex flex-col items-center border-2 border-y-orange-400 border-x-white bg-white rounded-sm'>
+                        <div className='px-20 py-10 flex flex-col items-center border border-y-orange-400 border-x-white bg-orange-100 rounded-sm'>
                             <Rating
-                                style={{ maxWidth: 180 }}
+                                style={{ maxWidth: 130 }}
                                 value={review.rating}
                                 readOnly
                             />
-                            <FaQuoteLeft size="2.2rem" className='mt-8 text-blue-500' />
-                            <p className='py-8 font-mono'>{review.description}</p>
+                            <FaQuoteLeft size="1.6rem" className='mt-6 text-blue-500' />
+                            <p className='py-6 font-mono text-sm'>{review.description}</p>
                             <div className='flex items-center justify-center'>
-                                <IoArrowRedoOutline size="1.5rem" />
-                                <h3 className='font-semibold text-lg pl-4 font-mono'>{review.name}</h3>
+                                {/* <IoArrowRedoOutline size="1.5rem" /> */}
+                                <h3 className='text-lg pl-4 font-mono flex'> <span className='flex items-center mr-7'><BsArrowReturnRight /></span> {review.name}</h3>
                             </div>
                         </div>
 

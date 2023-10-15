@@ -8,7 +8,7 @@ import { MdOutlineAdminPanelSettings } from 'react-icons/md';
 import { AiOutlineUserAdd } from 'react-icons/ai';
 import { MdOutlineManageAccounts, MdManageAccounts } from 'react-icons/md';
 import { CgAddR } from 'react-icons/cg';
-import Footer from "../Shared/Footer";
+// import Footer from "../Shared/Footer";
 import useCart from '../../hooks/useCart';
 
 const Dashboard = () => {
@@ -59,7 +59,7 @@ const Dashboard = () => {
                 </div>
             </div>
 
-            <Footer></Footer>
+            {/* <Footer></Footer> */}
 
         </section>
     );

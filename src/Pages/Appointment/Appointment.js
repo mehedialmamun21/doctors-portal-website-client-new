@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Footer from '../Shared/Footer';
+// import Footer from '../Shared/Footer';
 import AppointmentBanner from './AppointmentBanner';
 import AvailableAppointments from './AvailableAppointments';
 
@@ -11,7 +11,7 @@ const Appointment = () => {
                 <AppointmentBanner date={date} setDate={setDate}></AppointmentBanner>
                 <AvailableAppointments date={date}></AvailableAppointments>
             </div>
-            <Footer></Footer>
+            {/* <Footer></Footer> */}
         </div>
     );
 };

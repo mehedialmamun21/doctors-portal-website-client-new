@@ -33,7 +33,7 @@ const MyAppointments = () => {
 
                 });
         }
-    }, [user])
+    }, [user, navigate])
 
     return (
         <div className='mt-20'>
@@ -43,7 +43,7 @@ const MyAppointments = () => {
             </div>
 
             <div className='flex justify-center'>
-                <p className='py-1 font-mono'>Hi, <span className='text-purple-700'>{user?.email}</span> </p>
+                <p className='py-1 font-mono'> <span className='text-blue-500'>{user?.email}</span> </p>
             </div>
 
             <div class="overflow-x-auto my-5">
@@ -64,15 +64,15 @@ const MyAppointments = () => {
                             appointments.map((a, index) => <tr key={a._id}>
                                 <th>{index + 1}</th>
                                 {/* <td className='font-semibold font-mono'>{a.patientName}</td> */}
-                                <td className='font-semibold font-mono'>{a.date}</td>
-                                <td className='font-semibold font-mono'>{a.slot}</td>
-                                <td className='font-semibold font-mono'>{a.treatment}</td>
-                                <td className='font-semibold font-mono'>{a.phone}</td>
+                                <td className=' font-mono'>{a.date}</td>
+                                <td className=' font-mono'>{a.slot}</td>
+                                <td className=' font-mono'>{a.treatment}</td>
+                                <td className=' font-mono'>{a.phone}</td>
                                 <td>
                                     {(a.price && !a.paid) && <Link to={`/dashboard/payment/${a._id}`}> <button className='btn btn-sm bg-green-500 hover:bg-green-600 border-none text-white px-10 font-semibold rounded-sm'>Pay</button> </Link>}
                                     {(a.price && a.paid) && <div>
                                         <p><span className='text-green-500 font-semibold text-lg font-mono'>Paid</span></p>
-                                        <p ><span className='font-bold text-sm text-zinc-600 font-mono'>Trans. ID : </span><span className='text-zinc-600 text-sm font-mono'>{a.transactionId}</span> </p>
+                                        <p ><span className='text-sm text-zinc-600 font-mono font-semibold'>Transaction ID: </span> <br /> <span className='text-zinc-600 text-sm font-mono'>{a.transactionId}</span> </p>
                                     </div>}
                                 </td>
                             </tr>)

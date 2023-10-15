@@ -1,12 +1,21 @@
 import React, { useState } from 'react';
 import { CardElement, useElements, useStripe } from '@stripe/react-stripe-js';
 import jsPDF from 'jspdf';
+import { useEffect } from 'react';
 
 const Checkout = ({ price }) => {
     const stripe = useStripe();
     const elements = useElements();
     const [cardError, setCardError] = useState('');
     const [transactionId, setTransactionId] = useState('');
+
+    const getCurrentDate = () => {
+        const currentTime = new Date();
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        return currentTime.toLocaleDateString('en-US', options);
+    };
+
+    const [transactionTime, setTransactionTime] = useState(getCurrentDate());
 
     const [pdfGenerated, setPdfGenerated] = useState(false);
 
@@ -37,6 +46,15 @@ const Checkout = ({ price }) => {
         }
     }
 
+    const updateTransactionTime = () => {
+        setTransactionTime(getCurrentDate());
+    };
+
+    useEffect(() => {
+        const dateUpdateInterval = setInterval(updateTransactionTime, 24 * 60 * 60 * 1000); // Update date every 24 hours
+        return () => clearInterval(dateUpdateInterval);
+    }, []);
+
     const handleDownloadPDF = () => {
         if (transactionId) {
             if (pdfGenerated) {
@@ -58,10 +76,13 @@ const Checkout = ({ price }) => {
                 pdf.text(20, 35, `Payment Successful`);
 
                 pdf.setTextColor(0, 0, 0);
-                pdf.text(20, 45, `Total Price: ${price} Tk (Deducted)`);
+                pdf.text(20, 45, `Issue Date: ${transactionTime}`);
 
                 pdf.setTextColor(0, 0, 0);
-                pdf.text(20, 55, `Transaction ID: ${transactionId}`);
+                pdf.text(20, 55, `Total Price: ${price} Tk (Deducted)`);
+
+                pdf.setTextColor(0, 0, 0);
+                pdf.text(20, 75, `Transaction ID: ${transactionId}`);
 
                 pdf.save('transaction_details.pdf');
                 setPdfGenerated(true);
@@ -71,7 +92,7 @@ const Checkout = ({ price }) => {
 
     return (
         <>
-            <form className='w-3/6 ml-60 my-16 bg-white shadow-[0_3px_10px_rgb(0,0,0,0.2)] px-5 py-5 rounded-sm' onSubmit={handleSubmit}>
+            <form className='w-3/6 ml-60 my-10 bg-white shadow-[0_3px_10px_rgb(0,0,0,0.2)] px-5 py-5 rounded-sm' onSubmit={handleSubmit}>
                 <CardElement
                     options={{
                         style: {
@@ -89,8 +110,10 @@ const Checkout = ({ price }) => {
                     }}
                 />
 
-                <button className='btn bg-green-500 hover:bg-green-600 border-none rounded-sm px-10 btn-sm mt-10 mb-2 text-white' type="submit" disabled={!!transactionId}>
-                    {transactionId ? 'Paid' : 'Pay'}
+                <button className='btn bg-green-500 hover:bg-green-600 border-none rounded-sm px-6 btn-sm mt-10 mb-2 text-white' type="submit" disabled={!!transactionId}>
+                    {transactionId ? (
+                        <span style={{ color: 'black' }}>Paid</span>
+                    ) : 'Pay'}
                 </button>
 
                 <div className='mt-3'>
@@ -100,6 +123,7 @@ const Checkout = ({ price }) => {
                 {transactionId && !pdfGenerated &&
                     <>
                         <p className='text-green-500 font-mono'>Payment successful</p>
+                        <p className='font-mono'>Issue Date: {transactionTime}</p>
                         <p className='font-mono'>Transaction ID: {transactionId}</p>
                         <button className='btn bg-violet-500 hover-bg-blue-600 border-none rounded-sm px-4 btn-sm mt-2 text-white' onClick={handleDownloadPDF}>
                             Download as PDF
@@ -113,6 +137,7 @@ const Checkout = ({ price }) => {
             </form>
         </>
     );
+
 };
 
 export default Checkout;

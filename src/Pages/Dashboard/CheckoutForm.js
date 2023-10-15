@@ -20,6 +20,7 @@ const CheckoutForm = ({ appointment }) => {
     };
 
     const [transactionTime, setTransactionTime] = useState(getCurrentDate());
+
     const [pdfGenerated, setPdfGenerated] = useState(false);
 
     useEffect(() => {
@@ -131,16 +132,19 @@ const CheckoutForm = ({ appointment }) => {
                 pdf.text(20, 35, `Payment Successful`);
 
                 pdf.setTextColor(0, 0, 0);
-                pdf.text(20, 45, `Date: ${transactionTime}`);
+                pdf.text(20, 45, `Issue Date: ${transactionTime}`);
 
                 pdf.setTextColor(0, 0, 0);
-                pdf.text(20, 55, `Service Name: ${treatment}`);
+                pdf.text(20, 55, `Appointment Date: ${appointment.date}`);
 
                 pdf.setTextColor(0, 0, 0);
-                pdf.text(20, 65, `Price: ${price} Tk (Deducted)`);
+                pdf.text(20, 65, `Service Name: ${treatment}`);
 
                 pdf.setTextColor(0, 0, 0);
-                pdf.text(20, 75, `Transaction ID: ${transactionId}`);
+                pdf.text(20, 75, `Price: ${price} Tk (Deducted)`);
+
+                pdf.setTextColor(0, 0, 0);
+                pdf.text(20, 95, `Transaction ID: ${transactionId}`);
 
                 pdf.save('transaction_details.pdf');
                 setPdfGenerated(true);
@@ -173,7 +177,7 @@ const CheckoutForm = ({ appointment }) => {
                         type="submit"
                         disabled={true} // Disable the button when payment is completed
                     >
-                        Paid
+                        <span style={{ color: 'black' }}>Paid</span>
                     </button>
                 ) : (
                     <button
@@ -189,7 +193,8 @@ const CheckoutForm = ({ appointment }) => {
             {transactionId && !pdfGenerated && (
                 <>
                     <p className='text-green-500 font-mono'>Payment successful</p>
-                    <p className='font-mono'>Date: {transactionTime}</p>
+                    <p className='font-mono'>Issue Date: {transactionTime}</p>
+                    {/* <p className='font-mono'>Appointment Date: {appointment.date}</p> */}
                     <p className='font-mono'>Transaction ID: {transactionId}</p>
                     <button className='btn w-2/5 bg-violet-500 hover-bg-blue-600 border-none rounded-sm btn-sm mt-2 text-white' onClick={handleDownloadPDF}>
                         Download as PDF

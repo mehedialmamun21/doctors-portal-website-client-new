@@ -48,24 +48,25 @@ const MyCart = () => {
         <div className='mt-20'>
 
             <div className=''>
-                <h2 className='mt-24 mb-8 font-semibold border-2 border-y-zinc-400 border-x-gray-100 py-3 mx-80 text-center uppercase text-2xl'>Your Cart </h2>
+                <h2 className='mt-24 mb-6 font-semibold border-2 border-y-zinc-400 border-x-gray-100 py-3 mx-80 text-center uppercase text-2xl'>Your Cart </h2>
             </div>
+
+            <h2 className='pb-5 font-mono text-center'> <span className='text-blue-500'>{user?.email || ''}</span> </h2>
 
             <div className='mb-20'>
 
                 <div className='px-5 py-2'>
 
-                    <div className='flex gap-7 justify-center bg-white border border-gray-300 rounded-xl'>
+                    <div className='flex gap-7 justify-center bg-white border border-gray-300 rounded-sm'>
                         <div className='my-6'>
-                            <h2 className='pb-7 font-mono'>Hi, <span className='text-purple-700'>{user?.email || ''}</span> </h2>
-                            <h2 className='text-lg text-zinc-800 mb-6 font-mono uppercase'><span className=''>Total Items = <span className=''>{cart?.length || 0}</span> </span></h2>
-                            <h2 className='text-lg  text-zinc-800 font-mono border-t-gray-100 border-l-gray-100 border-r-gray-100 rounded-sm uppercase'><span className=''>Total Price = <span className=' bg-white px-3 py-2 border border-zinc-400'> <span>{total}</span> <span className='text-sm'>Tk</span> </span></span></h2>
+                            <h2 className='text-lg text-zinc-800 mb-8 font-mono uppercase'><span className=''>Total Items = <span className=''>{cart?.length || 0}</span> </span></h2>
+                            <h2 className='text-lg  text-zinc-800 font-mono border-t-gray-100 border-l-gray-100 border-r-gray-100 rounded-sm uppercase'><span className=''>Total Price = <span className=' bg-white px-3 py-2 border border-zinc-400'> <span>{total}</span> <span className='text-sm'> Tk </span> </span></span></h2>
                         </div>
 
                         <div>
                             <Link to="/dashboard/pay">
                                 <span className='flex gap-7'>
-                                    <span className='mt-28'><HiArrowNarrowRight size="1.2rem" className='mt-5' /></span> <button className='btn btn-sm bg-green-500 hover:bg-green-600 border-none mt-32 text-white px-10 font-semibold rounded-sm'>Pay</button>
+                                    <span className='mt-24'>  </span> <button className='btn btn-sm bg-green-500 hover:bg-green-600 border-none mt-20 text-white px-6 font-semibold rounded-sm'>Pay</button>
                                 </span>
                             </Link>
                         </div>
@@ -86,7 +87,7 @@ const MyCart = () => {
                                     <th>Medicine</th>
                                     <th>Name</th>
                                     <th>Price</th>
-                                    <th>Action</th>
+                                    <th>Delete</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -109,7 +110,7 @@ const MyCart = () => {
                                         <td>
                                             {item.name}
                                         </td>
-                                        <td className='text-left'>{item.price} <span className='text-2xl'>৳</span></td>
+                                        <td className='text-left'> {item.price} <span className='text-sm'>Tk</span> </td>
                                         <td>
                                             <button onClick={() => handleDelete(item)} className="btn btn-ghost bg-white text-red-500 btn-lg rounded-sm"> <FaTrashAlt /> </button>
                                         </td>

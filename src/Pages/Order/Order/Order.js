@@ -31,7 +31,7 @@ const Order = () => {
 
 
     return (
-        <section className='bg-white'>
+        <section className='h-screen bg-white'>
 
             <div className='pt-24 px-40 pb-20'>
 
@@ -57,8 +57,8 @@ const Order = () => {
                                 ></MediCard>)
                             }
                         </div>
-                        <div className="pagination-container font-semibold mt-8 border border-t-blue-500 border-b-gray-100 border-l-gray-100 border-r-gray-100">
-                            <div className='pt-10'>
+                        <div className="pagination-container font-semibold mt-8 border border-y-gray-300 border-l-white border-r-white">
+                            <div className='py-5'>
                                 <ReactPaginate
                                     previousLabel="Previous"
                                     nextLabel="Next"
@@ -69,26 +69,26 @@ const Order = () => {
                                     onPageChange={handlePageClick}
                                     containerClassName="pagination flex items-center justify-center"
                                     subContainerClassName="pages pagination"
-                                    activeClassName="bg-blue-500 text-blue-600"
+                                    activeClassName="bg-gray-200 text-blue-600"
                                     pageClassName="rounded-full mx-1 px-3 py-1 bg-gray-200 hover:bg-blue-200"
-                                    previousClassName="rounded-full mx-1 px-3 py-1 bg-blue-500 hover:bg-blue-600 text-white"
-                                    nextClassName="rounded-full mx-1 px-3 py-1 bg-blue-500 hover:bg-blue-600 text-white"
+                                    previousClassName="rounded-sm mx-3 px-3 py-1 bg-gray-400 hover:bg-blue-600 text-white"
+                                    nextClassName="rounded-sm mx-3 px-3 py-1 bg-gray-400 hover:bg-blue-600 text-white"
                                     breakClassName="rounded-full mx-1 px-3 py-1 bg-gray-200"
                                 />
                             </div>
                         </div>
                     </TabPanel>
                     <TabPanel>
-                        <div className='grid grid-cols-3 gap-x-5 gap-y-10 mt-10'>
+                        <div className='grid grid-cols-4 gap-x-5 gap-y-10 mt-10'>
                             {
-                                Periodontics.map(item => <MediCard
+                                Periodontics.slice(currentPage * itemsPerPage, (currentPage + 1) * itemsPerPage).map((item) => <MediCard
                                     key={item._id}
                                     item={item}
                                 ></MediCard>)
                             }
                         </div>
-                        <div className="pagination-container font-semibold mt-8 border border-t-blue-500 border-b-gray-100 border-l-gray-100 border-r-gray-100">
-                            <div className='pt-10'>
+                        <div className="pagination-container font-semibold mt-8 border border-y-gray-300 border-l-white border-r-white">
+                            <div className='py-5'>
                                 <ReactPaginate
                                     previousLabel="Previous"
                                     nextLabel="Next"
@@ -99,17 +99,17 @@ const Order = () => {
                                     onPageChange={handlePageClick}
                                     containerClassName="pagination flex items-center justify-center"
                                     subContainerClassName="pages pagination"
-                                    activeClassName="bg-blue-500 text-blue-600"
+                                    activeClassName="bg-gray-200 text-blue-600"
                                     pageClassName="rounded-full mx-1 px-3 py-1 bg-gray-200 hover:bg-blue-200"
-                                    previousClassName="rounded-full mx-1 px-3 py-1 bg-blue-500 hover:bg-blue-600 text-white"
-                                    nextClassName="rounded-full mx-1 px-3 py-1 bg-blue-500 hover:bg-blue-600 text-white"
+                                    previousClassName="rounded-sm mx-3 px-3 py-1 bg-gray-400 hover:bg-blue-600 text-white"
+                                    nextClassName="rounded-sm mx-3 px-3 py-1 bg-gray-400 hover:bg-blue-600 text-white"
                                     breakClassName="rounded-full mx-1 px-3 py-1 bg-gray-200"
                                 />
                             </div>
                         </div>
                     </TabPanel>
                     <TabPanel>
-                        <div className='grid grid-cols-3 gap-x-5 gap-y-10 mt-10'>
+                        <div className='grid grid-cols-4 gap-x-5 gap-y-10 mt-10'>
                             {
                                 Prosthodontics.map(item => <MediCard
                                     key={item._id}
@@ -117,8 +117,8 @@ const Order = () => {
                                 ></MediCard>)
                             }
                         </div>
-                        <div className="pagination-container font-semibold mt-8 border border-t-blue-500 border-b-gray-100 border-l-gray-100 border-r-gray-100">
-                            <div className='pt-10'>
+                        <div className="pagination-container font-semibold mt-8 border border-y-gray-300 border-l-white border-r-white">
+                            <div className='py-5'>
                                 <ReactPaginate
                                     previousLabel="Previous"
                                     nextLabel="Next"
@@ -129,17 +129,17 @@ const Order = () => {
                                     onPageChange={handlePageClick}
                                     containerClassName="pagination flex items-center justify-center"
                                     subContainerClassName="pages pagination"
-                                    activeClassName="bg-blue-500 text-blue-600"
+                                    activeClassName="bg-gray-200 text-blue-600"
                                     pageClassName="rounded-full mx-1 px-3 py-1 bg-gray-200 hover:bg-blue-200"
-                                    previousClassName="rounded-full mx-1 px-3 py-1 bg-blue-500 hover:bg-blue-600 text-white"
-                                    nextClassName="rounded-full mx-1 px-3 py-1 bg-blue-500 hover:bg-blue-600 text-white"
+                                    previousClassName="rounded-sm mx-3 px-3 py-1 bg-gray-400 hover:bg-blue-600 text-white"
+                                    nextClassName="rounded-sm mx-3 px-3 py-1 bg-gray-400 hover:bg-blue-600 text-white"
                                     breakClassName="rounded-full mx-1 px-3 py-1 bg-gray-200"
                                 />
                             </div>
                         </div>
                     </TabPanel>
                     <TabPanel>
-                        <div className='grid grid-cols-3 gap-x-5 gap-y-10 mt-10'>
+                        <div className='grid grid-cols-4 gap-x-5 gap-y-10 mt-10'>
                             {
                                 Restoratives.map(item => <MediCard
                                     key={item._id}
@@ -147,8 +147,8 @@ const Order = () => {
                                 ></MediCard>)
                             }
                         </div>
-                        <div className="pagination-container font-semibold mt-8 border border-t-blue-500 border-b-gray-100 border-l-gray-100 border-r-gray-100">
-                            <div className='pt-10'>
+                        <div className="pagination-container font-semibold mt-8 border border-y-gray-300 border-l-white border-r-white">
+                            <div className='py-5'>
                                 <ReactPaginate
                                     previousLabel="Previous"
                                     nextLabel="Next"
@@ -159,10 +159,10 @@ const Order = () => {
                                     onPageChange={handlePageClick}
                                     containerClassName="pagination flex items-center justify-center"
                                     subContainerClassName="pages pagination"
-                                    activeClassName="bg-blue-500 text-blue-600"
+                                    activeClassName="bg-gray-200 text-blue-600"
                                     pageClassName="rounded-full mx-1 px-3 py-1 bg-gray-200 hover:bg-blue-200"
-                                    previousClassName="rounded-full mx-1 px-3 py-1 bg-blue-500 hover:bg-blue-600 text-white"
-                                    nextClassName="rounded-full mx-1 px-3 py-1 bg-blue-500 hover:bg-blue-600 text-white"
+                                    previousClassName="rounded-sm mx-3 px-3 py-1 bg-gray-400 hover:bg-blue-600 text-white"
+                                    nextClassName="rounded-sm mx-3 px-3 py-1 bg-gray-400 hover:bg-blue-600 text-white"
                                     breakClassName="rounded-full mx-1 px-3 py-1 bg-gray-200"
                                 />
                             </div>
@@ -177,8 +177,8 @@ const Order = () => {
                                 ></MediCard>)
                             }
                         </div>
-                        <div className="pagination-container font-semibold mt-8 border border-t-blue-500 border-b-gray-100 border-l-gray-100 border-r-gray-100">
-                            <div className='pt-10'>
+                        <div className="pagination-container font-semibold mt-8 border border-y-gray-300 border-l-white border-r-white">
+                            <div className='py-5'>
                                 <ReactPaginate
                                     previousLabel="Previous"
                                     nextLabel="Next"
@@ -189,17 +189,17 @@ const Order = () => {
                                     onPageChange={handlePageClick}
                                     containerClassName="pagination flex items-center justify-center"
                                     subContainerClassName="pages pagination"
-                                    activeClassName="bg-blue-500 text-blue-600"
+                                    activeClassName="bg-gray-200 text-blue-600"
                                     pageClassName="rounded-full mx-1 px-3 py-1 bg-gray-200 hover:bg-blue-200"
-                                    previousClassName="rounded-full mx-1 px-3 py-1 bg-blue-500 hover:bg-blue-600 text-white"
-                                    nextClassName="rounded-full mx-1 px-3 py-1 bg-blue-500 hover:bg-blue-600 text-white"
+                                    previousClassName="rounded-sm mx-3 px-3 py-1 bg-gray-400 hover:bg-blue-600 text-white"
+                                    nextClassName="rounded-sm mx-3 px-3 py-1 bg-gray-400 hover:bg-blue-600 text-white"
                                     breakClassName="rounded-full mx-1 px-3 py-1 bg-gray-200"
                                 />
                             </div>
                         </div>
                     </TabPanel>
                     <TabPanel>
-                        <div className='grid grid-cols-3 gap-x-5 gap-y-10 mt-10'>
+                        <div className='grid grid-cols-4 gap-x-5 gap-y-10 mt-10'>
                             {
                                 Endodontics.map(item => <MediCard
                                     key={item._id}
@@ -207,8 +207,8 @@ const Order = () => {
                                 ></MediCard>)
                             }
                         </div>
-                        <div className="pagination-container font-semibold mt-8 border border-t-blue-500 border-b-gray-100 border-l-gray-100 border-r-gray-100">
-                            <div className='pt-10'>
+                        <div className="pagination-container font-semibold mt-8 border border-y-gray-300 border-l-white border-r-white">
+                            <div className='py-5'>
                                 <ReactPaginate
                                     previousLabel="Previous"
                                     nextLabel="Next"
@@ -219,17 +219,17 @@ const Order = () => {
                                     onPageChange={handlePageClick}
                                     containerClassName="pagination flex items-center justify-center"
                                     subContainerClassName="pages pagination"
-                                    activeClassName="bg-blue-500 text-blue-600"
+                                    activeClassName="bg-gray-200 text-blue-600"
                                     pageClassName="rounded-full mx-1 px-3 py-1 bg-gray-200 hover:bg-blue-200"
-                                    previousClassName="rounded-full mx-1 px-3 py-1 bg-blue-500 hover:bg-blue-600 text-white"
-                                    nextClassName="rounded-full mx-1 px-3 py-1 bg-blue-500 hover:bg-blue-600 text-white"
+                                    previousClassName="rounded-sm mx-3 px-3 py-1 bg-gray-400 hover:bg-blue-600 text-white"
+                                    nextClassName="rounded-sm mx-3 px-3 py-1 bg-gray-400 hover:bg-blue-600 text-white"
                                     breakClassName="rounded-full mx-1 px-3 py-1 bg-gray-200"
                                 />
                             </div>
                         </div>
                     </TabPanel>
                     <TabPanel>
-                        <div className='grid grid-cols-3 gap-x-5 gap-y-10 mt-10'>
+                        <div className='grid grid-cols-4 gap-x-5 gap-y-10 mt-10'>
                             {
                                 General_Dentistry.map(item => <MediCard
                                     key={item._id}
@@ -237,8 +237,8 @@ const Order = () => {
                                 ></MediCard>)
                             }
                         </div>
-                        <div className="pagination-container font-semibold mt-8 border border-t-blue-500 border-b-gray-100 border-l-gray-100 border-r-gray-100">
-                            <div className='pt-10'>
+                        <div className="pagination-container font-semibold mt-8 border border-y-gray-300 border-l-white border-r-white">
+                            <div className='py-5'>
                                 <ReactPaginate
                                     previousLabel="Previous"
                                     nextLabel="Next"
@@ -249,10 +249,10 @@ const Order = () => {
                                     onPageChange={handlePageClick}
                                     containerClassName="pagination flex items-center justify-center"
                                     subContainerClassName="pages pagination"
-                                    activeClassName="bg-blue-500 text-blue-600"
+                                    activeClassName="bg-gray-200 text-blue-600"
                                     pageClassName="rounded-full mx-1 px-3 py-1 bg-gray-200 hover:bg-blue-200"
-                                    previousClassName="rounded-full mx-1 px-3 py-1 bg-blue-500 hover:bg-blue-600 text-white"
-                                    nextClassName="rounded-full mx-1 px-3 py-1 bg-blue-500 hover:bg-blue-600 text-white"
+                                    previousClassName="rounded-sm mx-3 px-3 py-1 bg-gray-400 hover:bg-blue-600 text-white"
+                                    nextClassName="rounded-sm mx-3 px-3 py-1 bg-gray-400 hover:bg-blue-600 text-white"
                                     breakClassName="rounded-full mx-1 px-3 py-1 bg-gray-200"
                                 />
                             </div>
@@ -267,8 +267,8 @@ const Order = () => {
                                 ></MediCard>)
                             }
                         </div>
-                        <div className="pagination-container font-semibold mt-8 border border-t-blue-500 border-b-gray-100 border-l-gray-100 border-r-gray-100">
-                            <div className='pt-10'>
+                        <div className="pagination-container font-semibold mt-8 border border-y-gray-300 border-l-white border-r-white">
+                            <div className='py-5'>
                                 <ReactPaginate
                                     previousLabel="Previous"
                                     nextLabel="Next"
@@ -279,10 +279,10 @@ const Order = () => {
                                     onPageChange={handlePageClick}
                                     containerClassName="pagination flex items-center justify-center"
                                     subContainerClassName="pages pagination"
-                                    activeClassName="bg-blue-500 text-blue-600"
+                                    activeClassName="bg-gray-200 text-blue-600"
                                     pageClassName="rounded-full mx-1 px-3 py-1 bg-gray-200 hover:bg-blue-200"
-                                    previousClassName="rounded-full mx-1 px-3 py-1 bg-blue-500 hover:bg-blue-600 text-white"
-                                    nextClassName="rounded-full mx-1 px-3 py-1 bg-blue-500 hover:bg-blue-600 text-white"
+                                    previousClassName="rounded-sm mx-3 px-3 py-1 bg-gray-400 hover:bg-blue-600 text-white"
+                                    nextClassName="rounded-sm mx-3 px-3 py-1 bg-gray-400 hover:bg-blue-600 text-white"
                                     breakClassName="rounded-full mx-1 px-3 py-1 bg-gray-200"
                                 />
                             </div>
@@ -297,8 +297,8 @@ const Order = () => {
                                 ></MediCard>)
                             }
                         </div>
-                        <div className="pagination-container font-semibold mt-8 border border-t-blue-500 border-b-gray-100 border-l-gray-100 border-r-gray-100">
-                            <div className='pt-10'>
+                        <div className="pagination-container font-semibold mt-8 border border-y-gray-300 border-l-white border-r-white">
+                            <div className='py-5'>
                                 <ReactPaginate
                                     previousLabel="Previous"
                                     nextLabel="Next"
@@ -309,10 +309,10 @@ const Order = () => {
                                     onPageChange={handlePageClick}
                                     containerClassName="pagination flex items-center justify-center"
                                     subContainerClassName="pages pagination"
-                                    activeClassName="bg-blue-500 text-blue-600"
+                                    activeClassName="bg-gray-200 text-blue-600"
                                     pageClassName="rounded-full mx-1 px-3 py-1 bg-gray-200 hover:bg-blue-200"
-                                    previousClassName="rounded-full mx-1 px-3 py-1 bg-blue-500 hover:bg-blue-600 text-white"
-                                    nextClassName="rounded-full mx-1 px-3 py-1 bg-blue-500 hover:bg-blue-600 text-white"
+                                    previousClassName="rounded-sm mx-3 px-3 py-1 bg-gray-400 hover:bg-blue-600 text-white"
+                                    nextClassName="rounded-sm mx-3 px-3 py-1 bg-gray-400 hover:bg-blue-600 text-white"
                                     breakClassName="rounded-full mx-1 px-3 py-1 bg-gray-200"
                                 />
                             </div>

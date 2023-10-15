@@ -38,7 +38,7 @@ const AppointmentBanner = ({ date, setDate }) => {
 
             </div >
 
-            <p className='text-2xl my-5 font-semibold text-black font-mono flex items-center justify-center'>  <span className=''>Select A Service From Here,</span>  </p>
+            <p className='text-2xl mt-1 mb-10 font-semibold text-black font-mono flex items-center justify-center'>  <span className=''>Select A Service From Here</span>  </p>
 
         </section>
     );

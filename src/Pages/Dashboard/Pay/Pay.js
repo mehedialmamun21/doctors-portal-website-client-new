@@ -15,7 +15,7 @@ const Pay = () => {
         <section className=''>
             <div className=''>
                 <h2 className='mt-24 mb-8 font-semibold border-2 border-y-zinc-400 border-x-gray-100 py-3 mx-80 text-center uppercase text-2xl'>Make Payment</h2>
-
+                <p className='text-center font-semibold'>Total Price = <span className='text-lg'>{price}</span> Tk </p>
                 <Elements stripe={stripePromise}>
                     <Checkout price={price}></Checkout>
                 </Elements>

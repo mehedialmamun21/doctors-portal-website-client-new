@@ -62,7 +62,7 @@ const ManageItems = () => {
                                 <th>Category</th>
                                 <th>Price</th>
                                 {/* <th>Update</th> */}
-                                <th>Action</th>
+                                <th>Delete</th>
                             </tr>
                         </thead>
 
@@ -92,12 +92,12 @@ const ManageItems = () => {
                                     </td>
 
                                     <td className='text-right'>
-                                        {item.price} <span className='text-2xl'>৳</span>
+                                        {item.price} <span className='text-sm'>Tk</span>
                                     </td>
 
                                     {/* <td>
-                                            <button className="btn btn-ghost btn-xs">details</button>
-                                        </td> */}
+                                        <button className="btn btn-ghost btn-xs">Edit</button>
+                                    </td> */}
 
                                     <td>
                                         <button onClick={() => handleDelete(item)} className="btn btn-ghost bg-white text-red-500 btn-lg rounded-sm"> <FaTrashAlt /> </button>

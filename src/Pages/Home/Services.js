@@ -10,41 +10,41 @@ const Services = () => {
 
         {
             _id: 1,
-            name: "Orthodontic Braces",
+            name: "Teeth Orthodontics",
             description: "This is the procedure that makes a dentist a true artist. In this specialized area we can change your smile by correcting your crowded and malposed tooth. We make this service reachable to all.",
             url: "https://i.postimg.cc/hvnf1p2D/clear-braces.png"
         },
         {
             _id: 2,
-            name: "Scaling with Polishing",
+            name: "Cosmetics Dentistry",
             description: "Scaling with polishing is a mandatory treatment for all individuals for at least once a year. It completely clean your teeth, removes stains and provide you a happy and bright smile.",
             url: "https://i.postimg.cc/L8f9sz92/Scaling-and-Polishing.png"
 
         },
         {
             _id: 3,
-            name: "Dental Bridge",
+            name: "Cavity Protection",
             description: "This is the conventional procedure for replacement of missing tooth. Advanced lab technology and adequate training is our strength to provide the best dental bridge to our patients.",
             url: "https://i.postimg.cc/63GLDYJJ/Dental-Bridges1-1024x854.png"
         },
 
         {
             _id: 4,
-            name: "Teeth Whitening",
+            name: "Oral Surgery",
             description: "Everyone notices a bright, white, glowing smile. That's why we utilize long-lasting Teeth Whitening procedure — because we want you to glow with pride and confidence.",
             url: "https://i.postimg.cc/wBhVqbRH/teeth-whitening3-compressed.png"
         },
 
         {
             _id: 5,
-            name: "Dental Implant",
+            name: "Pediatric Dental",
             description: "Are you tensed with your missing tooth? Don`t worry. We are now prepared with the world`s most advanced technology to replace your tooth. Dental Implant is the most recent procedure to replace tooth.",
             url: "https://i.postimg.cc/7ZJ9cLx5/i-Stock-543979766-2.png"
         },
 
         {
             _id: 6,
-            name: "Root Canal Therapy",
+            name: "Teeth Whitening",
             description: "Root Canal Treatment (RCT) is a very specialized treatment which needs skilled experienced hand as well as modern instrumental support. We are very much able to provide you world class RCT.",
             url: "https://i.postimg.cc/y6fT8RxJ/maxresdefault.png"
         }
@@ -55,7 +55,7 @@ const Services = () => {
 
 
     return (
-        <div className='px-5 lg:px-40 py-10 lg:py-28 bg-gray-100'>
+        <div className='px-5 lg:px-40 py-10 lg:py-28 bg-white'>
 
             <div className='text-center pb-10 lg:pb-20'>
                 <h4 className='text-black text-xl lg:text-3xl font-semibold font-mono pb-2'>Our Services</h4>
