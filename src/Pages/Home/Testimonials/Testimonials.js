@@ -28,7 +28,7 @@ const Testimonials = () => {
             .then((data) => setReviews(data));
     }, []);
     return (
-        <section className='px-72 py-28'>
+        <section className='px-72 py-28 bg-gray-100'>
             <div className='pb-10 flex flex-col items-center'>
                 <h4 className='text-black text-xl lg:text-3xl font-mono font-semibold pb-2'>Testimonial</h4>
                 <h3 className='text-3xl lg:text-4xl pb-2 font-mono text-slate-600'>What Our Clients Say</h3>

@@ -1,6 +1,7 @@
 import React from 'react';
 import Chat from '../Home/Chat';
 import { BsInstagram } from 'react-icons/bs';
+import { FaRegHandPointLeft } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -24,12 +25,12 @@ const Footer = () => {
                 <div className='pl-5 lg:pl-0'>
                     <center>
                         <span className="footer-title text-xl text-white">Office Hours</span>
-                        <p className="text-white font-mono text-lg pt-5">Sat 9:00 am - 5:00 pm</p>
-                        <p className="text-white font-mono text-lg">Sun 9:00 am - 5:00 pm</p>
-                        <p className="text-white font-mono text-lg">Mon 9:00 am - 5:00 pm</p>
-                        <p className="text-white font-mono text-lg">Tue 9:00 am - 5:00 pm</p>
-                        <p className="text-white font-mono text-lg">Wed 9:00 am - 5:00 pm</p>
-                        <p className="text-white font-mono text-lg">Thu 9:00 am - 5:00 pm</p>
+                        <p className="text-white font-mono text-lg pt-5">Sat 8:00 am - 5:00 pm</p>
+                        <p className="text-white font-mono text-lg">Sun 8:00 am - 5:00 pm</p>
+                        <p className="text-white font-mono text-lg">Mon 8:00 am - 5:00 pm</p>
+                        <p className="text-white font-mono text-lg">Tue 8:00 am - 5:00 pm</p>
+                        <p className="text-white font-mono text-lg">Wed 8:00 am - 5:00 pm</p>
+                        <p className="text-white font-mono text-lg">Thu 8:00 am - 5:00 pm</p>
 
                     </center>
                 </div>
@@ -60,9 +61,12 @@ const Footer = () => {
 
 
             <div className='grid grid-cols-1 px-12 lg:px-0 lg:flex lg:gap-3 items-center justify-center text-white mt-5 lg:mt-5 py-5 lg:py-7 text-sm bg-zinc-800'>
-                <p className='font-mono pb-2 lg:pb-0'> <span className='text-lg'>©</span> <span className=''>{date}</span> <span className='pr-5'>POPULAR STREET DENTAL ALL RIGHT RESERVED</span> <span className='invisible lg:visible'>|</span> </p>
-                <p className='font-mono pb-2 lg:pb-0'><a href="/#" className='pl-0 lg:pl-3 pr-3'> ACCESSIBILITY STATEMENT </a> <span className='invisible lg:visible'>|</span> </p>
-                <p className='font-mono'> <a href="/#" className='pl-0 lg:pl-3'> SITE DESIGN: MEHEDI AL MAMUN</a> </p>
+                <p className='font-mono pb-2 lg:pb-0'> <span className='text-lg'>©</span> <span className=''>{date}</span> <span className='pr-5'>ALL RIGHT RESERVED BY POPULAR DENTAL </span> <span className='invisible lg:visible'>|</span> </p>
+                {/* <p className='font-mono pb-2 lg:pb-0'><a href="/#" className='pl-0 lg:pl-3 pr-3'> ACCESSIBILITY STATEMENT </a> <span className='invisible lg:visible'>|</span> </p> */}
+                <div className='flex items-center'>
+                    <a href="https://mehedi404.web.app/" target="_blank" rel="noreferrer" className='pl-0 lg:pl-3'> <p className='font-mono'> SITE DESIGN: <span className='bg-gray-100 text-black px-3 py-1 rounded-full font-semibold'>MEHEDI AL MAMUN</span> </p> </a>
+                    <a href="https://mehedi404.web.app/" target="_blank" rel="noreferrer"><FaRegHandPointLeft className='ml-3 text-gray-100' size="1.3rem" /></a>
+                </div>
             </div>
 
         </footer>

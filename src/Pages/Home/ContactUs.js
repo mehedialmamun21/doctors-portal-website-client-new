@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { BiMessageDots } from 'react-icons/bi';
 
 const ContactUs = () => {
 
@@ -27,7 +28,10 @@ const ContactUs = () => {
 
             <div className='w-full lg:w-6/12 mt-8 lg:mt-0 rounded-sm text-black px-5 lg:px-5 pb-0 lg:pb-0'>
 
-                <h4 className='text-2xl lg:text-3xl text-black font-semibold pb-7 flex items-center justify-center'> Get In Touch</h4>
+                <div className='flex items-cetner justify-center'>
+                    <h4 className='text-2xl lg:text-3xl text-black font-semibold pb-7 flex items-center justify-center'> Get In Touch </h4>
+                    <span className='pl-5 text-gray-700 flex items-center pb-7'><BiMessageDots size="2rem" /></span>
+                </div>
 
                 <div className='px-2 lg:px-24 py-5 lg:py-10 shadow-[0_3px_10px_rgb(0,0,0,0.2)]'>
 

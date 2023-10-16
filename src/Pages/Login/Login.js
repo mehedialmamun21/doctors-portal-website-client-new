@@ -145,7 +145,7 @@ const Login = () => {
                 <button
                   onClick={handleSubmit(handleSendPasswordResetEmail)}
                 >
-                  <h5 className="pb-2 font-mono text-sky-500">Forgot Password?</h5>
+                  <h5 className="pb-2 font-mono text-sky-600">Forgot Password?</h5>
                 </button>
 
                 <button type="submit" className="py-3 rounded-sm w-full max-w-xs font-semibold bg-orange-400 shadow-lg text-slate-600 mt-2 hover:scale-105 duration-300">
