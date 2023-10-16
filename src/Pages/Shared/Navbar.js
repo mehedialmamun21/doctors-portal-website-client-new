@@ -29,8 +29,6 @@ const Navbar = () => {
 
       <li><Link to="/order"><span className="font-semibold text-lg flex"> <span className="">Medicine</span> </span></Link></li>
 
-      {/* <li><Link to="/contact"><span className="font-semibold text-lg flex"> <span className="">Contact</span> </span></Link></li> */}
-
       {
         user && <li><Link to="/dashboard"><span className="font-semibold text-lg flex"> <span className="">Dashboard</span> </span></Link></li>
       }
@@ -49,7 +47,6 @@ const Navbar = () => {
 
   return (
 
-    // <div className="navbar px-5 py-2 lg:px-40 text-white bg-gradient-to-b from-primary to-secondary bg-opacity-90 z-50 fixed">
     <div className="navbar px-5 py-2 lg:px-40 text-white bg-black bg-opacity-80 z-50 fixed">
 
       <div className="navbar-start">
