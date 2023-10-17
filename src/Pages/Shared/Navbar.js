@@ -36,7 +36,7 @@ const Navbar = () => {
       <Link to="/dashboard/cart">
         <button className="btn ml-5 bg-none border-none rounded-sm">
           <div className="flex items-center">
-            <FaShoppingCart size="1.2rem" className="mr-2 text-white" />
+            <FaShoppingCart size="1.1rem" className="mr-2 text-white" />
             <div className="badge text-white bg-pink-600 px-3 py-2.5">+{cart?.length || 0}</div>
           </div>
         </button>
