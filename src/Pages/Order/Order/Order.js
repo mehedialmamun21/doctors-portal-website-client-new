@@ -24,7 +24,6 @@ const Order = () => {
     const Dental_Implants = menu.filter(item => item.category === 'Dental_Implants');
     const Dental_Brackets = menu.filter(item => item.category === 'Dental_Brackets');
 
-
     const pageCount = Math.ceil(Pediatric_Dentistry.length / itemsPerPage);
     const handlePageClick = (selected) => {
         setCurrentPage(selected.selected);
