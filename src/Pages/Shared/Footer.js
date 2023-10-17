@@ -50,12 +50,12 @@ const Footer = () => {
                     <center>
                         <span className="footer-title text-xl text-white">Contact Us</span>
                         <p href='/#' className="text-white pt-5">
-                            <span className='text-lg'>57 Popular Street, Dinajpur, Bangladesh</span>
+                            <span className='text-lg'>Kazi's Heritage, House-49, Dinajpur, Bangladesh</span>
                             <br />
                             <br />
                             <span className='text-lg'>( +880 ) 1521413730</span>
                             <br />
-                            <span className='text-lg'>hello@popularstreetdental.com</span>
+                            <span className='text-lg'>hello@dentamart.com</span>
                         </p>
                         <Chat />
                     </center>
@@ -64,10 +64,10 @@ const Footer = () => {
                 <div>
                     <center>
                         <span className="footer-title text-xl text-white">Instagram</span>
-                        <p className="text-white text-center text-lg pt-5"> "The cool Popular dentist who wants teeth to look as </p>
-                        <p className='text-white text-center text-lg'>nice as her Instagram feed"</p>
+                        <p className="text-white text-center text-lg pt-5"> "The cool DentaMart dentist who wants teeth to look as </p>
+                        <p className='text-white text-center text-lg'>nice as Instagram feed"</p>
                         <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
-                            <BsInstagram size="1.5rem" className='text-red-400 mt-3' />
+                            <BsInstagram size="1.5rem" className='text-red-500 mt-3' />
                         </a>
                     </center>
                 </div>
@@ -87,8 +87,8 @@ const Footer = () => {
                     <a href="https://mehedi404.web.app/" target="_blank" rel="noreferrer" className='pl-0 lg:pl-3'>
                         <p className='font-mono'>
                             <span className='relative group'>
-                                SITE DESIGN: <span className='bg-gray-100 text-zinc-900 px-5 py-1 rounded-full font-semibold'>MEHEDI AL MAMUN</span>
-                                <span className='opacity-0 group-hover:opacity-100 bg-sky-600 text-white px-5 py-1 rounded-full text-xs absolute top-0 -mt-12 left-1/2 transform -translate-x-2/2'>
+                                SITE DESIGN & DEVELOPED BY: <span className='bg-gray-700 border border-gray-400 text-white px-3 py-1'>MEHEDI AL MAMUN</span>
+                                <span className='opacity-0 group-hover:opacity-100 bg-sky-600 text-white px-3 py-1 rounded-full text-xs absolute top-0 -mt-8 left-1/2 transform -translate-x-2/2'>
                                     More about <span className='font-semibold'>Mehedi</span>
                                 </span>
                             </span>

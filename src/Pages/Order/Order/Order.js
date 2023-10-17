@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-// import Footer from '../../Shared/Footer';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import MediCard from '../../../component/MediCard/MediCard';
 import useMenu from '../../../hooks/useMenu';
 import ReactPaginate from 'react-paginate';
+import { useQuery } from 'react-query';
+import Loading from '../../Shared/Loading';
 
 const Order = () => {
     const [tabIndex, setTabIndex] = useState(0);
@@ -29,6 +30,15 @@ const Order = () => {
         setCurrentPage(selected.selected);
     };
 
+    const { data: item, isLoading } = useQuery('item', () => fetch('http://localhost:5000/menu', {
+        headers: {
+            authorization: `Bearer ${localStorage.getItem('accessToken')}`
+        }
+    }).then(res => res.json()));
+
+    if (isLoading) {
+        return <Loading></Loading>
+    }
 
     return (
         <section className='h-screen bg-white'>
@@ -321,8 +331,6 @@ const Order = () => {
 
                 </Tabs>
             </div>
-
-            {/* <Footer></Footer> */}
 
         </section>
     );

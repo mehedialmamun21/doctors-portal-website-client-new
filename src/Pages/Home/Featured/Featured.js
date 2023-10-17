@@ -17,7 +17,7 @@ const Featured = () => {
                     </div>
                     <div className='ml-10 text-zinc-900 w-full'>
                         <p className='text-lg uppercase'>We Create Beautiful Smiles</p>
-                        <p className='text-lg py-7 font-serif'>The Popular Dental Care is a modern dental clinic,
+                        <p className='text-lg py-7 font-serif'>The DentaMart is a modern dental clinic,
                             specialized in advanced diagnostics and treatment of dental and oral disorders.
                             We offer comprehensive services from all fields of dentistry.
                             In addition to high-end dental equipment, all services are provided in a comfortable,

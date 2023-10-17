@@ -1,7 +1,9 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
+import { useQuery } from 'react-query';
 import { useParams } from 'react-router-dom';
+import Loading from '../Shared/Loading';
 // import { BiDownArrow } from 'react-icons/bi';
 
 // import Footer from '../Shared/Footer'
@@ -18,6 +20,18 @@ const DrDetails = () => {
             .then(res => res.json())
             .then(data => setDoctor(data))
     }, [doctor, doctorId]);
+
+
+    const { data: doctors, isLoading } = useQuery('doctors', () => fetch('http://localhost:5000/doctor', {
+        headers: {
+            authorization: `Bearer ${localStorage.getItem('accessToken')}`
+        }
+    }).then(res => res.json()));
+
+    if (isLoading) {
+        return <Loading></Loading>
+    }
+
 
     return (
         <div>

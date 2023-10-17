@@ -15,9 +15,10 @@ import '@smastrom/react-rating/style.css'
 // import { BsArrowRight } from 'react-icons/bs';
 import { FaQuoteLeft } from 'react-icons/fa';
 import { BsArrowReturnRight } from 'react-icons/bs';
+import { useQuery } from 'react-query';
+import Loading from '../../Shared/Loading';
 
 // import { IoArrowRedoOutline } from 'react-icons/io5';
-
 
 const Testimonials = () => {
     const [reviews, setReviews] = useState([]);
@@ -27,6 +28,19 @@ const Testimonials = () => {
             .then((res) => res.json())
             .then((data) => setReviews(data));
     }, []);
+
+
+    const { data: review, isLoading } = useQuery('review', () => fetch('http://localhost:5000/review', {
+        headers: {
+            authorization: `Bearer ${localStorage.getItem('accessToken')}`
+        }
+    }).then(res => res.json()));
+
+    if (isLoading) {
+        return <Loading></Loading>
+    }
+
+
     return (
         <section className='px-72 py-28 bg-gray-100'>
             <div className='pb-10 flex flex-col items-center'>
