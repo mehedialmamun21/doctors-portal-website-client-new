@@ -17,10 +17,10 @@ export class Chat extends Component {
     render() {
         return (
             <div className="flex justify-center py-3 text-zinc-700">
-                <a href="https://www.facebook.com/" target="_blank"><FaFacebook size="1.5rem" className="mr-5 cursor-pointer text-white text-xl" /></a>
-                <a href="https://www.youtube.com/" target="_blank"><FaYoutube size="1.5rem" className="mr-5 cursor-pointer text-white text-xl" /></a>
-                <a href="https://www.twitter.com/" target="_blank"><FaTwitter size="1.5rem" className="mr-5 cursor-pointer text-white text-xl" /></a>
-                <a href="https://www.linkedin.com/" target="_blank"><FaLinkedin size="1.5rem" className="cursor-pointer text-white text-xl" /></a>
+                <a href="https://www.facebook.com/" target="_blank"><FaFacebook size="1.5rem" className="mr-5 cursor-pointer text-blue-400 text-xl" /></a>
+                <a href="https://www.youtube.com/" target="_blank"><FaYoutube size="1.5rem" className="mr-5 cursor-pointer text-red-600 text-xl" /></a>
+                <a href="https://www.twitter.com/" target="_blank"><FaTwitter size="1.5rem" className="mr-5 cursor-pointer text-sky-500 text-xl" /></a>
+                <a href="https://www.linkedin.com/" target="_blank"><FaLinkedin size="1.5rem" className="cursor-pointer text-blue-500 text-xl" /></a>
             </div>
         )
     }

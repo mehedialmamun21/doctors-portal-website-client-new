@@ -13,14 +13,6 @@ const CheckoutForm = ({ appointment }) => {
 
     const { _id, price, patient, patientName, treatment } = appointment;
 
-    const getCurrentDate = () => {
-        const currentTime = new Date();
-        const options = { year: 'numeric', month: 'long', day: 'numeric' };
-        return currentTime.toLocaleDateString('en-US', options);
-    };
-
-    const [transactionTime, setTransactionTime] = useState(getCurrentDate());
-
     const [pdfGenerated, setPdfGenerated] = useState(false);
 
     useEffect(() => {
@@ -40,14 +32,24 @@ const CheckoutForm = ({ appointment }) => {
             });
     }, [price]);
 
-    const updateTransactionTime = () => {
-        setTransactionTime(getCurrentDate());
-    };
+    // Initialize the time state
+    const [currentTime, setCurrentTime] = useState(new Date());
 
+    // Update the time every second using useEffect
     useEffect(() => {
-        const dateUpdateInterval = setInterval(updateTransactionTime, 24 * 60 * 60 * 1000); // Update date every 24 hours
-        return () => clearInterval(dateUpdateInterval);
+        const intervalId = setInterval(() => {
+            setCurrentTime(new Date());
+        }, 1000);
+
+        // Clean up the interval when the component unmounts
+        return () => {
+            clearInterval(intervalId);
+        };
     }, []);
+
+    // Format the date and time
+    const date = currentTime.getFullYear() + '-' + (currentTime.getMonth() + 1) + '-' + currentTime.getDate();
+    const time = currentTime.getHours() + ':' + (currentTime.getMinutes() < 10 ? '0' : '') + currentTime.getMinutes();
 
     const handleSubmit = async (event) => {
         event.preventDefault();
@@ -107,7 +109,6 @@ const CheckoutForm = ({ appointment }) => {
             }).then(res => res.json())
                 .then(data => {
                     setProcessing(false);
-                    updateTransactionTime(); // Update the date after successful payment
                 });
         }
     }
@@ -132,16 +133,16 @@ const CheckoutForm = ({ appointment }) => {
                 pdf.text(20, 35, `Payment Successful`);
 
                 pdf.setTextColor(0, 0, 0);
-                pdf.text(20, 45, `Issue Date: ${transactionTime}`);
+                pdf.text(20, 45, `Issue Date & Time: ${date}  (${time})`);
 
                 pdf.setTextColor(0, 0, 0);
-                pdf.text(20, 55, `Appointment Date: ${appointment.date}`);
+                pdf.text(20, 55, `Appointment Date & Time: ${appointment.date}  (${appointment.slot})`);
 
                 pdf.setTextColor(0, 0, 0);
                 pdf.text(20, 65, `Service Name: ${treatment}`);
 
                 pdf.setTextColor(0, 0, 0);
-                pdf.text(20, 75, `Price: ${price} Tk (Deducted)`);
+                pdf.text(20, 75, `Price: ${price} Tk  (Deducted)`);
 
                 pdf.setTextColor(0, 0, 0);
                 pdf.text(20, 95, `Transaction ID: ${transactionId}`);
@@ -193,8 +194,7 @@ const CheckoutForm = ({ appointment }) => {
             {transactionId && !pdfGenerated && (
                 <>
                     <p className='text-green-500 font-mono'>Payment successful</p>
-                    <p className='font-mono'>Issue Date: {transactionTime}</p>
-                    {/* <p className='font-mono'>Appointment Date: {appointment.date}</p> */}
+                    <p className='font-mono'>Issue Date & Time: {date}, {time}</p>
                     <p className='font-mono'>Transaction ID: {transactionId}</p>
                     <button className='btn w-2/5 bg-violet-500 hover-bg-blue-600 border-none rounded-sm btn-sm mt-2 text-white' onClick={handleDownloadPDF}>
                         Download as PDF

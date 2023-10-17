@@ -43,7 +43,7 @@ const MyAppointments = () => {
             </div>
 
             <div className='flex justify-center'>
-                <p className='py-1 font-mono'> <span className='text-blue-500'>{user?.email}</span> </p>
+                <p className='py-1 font-mono'> <span className='text-blue-600'>{user?.email}</span> </p>
             </div>
 
             <div class="overflow-x-auto my-5">

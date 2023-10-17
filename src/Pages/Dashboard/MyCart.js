@@ -51,7 +51,7 @@ const MyCart = () => {
                 <h2 className='mt-24 mb-6 font-semibold border-2 border-y-zinc-400 border-x-gray-100 py-3 mx-80 text-center uppercase text-2xl'>Your Cart </h2>
             </div>
 
-            <h2 className='pb-5 font-mono text-center'> <span className='text-blue-500'>{user?.email || ''}</span> </h2>
+            <h2 className='pb-5 font-mono text-center'> <span className='text-blue-600'>{user?.email || ''}</span> </h2>
 
             <div className='mb-20'>
 
