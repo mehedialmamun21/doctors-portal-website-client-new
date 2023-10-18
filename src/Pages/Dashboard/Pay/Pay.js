@@ -9,8 +9,9 @@ const stripePromise = loadStripe('pk_test_51O09MYK5hmfQM0j4piaYeKG5fZP2tgDHHB1Ey
 
 const Pay = () => {
     const [cart] = useCart();
-    const total = cart.reduce((sum, item) => sum + item.price, 0);
-    const price = parseFloat(total.toFixed(2))
+    const total = cart.reduce((sum, item) => sum + parseFloat(item.price), 0);
+    const price = total.toFixed(2);
+
     return (
         <section className=''>
             <div className=''>

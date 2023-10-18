@@ -9,23 +9,18 @@ const Checkout = ({ price }) => {
     const [cardError, setCardError] = useState('');
     const [transactionId, setTransactionId] = useState('');
 
-
-    // Initialize the time state
     const [currentTime, setCurrentTime] = useState(new Date());
 
-    // Update the time every second using useEffect
     useEffect(() => {
         const intervalId = setInterval(() => {
             setCurrentTime(new Date());
         }, 1000);
 
-        // Clean up the interval when the component unmounts
         return () => {
             clearInterval(intervalId);
         };
     }, []);
 
-    // Format the date and time
     const date = currentTime.getFullYear() + '-' + (currentTime.getMonth() + 1) + '-' + currentTime.getDate();
     const time = currentTime.getHours() + ':' + (currentTime.getMinutes() < 10 ? '0' : '') + currentTime.getMinutes();
 
@@ -63,7 +58,6 @@ const Checkout = ({ price }) => {
     const handleDownloadPDF = () => {
         if (transactionId) {
             if (pdfGenerated) {
-                // Showing the "PDF Downloaded (check it out!)" message here
                 alert('PDF Downloaded (check it out!)');
             } else {
                 const pdf = new jsPDF();

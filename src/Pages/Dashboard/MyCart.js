@@ -2,16 +2,16 @@ import React from 'react';
 import useCart from '../../hooks/useCart';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
-
 import { FaTrashAlt } from 'react-icons/fa';
-import { HiArrowNarrowRight } from 'react-icons/hi';
 import Swal from 'sweetalert2';
 import { Link } from 'react-router-dom';
 
 const MyCart = () => {
     const [cart, refetch] = useCart();
-    // console.log(cart);
-    const total = cart.reduce((sum, item) => item.price + sum, 0)
+
+    const total = cart.reduce((sum, item) => sum + parseFloat(item.price), 0);
+
+    const formattedTotal = total.toFixed(2);
 
     const [user] = useAuthState(auth);
 
@@ -60,7 +60,12 @@ const MyCart = () => {
                     <div className='flex gap-7 justify-center bg-white border border-gray-300 rounded-sm'>
                         <div className='my-6'>
                             <h2 className='text-lg text-zinc-800 mb-8 font-mono uppercase'><span className=''>Total Items = <span className=''>{cart?.length || 0}</span> </span></h2>
-                            <h2 className='text-lg  text-zinc-800 font-mono border-t-gray-100 border-l-gray-100 border-r-gray-100 rounded-sm uppercase'><span className=''>Total Price = <span className=' bg-white px-3 py-2 border border-zinc-400'> <span>{total}</span> <span className='text-sm'> Tk </span> </span></span></h2>
+                            <h2 className='text-lg text-zinc-800 font-mono border-t-gray-100 border-l-gray-100 border-r-gray-100 rounded-sm uppercase'>
+                                <span className=''>Total Price = <span className=' bg-white px-3 py-2 border border-zinc-400'>
+                                    <span>{formattedTotal}</span> <span className='text-sm'> Tk </span>
+                                </span>
+                                </span>
+                            </h2>
                         </div>
 
                         <div>
@@ -80,7 +85,7 @@ const MyCart = () => {
 
                     <div className="overflow-x-auto">
                         <table className="table w-full border-4">
-                            {/* head */}
+
                             <thead>
                                 <tr>
                                     <th>#</th>
@@ -122,8 +127,6 @@ const MyCart = () => {
                     </div>
                 </div>
 
-
-
             </div>
 
         </div>
@@ -131,3 +134,4 @@ const MyCart = () => {
 };
 
 export default MyCart;
+
