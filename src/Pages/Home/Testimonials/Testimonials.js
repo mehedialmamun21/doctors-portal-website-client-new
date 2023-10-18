@@ -40,7 +40,7 @@ const Testimonials = () => {
     }, []);
 
     return (
-        <section className='px-72 py-28 bg-gray-100'>
+        <section className='px-72 py-28 bg-zinc-200'>
             <div className='pb-10 flex flex-col items-center'>
                 <h4 className='text-black text-xl lg:text-3xl font-mono font-semibold pb-2'>Testimonial</h4>
                 <h3 className='text-3xl lg:text-4xl pb-2 font-mono text-slate-600'>What Our Clients Say</h3>
@@ -58,7 +58,7 @@ const Testimonials = () => {
                             key={review._id}
                         >
 
-                            <div className='px-20 py-10 flex flex-col items-center border border-y-orange-400 border-x-white bg-amber-50 rounded-sm'>
+                            <div className='px-20 py-10 flex flex-col items-center border border-y-orange-400 border-x-white bg-white rounded-sm'>
                                 <Rating
                                     style={{ maxWidth: 130 }}
                                     value={review.rating}
@@ -68,7 +68,8 @@ const Testimonials = () => {
                                 <p className='py-6 font-mono text-sm'>{review.description}</p>
                                 <div className='flex items-center justify-center'>
                                     {/* <IoArrowRedoOutline size="1.5rem" /> */}
-                                    <h3 className='text-lg pl-4 font-mono flex'> <span className='flex items-center mr-7'><BsArrowReturnRight /></span> {review.name}</h3>
+                                    {/* <h3 className='text-lg pl-4 font-mono flex'> <span className='flex items-center mr-7'><BsArrowReturnRight /></span> {review.name}</h3> */}
+                                    <h3 className='text-lg font-mono'> {review.name} </h3>
                                 </div>
                             </div>
 

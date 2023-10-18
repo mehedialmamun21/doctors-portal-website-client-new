@@ -27,7 +27,7 @@ const Navbar = () => {
 
       <li><Link to="/udoctors"><span className="font-semibold text-lg flex"> <span className="">Doctors</span> </span></Link></li>
 
-      <li><Link to="/order"><span className="font-semibold text-lg flex"> <span className="">Medicine</span> </span></Link></li>
+      <li><Link to="/order"><span className="font-semibold text-lg flex"> <span className="">Products</span> </span></Link></li>
 
       {
         user && <li><Link to="/dashboard"><span className="font-semibold text-lg flex"> <span className="">Dashboard</span> </span></Link></li>

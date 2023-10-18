@@ -22,7 +22,7 @@ const ContactUs = () => {
     };
 
     return (
-        <section className='flex flex-col items-center justify-center mb-20 mt-10'>
+        <section className='flex flex-col items-center justify-center mb-14 mt-20'>
 
             {/* <p className='text-2xl lg:text-3xl font-mono text-slate-600 mb-7'>Stay Connected With Us</p> */}
 
