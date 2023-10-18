@@ -90,7 +90,7 @@ const Order = () => {
                     </div>
                     <TabPanel>
                         {searchQuery !== '' && filteredItems.length === 0 ? (
-                            <div className='no-items-found-message text-center my-20 text-xl text-red-500'>Sorry, No items found</div>
+                            <div className='no-items-found-message text-center my-20 text-xl text-red-500'>Sorry, No Items Found</div>
                         ) : (
                             <div className='grid grid-cols-4 gap-x-0 gap-y-10 mt-10'>
                                 {filteredItems
