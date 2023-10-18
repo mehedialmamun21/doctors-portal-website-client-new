@@ -5,7 +5,8 @@ import MediCard from '../../../component/MediCard/MediCard';
 import useMenu from '../../../hooks/useMenu';
 import ReactPaginate from 'react-paginate';
 import { BiSearchAlt2 } from 'react-icons/bi';
-
+import { useQuery } from 'react-query';
+import Loading from '../../Shared/Loading';
 const Order = () => {
     const [tabIndex, setTabIndex] = useState(0);
     const [currentPage, setCurrentPage] = useState(0);
@@ -35,10 +36,20 @@ const Order = () => {
         item.name.toLowerCase().includes(searchQuery.toLowerCase())
     );
 
+    const { data: item, isLoading } = useQuery('item', () => fetch('http://localhost:5000/menu', {
+        headers: {
+            authorization: `Bearer ${localStorage.getItem('accessToken')}`
+        }
+    }).then(res => res.json()));
+
+    if (isLoading) {
+        return <Loading></Loading>
+    }
+
     return (
         <section className='bg-white'>
-            <div className='pt-24 px-40 pb-20'>
-                <div className="search-bar mb-10">
+            <div className='pt-28 px-40 pb-20'>
+                <div className="search-bar mb-11">
                     <div className="search-input flex items-center justify-center">
                         <input
                             type='text'
@@ -70,6 +81,7 @@ const Order = () => {
                                 style={{
                                     border: '1px solid #808080',
                                     borderRadius: '5px',
+                                    marginRight: '1px'
                                 }}
                             >
                                 {category}
