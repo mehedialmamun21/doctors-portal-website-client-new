@@ -7,7 +7,7 @@ import DrProfiles from './DrProfiles';
 const UDoctors = () => {
 
     return (
-        <section className='h-screen'>
+        <section className='lg:h-screen'>
 
             <div className='pb-28 mx-5 lg:mx-40 pt-24 lg:pt-24'>
 

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { BsInstagram } from 'react-icons/bs';
 import { FaFacebook, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa';
 export class Chat extends Component {
 
@@ -20,7 +21,8 @@ export class Chat extends Component {
                 <a href="https://www.facebook.com/" target="_blank"><FaFacebook size="1.5rem" className="mr-5 cursor-pointer text-blue-400 text-xl" /></a>
                 <a href="https://www.youtube.com/" target="_blank"><FaYoutube size="1.5rem" className="mr-5 cursor-pointer text-red-600 text-xl" /></a>
                 <a href="https://www.twitter.com/" target="_blank"><FaTwitter size="1.5rem" className="mr-5 cursor-pointer text-sky-500 text-xl" /></a>
-                <a href="https://www.linkedin.com/" target="_blank"><FaLinkedin size="1.5rem" className="cursor-pointer text-blue-500 text-xl" /></a>
+                <a href="https://www.linkedin.com/" target="_blank"><FaLinkedin size="1.5rem" className="mr-5 cursor-pointer text-blue-500 text-xl" /></a>
+                <a href="https://www.instagram.com/" target="_blank"><BsInstagram size="1.5rem" className="cursor-pointer text-red-500 text-xl" /></a>
             </div>
         )
     }

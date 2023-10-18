@@ -8,7 +8,7 @@ const AppointmentBanner = ({ date, setDate }) => {
     return (
 
         <section>
-            <div className="hero px-5 lg:px-60 pt-24 lg:pt-20 pb-10 lg:pb-0">
+            <div className="hero px-5 lg:px-60 pt-16 lg:pt-20 pb-10 lg:pb-0">
 
                 <div className="hero-content grid grid-cols-1 lg:grid-cols-3 rounded-sm text-lg text-black lg:px-36">
 
@@ -38,7 +38,7 @@ const AppointmentBanner = ({ date, setDate }) => {
 
             </div >
 
-            <p className='text-2xl mt-1 mb-10 text-black font-mono flex items-center justify-center'>  <span className=''>Select A Service From Here</span>  </p>
+            <p className='text-xl lg:text-2xl px-5 lg:px-0 mt-1 mb-10 text-black font-mono flex items-center justify-center'>  <span className=''>Select A Service From Here</span>  </p>
 
         </section>
     );

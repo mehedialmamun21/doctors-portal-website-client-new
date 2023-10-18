@@ -48,7 +48,7 @@ const Order = () => {
 
     return (
         <section className='bg-white'>
-            <div className='pt-28 px-40 pb-20'>
+            <div className='pt-28 lg:px-40 pb-20'>
                 <div className="search-bar mb-11">
                     <div className="search-input flex items-center justify-center">
                         <input
@@ -72,7 +72,7 @@ const Order = () => {
                     </div>
                 </div>
                 <Tabs defaultIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
-                    <div className='flex'>
+                    <div className='flex flex-wrap mx-1 lg:mx-0'>
                         {category.map((category, index) => (
                             <div
                                 key={index}
@@ -81,7 +81,9 @@ const Order = () => {
                                 style={{
                                     border: '1px solid #808080',
                                     borderRadius: '5px',
-                                    marginRight: '1px'
+                                    margin: '1px',
+                                    flex: '1', // Use flex to distribute equal width on larger screens
+                                    maxWidth: '150px', // Limit the maximum width for larger screens
                                 }}
                             >
                                 {category}
@@ -92,7 +94,7 @@ const Order = () => {
                         {searchQuery !== '' && filteredItems.length === 0 ? (
                             <div className='no-items-found-message text-center my-20 text-xl text-red-500'>Sorry, No Items Found</div>
                         ) : (
-                            <div className='grid grid-cols-4 gap-x-0 gap-y-10 mt-10'>
+                            <div className='grid grid-cols-1 lg:grid-cols-4 gap-x-0 gap-y-3 lg:gap-y-10 mt-10'>
                                 {filteredItems
                                     .slice(currentPage * itemsPerPage, (currentPage + 1) * itemsPerPage)
                                     .map((item) => (
@@ -100,7 +102,7 @@ const Order = () => {
                                     ))}
                             </div>
                         )}
-                        <div className='pagination-container font-semibold mt-8 border border-y-gray-300 border-l-white border-r-white'>
+                        <div className='pagination-container font-semibold mt-10 lg:mt-8 border border-y-gray-300 border-l-white border-r-white'>
                             <div className='py-5'>
                                 <ReactPaginate
                                     previousLabel='Previous'
@@ -113,10 +115,10 @@ const Order = () => {
                                     containerClassName='pagination flex items-center justify-center'
                                     subContainerClassName='pages pagination'
                                     activeClassName='bg-gray-200 text-blue-600'
-                                    pageClassName='rounded-full mx-1 px-3 py-1 bg-gray-200 hover:bg-blue-200'
-                                    previousClassName='rounded-sm mx-3 px-3 py-1 bg-zinc-400 hover:bg-blue-600 text-white'
-                                    nextClassName='rounded-sm mx-3 px-3 py-1 bg-zinc-400 hover:bg-blue-600 text-white'
-                                    breakClassName='rounded-full mx-1 px-3 py-1 bg-gray-200'
+                                    pageClassName='rounded-full mx-1 px-2 lg:px-3 py-1 bg-gray-200 hover:bg-blue-200'
+                                    previousClassName='rounded-sm mr-2 lg:mr-3 px-1 lg:px-3 py-1 bg-zinc-400 hover:bg-blue-600 text-white'
+                                    nextClassName='rounded-sm ml-2 lg:ml-3 px-1 lg:px-3 py-1 bg-zinc-400 hover:bg-blue-600 text-white'
+                                    breakClassName='rounded-full lg:mx-1 px-3 py-1 bg-gray-200'
                                 />
                             </div>
                         </div>

@@ -66,9 +66,10 @@ const Footer = () => {
                         <span className="footer-title text-xl text-white">Instagram</span>
                         <p className="text-white text-center text-lg pt-5"> "The cool DentaMart dentist who wants teeth to look as </p>
                         <p className='text-white text-center text-lg'>nice as Instagram feed"</p>
-                        <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
+                        {/* <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
                             <BsInstagram size="1.5rem" className='text-red-500 mt-3' />
-                        </a>
+                        </a> */}
+
                     </center>
                 </div>
 
@@ -79,15 +80,19 @@ const Footer = () => {
 
             <div className='grid grid-cols-1 px-12 lg:px-0 lg:flex lg:gap-3 items-center justify-center text-white mt-5 lg:mt-5 py-5 lg:py-7 text-sm bg-zinc-800'>
                 <p className='font-mono pb-2 lg:pb-0'>
-                    <span className='text-lg'>©</span> <span className=''>{date} <span className='text-yellow-500 mx-2 border border-yellow-500 px-2 py-1'>{time}</span> </span>
-                    <span className='pr-5'>ALL RIGHT RESERVED BY POPULAR DENTAL </span>
+                    <span className='text-yellow-500 mx-2 border border-yellow-500 px-2 py-1'>{time}</span>
+                    <span className=''>{date} </span>
+                    <span className='text-lg mr-2 lg:mr-3'>©</span>
+                    <span className='pr-5'>ALL RIGHT RESERVED BY DENTAMART </span>
                     <span className='invisible lg:visible'>|</span>
                 </p>
                 <div className='flex items-center'>
                     <a href="https://mehedi404.web.app/" target="_blank" rel="noreferrer" className='pl-0 lg:pl-3'>
                         <p className='font-mono'>
                             <span className='relative group'>
-                                SITE DESIGN & DEVELOPED BY: <span className='bg-gray-700 border border-gray-400 text-white px-3 py-1'>MEHEDI AL MAMUN</span>
+                                <div className='grid grid-cols-1 lg:grid-cols-2 gap-y-3 lg:gap-y-0 lg:gap-x-3'>
+                                    <span className='flex items-center'>SITE DESIGN & DEVELOPED BY:</span> <span className='bg-gray-700 flex items-center rounded-full lg:rounded-none border border-gray-400 text-white justify-center py-1'>MEHEDI AL MAMUN</span>
+                                </div>
                                 <span className='opacity-0 group-hover:opacity-100 bg-sky-600 text-white px-3 py-1 rounded-full text-xs absolute top-0 -mt-8 left-1/2 transform -translate-x-2/2'>
                                     More about <span className='font-semibold'>Mehedi</span>
                                 </span>

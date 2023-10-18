@@ -53,7 +53,7 @@ const SignUp = () => {
     }
 
     return (
-        <div className="pt-10">
+        <div className="pt-8 lg:pt-10 px-5 lg:px-0">
 
             <div className="h-screen flex justify-center items-center">
 

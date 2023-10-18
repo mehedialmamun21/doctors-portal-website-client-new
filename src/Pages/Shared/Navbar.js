@@ -34,7 +34,7 @@ const Navbar = () => {
       }
 
       <Link to="/dashboard/cart">
-        <button className="btn ml-5 bg-none border-none rounded-sm">
+        <button className="btn ml-5 my-2 lg:my-0 bg-none border-none rounded-sm">
           <div className="flex items-center">
             <FaShoppingCart size="1.1rem" className="mr-2 text-white" />
             <div className="badge text-white bg-pink-600 px-3 py-2.5">+{cart?.length || 0}</div>
@@ -91,7 +91,7 @@ const Navbar = () => {
           </svg>
         </label>
 
-        {user ? <a href="" className="font-bold" onClick={logout} > <span className="flex items-center"> <span className="text-white rounded-full bg-gray-600 border border-gray-400 px-2 lg:px-5 py-2 lg:py-1">Sign Out</span></span> </a> : <Link to="/login" className="font-bold"> <span className="flex items-center"> <span className="text-white rounded-full bg-gray-600 border border-gray-400 px-5 lg:px-6 py-2 lg:py-1">Login</span> </span> </Link>}
+        {user ? <a href="" className="font-bold" onClick={logout} > <span className="flex items-center"> <span className="text-white rounded-full bg-gray-600 border border-gray-400 px-5 lg:px-5 py-1 lg:py-1">Sign Out</span></span> </a> : <Link to="/login" className="font-bold"> <span className="flex items-center"> <span className="text-white rounded-full bg-gray-600 border border-gray-400 px-5 lg:px-6 py-1 lg:py-1">Login</span> </span> </Link>}
 
       </div>
 

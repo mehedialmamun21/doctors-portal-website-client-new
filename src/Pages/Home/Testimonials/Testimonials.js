@@ -40,10 +40,10 @@ const Testimonials = () => {
     }, []);
 
     return (
-        <section className='px-72 py-28 bg-zinc-200'>
-            <div className='pb-10 flex flex-col items-center'>
-                <h4 className='text-black text-xl lg:text-3xl font-mono font-semibold pb-2'>Testimonial</h4>
-                <h3 className='text-3xl lg:text-4xl pb-2 font-mono text-slate-600'>What Our Clients Say</h3>
+        <section className='lg:px-72 lg:py-28 bg-zinc-200 mt-20 lg:mt-0'>
+            <div className='lg:pb-10 flex flex-col items-center'>
+                <h4 className='text-black text-2xl lg:text-3xl font-mono font-semibold pt-5 lg:pt-0 pb-5 lg:pb-2'>Testimonial</h4>
+                <h3 className='text-2xl lg:text-4xl pb-5 lg:pb-2 font-mono text-slate-600'>What Our Clients Say</h3>
             </div>
 
 
@@ -58,7 +58,7 @@ const Testimonials = () => {
                             key={review._id}
                         >
 
-                            <div className='px-20 py-10 flex flex-col items-center border border-y-orange-400 border-x-white bg-white rounded-sm'>
+                            <div className='px-12 lg:px-20 py-10 flex flex-col items-center border border-y-orange-400 border-x-white bg-white rounded-sm'>
                                 <Rating
                                     style={{ maxWidth: 130 }}
                                     value={review.rating}
