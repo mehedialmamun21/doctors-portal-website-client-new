@@ -139,7 +139,7 @@ const MyCart = () => {
                             <thead>
                                 <tr>
                                     <th>#</th>
-                                    <th>Medicine</th>
+                                    <th>Item</th>
                                     <th>Name</th>
                                     <th>Price</th>
                                     <th>Quantity</th>

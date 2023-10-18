@@ -93,7 +93,7 @@ const ManageItems = () => {
                     <table className="table w-full border-4">
                         <thead>
                             <tr>
-                                <th>#</th>
+                                {/* <th>#</th> */}
                                 <th>Item</th>
                                 <th>Category</th>
                                 <th>Price</th>
@@ -104,7 +104,7 @@ const ManageItems = () => {
                         <tbody>
                             {menu.map((item, index) => (
                                 <tr key={item._id}>
-                                    <td>{index + 1}</td>
+                                    {/* <td>{index + 1}</td> */}
                                     <td>
                                         {isFieldEditable('name', item._id) ? (
                                             <input
@@ -161,9 +161,9 @@ const ManageItems = () => {
                                                     openEditForm(item);
                                                 }
                                             }}
-                                            className="btn btn-ghost btn-xs"
+                                            className="btn btn-ghost btn-lg text-blue-500 rounded-sm"
                                         >
-                                            {editItemId === item._id ? 'Save' : <BiEdit className='text-blue-500' size="1.2rem" />}
+                                            {editItemId === item._id ? 'Save' : <BiEdit className='' size="1.2rem" />}
                                         </button>
                                     </td>
                                     <td>
