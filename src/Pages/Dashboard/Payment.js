@@ -44,7 +44,7 @@ const Payment = () => {
                         <div class="card-body">
 
                             <p> <span className='font-mono'>Pay for:</span> <span className='text-black font-semibold'>{appointment.treatment}</span> </p>
-                            <p> <span className='font-mono'>Appointment:</span> <span className='text-black'>{appointment.date}</span> <br /> <span className='text-black pl-28'>{appointment.slot}</span> </p>
+                            <p> <span className='font-mono'>Appointment:</span> <span className='text-black'>{appointment.date}</span> <br /> <span className='text-black pl-14 lg:pl-28'>{appointment.slot}</span> </p>
                             <br />
                             <p> <span className='font-mono'>Please pay:</span> <span className='font-semibold border rounded-sm border-slate-600 px-3 py-1'> <span className='text-black'>{appointment.price} Tk</span> </span></p>
                         </div>

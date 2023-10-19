@@ -33,8 +33,8 @@ const Footer = () => {
                 <p className='text-white pt-5 lg:pt-0 text-lg lg:text-2xl lg:pl-10'>Find available appointments</p>
             </div>
 
-            <div className='footer lg:grid lg:grid-cols-4 px-16 py-5 lg:py-0 lg:px-40'>
-                <div className='pl-5 lg:pl-0'>
+            <div className='footer lg:grid lg:grid-cols-4 px-20 lg:px-40 py-5 lg:py-0'>
+                <div className=''>
                     <center>
                         <span className="footer-title text-xl text-white">Office Hours</span>
                         <p className="text-white font-mono text-lg pt-5">Sat 8:00 am - 5:00 pm</p>
@@ -81,7 +81,7 @@ const Footer = () => {
             <div className='grid grid-cols-1 px-12 lg:px-0 lg:flex lg:gap-3 items-center justify-center text-white mt-5 lg:mt-5 py-5 lg:py-7 text-sm bg-zinc-800'>
                 <p className='font-mono pb-2 lg:pb-0'>
                     <span className='text-yellow-500 mr-2 lg:mr-4 border border-yellow-500 px-2 py-1'>{time}</span>
-                    <span className=''>{date} </span>
+                    <span className='mr-32 lg:mr-0'>{date} </span>
                     <span className='text-lg mr-2 lg:mr-3'>©</span>
                     <span className='pr-5'>ALL RIGHT RESERVED BY DENTAMART </span>
                     <span className='invisible lg:visible'>|</span>
@@ -91,7 +91,7 @@ const Footer = () => {
                         <p className='font-mono'>
                             <span className='relative group'>
                                 <div className='grid grid-cols-1 lg:grid-cols-2 gap-y-3 lg:gap-y-0 lg:gap-x-3'>
-                                    <span className='flex items-center'>SITE DESIGN & DEVELOPED BY:</span> <span className='bg-gray-700 flex items-center rounded-full lg:rounded-none border border-gray-400 text-white justify-center py-1'>MEHEDI AL MAMUN</span>
+                                    <span className='flex items-center'>SITE DESIGN & DEVELOPED BY:</span> <span className='bg-gray-700 flex items-center justify-center rounded-full lg:rounded-none border border-gray-400 text-white py-1'>MD. MEHEDI AL MAMUN</span>
                                 </div>
                                 <span className='opacity-0 group-hover:opacity-100 bg-sky-600 text-white px-3 py-1 rounded-full text-xs absolute top-0 -mt-8 left-1/2 transform -translate-x-2/2'>
                                     More about <span className='font-semibold'>Mehedi</span>

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import auth from "../../firebase.init";
 import { FaShoppingCart } from 'react-icons/fa';
 
-import NavbarLogo from "../../assets/images/logo-white.png"
+import NavbarLogo from "../../assets/images/denta.png"
 import useCart from "../../hooks/useCart";
 
 const Navbar = () => {
@@ -68,7 +68,7 @@ const Navbar = () => {
         </div>
 
         <a href="/">
-          <img src={NavbarLogo} className="w-20 lg:w-48" alt="" />
+          <img src={NavbarLogo} className="w-24 lg:w-40" alt="" />
         </a>
 
       </div>
