@@ -81,14 +81,14 @@ const AddDoctor = () => {
             {/* <h2 className='text-xl text-center mt-12 mb-5 text-white bg-violet-500 py-2 font-mono'><span> Add Doctor </span> </h2> */}
 
             <div>
-                <h2 className='mt-24 mb-3 font-semibold border-2 border-y-zinc-400 border-x-gray-100 py-3 mx-80 text-center uppercase text-2xl'>Add Doctor</h2>
+                <h2 className='mt-24 mb-3 font-semibold border-2 border-y-zinc-400 border-x-gray-100 py-3 mx-5 lg:mx-80 text-center uppercase text-2xl'>Add Doctor</h2>
             </div>
 
             <div className='flex justify-center'>
 
                 <form onSubmit={handleSubmit(onSubmit)}>
 
-                    <div className='px-10 py-5 lg:py-10 lg:grid lg:grid-cols-2 lg:gap-12'>
+                    <div className='px-0 lg:px-10 pt-5 pb-24 lg:py-10 lg:grid lg:grid-cols-2 lg:gap-12'>
 
                         <div>
                             <div className="form-control w-full max-w-xs">
@@ -248,7 +248,7 @@ const AddDoctor = () => {
 
                                 <textarea type="text"
                                     placeholder="More about Doctor.."
-                                    className='input w-full max-w-xs h-44 rounded-sm border border-zinc-400 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] font-mono'
+                                    className='input w-full max-w-xs h-24 lg:h-44 rounded-sm border border-zinc-400 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] font-mono'
                                     {...register("description", {
                                         required: {
                                             value: true,

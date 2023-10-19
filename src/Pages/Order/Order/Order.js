@@ -15,7 +15,7 @@ const Order = () => {
     const [menu] = useMenu();
 
     const category = [
-        'All category',
+        'All',
         'Pediatric_Dentistry',
         'Periodontics',
         'Prosthodontics',
@@ -102,7 +102,7 @@ const Order = () => {
                                     ))}
                             </div>
                         )}
-                        <div className='pagination-container font-semibold mt-10 lg:mt-8 border border-y-gray-300 border-l-white border-r-white'>
+                        <div className='pagination-container font-semibold mx-5 lg:mx-0 mt-5 mb-24 lg:mt-8 lg:mb-8 border border-y-gray-300 border-l-white border-r-white'>
                             <div className='py-5'>
                                 <ReactPaginate
                                     previousLabel='Previous'

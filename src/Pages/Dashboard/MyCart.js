@@ -94,7 +94,7 @@ const MyCart = () => {
     return (
         <div className="mt-20">
             <div className="">
-                <h2 className="mt-24 mb-6 font-semibold border-2 border-y-zinc-400 border-x-gray-100 py-3 mx-80 text-center uppercase text-2xl">
+                <h2 className="mt-24 mb-6 font-semibold border-2 border-y-zinc-400 border-x-gray-100 py-3 mx-5 lg:mx-80 text-center uppercase text-2xl">
                     Your Cart
                 </h2>
             </div>
@@ -105,8 +105,8 @@ const MyCart = () => {
 
             <div className="mb-20">
                 <div className="px-5 py-2">
-                    <div className="flex gap-7 justify-center bg-white border border-gray-300 rounded-sm">
-                        <div className="my-6">
+                    <div className="lg:flex gap-0 lg:gap-7 mx-0 lg:mx-40 justify-center bg-white border border-gray-300 rounded-sm">
+                        <div className="my-6 ml-5 lg:ml-0">
                             <h2 className="text-lg text-zinc-800 mb-8 font-mono uppercase">
                                 <span className="">
                                     Total Items = <span className="">{cart?.length || 0}</span>
@@ -126,14 +126,14 @@ const MyCart = () => {
                             <Link to="/dashboard/pay">
                                 <span className="flex gap-7">
                                     <span className="mt-24"> </span>{' '}
-                                    <button className="btn btn-sm bg-green-500 hover-bg-green-600 border-none mt-20 text-white px-6 font-semibold rounded-sm">Pay</button>
+                                    <button className="btn btn-sm bg-green-500 hover-bg-green-600 border-none mt-10 lg:mt-20 text-white px-6 font-semibold rounded-sm">Pay</button>
                                 </span>
                             </Link>
                         </div>
                     </div>
                 </div>
 
-                <div className="mt-5 px-5">
+                <div className="mt-5 lg:px-5">
                     <div className="overflow-x-auto">
                         <table className="table w-full border-4">
                             <thead>

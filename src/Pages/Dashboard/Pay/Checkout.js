@@ -91,7 +91,7 @@ const Checkout = ({ price }) => {
 
     return (
         <>
-            <form className='w-3/6 ml-60 my-10 bg-white shadow-[0_3px_10px_rgb(0,0,0,0.2)] px-5 py-5 rounded-sm' onSubmit={handleSubmit}>
+            <form className='lg:w-3/6 mx-5 lg:mx-60 my-10 bg-white shadow-[0_3px_10px_rgb(0,0,0,0.2)] px-5 py-5 rounded-sm' onSubmit={handleSubmit}>
                 <CardElement
                     options={{
                         style: {

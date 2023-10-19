@@ -20,10 +20,10 @@ const Users = () => {
         <div className='mt-20'>
 
             <div>
-                <h2 className='mt-24 mb-8 font-semibold border-2 border-y-zinc-400 border-x-gray-100 py-3 mx-80 text-center uppercase text-2xl'>Total User - {users.length}</h2>
+                <h2 className='mt-24 mb-8 font-semibold border-2 border-y-zinc-400 border-x-gray-100 py-3 mx-5 lg:mx-80 text-center uppercase text-2xl'>Total User - {users.length}</h2>
             </div>
 
-            <div class="overflow-x-auto mx-5 mb-5">
+            <div class="overflow-x-auto lg:mx-5 mb-24 lg:mb-5">
                 <table class="table w-full border-4">
                     <thead>
                         <tr>

@@ -33,10 +33,10 @@ const MyReview = () => {
         <div className='addItem mt-20'>
 
             <div>
-                <h2 className='mt-24 mb-8 font-semibold border-2 border-y-zinc-400 border-x-gray-100 py-3 mx-80 text-center uppercase text-2xl'>Give a Review</h2>
+                <h2 className='mt-24 mb-8 font-semibold border-2 border-y-zinc-400 border-x-gray-100 py-3 mx-5 lg:mx-80 text-center uppercase text-2xl'>Give a Review</h2>
             </div>
 
-            <div className='pb-10 px-5 lg:px-14 mx-48'>
+            <div className='pb-10 px-5 lg:px-14 lg:mx-48'>
                 <form className='flex flex-col items-center' onSubmit={handleSubmit(onSubmit)}>
                     <input className='input border border-zinc-400 w-full  my-2 rounded-sm shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] font-mono' required placeholder="Your Name" type="text" {...register("name")} />
                     <input className='input border border-zinc-400 w-full  my-2 rounded-sm shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] font-mono' required placeholder="Give us Ratings  (1-5)" type="number" {...register("rating")} />

@@ -80,7 +80,7 @@ const Footer = () => {
 
             <div className='grid grid-cols-1 px-12 lg:px-0 lg:flex lg:gap-3 items-center justify-center text-white mt-5 lg:mt-5 py-5 lg:py-7 text-sm bg-zinc-800'>
                 <p className='font-mono pb-2 lg:pb-0'>
-                    <span className='text-yellow-500 mx-2 border border-yellow-500 px-2 py-1'>{time}</span>
+                    <span className='text-yellow-500 mr-2 lg:mr-4 border border-yellow-500 px-2 py-1'>{time}</span>
                     <span className=''>{date} </span>
                     <span className='text-lg mr-2 lg:mr-3'>©</span>
                     <span className='pr-5'>ALL RIGHT RESERVED BY DENTAMART </span>

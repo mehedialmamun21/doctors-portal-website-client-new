@@ -86,14 +86,14 @@ const ManageItems = () => {
     return (
         <section>
             <div>
-                <h2 className='mt-24 mb-8 font-semibold border-2 border-y-zinc-400 border-x-gray-100 py-3 mx-80 text-center uppercase text-2xl'>Manage All Items</h2>
+                <h2 className='mt-24 mb-8 font-semibold border-2 border-y-zinc-400 border-x-gray-100 py-3 mx-5 lg:mx-80 text-center uppercase text-2xl'>Manage All Items</h2>
             </div>
-            <div className="px-12 mb-5">
+            <div className="px-0 lg:px-12 mb-24 lg:mb-5">
                 <div className="overflow-x-auto">
                     <table className="table w-full border-4">
                         <thead>
                             <tr>
-                                {/* <th>#</th> */}
+                                <th>#</th>
                                 <th>Item</th>
                                 <th>Category</th>
                                 <th>Price</th>
@@ -104,7 +104,7 @@ const ManageItems = () => {
                         <tbody>
                             {menu.map((item, index) => (
                                 <tr key={item._id}>
-                                    {/* <td>{index + 1}</td> */}
+                                    <td>{index + 1}</td>
                                     <td>
                                         {isFieldEditable('name', item._id) ? (
                                             <input
