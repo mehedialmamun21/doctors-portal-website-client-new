@@ -41,7 +41,7 @@ const DrDetails = () => {
                     <div className='text-center mb-10'>
                         <h2> <span className='text-2xl'>Details About</span> <br /> <span className='font-semibold text-sky-500'>{doctor.name}</span></h2>
                     </div>
-                    <div className='border border-zinc-400 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] '>
+                    <div className=''>
 
                         <div className='text-center'>
 

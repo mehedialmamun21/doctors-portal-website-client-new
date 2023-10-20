@@ -79,7 +79,7 @@ const MyCart = () => {
                     type="text"
                     value={item.quantity || 1} // Set the initial quantity to 1
                     onChange={(e) => updateQuantity(item, e.target.value)}
-                    className="px-2 py-1 text-sm text-center border border-gray-300"
+                    className="px-2 py-1 text-sm text-center border border-gray-300 w-10"
                 />
                 <button
                     onClick={() => updateQuantity(item, item.quantity + 1)}
@@ -124,10 +124,7 @@ const MyCart = () => {
 
                         <div>
                             <Link to="/dashboard/pay">
-                                <span className="flex gap-7">
-                                    <span className="mt-24"> </span>{' '}
-                                    <button className="btn btn-sm bg-green-500 hover-bg-green-600 border-none mt-10 lg:mt-20 text-white px-6 font-semibold rounded-sm">Pay</button>
-                                </span>
+                                <button className="btn btn-sm bg-green-500 hover-bg-green-600 border-none mt-5 lg:mt-20 ml-5 lg:ml-10 mb-5 lg:mb-0 text-white px-6 font-semibold rounded-sm">Pay</button>
                             </Link>
                         </div>
                     </div>
