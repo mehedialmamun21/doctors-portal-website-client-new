@@ -1,0 +1,46 @@
+/* Add this CSS to your styles or a separate CSS file */
+
+.stylish-input {
+    background: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .stylish-input:focus {
+    border-color: #0070f3;
+    box-shadow: 0 0 5px rgba(0, 112, 243, 0.5);
+  }
+  
+  .stylish-textarea {
+    background: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .stylish-textarea:focus {
+    border-color: #0070f3;
+    box-shadow: 0 0 5px rgba(0, 112, 243, 0.5);
+  }
+  
+  .stylish-button {
+    background: linear-gradient(to right, #0070f3, #7928ca);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px; /* Adjust the padding as needed */
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.3s;
+  }
+  
+  .stylish-button:hover {
+    transform: scale(1.05);
+  }
+  
+  

@@ -14,7 +14,6 @@ import '@smastrom/react-rating/style.css'
 
 // import { BsArrowRight } from 'react-icons/bs';
 import { FaQuoteLeft } from 'react-icons/fa';
-import { BsArrowReturnRight } from 'react-icons/bs';
 import Loading from '../../Shared/Loading';
 
 // import { IoArrowRedoOutline } from 'react-icons/io5';
@@ -30,17 +29,16 @@ const Testimonials = () => {
             .then((res) => res.json())
             .then((data) => {
                 setReviews(data);
-                setLoading(false); // Set loading to false when data is ready.
+                setLoading(false);
             })
             .catch((error) => {
-                // Handle any errors here
                 console.error('Error fetching data: ', error);
-                setLoading(false); // Ensure loading is set to false even on error.
+                setLoading(false);
             });
     }, []);
 
     return (
-        <section className='lg:px-72 lg:py-28 bg-zinc-200 mt-20 lg:mt-0'>
+        <section className='px-5 lg:px-72 lg:py-28 lg:bg-zinc-200 mt-20 lg:mt-0'>
             <div className='lg:pb-10 flex flex-col items-center'>
                 <h4 className='text-black text-2xl lg:text-3xl font-mono font-semibold pt-5 lg:pt-0 pb-5 lg:pb-2'>Testimonial</h4>
                 <h3 className='text-2xl lg:text-4xl pb-5 lg:pb-2 font-mono text-slate-600'>What Our Clients Say</h3>
@@ -48,7 +46,6 @@ const Testimonials = () => {
 
 
             {loading ? (
-                // Render a loading indicator here
                 <Loading />
             ) : (
 
@@ -58,7 +55,7 @@ const Testimonials = () => {
                             key={review._id}
                         >
 
-                            <div className='px-12 lg:px-20 py-10 flex flex-col items-center border border-y-orange-400 border-x-white bg-white rounded-sm'>
+                            <div className='px-12 lg:px-20 py-10 flex flex-col items-center border-2 border-y-orange-400 border-x-white bg-white rounded-sm'>
                                 <Rating
                                     style={{ maxWidth: 130 }}
                                     value={review.rating}
@@ -67,9 +64,7 @@ const Testimonials = () => {
                                 <FaQuoteLeft size="1.6rem" className='mt-6 text-blue-500' />
                                 <p className='py-6 font-mono text-sm'>{review.description}</p>
                                 <div className='flex items-center justify-center'>
-                                    {/* <IoArrowRedoOutline size="1.5rem" /> */}
-                                    {/* <h3 className='text-lg pl-4 font-mono flex'> <span className='flex items-center mr-7'><BsArrowReturnRight /></span> {review.name}</h3> */}
-                                    <h3 className='text-lg font-mono'> {review.name} </h3>
+                                    <h3 className='text-sm lg:text-lg font-mono bg-slate-200 px-3 lg:px-5 rounded-sm'> {review.name} </h3>
                                 </div>
                             </div>
 

@@ -32,18 +32,14 @@ const DrProfilesCard = ({ doctor }) => {
                     </div>
                     <br />
 
-                    {/* <div>
-                        <p className='text-zinc-700 font-mono text-sm'>Phone: {phone}</p>
-                    </div> */}
-
                     <div>
                         <p className='text-zinc-700 font-mono text-sm'>Email: <br /> {email}</p>
                     </div>
                 </div>
 
-                <div className='pt-3 flex pl-32 lg:pl-40 items-center'>
+                <div className='pt-3 flex pl-40 lg:pl-40 items-center'>
                     <p className='text-sky-600 text-lg font-bold flex items-center'><BsArrowRight size="1rem" /></p>
-                    <button className='rounded-sm text-zinc-700 text-sm font-mono cursor-pointer' onClick={() => navigateToDetailsPage(_id)}> <span className='hover:text-zinc-700 font-semibold text-zinc-500'>more</span> </button>
+                    <button className='rounded-sm text-zinc-700 text-sm font-mono cursor-pointer' onClick={() => navigateToDetailsPage(_id)}> <span className='hover:text-zinc-700 font-semibold text-sky-500'>more</span> </button>
                 </div>
 
             </div>
