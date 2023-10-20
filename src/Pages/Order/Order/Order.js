@@ -52,9 +52,9 @@ const Order = () => {
 
     return (
         <section className='bg-white'>
-            <div className='pt-28 md:pt-12 lg:pt-28 lg:px-20 xl:px-40 pb-10 xl:pb-20'>
+            <div className='pt-28 md:pt-12 lg:pt-28 lg:px-20 pb-10'>
                 <div style={{ marginBottom: '1rem' }}>
-                    <div className='mx-10 lg:mx-80' style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <div className='mx-10 lg:mx-96' style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                         <input
                             type="text"
                             placeholder="Search entire store here..."
