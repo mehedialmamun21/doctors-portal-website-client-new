@@ -182,7 +182,7 @@ const CheckoutForm = ({ appointment }) => {
                     </button>
                 ) : (
                     <button
-                        className='btn bg-green-500 hover-bg-green-600 border-none rounded-sm px-10 btn-sm mt-10 mb-3 text-white'
+                        className='btn bg-green-500 hover:bg-green-600 border-none rounded-sm px-4 lg:px-6 btn-sm mt-10 mb-3 text-white'
                         type="submit"
                         disabled={!stripe || !clientSecret || processing}
                     >

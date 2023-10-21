@@ -31,6 +31,8 @@ import MyCart from "./Pages/Dashboard/MyCart";
 import AddItem from "./Pages/Dashboard/AddItem";
 import ManageItems from "./Pages/Dashboard/ManageItems";
 import Pay from "./Pages/Dashboard/Pay/Pay";
+import DoctorDashboard from "./Pages/Dashboard/DoctorDashboard";
+import AppointmentDetails from "./Pages/Dashboard/AppointmentDetails";
 
 function App() {
 
@@ -59,10 +61,15 @@ function App() {
           <Route path="pay" element={<Pay></Pay>}></Route>
 
           <Route path="users" element={<RequireAdmin><Users></Users></RequireAdmin>}></Route>
+
           <Route path="addDoctor" element={<RequireAdmin><AddDoctor></AddDoctor></RequireAdmin>}></Route>
+          <Route path="appointmentDetails" element={<RequireAdmin> <AppointmentDetails></AppointmentDetails> </RequireAdmin>}></Route>
           <Route path="addItem" element={<RequireAdmin><AddItem></AddItem></RequireAdmin>}></Route>
           <Route path="manageDoctor" element={<RequireAdmin><ManageDoctors></ManageDoctors></RequireAdmin>}></Route>
           <Route path="manageItem" element={<RequireAdmin> <ManageItems></ManageItems> </RequireAdmin>}></Route>
+
+          <Route path="doctorDashboard" element={<DoctorDashboard></DoctorDashboard>}></Route>
+
         </Route>
 
         <Route path="/order" element={<Order></Order>} />

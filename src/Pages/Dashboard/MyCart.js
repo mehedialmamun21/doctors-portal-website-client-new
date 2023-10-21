@@ -105,7 +105,7 @@ const MyCart = () => {
 
             <div className="mb-20">
                 <div className="px-5 py-2">
-                    <div className="lg:flex gap-0 lg:gap-7 mx-0 lg:mx-40 justify-center bg-white border border-gray-300 rounded-sm">
+                    <div className="lg:flex gap-0 lg:gap-7 mx-0 lg:mx-60 justify-center bg-white border border-gray-300 rounded-sm">
                         <div className="my-6 ml-5 lg:ml-0">
                             <h2 className="text-lg text-zinc-800 mb-8 font-mono uppercase">
                                 <span className="">
@@ -124,7 +124,7 @@ const MyCart = () => {
 
                         <div>
                             <Link to="/dashboard/pay">
-                                <button className="btn btn-sm bg-green-500 hover-bg-green-600 border-none mt-5 lg:mt-20 ml-5 lg:ml-10 mb-5 lg:mb-0 text-white px-6 font-semibold rounded-sm">Pay</button>
+                                <button className="btn btn-sm bg-green-500 hover:bg-green-600 border-none mt-5 lg:mt-20 ml-5 lg:ml-0 mb-5 lg:mb-0 text-white px-6 font-semibold rounded-sm">Pay</button>
                             </Link>
                         </div>
                     </div>

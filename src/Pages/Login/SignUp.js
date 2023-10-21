@@ -61,7 +61,7 @@ const SignUp = () => {
 
                     <div className="card w-96 rounded-sm bg-white border border-sky-500">
 
-                        <div className="bg-sky-500 text-white px-8 py-3 flex items-center justify-between">
+                        <div className="bg-sky-600 text-white px-8 py-3 flex items-center justify-between">
                             <h2 className='text-lg'>Create an Account</h2>
                             <Link className="ml-3 lg:ml-5 text-white text-sm font-semibold" to="/login" >LOG IN?</Link>
                         </div>
@@ -142,7 +142,7 @@ const SignUp = () => {
                                     </label>
                                 </div>
 
-                                <button type="submit" className="py-3 rounded-sm w-full max-w-xs font-semibold bg-orange-400 shadow-lg text-slate-600 mt-2 hover:scale-105 duration-300">
+                                <button type="submit" className="py-3 rounded-sm w-full max-w-xs font-semibold bg-orange-500 shadow-lg text-slate-600 mt-2 hover:scale-105 duration-300">
                                     <p className='flex justify-center items-center text-white'>
                                         <FaSignOutAlt size="1rem" className='' />
                                         <span className='pl-3 flex items-center text-md'>REGISTER</span>

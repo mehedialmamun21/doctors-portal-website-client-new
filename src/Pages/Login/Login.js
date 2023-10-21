@@ -78,7 +78,7 @@ const Login = () => {
 
           <div className="card w-96 rounded-sm bg-white border border-sky-600">
 
-            <div className="bg-sky-500 text-white px-8 py-3 flex items-center justify-between">
+            <div className="bg-sky-600 text-white px-8 py-3 flex items-center justify-between">
               <h2 className="text-lg">Login to Your Account</h2>
               <Link className="ml-3 lg:ml-5  text-sm text-white font-semibold" to="/signup" >SIGN UP?</Link>
             </div>
@@ -148,7 +148,7 @@ const Login = () => {
                   <h5 className="pb-2 font-mono text-sky-600">Forgot Password?</h5>
                 </button>
 
-                <button type="submit" className="py-3 rounded-sm w-full max-w-xs font-semibold bg-orange-400 shadow-lg text-slate-600 mt-2 hover:scale-105 duration-300">
+                <button type="submit" className="py-3 rounded-sm w-full max-w-xs font-semibold bg-orange-500 shadow-lg text-slate-600 mt-2 hover:scale-105 duration-300">
                   <p className='flex justify-center items-center text-white'>
                     <FaSignInAlt size="1rem" />
                     <span className='pl-3 flex items-center text-md'>LOGIN</span>
