@@ -38,23 +38,27 @@ const DrDetails = () => {
             <div className='lg:h-screen'>
 
                 <div className='px-5 lg:px-72 pt-28 mb-20 lg:mb-0'>
-                    <div className='text-center mb-10'>
-                        <h2> <span className='text-2xl'>Details About</span> <br /> <span className='font-semibold text-sky-500'>{doctor.name}</span></h2>
+                    <div className='text-center mb-7'>
+                        <div>
+                            <p className='text-xl lg:text-2xl font-semibold mb-3'>Details About</p>
+                            <p className='font-semibold text-sky-500 text-sm'> <span className='bg-white px-3 py-1 rounded-full border border-zinc-400'>{doctor.name}</span> </p>
+                        </div>
                     </div>
                     <div className=''>
 
                         <div className='text-center'>
 
-                            <div className='flex justify-center items-center'>
+                            <div className='flex justify-center items-center bg-white border border-zinc-400 rounded-xl py-5 lg:py-0 px-5 mx-7 lg:mx-40'>
                                 <div className='hidden lg:block'>
                                     <center><img className='rounded py-5' src={doctor.img} style={{ width: 170, height: 170 }} alt="" /></center>
                                 </div>
                                 <div className='lg:pl-40'>
-                                    <div className='py-5 bg-white border border-gray-400 rounded-sm px-8 lg:px-10'>
+                                    <div className='py-2 lg:py-3 bg-white border border-gray-400 rounded-sm px-8 lg:px-5'>
                                         <div className='pt-2'>
-                                            <p className='font-mono text-slate-600'> Time: {doctor.time}</p>
+                                            <p className='font-mono text-left text-slate-600'> Time: {doctor.time}</p>
                                             <p className='font-mono text-left text-slate-600'> Room: {doctor.room}</p>
                                             <p className='font-mono text-left text-slate-600'> Phone: {doctor.phone}</p>
+                                            {/* <p className='font-mono text-left text-slate-600'> Email: {doctor.email}</p> */}
                                         </div>
                                     </div>
                                 </div>
@@ -62,10 +66,11 @@ const DrDetails = () => {
                         </div>
                     </div>
 
-                    <div className='pb-5 mt-5 lg:mt-10 px-10 border border-zinc-400 shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] bg-white'>
+                    <div className='pb-5 mt-5 lg:mt-5 px-10 border border-zinc-400 rounded-sm shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] bg-white'>
                         <div className='pt-5 pb-5'>
-                            <p className='font-mono text-slate-700'>{doctor.degree} <span className='pl-2'>({doctor.speciality})</span> </p>
-                            <p className='text-sky-500 font-mono'> {doctor.name} </p>
+                            <p className='font-mono text-sky-500 mb-3 lg:mb-4'>{doctor.degree} </p>
+                            <p className='font-semibold text-sm'> <span className='border border-zinc-600 rounded-sm px-3 py-1'> {doctor.speciality} </span> </p>
+                            {/* <p className='text-sky-500 font-mono'> {doctor.name} </p> */}
                         </div>
 
                         <div className=''>

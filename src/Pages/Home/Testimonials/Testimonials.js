@@ -64,7 +64,7 @@ const Testimonials = () => {
                                 <FaQuoteLeft size="1.6rem" className='mt-6 text-blue-500' />
                                 <p className='py-6 font-mono text-sm'>{review.description}</p>
                                 <div className='flex items-center justify-center'>
-                                    <h3 className='text-sm lg:text-lg font-mono bg-slate-200 px-3 lg:px-5 rounded-sm'> {review.name} </h3>
+                                    <h3 className='text-sm lg:text-lg font-mono bg-slate-200 px-3 lg:px-5 py-1 lg:py-1 rounded-sm'> {review.name} </h3>
                                 </div>
                             </div>
 

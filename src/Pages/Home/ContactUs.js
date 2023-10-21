@@ -29,7 +29,7 @@ const ContactUs = () => {
                     <h4 className='text-2xl lg:text-3xl text-black font-semibold pb-4 lg:pb-7 flex items-center justify-center'> Get In Touch </h4>
                 </div>
 
-                <div className='px-2 lg:px-24 py-5 lg:py-10 lg:shadow-[0_3px_10px_rgb(0,0,0,0.2)]'>
+                <div className='px-2 lg:px-24 py-5 lg:py-10 lg:shadow-[0_3px_10px_rgb(0,0,0,0.2)] border border-gray-300 rounded-sm'>
 
                     <form className='row' ref={form} onSubmit={sendEmail}>
                         <div className='flex flex-col gap-5 w-full'>

@@ -13,7 +13,7 @@ const DrProfilesCard = ({ doctor }) => {
     }
 
     return (
-        <div className='card lg:max-w-lg border border-zinc-400 shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] rounded-sm bg-white' style={{ maxWidth: '300px', width: '100%', height: '370px' }}>
+        <div className='card lg:max-w-lg border border-zinc-400 shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] rounded-sm bg-white' style={{ maxWidth: '300px', width: '130%', height: '360px' }}>
 
             <div className=''>
                 <figure>
@@ -28,7 +28,8 @@ const DrProfilesCard = ({ doctor }) => {
                         <p className='text-sky-500 font-mono border-b border-zinc-500 pb-1'>{doctor.name}</p>
                     </div>
                     <div>
-                        <p className='text-zinc-700 font-mono pt-3'>{degree}, {speciality}</p>
+                        <p className='text-zinc-700 font-mono pt-3 text-sm'>{degree}</p>
+                        <p className='mt-2 text-sm text-zinc-700'> <span className='px-2 border border-gray-700 rounded-sm'>{speciality}</span> </p>
                     </div>
                     <br />
 
@@ -38,13 +39,13 @@ const DrProfilesCard = ({ doctor }) => {
                 </div>
 
                 <div className='pt-3 flex pl-40 lg:pl-40 items-center'>
-                    <p className='text-sky-600 text-lg font-bold flex items-center'><BsArrowRight size="1rem" /></p>
-                    <button className='rounded-sm text-zinc-700 text-sm font-mono cursor-pointer' onClick={() => navigateToDetailsPage(_id)}> <span className='hover:text-zinc-700 font-semibold text-sky-500'>more</span> </button>
+                    <p className='text-teal-600 text-lg font-bold flex items-center'><BsArrowRight size="1rem" /></p>
+                    <button className='rounded-sm text-zinc-700 text-sm font-mono cursor-pointer' onClick={() => navigateToDetailsPage(_id)}> <span className='hover:text-zinc-700 font-semibold text-teal-600'>more</span> </button>
                 </div>
 
             </div>
 
-        </div>
+        </div >
     );
 };
 

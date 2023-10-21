@@ -122,8 +122,8 @@ const Order = () => {
                                     subContainerClassName='pages pagination'
                                     activeClassName='bg-gray-200 text-blue-600'
                                     pageClassName='rounded-full mx-1 px-2 lg:px-3 py-1 bg-gray-200 hover:bg-blue-200'
-                                    previousClassName='rounded-sm mr-2 lg:mr-3 px-1 lg:px-3 py-1 bg-zinc-500 hover:bg-blue-600 text-white'
-                                    nextClassName='rounded-sm ml-2 lg:ml-3 px-1 lg:px-3 py-1 bg-zinc-500 hover:bg-blue-600 text-white'
+                                    previousClassName='rounded-sm mr-2 lg:mr-3 px-1 lg:px-3 py-1 hover:bg-zinc-500 bg-blue-600 text-white'
+                                    nextClassName='rounded-sm ml-2 lg:ml-3 px-1 lg:px-3 py-1 hover:bg-zinc-500 bg-blue-600 text-white'
                                     breakClassName='rounded-full lg:mx-1 px-3 py-1 bg-gray-200'
                                 />
                             </div>
