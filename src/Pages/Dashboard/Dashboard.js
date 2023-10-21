@@ -70,7 +70,7 @@ const Dashboard = () => {
                                 <li>
                                     <Link to="/dashboard/users">
                                         <span className='px-2 py-3 font-bold rounded-sm font-mono text-white text-lg flex items-center'>
-                                            <MdOutlineAdminPanelSettings className='mr-3' /> Make Admin
+                                            <MdOutlineAdminPanelSettings className='mr-3' /> Set User Role
                                         </span>
                                     </Link>
                                 </li>

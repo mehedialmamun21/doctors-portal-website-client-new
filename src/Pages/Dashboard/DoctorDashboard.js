@@ -78,59 +78,59 @@ const DoctorDashboard = () => {
                 const totalAppointmentsCategory = sortedAppointments.length;
 
                 return (
-                    <center>
-                        <div key={treatment} className='mb-20'>
 
-                            <div className='mb-5'>
-                                <div className='flex items-center justify-center pb-1'>
-                                    <div className='flex items-center'>
-                                        <BiAddToQueue className='' size="1.2rem" />
-                                        <h2 className='text-lg font-semibold pl-2 text-zinc-700'> <u>{treatment}</u> </h2>
-                                    </div>
-                                </div>
-                                <div>
-                                    {totalAppointmentsCategory === 0 ? (
-                                        <p className='text-red-500 font-semibold'>Total = 0</p>
-                                    ) : (
-                                        <p className='text-blue-500 font-semibold'>Total = {totalAppointmentsCategory}</p>
-                                    )}
+                    <div key={treatment} className='mb-20'>
+
+                        <div className='mb-5'>
+                            <div className='flex items-center justify-center pb-2'>
+                                <div className='flex items-center bg-white px-5 py-1 rounded-sm'>
+                                    <BiAddToQueue className='' size="1.2rem" />
+                                    <h2 className='text-lg font-semibold pl-2 text-zinc-700'> {treatment} </h2>
                                 </div>
                             </div>
-
-                            {totalAppointmentsCategory === 0 ? (
-                                <p className='text-center text-lg text-red-500'>( No appointments available till now )</p>
-                            ) : (
-                                <table style={{ border: '1px solid #000', width: '100%' }}>
-                                    <thead className='text-left'>
-                                        <tr>
-                                            <th style={{ border: '1px solid #000', padding: '8px' }}>Patient Name</th>
-                                            <th style={{ border: '1px solid #000', padding: '8px' }}>Phone</th>
-                                            <th style={{ border: '1px solid #000', padding: '8px' }}>Date</th>
-                                            <th style={{ border: '1px solid #000', padding: '8px' }}>Slot</th>
-                                            <th style={{ border: '1px solid #000', padding: '8px' }}>Price <span className='text-xs'>(Tk)</span> </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        {sortedAppointments.map((appointment) => (
-                                            <tr key={appointment._id}>
-                                                <td style={{ border: '1px solid #000', padding: '8px', textAlign: 'left' }}>{appointment.patientName}</td>
-                                                <td style={{ border: '1px solid #000', padding: '8px', textAlign: 'left' }}>{appointment.phone}</td>
-                                                <td style={{
-                                                    border: '1px solid #000',
-                                                    padding: '8px',
-                                                    textAlign: 'left',
-                                                }}>
-                                                    {formatDate(appointment.date)}
-                                                </td>
-                                                <td style={{ border: '1px solid #000', padding: '8px', textAlign: 'left' }}>{appointment.slot}</td>
-                                                <td style={{ border: '1px solid #000', padding: '8px', textAlign: 'left' }}>{appointment.price}</td>
-                                            </tr>
-                                        ))}
-                                    </tbody>
-                                </table>
-                            )}
+                            <div className='flex items-center justify-center'>
+                                {totalAppointmentsCategory === 0 ? (
+                                    <p className='text-red-500 font-semibold'>Total = 0</p>
+                                ) : (
+                                    <p className='text-blue-500 font-semibold'>Total = {totalAppointmentsCategory}</p>
+                                )}
+                            </div>
                         </div>
-                    </center>
+
+                        {totalAppointmentsCategory === 0 ? (
+                            <p className='text-center text-lg text-red-500'>( No appointments available till now )</p>
+                        ) : (
+                            <table style={{ border: '1px solid #000', width: '100%' }}>
+                                <thead className='text-left'>
+                                    <tr>
+                                        <th style={{ border: '1px solid #000', padding: '8px' }}>Patient Name</th>
+                                        <th style={{ border: '1px solid #000', padding: '8px' }}>Phone</th>
+                                        <th style={{ border: '1px solid #000', padding: '8px' }}>Date</th>
+                                        <th style={{ border: '1px solid #000', padding: '8px' }}>Slot</th>
+                                        <th style={{ border: '1px solid #000', padding: '8px' }}>Price <span className='text-xs'>(Tk)</span> </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {sortedAppointments.map((appointment) => (
+                                        <tr key={appointment._id}>
+                                            <td style={{ border: '1px solid #000', padding: '8px', textAlign: 'left' }}>{appointment.patientName}</td>
+                                            <td style={{ border: '1px solid #000', padding: '8px', textAlign: 'left' }}>{appointment.phone}</td>
+                                            <td style={{
+                                                border: '1px solid #000',
+                                                padding: '8px',
+                                                textAlign: 'left',
+                                            }}>
+                                                {formatDate(appointment.date)}
+                                            </td>
+                                            <td style={{ border: '1px solid #000', padding: '8px', textAlign: 'left' }}>{appointment.slot}</td>
+                                            <td style={{ border: '1px solid #000', padding: '8px', textAlign: 'left' }}>{appointment.price}</td>
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            </table>
+                        )}
+                    </div>
+
                 );
             })}
         </section>
