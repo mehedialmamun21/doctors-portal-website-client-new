@@ -57,7 +57,7 @@ const AppointmentDetails = () => {
     return (
         <section>
             <div className='sticky top-0 z-10 bg-white' ref={stickyCategoryRef}>
-                <h2 className='mt-20 lg:mt-24 mb-8 font-semibold border-2 border-y-zinc-400 border-x-white py-3 mx-5 lg:mx-52 text-center text-lg lg:text-2xl'>
+                <h2 className='mt-20 lg:mt-24 mb-8 font-semibold border-2 border-b-zinc-400 border-t-white border-x-white py-3 mx-5 lg:mx-52 text-center text-lg lg:text-2xl'>
                     Appointments by Treatment Category
                 </h2>
                 <div className='flex justify-center space-x-4 pb-3 mb-5 lg:mb-10'>

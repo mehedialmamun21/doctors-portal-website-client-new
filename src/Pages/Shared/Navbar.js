@@ -26,7 +26,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="navbar bg-transparent backdrop-blur-lg bg-opacity-80 px-5 py-2 lg:px-40 border-b border-gray-300 text-zinc-700 z-50 fixed">
+    <div className="navbar backdrop-blur bg-opacity-80 px-5 py-2 lg:px-40 border-b border-gray-300 text-zinc-700 bg-white z-50 fixed">
       <div className="navbar-start">
         <div className="dropdown lg:hidden">
           <label tabIndex="0" className="btn btn-ghost">
@@ -86,9 +86,9 @@ const Navbar = () => {
               </div>
             </div>
           </button> */}
-          <button className="btn ml-5 my-2 lg:my-0 bg-transparent border-none rounded-sm">
+          <button className="btn ml-5 my-2 lg:my-0 bg-transparent hover:bg-white border-none rounded-sm">
             <div className="flex items-center">
-              <FaShoppingCart size="1.2rem" className="mr-2 text-zinc-500" />
+              <FaShoppingCart size="1.2rem" className="mr-2 text-yellow-500" />
               <div className="badge text-white border-none bg-pink-600 px-3 py-2.5">
                 {cart?.length || 0}
               </div>
@@ -114,14 +114,14 @@ const Navbar = () => {
         {user ? (
           <a href="#" className="font-bold" onClick={handleLogout}>
             <span className="flex items-center">
-              <FaSignOutAlt className="mr-2" />
+              <FaSignOutAlt className="mr-2 text-blue-500" />
               Sign Out
             </span>
           </a>
         ) :
           <Link to="/login" className="font-bold">
             <span className="flex items-center">
-              <FaUser className="mr-2" />
+              <FaUser className="mr-2 text-blue-500" />
               Login
             </span>
           </Link>
