@@ -46,7 +46,7 @@ const Wrapper = styled.section`
 
     .top-btn {
         width: 2.3rem;
-        color: teal;
+        color: black;
         position: fixed;
         bottom: 7.8rem;
         right: 2.3rem;

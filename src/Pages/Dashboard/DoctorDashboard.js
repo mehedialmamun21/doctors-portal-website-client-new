@@ -115,7 +115,7 @@ const DoctorDashboard = () => {
                 <div className='mb-5 lg:mb-10 px-5'>
                     <p className='text-zinc-700 text-lg font-semibold text-center'>
                         <span className='text-red-500'>
-                            Give correct name of treatment category..
+                            Provide correct name of treatment category..
                         </span>
                     </p>
                 </div>
@@ -140,7 +140,7 @@ const DoctorDashboard = () => {
 
                 return (
                     <section>
-                        <div key={treatment} className='mb-5 lg:mb-10 bg-amber-200 px-5 py-5'>
+                        <div key={treatment} className='mb-5 lg:mb-14 bg-blue-100 px-5 py-5'>
                             <div className='mb-5'>
                                 <div className='flex items-center justify-center pb-2'>
                                     <div className='flex items-center px-5 py-1 rounded-full border border-gray-500'>

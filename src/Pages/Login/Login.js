@@ -76,9 +76,9 @@ const Login = () => {
 
         <div className="w-full lg:w-1/2 flex justify-center items-center py-0">
 
-          <div className="card w-96 rounded-sm bg-white border border-sky-600">
+          <div className="card w-96 rounded-sm bg-white border border-sky-500">
 
-            <div className="bg-sky-600 text-white px-8 py-3 flex items-center justify-between">
+            <div className="bg-sky-500 text-white px-8 py-3 flex items-center justify-between">
               <h2 className="text-lg">Login to Your Account</h2>
               <Link className="ml-3 lg:ml-5  text-sm text-white font-semibold" to="/signup" >SIGN UP?</Link>
             </div>
