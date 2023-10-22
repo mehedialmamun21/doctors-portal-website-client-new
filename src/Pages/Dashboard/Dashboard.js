@@ -28,7 +28,7 @@ const Dashboard = () => {
                         <Outlet></Outlet>
                     </div>
 
-                    <div class="drawer-side lg:bg-violet-600 lg:mr-3 mt-20 mb-3">
+                    <div class="drawer-side lg:bg-teal-600 lg:mr-3 mt-20 mb-3">
                         <label for="dashboard-sidebar" class="drawer-overlay"></label>
                         <ul class="menu pt-3 overflow-y-auto w-60 lg:w-full">
 

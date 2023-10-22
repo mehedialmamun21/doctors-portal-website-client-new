@@ -64,7 +64,7 @@ const Navbar = () => {
         </div>
 
         <Link to="/">
-          <img src={NavbarLogo} className="w-24 lg:w-40" alt="" />
+          <img src={NavbarLogo} className="w-28 lg:w-48" alt="" />
         </Link>
       </div>
       <div className="navbar-end hidden lg:flex">
