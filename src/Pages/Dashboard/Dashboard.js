@@ -106,13 +106,22 @@ const Dashboard = () => {
 
                             {/* Add doctor-specific options */}
                             {isDoctor && (
-                                <li>
-                                    <Link to="/dashboard/doctorDashboard">
-                                        <span className='px-2 py-3 font-bold rounded-sm font-mono text-white text-lg flex items-center'>
-                                            <AiOutlineProfile className='mr-3' /> Doctor Profile
-                                        </span>
-                                    </Link>
-                                </li>
+                                <div>
+                                    <li>
+                                        <Link to="/dashboard/doctorDashboard">
+                                            <span className='px-2 py-3 font-bold rounded-sm font-mono text-white text-lg flex items-center'>
+                                                <AiOutlineProfile className='mr-3' /> Doctor Profile
+                                            </span>
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/dashboard/prescription">
+                                            <span className='px-2 py-3 font-bold rounded-sm font-mono text-white text-lg flex items-center'>
+                                                <AiOutlineProfile className='mr-3' /> Prescription
+                                            </span>
+                                        </Link>
+                                    </li>
+                                </div>
                             )}
                         </ul>
                     </div>

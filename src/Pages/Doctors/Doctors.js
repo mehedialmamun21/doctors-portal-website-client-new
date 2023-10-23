@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useQuery } from 'react-query';
 import Loading from '../Shared/Loading';
-import Footer from '../Shared/Footer';
+// import Footer from '../Shared/Footer';
 import { FaRegCaretSquareRight } from 'react-icons/fa';
 
 import Modal from "./Modal";
@@ -32,7 +32,7 @@ const Doctors = () => {
     return (
         <section className=' pt-20'>
 
-            <div className='px-40 h-screen'>
+            <div className='px-0 h-screen'>
                 <div class="overflow-x-auto pt-12">
 
                     <table class="table w-full border-4">
@@ -42,7 +42,7 @@ const Doctors = () => {
                                 <th>Index</th>
                                 {/* <th>Doctor Image</th> */}
                                 <th>Name</th>
-                                <th>Degree</th>
+                                {/* <th>Degree</th> */}
                                 <th>Speciality</th>
                                 <th>Time</th>
                                 {/* <th>Room</th> */}
@@ -70,16 +70,16 @@ const Doctors = () => {
                 </div>
 
                 <div className='flex justify-end items-end pt-2 pb-28 px-5'>
-                    <span className='pb-9 flex justify-center items-center'>
+                    {/* <span className='pb-9 flex justify-center items-center'>
                         <FaRegCaretSquareRight size="30px" className='text-zinc-500 pt-1' />
-                    </span>
+                    </span> */}
                     <div className='pl-5 py-7'>
-                        <button onClick={clicked} className='bg-gradient-to-r from-sky-500 to-orange-500 text-white text-lg font-semibold px-12 py-2 rounded-sm hover:scale-105 duration-300'>Doctor's Entry</button>
+                        <button onClick={clicked} className='bg-gradient-to-r from-sky-500 to-orange-500 text-white text-lg font-semibold px-12 py-2 rounded-sm hover:scale-105 duration-300'>Enter</button>
                     </div>
                 </div>
             </div>
 
-            <Footer></Footer>
+            {/* <Footer></Footer> */}
 
         </section>
 

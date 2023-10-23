@@ -41,14 +41,14 @@ const DrDetails = () => {
                     <div className='text-center mb-7'>
                         <div>
                             <p className='text-xl lg:text-2xl font-semibold mb-3'>Details About</p>
-                            <p className='font-semibold text-sky-600 text-sm'> <span className='bg-white px-5 py-1 rounded-full border border-zinc-400'>{doctor.name}</span> </p>
+                            <p className='font-semibold text-sky-600 text-sm'> <span className='bg-white px-5 py-1 rounded-lg lg:rounded-lg border border-zinc-400'>{doctor.name}</span> </p>
                         </div>
                     </div>
                     <div className=''>
 
                         <div className='text-center'>
 
-                            <div className='flex justify-center items-center bg-white border border-zinc-400 rounded-xl py-5 lg:py-0 px-5 mx-7 lg:mx-40'>
+                            <div className='flex justify-center items-center lg:bg-white lg:border lg:border-zinc-400 lg:rounded-xl py-5 lg:py-0 px-5 mx-7 lg:mx-40'>
                                 <div className='hidden lg:block'>
                                     <center><img className='rounded py-5' src={doctor.img} style={{ width: 170, height: 170 }} alt="" /></center>
                                 </div>

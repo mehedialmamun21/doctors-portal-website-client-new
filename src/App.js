@@ -33,6 +33,7 @@ import ManageItems from "./Pages/Dashboard/ManageItems";
 import Pay from "./Pages/Dashboard/Pay/Pay";
 import DoctorDashboard from "./Pages/Dashboard/DoctorDashboard";
 import AppointmentDetails from "./Pages/Dashboard/AppointmentDetails";
+import Prescription from "./Pages/Dashboard/Prescription";
 
 function App() {
 
@@ -69,6 +70,7 @@ function App() {
           <Route path="manageItem" element={<RequireAdmin> <ManageItems></ManageItems> </RequireAdmin>}></Route>
 
           <Route path="doctorDashboard" element={<DoctorDashboard></DoctorDashboard>}></Route>
+          <Route path="prescription" element={<Prescription></Prescription>}></Route>
 
         </Route>
 
