@@ -29,7 +29,7 @@ const DrProfilesCard = ({ doctor }) => {
                     </div>
                     <div>
                         <p className='text-zinc-700 font-mono pt-3 text-sm'>{degree}</p>
-                        <p className='mt-2 text-sm text-zinc-700'> <span className='px-2 border border-gray-700 rounded-sm'>{speciality}</span> </p>
+                        <p className='mt-2 text-sm text-zinc-700'> <span className='px-2 py-1 border border-gray-700 rounded-sm'>{speciality}</span> </p>
                     </div>
                     <br />
 

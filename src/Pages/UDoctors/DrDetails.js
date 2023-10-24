@@ -40,20 +40,20 @@ const DrDetails = () => {
                 <div className='px-5 lg:px-72 pt-28 mb-20 lg:mb-0'>
                     <div className='text-center mb-7'>
                         <div>
-                            <p className='text-xl lg:text-2xl font-semibold mb-3'>Details About</p>
-                            <p className='font-semibold text-sky-600 text-sm'> <span className='bg-white px-5 py-1 rounded-lg lg:rounded-lg border border-zinc-400'>{doctor.name}</span> </p>
+                            <p className='text-xl lg:text-2xl font-semibold mb-3 uppercase'>Details About</p>
+                            <p className='font-semibold text-sky-600 text-md'> <span className='rounded-lg lg:rounded-lg'>{doctor.name}</span> </p>
                         </div>
                     </div>
                     <div className=''>
 
                         <div className='text-center'>
 
-                            <div className='flex justify-center items-center lg:bg-white lg:border lg:border-zinc-400 lg:rounded-xl lg:py-0 px-0 mx-5 lg:mx-40'>
+                            <div className='flex justify-center items-center lg:bg-white lg:border lg:border-zinc-400 lg:rounded-sm lg:py-0 px-0 mx-5 lg:mx-40'>
                                 <div className='hidden lg:block'>
                                     <center><img className='rounded py-5' src={doctor.img} style={{ width: 170, height: 170 }} alt="" /></center>
                                 </div>
                                 <div className='lg:pl-40'>
-                                    <div className='py-2 lg:py-3 bg-white border border-gray-400 rounded-lg px-4 lg:px-5'>
+                                    <div className='py-2 lg:py-3 bg-white border border-gray-400 rounded-sm px-2 lg:px-5'>
                                         <div className='lg:pt-2'>
                                             <p className='font-mono text-left text-slate-600'> Time: {doctor.time}</p>
                                             <p className='font-mono text-left text-slate-600'> Room: {doctor.room}</p>

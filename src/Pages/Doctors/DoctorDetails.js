@@ -113,7 +113,7 @@ function DoctorDetails() {
     return (
         <section className='h-screen'>
             <div className='pt-28 text-center'>
-                <p className='mb-12 text-xl font-semibold uppercase'><span className='font-semibold border-2 border-y-zinc-400 border-x-gray-100 py-3 mx-5 lg:mx-80 text-center uppercase text-2xl'>Create Prescription Here</span></p>
+                <p className='mb-12 font-semibold uppercase'><span className='font-semibold border-2 border-y-zinc-400 border-x-gray-100 py-3 mx-5 lg:mx-80 text-center uppercase text-lg lg:text-2xl'>Create Prescription Here</span></p>
                 <div className='grid grid-cols-1 lg:grid-cols-3 bg-blue-200 border border-zinc-400 py-5 mx-5 lg:mx-32 px-5 lg:px-24'>
                     <div>
                         <p className='text-black text-lg font-bold font-serif flex justify-start'>{doctor.name}</p>
@@ -184,7 +184,7 @@ function DoctorDetails() {
                             <button
                                 type="button"
                                 onClick={addMedication}
-                                className="btn btn-ghost bg-green-500 hover:bg-green-600 border-none text-white px-2 lg:px-14 rounded-sm font-mono text-lg"
+                                className="btn btn-ghost bg-green-500 hover:bg-green-600 border-none text-white px-5 lg:px-14 rounded-sm font-mono text-lg"
                             >
                                 Add Medication
                             </button>
@@ -238,20 +238,20 @@ function DoctorDetails() {
                         ))}
                     </div>
                     <div>
-                        <div className='flex justify-end mb-10'>
+                        <div className='flex lg:justify-end mb-5 lg:mb-10'>
                             <button
                                 type="button"
                                 onClick={clearFields}
-                                className="btn btn-ghost bg-red-500 border-none text-white px-2 lg:px-14 hover:bg-red-600 rounded-sm font-mono text-lg"
+                                className="btn btn-ghost bg-red-500 border-none text-white px-5 lg:px-14 hover:bg-red-600 rounded-sm font-mono text-lg"
                             >
                                 Clear
                             </button>
                         </div>
-                        <div className='flex justify-end'>
+                        <div className='flex lg:justify-end'>
                             <button
                                 type="button"
                                 onClick={downloadDataAsPDF}
-                                className="btn btn-ghost bg-gradient-to-r from-sky-500 to-orange-500 border-none text-white px-2 lg:px-14 hover:scale-105 duration-300 rounded-sm font-mono text-lg"
+                                className="btn btn-ghost bg-gradient-to-r from-sky-500 to-orange-500 border-none text-white px-5 lg:px-14 hover:scale-105 duration-300 rounded-sm font-mono text-lg"
                             >
                                 PRINT
                             </button>

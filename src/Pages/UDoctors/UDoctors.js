@@ -9,7 +9,7 @@ const UDoctors = () => {
     return (
         <section className='h-screen'>
 
-            <div className='pb-28 mx-7 lg:mx-40 pt-24 lg:pt-24'>
+            <div className='pb-28 mx-9 lg:mx-40 pt-24 lg:pt-24'>
 
                 <div className='text-center lg:text-start'>
                     <p className='text-3xl font-mono text-slate-600'>Our Doctors</p>
