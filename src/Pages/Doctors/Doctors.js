@@ -30,10 +30,10 @@ const Doctors = () => {
 
 
     return (
-        <section className=' pt-20'>
+        <section className='pt-0'>
 
             <div className='px-0 h-screen'>
-                <div class="overflow-x-auto pt-12">
+                <div class="overflow-x-auto pt-7">
 
                     <table class="table w-full border-4">
 

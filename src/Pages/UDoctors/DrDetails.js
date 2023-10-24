@@ -48,13 +48,13 @@ const DrDetails = () => {
 
                         <div className='text-center'>
 
-                            <div className='flex justify-center items-center lg:bg-white lg:border lg:border-zinc-400 lg:rounded-xl py-5 lg:py-0 px-5 mx-7 lg:mx-40'>
+                            <div className='flex justify-center items-center lg:bg-white lg:border lg:border-zinc-400 lg:rounded-xl lg:py-0 px-0 mx-5 lg:mx-40'>
                                 <div className='hidden lg:block'>
                                     <center><img className='rounded py-5' src={doctor.img} style={{ width: 170, height: 170 }} alt="" /></center>
                                 </div>
                                 <div className='lg:pl-40'>
-                                    <div className='py-2 lg:py-3 bg-white border border-gray-400 rounded-lg px-8 lg:px-5'>
-                                        <div className='pt-2'>
+                                    <div className='py-2 lg:py-3 bg-white border border-gray-400 rounded-lg px-4 lg:px-5'>
+                                        <div className='lg:pt-2'>
                                             <p className='font-mono text-left text-slate-600'> Time: {doctor.time}</p>
                                             <p className='font-mono text-left text-slate-600'> Room: {doctor.room}</p>
                                             <p className='font-mono text-left text-slate-600'> Phone: {doctor.phone}</p>

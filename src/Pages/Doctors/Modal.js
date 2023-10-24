@@ -31,9 +31,9 @@ const Modal = ({ setModalOn, setChoice }) => {
 
             <div className="flex h-screen justify-center items-center">
 
-                <div className="flex-col justify-center border border-orange-500 bg-white py-12 px-20 rounded-sm ">
+                <div className="flex-col justify-center border border-green-500 bg-white py-12 px-20 rounded-sm ">
 
-                    <div className="flex justify-center text-2xl text-zinc-900 font-bold font-mono" >Want to Enter in Your Profile?</div>
+                    <div className="flex justify-center text-2xl text-zinc-900 font-bold font-mono" >Want to create a prescription?</div>
 
                     <div className="flex pt-16">
 
