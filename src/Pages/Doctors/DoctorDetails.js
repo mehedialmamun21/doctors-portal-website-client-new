@@ -165,7 +165,7 @@ function DoctorDetails() {
                 </div>
 
                 <div className='grid grid-cols-1 lg:grid-cols-3 px-5 lg:px-24 pt-5 pb-5 lg:pb-5 mx-5 lg:mx-32 bg-amber-200 border border-l-zinc-300 border-r-zinc-300 border-b-zinc-300'>
-                    <div className=''>
+                    <div className='mb-5 lg:mb-0'>
                         <div className='mb-3'>
                             <label htmlFor='symptom' className='flex justify-start font-bold text-sm uppercase'>
                                 Symptoms:
