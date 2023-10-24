@@ -9,7 +9,7 @@ const AppointmentBanner = ({ date, setDate }) => {
         <section>
             <div className="hero px-5 lg:px-60 pt-20 lg:pt-24 pb-5 lg:pb-5">
 
-                <div className="hero-content grid grid-cols-1 lg:grid-cols-2 rounded-2xl text-lg border border-zinc-300 text-black lg:px-36 bg-blue-200">
+                <div className="hero-content grid grid-cols-1 lg:grid-cols-2 rounded-lg text-lg border border-zinc-300 text-black lg:px-36 bg-blue-200">
 
                     <div className='lg:pb-0 flex justify-center items-center'>
 

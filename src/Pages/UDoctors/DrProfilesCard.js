@@ -17,7 +17,7 @@ const DrProfilesCard = ({ doctor }) => {
 
             <div className=''>
                 <figure>
-                    <img src={doctor.img} alt="" className="border rounded-sm border-gray-600 scale-x-110 hover:scale-x-125 duration-500 scale-y-75 hover:scale-y-95 cursor-pointer" style={{ width: '120px', height: '140px' }} />
+                    <img src={doctor.img} alt="" className="border rounded-sm border-gray-400 scale-x-110 hover:scale-x-125 duration-500 scale-y-75 hover:scale-y-95 cursor-pointer" style={{ width: '120px', height: '140px' }} />
                 </figure>
             </div>
 
@@ -29,7 +29,7 @@ const DrProfilesCard = ({ doctor }) => {
                     </div>
                     <div>
                         <p className='text-zinc-700 font-mono pt-3 text-sm'>{degree}</p>
-                        <p className='mt-2 text-sm text-zinc-700'> <span className='px-2 py-1 border border-gray-700 rounded-sm'>{speciality}</span> </p>
+                        <p className='mt-1 text-sm text-zinc-700'> <span className='font-semibold'>{speciality}</span> </p>
                     </div>
                     <br />
 

@@ -140,7 +140,7 @@ const DoctorDashboard = () => {
 
                 return (
                     <section>
-                        <div key={treatment} className='mb-5 lg:mb-14 bg-blue-100 px-5 py-5'>
+                        <div key={treatment} className='mb-5 lg:mb-14 bg-amber-200 px-5 py-5'>
                             <div className='mb-5'>
                                 <div className='flex items-center justify-center pb-2'>
                                     <div className='flex items-center px-5 py-1 rounded-full border border-gray-500'>

@@ -90,7 +90,7 @@ const Navbar = () => {
             <div className="flex items-center">
               <FaShoppingCart size="1.2rem" className="mr-2 text-yellow-500" />
               <div className="badge text-white border-none bg-pink-600 px-3 py-2.5">
-                {cart?.length || 0}
+                +{cart?.length || 0}
               </div>
             </div>
           </button>

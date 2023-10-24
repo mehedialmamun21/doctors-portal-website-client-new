@@ -41,7 +41,7 @@ const Modal = ({ setModalOn, setChoice }) => {
                             doctors.map((doctor) =>
                                 <div className="flex mr-7">
                                     <div className="flex items-center justify-center bg-cyan-600 px-5 py-8">
-                                        <p className="font-semibold text-white font-serif"> {doctor.name} </p> <br />
+                                        <p className="font-semibold text-white font-mono"> {doctor.name} </p> <br />
                                     </div>
 
                                     <div className="flex items-center justify-center border-2 border-cyan-600 px-3 py-5">

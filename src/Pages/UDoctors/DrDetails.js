@@ -41,7 +41,7 @@ const DrDetails = () => {
                     <div className='text-center mb-7'>
                         <div>
                             <p className='text-xl lg:text-2xl font-semibold mb-3 uppercase'>Details About</p>
-                            <p className='font-semibold text-sky-600 text-md'> <span className='rounded-lg lg:rounded-lg'>{doctor.name}</span> </p>
+                            <p className='font-semibold text-sky-500 text-md'> <span className='rounded-lg lg:rounded-lg'>{doctor.name}</span> </p>
                         </div>
                     </div>
                     <div className=''>

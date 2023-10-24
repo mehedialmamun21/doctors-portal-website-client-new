@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaTrashAlt } from 'react-icons/fa';
 import { toast } from 'react-toastify';
 
 const UserRow = ({ user, refetch, index }) => {
@@ -99,8 +100,8 @@ const UserRow = ({ user, refetch, index }) => {
                 )}
             </td>
             <td>
-                <button onClick={() => handleDelete(email)} className="btn btn-sm bg-red-500 hover:bg-red-600 border-none text-white px-2 rounded-sm">
-                    Remove
+                <button onClick={() => handleDelete(email)} className="btn btn-ghost bg-white text-red-500 btn-lg rounded-sm">
+                    <FaTrashAlt size="1.1rem" />
                 </button>
             </td>
         </tr>

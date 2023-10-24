@@ -64,7 +64,7 @@ const AppointmentDetails = () => {
                     {Object.keys(groupedAppointments).map((treatment) => (
                         <button
                             key={treatment}
-                            className='text-blue-600 text-md font-semibold border bg-white px-2 py-1 rounded-md border-blue-600'
+                            className='text-blue-500 hover:text-white text-md font-semibold border bg-white hover:bg-blue-500 px-2 py-1 rounded-md border-blue-600'
                             onClick={() => scrollToCategory(treatment)}
                         >
                             {treatment}
@@ -77,7 +77,7 @@ const AppointmentDetails = () => {
                 <p className='font-semibold'>
                     <span className='border border-zinc-500 px-5 py-1'>
                         <span className='text-zinc-800'>Total Appointments = {totalAppointments} ,</span>
-                        <span className='pl-5 text-blue-600 font-semibold'> Today = {todayAppointments} </span>
+                        <span className='pl-5 text-blue-500 font-semibold'> Today = {todayAppointments} </span>
                     </span>
                 </p>
             </div>
@@ -106,16 +106,16 @@ const AppointmentDetails = () => {
                 const todayAppointmentsCategory = sortedAppointments.filter(appointment => isToday(new Date(appointment.date))).length;
 
                 return (
-                    <div key={treatment} ref={categoryRefs[treatment]} className='mb-10 bg-blue-100 py-0'>
+                    <div key={treatment} ref={categoryRefs[treatment]} className='mb-10 px-0 lg:px-5 pb-5 bg-amber-200 py-0'>
 
                         <div className='flex justify-center lg:mt-16'>
                             <div className='flex gap-7'>
                                 <div className='py-5 flex items-center'>
                                     <BiAddToQueue className='' size="1.2rem" />
-                                    <h2 className='text-xl font-semibold pl-2 text-zinc-700'> {treatment} </h2>
+                                    <h2 className='text-sm lg:text-lg uppercase font-semibold pl-2 text-zinc-800'> {treatment} </h2>
                                 </div>
-                                <div className='my-5 px-2 py-1 rounded-sm'>
-                                    <p className='text-zinc-900'>Total = {totalAppointmentsCategory}</p>
+                                <div className='my-5 px-2 py-1 rounded-sm border border-zinc-600'>
+                                    <p className='text-zinc-900 border border-b-zinc-600 border-t-amber-200 border-x-amber-200'>Total = {totalAppointmentsCategory}</p>
                                     <p className='text-zinc-900 font-semibold'>Today = {todayAppointmentsCategory}</p>
                                 </div>
                             </div>
@@ -264,7 +264,7 @@ export default AppointmentDetails;
 //             </div>
 
 //             <div className='my-10 text-center'>
-//                 <p className='font-semibold'> <span className='border border-zinc-800 rounded-sm px-5 py-1'> <span className='text-zinc-800'>Total Appointments = {totalAppointments} ,</span> <span className='pl-5 text-blue-600 font-semibold'> Today = {todayAppointments} </span> </span></p>
+//                 <p className='font-semibold'> <span className='border border-zinc-800 rounded-sm px-5 py-1'> <span className='text-zinc-800'>Total Appointments = {totalAppointments} ,</span> <span className='pl-5 text-blue-500 font-semibold'> Today = {todayAppointments} </span> </span></p>
 //             </div>
 
 //             {Object.keys(groupedAppointments).map((treatment) => {

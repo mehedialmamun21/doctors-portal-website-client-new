@@ -53,27 +53,31 @@ const Order = () => {
     return (
         <section className='bg-white'>
             <div className='pt-28 md:pt-12 lg:pt-28 lg:px-32 pb-10'>
+
                 <div style={{ marginBottom: '1rem' }}>
                     <div className='mx-10 lg:mx-96' style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                        <input
-                            type="text"
-                            placeholder="Search entire store here..."
-                            value={searchQuery}
-                            onChange={(e) => setSearchQuery(e.target.value)}
-                            style={{
-                                backgroundColor: '#FFFFFF',
-                                border: '1px solid #808080',
-                                borderRadius: '0px',
-                                fontSize: '16px',
-                                padding: '5px',
-                                width: '100%', // Adjust width as needed
-                            }}
-                        />
-                        <span style={{ marginLeft: '0.5rem' }}>
-                            <BiSearchAlt2 size="1.6rem" />
-                        </span>
+                        <div style={{ position: 'relative', width: '100%' }}>
+                            <input
+                                type="text"
+                                placeholder="Search entire store here..."
+                                value={searchQuery}
+                                onChange={(e) => setSearchQuery(e.target.value)}
+                                style={{
+                                    backgroundColor: '#FFFFFF',
+                                    border: '1px solid #808080',
+                                    borderRadius: '0px',
+                                    fontSize: '16px',
+                                    padding: '5px 40px 5px 5px', // Adjust padding as needed
+                                    width: '100%', // Adjust width as needed
+                                }}
+                            />
+                            <span style={{ position: 'absolute', right: '5px', top: '5px' }}>
+                                <BiSearchAlt2 size="1.6rem" />
+                            </span>
+                        </div>
                     </div>
                 </div>
+
                 <Tabs defaultIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
                     <div className='flex flex-wrap px-5 lg:px-0 my-10'>
                         {category.map((category, index) => (

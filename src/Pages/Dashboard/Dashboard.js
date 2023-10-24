@@ -9,7 +9,8 @@ import { MdOutlineAdminPanelSettings } from 'react-icons/md';
 import { AiOutlineUserAdd } from 'react-icons/ai';
 import { MdOutlineManageAccounts, MdManageAccounts } from 'react-icons/md';
 import { CgAddR } from 'react-icons/cg';
-import { AiOutlineProfile } from 'react-icons/ai';
+import { FaFilePrescription } from 'react-icons/fa';
+import { ImProfile } from 'react-icons/im';
 import useCart from '../../hooks/useCart';
 
 const Dashboard = () => {
@@ -62,7 +63,7 @@ const Dashboard = () => {
                             {admin && !isDoctor && <>
                                 <li>
                                     <Link to="/dashboard/appointmentDetails">
-                                        <span className='px-4 lg:px-2 py-1 font-bold border border-white rounded-full font-mono text-white text-lg flex'>
+                                        <span className='px-4 lg:px-2 py-1 font-bold border border-white font-mono text-white text-lg flex'>
                                             All Appointments
                                         </span>
                                     </Link>
@@ -110,14 +111,14 @@ const Dashboard = () => {
                                     <li>
                                         <Link to="/dashboard/doctorDashboard">
                                             <span className='px-2 py-3 font-bold rounded-sm font-mono text-white text-lg flex items-center'>
-                                                <AiOutlineProfile className='mr-3' /> My Profile
+                                                <ImProfile className='mr-3' /> My Profile
                                             </span>
                                         </Link>
                                     </li>
                                     <li>
                                         <Link to="/dashboard/prescription">
                                             <span className='px-2 py-3 font-bold rounded-sm font-mono text-white text-lg flex items-center'>
-                                                <AiOutlineProfile className='mr-3' /> Prescription
+                                                <FaFilePrescription className='mr-3' /> Prescription
                                             </span>
                                         </Link>
                                     </li>

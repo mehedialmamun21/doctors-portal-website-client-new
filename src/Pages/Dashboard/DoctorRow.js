@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaTrashAlt } from 'react-icons/fa';
 import { toast } from 'react-toastify';
 
 const DoctorRow = ({ doctor, index, refetch, setDeletingDoctor }) => {
@@ -19,7 +20,7 @@ const DoctorRow = ({ doctor, index, refetch, setDeletingDoctor }) => {
             <td className='font-mono'>{email}</td>
             <td className='font-mono'>{phone}</td>
             <td>
-                <label onClick={() => setDeletingDoctor(doctor)} for="delete-confirm-modal" class="btn btn-sm bg-red-500 hover:bg-red-600 border-none text-white px-6 rounded-sm font-bold">Delete</label>
+                <label onClick={() => setDeletingDoctor(doctor)} for="delete-confirm-modal" class="btn btn-ghost bg-white text-red-500 btn-lg rounded-sm"><FaTrashAlt size="1.1rem" /></label>
             </td>
         </tr>
     );

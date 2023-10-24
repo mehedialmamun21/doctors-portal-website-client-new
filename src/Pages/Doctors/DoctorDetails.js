@@ -101,13 +101,14 @@ function DoctorDetails() {
             return;
         }
 
+        doc.text(`------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------`, margin, 110);
         doc.setFontSize(mediumFontSize);
-        doc.text(`--------------------------------------------------------------------------------------------------------------------------------------------------`, margin, 110);
         doc.text(`Symptoms: ${symptomValue}`, margin, 120);
         doc.text(`Tests: ${testValue}`, margin, 130);
         doc.text(`Advice: ${adviceValue}`, margin, 140);
-        doc.text(`--------------------------------------------------------------------------------------------------------------------------------------------------`, margin, 150);
-
+        doc.setFontSize(smallFontSize);
+        doc.text(`------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------`, margin, 150);
+        doc.setFontSize(mediumFontSize);
         medications.forEach((medication, index) => {
             const blueColor = 'blue';
             const blackColor = 'black';
@@ -131,32 +132,31 @@ function DoctorDetails() {
         <section className='h-screen'>
             <div className='pt-24 lg:pt-28 pb-24 lg:pb-10 text-center'>
                 <p className='mb-8 lg:mb-12 font-semibold uppercase'>
-                    <span className='font-semibold border-2 border-y-zinc-400 border-x-gray-100 py-3 mx-5 lg:mx-80 text-center uppercase text-lg lg:text-2xl'>
+                    <span className='font-semibold border-2 border-y-zinc-400 border-x-gray-100 py-3 text-center uppercase text-lg lg:text-2xl'>
                         Create Prescription Here
                     </span>
                 </p>
-                <div className='grid grid-cols-1 lg:grid-cols-3 bg-blue-200 border border-zinc-300 py-5 mx-5 lg:mx-32 px-5 lg:px-24'>
+                <div className='grid grid-cols-1 lg:grid-cols-3 bg-blue-200 border border-zinc-300 py-5 mx-5 lg:mx-40 px-5 lg:px-24'>
                     <div>
-                        <p className='text-black text-lg font-bold font-serif flex justify-start'>{doctor.name}</p>
-                        <p className='flex items-center pb-3 text-black'>{doctor.degree}</p>
+                        <p className='text-black text-md lg:text-lg font-bold font-serif flex justify-start'>{doctor.name}</p>
+                        <p className='flex items-center pb-3 text-black text-sm'>{doctor.degree}</p>
                         <p className='font-mono flex justify-start'><span className='text-black'>Reg:</span><span className='text-black'>{doctor._id} </span></p>
-                        <p className='font-mono flex justify-start'><span className='text-black'>Email:</span><span className='font-semibold text-black'>{doctor.email}</span></p>
+                        <p className='font-mono flex justify-start'><span className='text-black'>Email:</span><span className='text-black'>{doctor.email}</span></p>
+                        <p className='font-mono flex justify-start'><span className='text-black'>Phone:</span><span className='text-black'>{doctor.phone}</span></p>
                     </div>
                     <div>
-                        <p className='font-mono flex justify-start'><span className='text-black'>Phone:</span><span className='font-semibold text-black'>{doctor.phone}</span></p>
-                        <br />
-                        <p className='font-mono flex justify-start'><span className='text-black'>Time:</span><span className='font-semibold text-black'>{doctor.time}</span></p>
-                        <p className='font-mono flex justify-start'><span className='text-black'>Room No:</span><span className='font-semibold text-black'>{doctor.room}</span></p>
-                        <p className='pb-2 font-mono flex justify-start'><span className='text-black'>Chamber:</span><span className='font-semibold text-black'>DentaMart, Dinajpur</span></p>
+                        <p className='font-mono flex justify-start'><span className='text-black'>Time:</span><span className='text-black'>{doctor.time}</span></p>
+                        <p className='font-mono flex justify-start'><span className='text-black'>Room No:</span><span className='text-black'>{doctor.room}</span></p>
+                        <p className='pb-2 font-mono flex justify-start'><span className='text-black'>Chamber:</span><span className='text-black'>DentaMart, Dinajpur</span></p>
                     </div>
                     <div>
-                        <p className="text-sm font-semibold flex justify-start">Date: {currentDate}</p>
+                        <p className="font-mono text-black flex justify-start">Date: {currentDate}</p>
                         <div className='flex justify-start mt-4'>
-                            <label htmlFor="nextMeet">Next Meet: </label>
+                            <label htmlFor="nextMeet" className='text-black font-mono'>Next Meet: </label>
                             <input
                                 type="text"
                                 id="nextMeet"
-                                className='ml-2'
+                                className='ml-2 pl-2'
                                 value={nextMeetDate}
                                 onChange={(e) => setNextMeetDate(e.target.value)}
                             />
@@ -164,7 +164,7 @@ function DoctorDetails() {
                     </div>
                 </div>
 
-                <div className='grid grid-cols-1 lg:grid-cols-3 px-5 lg:px-24 pt-5 pb-5 lg:pb-5 mx-5 lg:mx-32 bg-amber-200 border border-l-zinc-300 border-r-zinc-300 border-b-zinc-300'>
+                <div className='grid grid-cols-1 lg:grid-cols-3 px-5 lg:px-24 pt-7 pb-5 lg:pb-7 mx-5 lg:mx-40 bg-amber-200 border border-l-zinc-300 border-r-zinc-300 border-b-zinc-300'>
                     <div className='mb-5 lg:mb-0'>
                         <div className='mb-3'>
                             <label htmlFor='symptom' className='flex justify-start font-bold text-sm uppercase'>
@@ -228,7 +228,7 @@ function DoctorDetails() {
                                         id={`med${index}`}
                                         value={medication.med}
                                         onChange={(e) => updateMedication(index, 'med', e.target.value)}
-                                        className='flex justify-start ml-2'
+                                        className='flex justify-start ml-2 pl-2'
                                     />
                                     <button
                                         type='button'
@@ -248,7 +248,7 @@ function DoctorDetails() {
                                             id={`morning${index}`}
                                             value={medication.morning}
                                             onChange={(e) => updateMedication(index, 'morning', e.target.value)}
-                                            className={`flex justify-start ml-2 ${isMorningInvalid ? 'border-red-500' : ''} w-full`}
+                                            className={`flex justify-start ml-2 pl-1 ${isMorningInvalid ? 'border-red-500' : ''} w-full`}
                                         />
                                     </div>
                                 </div>
@@ -262,7 +262,7 @@ function DoctorDetails() {
                                             id={`day${index}`}
                                             value={medication.day}
                                             onChange={(e) => updateMedication(index, 'day', e.target.value)}
-                                            className={`flex justify-start ml-2 ${isDayInvalid ? 'border-red-500' : ''} w-full`}
+                                            className={`flex justify-start ml-2 pl-1 ${isDayInvalid ? 'border-red-500' : ''} w-full`}
                                         />
                                     </div>
                                 </div>
@@ -276,7 +276,7 @@ function DoctorDetails() {
                                             id={`night${index}`}
                                             value={medication.night}
                                             onChange={(e) => updateMedication(index, 'night', e.target.value)}
-                                            className={`flex justify-start ml-2 ${isNightInvalid ? 'border-red-500' : ''} w-full`}
+                                            className={`flex justify-start ml-2 pl-1 ${isNightInvalid ? 'border-red-500' : ''} w-full`}
                                         />
                                     </div>
                                 </div>

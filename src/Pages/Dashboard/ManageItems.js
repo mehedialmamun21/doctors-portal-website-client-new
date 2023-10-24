@@ -98,7 +98,7 @@ const ManageItems = () => {
                                 <th>Category</th>
                                 <th>Price</th>
                                 <th>Update</th>
-                                <th>Delete</th>
+                                <th>Action</th>
                             </tr>
                         </thead>
                         <tbody>
