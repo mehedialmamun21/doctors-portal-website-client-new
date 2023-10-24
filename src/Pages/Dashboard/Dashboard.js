@@ -110,7 +110,7 @@ const Dashboard = () => {
                                     <li>
                                         <Link to="/dashboard/doctorDashboard">
                                             <span className='px-2 py-3 font-bold rounded-sm font-mono text-white text-lg flex items-center'>
-                                                <AiOutlineProfile className='mr-3' /> Doctor Profile
+                                                <AiOutlineProfile className='mr-3' /> My Profile
                                             </span>
                                         </Link>
                                     </li>
