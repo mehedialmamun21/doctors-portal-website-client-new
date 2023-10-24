@@ -12,7 +12,7 @@ const MyAppointments = () => {
     const [user] = useAuthState(auth);
     const navigate = useNavigate();
 
-    const handleDeleteAppointment = (id, slot, date, treatment) => {
+    const handleDeleteAppointment = (id, date, treatment) => {
         if (window.confirm('Are you sure you want to delete this appointment?')) {
             fetch(`http://localhost:5000/booking/${id}`, {
                 method: 'DELETE',

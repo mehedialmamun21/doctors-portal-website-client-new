@@ -112,8 +112,8 @@ function DoctorDetails() {
 
     return (
         <section className='h-screen'>
-            <div className='pt-28 text-center'>
-                <p className='mb-12 font-semibold uppercase'><span className='font-semibold border-2 border-y-zinc-400 border-x-gray-100 py-3 mx-5 lg:mx-80 text-center uppercase text-lg lg:text-2xl'>Create Prescription Here</span></p>
+            <div className='pt-24 lg:pt-28 pb-24 lg:pb-10 text-center'>
+                <p className='mb-8 lg:mb-12 font-semibold uppercase'><span className='font-semibold border-2 border-y-zinc-400 border-x-gray-100 py-3 mx-5 lg:mx-80 text-center uppercase text-lg lg:text-2xl'>Create Prescription Here</span></p>
                 <div className='grid grid-cols-1 lg:grid-cols-3 bg-blue-200 border border-zinc-400 py-5 mx-5 lg:mx-32 px-5 lg:px-24'>
                     <div>
                         <p className='text-black text-lg font-bold font-serif flex justify-start'>{doctor.name}</p>
