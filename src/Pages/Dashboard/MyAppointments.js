@@ -29,7 +29,7 @@ const MyAppointments = () => {
                         Swal.fire({
                             icon: 'success',
                             title: 'Success',
-                            text: `Your appointment of date = ${date}, treatment = ${treatment} deleted.`,
+                            text: `Your appointment has been deleted.`,
                         });
                     } else if (res.status === 403) {
                         signOut(auth);

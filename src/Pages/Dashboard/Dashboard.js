@@ -47,7 +47,7 @@ const Dashboard = () => {
                                         <span className='px-2 py-2 font-semibold rounded-sm font-mono text-white flex items-center text-lg'>
                                             <FaShoppingCart className='mr-3' /> My Cart
                                         </span>
-                                        <span className="badge text-white bg-pink-600 border-none px-3 py-2.5">+{cart?.length || 0}</span>
+                                        <span className="badge text-pink-500 bg-white font-bold border-none px-2 py-2">+{cart?.length || 0}</span>
                                     </Link>
                                 </li>
 
@@ -111,7 +111,7 @@ const Dashboard = () => {
                                     <li>
                                         <Link to="/dashboard/doctorDashboard">
                                             <span className='px-2 py-3 font-bold rounded-sm font-mono text-white text-lg flex items-center'>
-                                                <ImProfile className='mr-3' /> My Profile
+                                                <ImProfile className='mr-3' /> Doctor Profile
                                             </span>
                                         </Link>
                                     </li>

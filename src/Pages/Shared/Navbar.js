@@ -40,7 +40,7 @@ const Navbar = () => {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
             </svg>
           </label>
-          <ul tabIndex="0" className="menu menu-compact dropdown-content mt-2 p-2 shadow rounded-sm w-52 text-white bg-black">
+          <ul tabIndex="0" className="menu menu-compact dropdown-content mt-2 p-2 shadow rounded-sm w-52 text-white bg-teal-500">
             {menuItems.map((item, index) => (
               <li key={index}>
                 <Link to={item.to}>
@@ -52,9 +52,9 @@ const Navbar = () => {
               <Link to="/dashboard/cart">
                 <button className="btn bg-none border-none rounded-sm">
                   <div className="flex items-center">
-                    <FaShoppingCart size="1.1rem" className="mr-2 text-white" />
-                    <div className="badge text-white bg-pink-600 px-3 py-2.5">
-                      {cart?.length || 0}
+                    <FaShoppingCart size="1.4rem" className="mr-2 text-white" />
+                    <div className="badge border-none text-white bg-pink-600 px-3 py-3">
+                      +{cart?.length || 0}
                     </div>
                   </div>
                 </button>
@@ -88,8 +88,8 @@ const Navbar = () => {
           </button> */}
           <button className="btn ml-5 my-2 lg:my-0 bg-transparent hover:bg-white border-none rounded-sm">
             <div className="flex items-center">
-              <FaShoppingCart size="1.2rem" className="mr-2 text-yellow-500" />
-              <div className="badge text-white border-none bg-pink-600 px-3 py-2.5">
+              <FaShoppingCart size="1.4rem" className="mr-2 text-yellow-500" />
+              <div className="badge text-white border-none bg-pink-600 px-2 py-2">
                 +{cart?.length || 0}
               </div>
             </div>

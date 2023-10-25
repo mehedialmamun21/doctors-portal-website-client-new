@@ -30,7 +30,7 @@ const Footer = () => {
             <center>
                 <div className='lg:flex items-center justify-center py-10 lg:py-8 border-b border-white mx-16 lg:mx-40 mb-0 lg:mb-10'>
                     <Link to="/appointment">
-                        <button className='px-10 py-2 rounded-sm font-serif text-white border border-white hover:scale-105 duration-300'>BOOK ONLINE</button>
+                        <button className='px-10 py-2 font-serif text-white border border-white hover:scale-105 duration-300'>BOOK ONLINE</button>
                     </Link>
                     <p className='text-white pt-5 lg:pt-0 text-lg lg:text-2xl lg:pl-10'>Find available appointments</p>
                 </div>
@@ -90,7 +90,7 @@ const Footer = () => {
             <div className='grid grid-cols-1 px-12 lg:px-0 lg:flex lg:gap-3 items-center justify-center text-white mt-5 lg:mt-5 py-5 lg:py-7 text-sm bg-zinc-800'>
 
                 <p className='font-mono pb-2 lg:pb-0'>
-                    <span className='text-white mr-2 lg:mr-4 border border-white rounded-sm px-2 py-1'>{time}</span>
+                    <span className='text-white mr-2 lg:mr-4 border border-white px-2 py-1'>{time}</span>
                     <span className=''>{date} </span>
                     <span className='pl-0 lg:pl-5 lg:pr-5 mt-3 lg:mt-0 lg:inline block'>© ALL RIGHT RESERVED BY DENTAMART</span>
                     <span className='invisible lg:visible'>|</span>
