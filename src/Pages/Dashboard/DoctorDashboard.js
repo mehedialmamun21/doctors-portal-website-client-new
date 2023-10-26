@@ -104,8 +104,8 @@ const DoctorDashboard = () => {
                                 height: '40px',
                             }}
                         />
-                        <span style={{ marginLeft: '-30px' }}>
-                            <BiSearchAlt2 size="1.4rem" className='text-gray-500' />
+                        <span className='bg-blue-500 px-2 py-1 text-white' style={{ marginLeft: '-46px' }}>
+                            <BiSearchAlt2 size="1.9rem" className='' />
                         </span>
                     </div>
                 </div>

@@ -106,9 +106,9 @@ const AppointmentDetails = () => {
                 const todayAppointmentsCategory = sortedAppointments.filter(appointment => isToday(new Date(appointment.date))).length;
 
                 return (
-                    <div key={treatment} ref={categoryRefs[treatment]} className='mb-10 px-0 lg:px-5 pb-5 bg-amber-200 py-0'>
+                    <div key={treatment} ref={categoryRefs[treatment]} className='mb-10 px-0 lg:px-5 pb-5 bg-blue-200 py-0'>
 
-                        <div className='flex justify-center lg:mt-16'>
+                        <div className='flex justify-center lg:mt-10'>
                             <div className='flex gap-7'>
                                 <div className='py-5 flex items-center'>
                                     <BiAddToQueue className='' size="1.2rem" />

@@ -71,8 +71,8 @@ const Order = () => {
                                     width: '100%', // Adjust width as needed
                                 }}
                             />
-                            <span style={{ position: 'absolute', right: '5px', top: '5px' }}>
-                                <BiSearchAlt2 size="1.6rem" />
+                            <span className="bg-blue-500 text-white px-2 py-1" style={{ position: 'absolute', right: '0px', top: '0px' }}>
+                                <BiSearchAlt2 size="1.7rem" />
                             </span>
                         </div>
                     </div>
