@@ -106,7 +106,7 @@ const AppointmentDetails = () => {
                 const todayAppointmentsCategory = sortedAppointments.filter(appointment => isToday(new Date(appointment.date))).length;
 
                 return (
-                    <div key={treatment} ref={categoryRefs[treatment]} className='mb-10 px-0 lg:px-5 pb-5 bg-blue-200 py-0'>
+                    <div key={treatment} ref={categoryRefs[treatment]} className='mb-10 px-0 lg:px-5 pb-5 bg-blue-100 py-0'>
 
                         <div className='flex justify-center lg:mt-10'>
                             <div className='flex gap-7'>
@@ -115,7 +115,7 @@ const AppointmentDetails = () => {
                                     <h2 className='text-sm lg:text-lg uppercase font-semibold pl-2 text-zinc-800'> {treatment} </h2>
                                 </div>
                                 <div className='my-5 px-2 py-1 rounded-sm border border-zinc-600'>
-                                    <p className='text-zinc-900 border border-b-zinc-600 border-t-amber-200 border-x-amber-200'>Total = {totalAppointmentsCategory}</p>
+                                    <p className='text-zinc-900 border border-b-zinc-600 border-t-blue-100 border-x-blue-100'>Total = {totalAppointmentsCategory}</p>
                                     <p className='text-zinc-900 font-semibold'>Today = {todayAppointmentsCategory}</p>
                                 </div>
                             </div>
