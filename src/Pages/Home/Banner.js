@@ -12,7 +12,7 @@ const Banner = () => {
         // Create an interval to change the current slide every 5 seconds
         const intervalId = setInterval(() => {
             setCurrentSlide((currentSlide + 1) % 3);
-        }, 4000);
+        }, 6000);
 
         // Clear the interval when the component unmounts to prevent memory leaks
         return () => {
