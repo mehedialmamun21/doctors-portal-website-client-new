@@ -18,7 +18,7 @@ const DrProfiles = ({ doctor }) => {
     return (
         <section>
 
-            <div className='grid grid-cols-1 lg:grid-cols-4 lg:gap-10'>
+            <div className='grid grid-cols-1 lg:grid-cols-4 gap-5 lg:gap-10'>
                 {
                     doctors.map((doctor) => <DrProfilesCard
                         key={doctor._id}

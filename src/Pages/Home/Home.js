@@ -14,7 +14,9 @@ const Home = () => {
     <div className="h-screen">
       <div className="pb-14 pt-16">
         <Banner></Banner>
-        <Info></Info>
+        <div className="hidden lg:block">
+          <Info></Info>
+        </div>
         <Services></Services>
         <Featured></Featured>
         <div className="hidden lg:block" style={{ height: "1300px" }}>

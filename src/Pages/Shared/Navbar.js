@@ -40,7 +40,7 @@ const Navbar = () => {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
             </svg>
           </label>
-          <ul tabIndex="0" className="menu menu-compact dropdown-content mt-2 p-2 shadow rounded-sm w-52 text-white bg-teal-500">
+          <ul tabIndex="0" className="menu menu-compact dropdown-content mt-4 p-1 shadow rounded-sm w-52 text-white bg-teal-500">
             {menuItems.map((item, index) => (
               <li key={index}>
                 <Link to={item.to}>
@@ -50,9 +50,9 @@ const Navbar = () => {
             ))}
             <li>
               <Link to="/dashboard/cart">
-                <button className="btn bg-none border-none rounded-sm">
-                  <div className="flex items-center">
-                    <FaShoppingCart size="1.4rem" className="mr-2 text-white" />
+                <button className="border-none rounded-sm">
+                  <div className="flex items-center bg-white px-2 py-1 rounded-sm">
+                    <FaShoppingCart size="1.4rem" className="mr-2 text-yellow-500" />
                     <div className="badge border-none text-white bg-pink-600 px-3 py-3">
                       +{cart?.length || 0}
                     </div>
@@ -64,7 +64,7 @@ const Navbar = () => {
         </div>
 
         <Link to="/">
-          <img src={NavbarLogo} className="w-28 lg:w-48" alt="" />
+          <img src={NavbarLogo} className="w-28 lg:w-48 ml-1 lg:ml-0" alt="" />
         </Link>
       </div>
       <div className="navbar-end hidden lg:flex">
@@ -114,14 +114,14 @@ const Navbar = () => {
         {user ? (
           <a href="#" className="font-bold" onClick={handleLogout}>
             <span className="flex items-center">
-              <FaSignOutAlt className="mr-2 text-blue-500" />
+              <FaSignOutAlt className="ml-2 mr-2 text-blue-500" />
               Sign Out
             </span>
           </a>
         ) :
           <Link to="/login" className="font-bold">
             <span className="flex items-center">
-              <FaUser className="mr-2 text-blue-500" />
+              <FaUser className="ml-2 mr-2 text-blue-500" />
               Login
             </span>
           </Link>
