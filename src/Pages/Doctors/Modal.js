@@ -27,20 +27,20 @@ const Modal = ({ setModalOn, setChoice }) => {
 
     return (
 
-        <div className="bg-zinc-500 opacity-80 fixed inset-0 z-50 px-5 lg:px-12">
+        <div className="bg-zinc-500 opacity-80 fixed inset-0 z-50 lg:px-12 py-12 lg:py-0">
 
-            <div className="flex h-screen justify-center items-center">
+            <div className="flex lg:h-screen justify-center items-center">
 
-                <div className="flex-col justify-center border border-green-500 bg-white py-12 px-20 rounded-sm ">
+                <div className="flex-col justify-center border border-green-500 bg-white lg:py-12 py-10 lg:px-20 px-5 rounded-sm ">
 
-                    <div className="flex justify-center text-2xl text-zinc-900 font-bold font-mono" >Want to create a prescription?</div>
+                    <div className="flex justify-center lg:text-2xl text-xl text-zinc-900 font-bold font-mono" >Want to create a prescription?</div>
 
-                    <div className="flex pt-16">
+                    <div className="lg:flex lg:pt-16 pt-5">
 
                         {
                             doctors.map((doctor) =>
-                                <div className="flex mr-7">
-                                    <div className="flex items-center justify-center bg-cyan-600 px-5 py-8">
+                                <div className="flex mr-7 lg:mb-0 mb-3">
+                                    <div className="flex items-center justify-center bg-cyan-600 px-5 lg:py-8 py-5">
                                         <p className="font-semibold text-white font-mono"> {doctor.name} </p> <br />
                                     </div>
 
